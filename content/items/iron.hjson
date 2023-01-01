@@ -1,0 +1,10 @@
+{
+    name: "Iron",
+    description: "Common metal, used in pretty much everything",
+
+    research: {
+        parent: "aeyama-wood"
+    },
+
+    buildable: false
+}

@@ -1,0 +1,82 @@
+{
+    type: "mech",
+    name: "Builder",
+    controller: "BuilderAI",
+    isEnemy: false,
+
+    mechSideSway: 0
+    mechStepShake: 4
+    mechStepParticles: true
+
+    health: 300,
+    armor: 2,
+    speed: 1,
+    flying: false,
+    hitSize: 1.25,
+    itemCapacity: 50,
+
+    buildSpeed: 0.25,
+
+    canBoost: true,
+    boostMultiplier: 0.5,
+
+    canAttack: true,
+    mineSpeed: 1,
+    mineTier: 4,
+    mineFloor: true,
+    mineWalls: true,
+
+    coreUnitDock: true,
+    createScorch: false,
+
+
+    weapons: [
+        {
+            name: "infantry-weapon1",
+            top: false,
+            x: 5,
+            y: 4,
+            shootY: 2,
+            reload: 25,
+            recoil: 2,
+            shootSound: "pew",
+            shake: 0.25,
+            alternate: false,
+            mirror: false,
+            bullet: {
+                type: "BasicBulletType",
+                damage: 14,
+                buildingDamageMultiplier: 0.01,
+                speed: 8,
+                lifetime: 40,
+                collidesTeam: true,
+                healPercent: 5,
+                frontColor: ffffff,
+                backColor: 98ffa9
+            }
+        }
+    ]
+}
+/*
+type: mech 
+hitSize: 50
+health: 150000
+armor: 40
+speed: 0.4
+canDrown: false
+rotateSpeed: 1.8
+baseRotateSpeed: 1.8
+buildSpeed: 4.5
+mineSpeed: 6
+mineTier: 4
+shadowElevationScl: 0.4
+mechSideSway: 0
+mechStepShake: 4
+mechStepParticles: true
+groundLayer: 80
+drawBody: false
+lightRadius: 90
+lightColor: 83f793
+range: 480
+maxRange: 480
+*/

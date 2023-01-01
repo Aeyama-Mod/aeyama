@@ -1,0 +1,20 @@
+{
+    type: "CoreBlock",
+    category: "effect",
+    name: "Aeyama: Frontline Outpost",
+    description: "Core of the ship. Once destroyed, the sector is lost.",
+    research: {
+        root: true,
+        name: "Aeyama",
+        planet: "aeyama",
+    },
+    requirements: [
+        copper/100
+    ]
+    size: 2,
+    health: 2000,
+    itemCapacity: 1000,
+
+    unitType: "infantry"
+    //unitType: "quasar",
+}

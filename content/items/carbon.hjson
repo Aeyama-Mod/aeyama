@@ -1,0 +1,10 @@
+{
+    name: "Carbon",
+    description: "Result of wood burning, really useful to harden iron.",
+
+    research: {
+        parent: "aeyama-wood"
+    },
+
+    buildable: false
+}

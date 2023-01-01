@@ -1,0 +1,8 @@
+{
+    name: "Carbon",
+    description: "Result of wood burning, really useful to harden iron.",
+
+    research: "aeyama-conveyor",
+
+    buildable: false
+}

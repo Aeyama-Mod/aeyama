@@ -1,0 +1,62 @@
+{
+    generator: "PlanetGenerator",
+    parent: "sun",
+    localizedName: "Aeyama",
+    iconColor: 158400,
+    orbitRadius: 9,
+    hasAtmosphere: true,
+    updateLighting: false,
+    atmosphereRadIn: 0.1,
+    atmosphereRadOut: 0.3,
+    atmosphereColor: 925115,
+    drawOrbit: true,
+    accessible: true,
+    alwaysUnlocked: true,
+    defaultCore: "aeyama-core",
+    sectorSeed: 5948,
+    startSector: 7,
+    sectorSize: 1,
+    clearSectorOnLose: true,
+    allowSectorInvasion: false,
+    radius: 1,
+    hiddenItems: [
+        "copper",
+        "lead",
+        "scrap",
+        "graphite",
+        "coal",
+        "titanium",
+        "thorium",
+        "silicon",
+        "plastanium",
+        "phase-fabric",
+        "surge-alloy",
+        "spore-pod",
+        "sand",
+        "blast-compund",
+        "pyratite",
+        "metaglass",
+        "beryllium",
+        "oxide",
+        "tungsten",
+        "carbide",
+        "fissile-matter",
+        "dormant-cyst"
+    ]
+    mesh: {
+        type: "NoiseMesh",  //NoiseMesh NoiseMesh
+        divisions: 5,       //3         3
+        radius: 0.9,        //0.12      0.8
+        planet: "aeyama",   //2         aeyama
+        color1: 158400,     //ff7a38    158400
+        color2: 7070ff,     //ff7a38    131316
+        octaves: 4,         //1         4
+        persistence: 1,     //0.01      1
+        scale: 1.1,         //0.01      1.1
+        mag: 1.2,             //1         5
+        coct: 4,            //1         4
+        cper: 1.4,          //1         1.4
+        cscl: 0.3,          //1         0.3
+        cthresh: 0.5        //1         0.2
+    }
+}

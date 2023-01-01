@@ -1,0 +1,10 @@
+{
+    name: "Wood",
+    description: "A basic resource that you can find pretty much anywhere.",
+
+    research: {
+        parent: "aeyama-core"
+    },
+
+    buildable: false
+}
