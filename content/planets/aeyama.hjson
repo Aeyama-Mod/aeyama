@@ -3,7 +3,7 @@
     parent: "sun",
     localizedName: "Aeyama",
     iconColor: 158400,
-    orbitRadius: 9,
+    orbitRadius: 24,
     hasAtmosphere: true,
     updateLighting: false,
     atmosphereRadIn: 0.1,
