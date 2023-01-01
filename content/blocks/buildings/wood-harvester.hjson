@@ -1,0 +1,26 @@
+{
+    localizedName: "Wood Harvester",
+    description: "When placed beside trees, generate wood indefinitely.",
+    type: "BeamDrill",
+    category: "production",
+    size: 2,
+
+    drillTime: 120,
+    range: 1,
+    tier: 1,
+    sparkColor: 603232,
+    heatColor: 603232,
+
+    //laserWidth: 0.01,
+
+    research: {
+        parent: "aeyama-core",
+        requirements: [
+            aeyama-wood/100
+        ]
+    },
+
+    requirements: [
+        aeyama-wood/20
+    ]
+}

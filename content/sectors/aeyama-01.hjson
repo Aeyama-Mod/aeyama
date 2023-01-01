@@ -1,0 +1,11 @@
+{
+    localizedName: "New World",
+    description: "A new planet has been discovered in the system, go check it out.",
+    sector: 7
+    planet: "aeyama"
+    research: {
+        parent: "aeyama-core"
+    }
+    difficulty: 0
+    enemyBase: false
+}

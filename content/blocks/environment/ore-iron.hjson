@@ -1,0 +1,5 @@
+{
+    type: "OreBlock",
+    itemDrop: "aeyama-iron",
+    variants: 4
+}

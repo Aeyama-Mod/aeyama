@@ -1,0 +1,23 @@
+{
+    type: "Conveyor",
+    localizedName: "Efficient Conveyor",
+    description: "",
+    category: "distribution",
+
+    health: 200,
+    speed: 0.12,
+    displayedSpeed: 16.8,
+
+    research: {
+        parent: "aeyama-conveyor-normal",
+        requirements: [
+            aeyama-iron/2000,
+            aeyama-steel/1000
+        ]
+    },
+
+    requirements: [
+        aeyama-iron/1,
+        aeyama-steel/1
+    ]
+}

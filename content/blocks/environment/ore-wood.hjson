@@ -1,0 +1,6 @@
+{
+    type: "OreBlock",
+    itemDrop: "aeyama-wood",
+    variants: 2,
+    wallOre: true
+}
