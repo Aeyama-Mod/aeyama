@@ -6,5 +6,3 @@ Events.on(ContentInitEvent, e => {
     //p.generator = gen.AeyamaPlanetGenerator;
     p.generator = gen.gen;
 });
-
-print("Updated Aeyama planet generator.");
