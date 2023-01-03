@@ -1,0 +1,5 @@
+{
+    localizedName: "Aeyama Tree",
+    type: "StaticTree",
+    variants: 4
+}

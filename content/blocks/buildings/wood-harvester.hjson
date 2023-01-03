@@ -5,13 +5,13 @@
     category: "production",
     size: 2,
 
-    drillTime: 120,
+    drillTime: 180,
     range: 1,
     tier: 1,
     sparkColor: 603232,
     heatColor: 603232,
 
-    //laserWidth: 0.01,
+    laserWidth: 0,
 
     research: {
         parent: "aeyama-core",

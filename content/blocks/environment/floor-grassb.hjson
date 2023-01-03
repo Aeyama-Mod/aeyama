@@ -1,0 +1,6 @@
+{
+    localizedName: "Aeyama Grass B",
+    type: "Floor",
+    allowCorePlacement: true,
+    variatns: 3
+}
