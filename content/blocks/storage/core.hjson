@@ -9,6 +9,7 @@
     itemCapacity: 1000,
     isFirstTier: true,
     unitType: "infantry",
+    alwaysUnlocked: true,
 
     research: {
         root: true,

@@ -12,7 +12,7 @@
         parent: "aeyama-conveyor-slow",
         requirements: [
             aeyama-iron/1000,
-            aeyama-steel/500
+            aeyama-steel/1000
         ]
     },
 
