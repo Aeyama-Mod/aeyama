@@ -9,8 +9,6 @@ Events.on(ContentInitEvent, e => {
     p.generator = new ErekirPlanetGenerator();
 
     // Adds the new attribute to trees to be able to harvest
-    let t = Vars.content.block("aeyama-tree");
-    t.attributes.set(Attribute.get("wood"), 1);
-    let d = Vars.content.block("aeyama-wood-harvester");
-    d.attribute = Attribute.get("wood");
+    Vars.content.block("aeyama-tree").attributes.set(Attribute.get("wood"), 1);
+    Vars.content.block("aeyama-wood-harvester").attribute = Attribute.get("wood");
 });
