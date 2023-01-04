@@ -1,0 +1,48 @@
+{
+    
+    targetGround : true
+    description : The first turret of Aeyama
+    inaccuracy : 4
+    targetAir : true
+    category : turret
+    research: {
+        parent: "aeyama-core",
+        requirements: [
+            aeyama-blueprint/5
+        ]
+    },
+    health : 860
+    reload : 40
+    range : 180
+    type : ItemTurret
+    name : Craker
+    size : 2
+    shoot: {
+        type: ShootSpread
+        shots: 10
+        spread: 20
+    }
+    
+    requirements : [
+        iron/120
+        wood/250
+    ]
+    
+    ammoTypes : {
+        wood : {
+            reloadMultiplier : 1
+            ammoMultiplier : 3
+            lifetime : 60
+            damage : 13
+            height : 14
+            speed : 3
+            width : 10
+        }
+    }
+    
+    consumes : {
+        coolant : {
+            amount : 0.2
+        }
+    }
+}
