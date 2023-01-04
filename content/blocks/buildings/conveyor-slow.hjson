@@ -11,11 +11,11 @@
     research: {
         parent: "aeyama-core",
         requirements: [
-            aeyama-iron/100
+            aeyama-wood/100
         ]
     },
 
     requirements: [
-        aeyama-iron/1
+        aeyama-wood/2
     ]
 }

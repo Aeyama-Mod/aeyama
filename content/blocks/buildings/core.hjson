@@ -7,7 +7,6 @@
     size: 2,
     health: 2000,
     itemCapacity: 1000,
-    isFirstTier: true,
     unitType: "infantry",
     alwaysUnlocked: true,
 
@@ -21,5 +20,4 @@
         aeyama-wood/1000,
         aeyama-iron/1000
     ]
-    //unitType: "quasar",
 }
