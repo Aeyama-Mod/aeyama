@@ -13,13 +13,12 @@
     research: {
         parent: "aeyama-core",
         requirements: [
-            aeyama-iron/1000,
-            aeyama-steel/500
+            aeyama-blueprint/1
         ]
     },
 
     requirements: [
-        aeyama-iron/200,
-        aeyama-steel/100
+        aeyama-wood/500,
+        aeyama-iron/200
     ]
 }

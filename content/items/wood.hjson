@@ -10,7 +10,7 @@
     hardness: 0.1,
 
     research: {
-        parent: "aeyama-core"
+        parent: "aeyama-blueprint"
     },
 
     buildable: false,

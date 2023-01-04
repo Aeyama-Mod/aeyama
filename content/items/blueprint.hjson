@@ -9,7 +9,7 @@
     hardness: 0,
 
     research: {
-        parent: "aeyama-wood"
+        parent: "aeyama-core"
     },
 
     buildable: false,

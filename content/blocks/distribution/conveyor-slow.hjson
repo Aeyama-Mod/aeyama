@@ -11,7 +11,7 @@
     research: {
         parent: "aeyama-core",
         requirements: [
-            aeyama-wood/100
+            aeyama-blueprint/1
         ]
     },
 

@@ -12,7 +12,8 @@
         parent: "aeyama-conveyor-normal",
         requirements: [
             aeyama-iron/2000,
-            aeyama-steel/2000
+            aeyama-steel/2000,
+            aeyama-blueprint/4
         ]
     },
 
