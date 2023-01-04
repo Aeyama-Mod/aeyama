@@ -9,6 +9,7 @@
 
     craftTime: 7200,
     outputItem : aeyama-blueprint/1,
+    alwaysUnlocked: true,
 
     research: {
         parent: "aeyama-core",
