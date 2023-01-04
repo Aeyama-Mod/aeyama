@@ -1,17 +1,12 @@
 {
     localizedName: "Wood Harvester",
     description: "When placed beside trees, generate wood indefinitely.",
-    type: "BeamDrill",
+    type: "WallCrafter",
     category: "production",
     size: 2,
 
     drillTime: 180,
-    range: 1,
-    tier: 1,
-    sparkColor: 603232,
-    heatColor: 603232,
-
-    laserWidth: 0,
+    output: "aeyama-wood",
 
     research: {
         parent: "aeyama-core",

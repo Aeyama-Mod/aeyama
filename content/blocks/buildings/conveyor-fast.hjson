@@ -12,12 +12,13 @@
         parent: "aeyama-conveyor-normal",
         requirements: [
             aeyama-iron/2000,
-            aeyama-steel/1000
+            aeyama-steel/1000,
+            aeyama-wood/400
         ]
     },
 
     requirements: [
-        aeyama-iron/1,
-        aeyama-steel/1
+        aeyama-iron/2,
+        aeyama-steel/2
     ]
 }
