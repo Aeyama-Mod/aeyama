@@ -8,6 +8,7 @@
     health: 2000,
     itemCapacity: 1000,
     unitType: "infantry",
+    alwaysUnlocked: true,
 
     research: {
         root: true,
