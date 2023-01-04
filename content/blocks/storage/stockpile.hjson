@@ -1,25 +1,24 @@
 {
-    type: "CoreBlock",
+    type: "StorageBlock",
     name: "Stockpile",
     description: "Resource stockpile, you can drop resources here.",
     category: "effect",
 
-    size: 2,
+    size: 1,
     health: 500,
     itemCapacity: 250,
-    isFirstTier: true,
-    unitType: "infantry",
 
     research: {
         parent: "aeyama-core",
         requirements: [
             aeyama-wood/1000,
-            aeyama-iron/800
+            aeyama-iron/800,
+            aeyama-blueprint/1
         ]
     },
 
     requirements: [
-        aeyama-wood/500,
-        aeyama-iron/400
+        aeyama-wood/200,
+        aeyama-iron/160
     ]
 }

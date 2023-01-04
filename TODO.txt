@@ -1,29 +1,29 @@
 Blocks:
- - 1x1 wooden harvester (directional)
- - 2x2 wood burner
- - 2x2 wood -> lumber station
- - 4x4 research station
- - 3x3 brass mixer
- - 2x2 ammunition fabricator
- - 1x1 stockpile (core expansion)
+     - 1x1 wooden harvester (directional)
+     - 2x2 wood burner
+     - 2x2 wood -> lumber station
+     - 4x4 research station
+     - 3x3 brass mixer
+     - 2x2 ammunition fabricator
+     - 1x1 stockpile (core expansion)
 
 Ores:
- - 2x2 copper boulder
- - 3x3 copper boulder
- - 2x2 zinc boulder
- - 3x3 zinc boulder
- - 2x2 iron boulder
- - 3x3 iron boulder
- - 2x2 stone boulder
- - 3x3 stone boulder
- - 4x4 stone boulder
+     - 2x2 copper boulder
+     - 3x3 copper boulder
+     - 2x2 zinc boulder
+     - 3x3 zinc boulder
+     - 2x2 iron boulder
+     - 3x3 iron boulder
+     - 2x2 stone boulder
+     - 3x3 stone boulder
+     - 4x4 stone boulder
 
 Items:
- - research blueprints?
- - wood planks
- - brass
- - copper
- - battery
- - ammunitions
-   - 5.56
-   - shotgun
+DONE - research blueprints?
+     - wood planks
+     - brass
+     - copper
+     - battery
+     - ammunitions
+       - 5.56
+       - shotgun

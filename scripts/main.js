@@ -1,7 +1,7 @@
 // Creates new attributes
 Attribute.add("wood");
 
-
+// Then apply some changes
 Events.on(ContentInitEvent, e => {
     // Change the planet generator
     // Using ErekirPlanetGenerator prevents people to generate random sectors

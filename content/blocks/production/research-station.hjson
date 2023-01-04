@@ -1,0 +1,25 @@
+{
+    type: "GenericCrafter",
+    name: "Research Station",
+    description: "The Research Station is used to produce blueprints to unlock new technologies.",
+    category: "crafting",
+
+    size: 4,
+    health: 1200,
+
+    craftTime: 7200,
+    outputItem : aeyama-blueprint/1,
+
+    research: {
+        parent: "aeyama-core",
+        requirements: [
+            aeyama-iron/1000,
+            aeyama-steel/500
+        ]
+    },
+
+    requirements: [
+        aeyama-iron/200,
+        aeyama-steel/100
+    ]
+}
