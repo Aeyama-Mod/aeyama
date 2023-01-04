@@ -10,6 +10,17 @@
     unitType: "infantry",
     alwaysUnlocked: true,
 
+// DEBUG TESTING STUFF
+    //hasPower: true,
+    //outputsPower: true,
+    //consumesPower: false,
+    //conductivePower: true,
+    //consPower: {
+    //    usage: -5,
+    //    capacity: 1000,
+    //    buffered: true
+    //},
+
     research: {
         root: true,
         name: "Aeyama",
