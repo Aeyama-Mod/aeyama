@@ -6,7 +6,7 @@
     flammability: 0,
     radioactivity: 0,
     charge: 0.5,
-    hardness: 0,
+    hardness: 0.6,
 
     research: {
         parent: "aeyama-iron"
