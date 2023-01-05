@@ -20,7 +20,7 @@ Ores:
 
 Items:
 DONE - research blueprints?
-     - wood planks
+DONE - wood planks
      - brass
      - copper
      - battery
