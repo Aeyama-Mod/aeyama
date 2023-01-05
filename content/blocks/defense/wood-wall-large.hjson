@@ -1,0 +1,21 @@
+{
+    type: "Wall",
+    localizedName: "Large Wooden Wall",
+    description: "Basic defensive structure, but a bit bigger.",
+    category: "defense",
+
+    health: 1100,
+    size: 2,
+
+    research: {
+        parent: "aeyama-wood-wall",
+        requirements: [
+            aeyama-wood/120,
+            aeyama-blueprint/1
+        ]
+    },
+
+    requirements: [
+        aeyama-wood/24
+    ]
+}

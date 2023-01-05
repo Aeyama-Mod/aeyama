@@ -8,6 +8,8 @@
     research: {
         parent: "aeyama-core",
         requirements: [
+            aeyama-wood/325,
+            aeyama-iron/150,
             aeyama-blueprint/5
         ]
     },
@@ -24,8 +26,8 @@
     }
     
     requirements : [
-        iron/120
-        wood/250
+        iron/30
+        wood/65
     ]
     
     ammoTypes : {

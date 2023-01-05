@@ -1,0 +1,20 @@
+{
+    type: "Wall",
+    localizedName: "Wooden Wall",
+    description: "Basic defensive structure.",
+    category: "defense",
+
+    health: 250,
+
+    research: {
+        parent: "aeyama-cracker",
+        requirements: [
+            aeyama-wood/30,
+            aeyama-blueprint/1
+        ]
+    },
+
+    requirements: [
+        aeyama-wood/6
+    ]
+}
