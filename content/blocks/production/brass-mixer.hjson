@@ -1,0 +1,31 @@
+{
+    type: "GenericCrafter",
+    name: "Brass Mixer",
+    description: "Creates brass alloy.",
+    category: "crafting",
+
+    size: 3,
+    health: 900,
+
+    craftTime: 120,
+    consumes: {
+        items: [
+            "aeyama-new-copper/2",
+            "aeyama-zinc/2"
+        ]}
+    outputItem : "aeyama-brass/1",
+
+    research: {
+        parent: "aeyama-research-station",
+        requirements: [
+            "aeyama-lumber/500",
+            "aeyama-iron/400",
+            "aeyama-blueprint/2"
+        ]
+    },
+
+    requirements: [
+        "aeyama-lumber/100",
+        "aeyama-iron/80"
+    ]
+}

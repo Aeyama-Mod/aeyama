@@ -1,0 +1,39 @@
+{
+    localizedName: "Zinc Miner",
+    description: "When placed, generates zinc indefinitely. Some locations are better than others.",
+    type: "AttributeCrafter",
+    category: "production",
+    size: 2,
+    health: 600,
+
+    craftTime: 180,
+    baseEfficiency: 0,
+    outputItem: "aeyama-zinc/1",
+
+    research: {
+        parent: "aeyama-wood-harvester",
+        requirements: [
+            "aeyama-iron/200",
+            "aeyama-blueprint/2"
+        ]
+    },
+
+    requirements: [
+        "aeyama-iron/40"
+    ],
+
+    drawer: [
+        {
+            type: "DrawDefault"
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-rotator",
+            rotateSpeed: 1
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-top"
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    localizedName: "Aeyama Copper",
+    type: "Floor",
+    itemDrop: "aeyama-new-copper",
+    size: 2,
+    variants: 1
+}

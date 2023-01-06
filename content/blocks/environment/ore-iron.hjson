@@ -1,5 +1,6 @@
 {
-    type: "OreBlock",
+    localizedName: "Aeyama Iron",
+    type: "Floor",
     itemDrop: "aeyama-iron",
-    variants: 4
+    variants: 3
 }

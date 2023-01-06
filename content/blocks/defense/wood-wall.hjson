@@ -7,14 +7,14 @@
     health: 250,
 
     research: {
-        parent: "aeyama-cracker",
+        parent: "aeyama-craker",
         requirements: [
-            aeyama-wood/30,
-            aeyama-blueprint/1
+            "aeyama-wood/30",
+            "aeyama-blueprint/1"
         ]
     },
 
     requirements: [
-        aeyama-wood/6
+        "aeyama-wood/6"
     ]
 }

@@ -1,0 +1,31 @@
+{
+    type: "GenericCrafter",
+    name: "Steel Foundry",
+    description: "Reheat Iron with crbon to remove impurities and make steel.",
+    category: "crafting",
+
+    size: 3,
+    health: 900,
+
+    craftTime: 300,
+    consumes: {
+        items: [
+            "aeyama-iron/10",
+            "aeyama-carbon/5"
+        ]}
+    outputItem : aeyama-steel/1,
+
+    research: {
+        parent: "aeyama-lumber-mill",
+        requirements: [
+            "aeyama-iron/500",
+            "aeyama-lumber/125"
+            "aeyama-blueprint/3"
+        ]
+    },
+
+    requirements: [
+        "aeyama-iron/100",
+        "aeyama-lumber/25"
+    ]
+}
