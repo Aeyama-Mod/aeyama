@@ -1,7 +1,5 @@
 {
     type: "GenericCrafter",
-    name: "Steel Foundry",
-    description: "Reheat Iron with crbon to remove impurities and make steel.",
     category: "crafting",
 
     size: 3,

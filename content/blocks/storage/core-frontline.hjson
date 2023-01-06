@@ -1,7 +1,5 @@
 {
     type: "CoreBlock",
-    name: "Aeyama: Frontline Outpost",
-    description: "Core of the base. Once destroyed, the sector is lost.",
     category: "effect",
 
     size: 2,

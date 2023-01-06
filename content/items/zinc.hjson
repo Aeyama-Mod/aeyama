@@ -1,6 +1,4 @@
 {
-    name: "Zinc",
-    description: "A metal with great conductivity, usefull to make alloys.",
     color: 4F4F4F,
 
     explosiveness: 0,

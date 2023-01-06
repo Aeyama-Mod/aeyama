@@ -4,7 +4,7 @@
     sector: 0,
     planet: "aeyama",
     research: {
-        parent: "aeyama-core"
+        parent: "aeyama-core-frontline"
     },
     difficulty: 0,
     alwaysUnlocked: true

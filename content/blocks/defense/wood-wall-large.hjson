@@ -1,7 +1,5 @@
 {
     type: "Wall",
-    localizedName: "Large Wooden Wall",
-    description: "Basic defensive structure, but a bit bigger.",
     category: "defense",
 
     health: 1100,

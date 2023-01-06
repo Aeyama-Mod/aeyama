@@ -1,6 +1,4 @@
 {
-    name: "Wood",
-    description: "A basic resource that you can find pretty much anywhere.",
     color: 5A9F5C,
 
     explosiveness: 0,

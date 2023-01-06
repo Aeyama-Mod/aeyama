@@ -1,6 +1,4 @@
 {
-    localizedName: "Iron Miner",
-    description: "When placed, generates iron indefinitely. Some locations are better than others.",
     type: "AttributeCrafter",
     category: "production",
     size: 2,

@@ -1,7 +1,5 @@
 {
     type: "StorageBlock",
-    name: "Stockpile",
-    description: "Resource stockpile, you can drop resources here.",
     category: "effect",
 
     size: 1,
@@ -9,7 +7,7 @@
     itemCapacity: 250,
 
     research: {
-        parent: "aeyama-core",
+        parent: "aeyama-core-frontline",
         requirements: [
             aeyama-wood/1000,
             aeyama-iron/800,

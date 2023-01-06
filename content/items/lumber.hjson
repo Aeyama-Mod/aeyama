@@ -1,6 +1,4 @@
 {
-    name: "Lumber",
-    description: "Transformed wood used in constructions.",
     color: 5A9F5C,
 
     explosiveness: 0,
