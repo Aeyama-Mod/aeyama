@@ -1,0 +1,28 @@
+{
+    type: "GenericCrafter",
+    name: "Wood Burner",
+    description: "Burns wood.",
+    category: "crafting",
+
+    size: 2,
+    health: 600,
+
+    craftTime: 600,
+    consumes: {
+        items: [
+            "aeyama-wood/10"
+        ]}
+    outputItem : "aeyama-dry-wood/10",
+
+    research: {
+        parent: "aeyama-research-station",
+        requirements: [
+            "aeyama-wood/500",
+            "aeyama-blueprint/2"
+        ]
+    },
+
+    requirements: [
+        "aeyama-wood/100"
+    ]
+}
