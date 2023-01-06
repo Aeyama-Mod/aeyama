@@ -1,7 +1,5 @@
 {
     type: "StorageBlock",
-    name: "",
-    description: "",
     category: "effect",
 
     size: 1,
