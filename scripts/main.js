@@ -1,3 +1,5 @@
+//const gen = require("AeyamaPlanetGenerator");
+
 // Creates new attributes
 Attribute.add("wood");
 Attribute.add("iron");
@@ -9,6 +11,7 @@ Events.on(ContentInitEvent, e => {
     // Change the planet generator
     // Using ErekirPlanetGenerator prevents people to generate random sectors
     const p = Vars.content.planet("aeyama");
+    p.generator = new ErekirPlanetGenerator();
 
     // Adds ores attributes to floor blocks, resources are everywhere.
     Vars.content.block("aeyama-tree").attributes.set(Attribute.get("wood"), 1);

@@ -14,7 +14,7 @@
     alwaysUnlocked: true,
     defaultCore: "aeyama-core",
     sectorSeed: 5948,
-    startSector: 7,
+    startSector: 0,
     sectorSize: 1,
     clearSectorOnLose: true,
     allowSectorInvasion: false,
@@ -42,7 +42,7 @@
         "carbide",
         "fissile-matter",
         "dormant-cyst"
-    ]
+    ],
     mesh: {
         type: "NoiseMesh",  //NoiseMesh NoiseMesh
         divisions: 5,       //3         3

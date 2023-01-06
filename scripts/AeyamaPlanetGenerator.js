@@ -284,3 +284,5 @@ aeyamagen.waterOffset = 0.07;
 aeyamagen.water = 2 / aeyamagen.arr[0].length;
 
 //endregion planet Aeyama
+
+exports.gen = aeyamagen;
