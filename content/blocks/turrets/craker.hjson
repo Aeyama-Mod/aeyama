@@ -22,7 +22,7 @@
     shoot: {
         type: ShootSpread
         shots: 10
-        spread: 20
+        spread: 10
     }
     
     requirements : [
