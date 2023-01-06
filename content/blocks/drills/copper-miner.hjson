@@ -1,6 +1,4 @@
 {
-    localizedName: "Copper Miner",
-    description: "When placed, generates copper indefinitely. Some locations are better than others.",
     type: "AttributeCrafter",
     category: "production",
     size: 2,

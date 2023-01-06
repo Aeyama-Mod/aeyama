@@ -1,7 +1,5 @@
 {
     type: "GenericCrafter",
-    name: "Lumbermill",
-    description: "Transforms wood into lumber, a better building material.",
     category: "crafting",
 
     size: 3,

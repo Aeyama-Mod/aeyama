@@ -1,7 +1,5 @@
 {
     type: "Conveyor",
-    localizedName: "Inefficient Conveyor",
-    description: "",
     category: "distribution",
 
     health: 50,
@@ -9,7 +7,7 @@
     displayedSpeed: 4.2,
 
     research: {
-        parent: "aeyama-core",
+        parent: "aeyama-core-frontline",
         requirements: [
             aeyama-blueprint/1
         ]

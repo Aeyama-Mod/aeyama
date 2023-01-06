@@ -1,7 +1,5 @@
 {
     type: "Wall",
-    localizedName: "Wooden Wall",
-    description: "Basic defensive structure.",
     category: "defense",
 
     health: 250,

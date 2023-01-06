@@ -1,7 +1,5 @@
 {
     type: "GenericCrafter",
-    name: "Brass Mixer",
-    description: "Creates brass alloy.",
     category: "crafting",
 
     size: 3,

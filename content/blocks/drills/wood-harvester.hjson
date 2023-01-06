@@ -1,6 +1,4 @@
 {
-    localizedName: "Wood Harvester",
-    description: "When placed beside trees, generate wood indefinitely.",
     type: "WallCrafter",
     category: "production",
     size: 2,
@@ -9,7 +7,7 @@
     output: "aeyama-wood",
 
     research: {
-        parent: "aeyama-core",
+        parent: "aeyama-core-frontline",
         requirements: [
             aeyama-blueprint/1
         ]

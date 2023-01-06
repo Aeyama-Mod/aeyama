@@ -1,6 +1,5 @@
 {
-    name: "Advanced Blueprint",
-    description: "Great research material.",
+    //color:
 
     explosiveness: 0,
     flammability: 1,

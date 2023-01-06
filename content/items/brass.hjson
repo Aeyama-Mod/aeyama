@@ -1,6 +1,4 @@
 {
-    name: "Brass",
-    description: "A great alloy, used mostly in ammunitions.",
     color: 4F4F4F,
 
     explosiveness: 0,

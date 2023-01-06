@@ -1,12 +1,11 @@
 {
-    
     targetGround : true
     description : The first turret of Aeyama
     inaccuracy : 4
     targetAir : true
     category : turret
     research: {
-        parent: "aeyama-core",
+        parent: "aeyama-core-frontline",
         requirements: [
             aeyama-wood/325,
             aeyama-iron/150,

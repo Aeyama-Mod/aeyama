@@ -1,6 +1,4 @@
 {
-    name: "Drywood",
-    description: "Dried wood, burns really well.",
     color: 5A9F5C,
 
     explosiveness: 0,

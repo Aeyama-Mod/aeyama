@@ -1,7 +1,5 @@
 {
     type: "GenericCrafter",
-    name: "Wood Burner",
-    description: "Burns wood.",
     category: "crafting",
 
     size: 1,

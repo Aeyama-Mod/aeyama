@@ -1,6 +1,4 @@
 {
-    name: "Iron",
-    description: "Common metal, used in pretty much everything",
     color: 4F4F4F,
 
     explosiveness: 0,

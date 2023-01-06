@@ -1,6 +1,4 @@
 {
-    name: "Copper",
-    description: "Basic metal, used to create alloys.",
     color: D99D73,
 
     explosiveness: 0,

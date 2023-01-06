@@ -1,7 +1,5 @@
 {
     type: "Conveyor",
-    localizedName: "Conveyor",
-    description: "",
     category: "distribution",
 
     health: 100,

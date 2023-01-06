@@ -1,6 +1,5 @@
 {
-    name: "Carbon",
-    description: "Result of wood burning, really useful to harden iron.",
+    //color:
 
     explosiveness: 0,
     flammability: 0.3,
