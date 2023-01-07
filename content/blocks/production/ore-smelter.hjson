@@ -1,0 +1,35 @@
+{
+    type: "multicraft.MultiCrafter",
+    category: "crafting",
+
+    size: 1,
+    health: 300,
+
+    menu: "Simple",
+    recipes: [
+        {
+            input: "aeyama-iron/1",
+            output: "aeyama-iron/1",
+            craftTime: 30
+        },
+        {
+            input: "aeyama-wood/1",
+            output: "aeyama-lumber/1",
+            craftTime: 30
+        }
+    ],
+
+    research: {
+        parent: "aeyama-lumber-mill",
+        requirements: [
+            "aeyama-iron/500",
+            "aeyama-lumber/125"
+            "aeyama-blueprint/3"
+        ]
+    },
+
+    requirements: [
+        "aeyama-iron/100",
+        "aeyama-lumber/25"
+    ]
+}

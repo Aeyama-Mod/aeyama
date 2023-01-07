@@ -33,4 +33,8 @@ Events.on(ContentInitEvent, e => {
     Vars.content.block("aeyama-iron-miner").attribute = Attribute.get("iron");
     Vars.content.block("aeyama-zinc-miner").attribute = Attribute.get("zinc");
     Vars.content.block("aeyama-copper-miner").attribute = Attribute.get("copper");
+
+    // Test for multicrafting
+    //let smelter = Vars.content.block("aeyama-ore-smelter");
+    //smelter.configurations = Block.Sorter.class;
 });

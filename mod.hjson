@@ -3,9 +3,13 @@
     displayName: "Aeyama Discovery",
     author: "FredyJabe",
     description: "New Planet. New TechTree. New Campaign.",
-    repo: fredyjabe/aeyama-discovery
+    repo: "fredyjabe/aeyama-discovery"
     version: "0.0.1",
     minGameVersion: 140,
     hidden: false,
-    hideBrowser: true
+    hideBrowser: true,
+
+    // MultiCrafterLib injection
+    java: true,
+    main: "MultiCrafterAdapter"
 }

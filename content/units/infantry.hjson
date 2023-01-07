@@ -48,7 +48,7 @@
                 damage: 14,
                 buildingDamageMultiplier: 0.01,
                 speed: 8,
-                lifetime: 40,
+                lifetime: 20,
                 collidesTeam: true,
                 healPercent: 5,
                 frontColor: ffffff,

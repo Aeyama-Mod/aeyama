@@ -45,18 +45,19 @@
     ],
     mesh: {
         type: "NoiseMesh",  //NoiseMesh NoiseMesh
+        seed: 262436,
         divisions: 5,       //3         3
         radius: 0.9,        //0.12      0.8
         planet: "aeyama",   //2         aeyama
-        color1: 158400,     //ff7a38    158400
-        color2: 7070ff,     //ff7a38    131316
+        color1: "158400",     //ff7a38    158400
+        color2: "7070ff",     //ff7a38    131316
+        colorOct: 4, //i 1
+        colorPersistence: 0.5, //f 0.5
+        colorScale: 0.5, //f 1
+        colorThreshold: 0.5, //f 0.5
         octaves: 4,         //1         4
         persistence: 1,     //0.01      1
-        scale: 1.25,         //0.01      1.1
+        scale: 0.75,         //0.01      1.1
         mag: 1.2,             //1         5
-        coct: 4,            //1         4
-        cper: 1.4,          //1         1.4
-        cscl: 0.3,          //1         0.3
-        cthresh: 0.5        //1         0.2
     }
 }
