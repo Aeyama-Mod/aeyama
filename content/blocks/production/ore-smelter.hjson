@@ -8,20 +8,29 @@
     menu: "Simple",
     recipes: [
         {
-            input: "aeyama-iron-raw/5",
+            input: {
+                items: [ "aeyama-iron-raw/5" ],
+                heat: 20
+            },
             output: "aeyama-iron/1",
-            craftTime: 30
+            craftTime: 60
         },
         {
-            input: "aeyama-zinc-raw/5",
+            input: {
+                items: [ "aeyama-zinc-raw/5" ],
+                heat: 20
+            },
             output: "aeyama-zinc/1",
-            craftTime: 30
+            craftTime: 60
         }
         ,
         {
-            input: "aeyama-new-copper-raw/5",
+            input: {
+                items: [ "aeyama-new-copper-raw/5" ],
+                heat: 20
+            },
             output: "aeyama-new-copper/1",
-            craftTime: 30
+            craftTime: 60
         }
     ],
 

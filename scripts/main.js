@@ -34,6 +34,9 @@ Events.on(ContentInitEvent, e => {
     Vars.content.block("aeyama-zinc-miner").attribute = Attribute.get("zinc");
     Vars.content.block("aeyama-copper-miner").attribute = Attribute.get("copper");
 
+    // Apply custom consumers to specific blocks
+    Vars.content.block("aeyama-wood-burner").consume(new ConsumeItemFlammable()); // Can burn anything that has more than .5 flammability
+
     // Test for multicrafting
     //let smelter = Vars.content.block("aeyama-ore-smelter");
     //smelter.configurations = Block.Sorter.class;

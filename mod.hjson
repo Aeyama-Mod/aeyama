@@ -1,7 +1,7 @@
 {
     name: "aeyama",
-    displayName: "Aeyama Discovery",
-    author: "FredyJabe",
+    displayName: "Aeyama, the New World",
+    author: "FredyJabe\nHelped by: RouterXdd & Jojo",
     description: "New Planet. New TechTree. New Campaign.",
     repo: "fredyjabe/aeyama-discovery"
     version: "0.0.1",

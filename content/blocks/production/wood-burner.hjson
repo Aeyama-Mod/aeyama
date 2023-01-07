@@ -1,16 +1,19 @@
 {
-    type: "GenericCrafter",
+    type: "HeatProducer",
     category: "crafting",
 
     size: 1,
     health: 300,
 
     craftTime: 60,
+    
     consumes: {
-        items: [
-            "aeyama-wood/2"
-        ]}
-    outputItem : "aeyama-carbon/1",
+        itemFlammable: {
+            minFlammability: 0.8
+        }
+    },
+    heatOutput: 50,
+    
 
     research: {
         parent: "aeyama-research-station",
