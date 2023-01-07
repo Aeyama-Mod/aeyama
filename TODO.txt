@@ -1,6 +1,7 @@
 Blocks:
      - 1x1 wooden harvester (directional)
      - 2x2 wood burner
+     - 2x2 ore smelter
      - 3x3 wood -> lumber station
      - 4x4 research station
      - 3x3 brass mixer
@@ -19,7 +20,7 @@ REDO - Iron (with background)
 Items:
 DONE - research blueprints?
 DONE - wood planks
-     - brass
+DONE - brass
 DONE - copper
      - battery
      - ammunitions
