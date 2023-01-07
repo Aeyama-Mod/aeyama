@@ -1,6 +1,5 @@
 {
     type: "mech",
-    name: "Builder",
     controller: "BuilderAI",
     isEnemy: false,
 
