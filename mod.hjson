@@ -7,7 +7,6 @@
     version: "0.0.1",
     minGameVersion: 140,
     hidden: false,
-    hideBrowser: true,
 
     // MultiCrafterLib injection
     java: true,
