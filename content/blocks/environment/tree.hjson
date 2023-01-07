@@ -1,5 +1,4 @@
 {
-    localizedName: "Wood",
     type: "StaticTree",
     itemDrop: "aeyama-wood",
     variants: 4

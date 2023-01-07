@@ -1,5 +1,4 @@
 {
-    localizedName: "Aeyama Grass D",
     type: "Floor",
     allowCorePlacement: true,
     variants: 3

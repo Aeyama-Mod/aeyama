@@ -1,5 +1,4 @@
 {
-    localizedName: "Aeyama Iron",
     type: "Floor",
     itemDrop: "aeyama-iron",
     variants: 3
