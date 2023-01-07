@@ -4,9 +4,9 @@
     size: 2,
     health: 600,
 
-    craftTime: 180,
+    craftTime: 45,
     baseEfficiency: 0,
-    outputItem: "aeyama-zinc/1",
+    outputItem: "aeyama-zinc-raw/1",
 
     research: {
         parent: "aeyama-wood-harvester",

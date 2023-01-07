@@ -15,18 +15,18 @@ Events.on(ContentInitEvent, e => {
 
     // Adds ores attributes to floor blocks, resources are everywhere.
     Vars.content.block("aeyama-tree").attributes.set(Attribute.get("wood"), 1);
-    Vars.content.block("aeyama-ore-iron").attributes.set(Attribute.get("iron"), 0.25);
-    Vars.content.block("aeyama-ore-zinc").attributes.set(Attribute.get("zinc"), 0.25);
-    Vars.content.block("aeyama-ore-new-copper").attributes.set(Attribute.get("copper"), 0.25);
-    Vars.content.block("aeyama-floor-grassa").attributes.set(Attribute.get("iron"), 0.0125);
-    Vars.content.block("aeyama-floor-grassa").attributes.set(Attribute.get("zinc"), 0.0125);
-    Vars.content.block("aeyama-floor-grassa").attributes.set(Attribute.get("copper"), 0.0125);
-    Vars.content.block("aeyama-floor-grassb").attributes.set(Attribute.get("iron"), 0.0125);
-    Vars.content.block("aeyama-floor-grassb").attributes.set(Attribute.get("zinc"), 0.0125);
-    Vars.content.block("aeyama-floor-grassb").attributes.set(Attribute.get("copper"), 0.0125);
-    Vars.content.block("aeyama-floor-grassc").attributes.set(Attribute.get("iron"), 0.0125);
-    Vars.content.block("aeyama-floor-grassc").attributes.set(Attribute.get("zinc"), 0.0125);
-    Vars.content.block("aeyama-floor-grassc").attributes.set(Attribute.get("copper"), 0.0125);
+    Vars.content.block("aeyama-ore-iron").attributes.set(Attribute.get("iron"), 0.225);
+    Vars.content.block("aeyama-ore-zinc").attributes.set(Attribute.get("zinc"), 0.225);
+    Vars.content.block("aeyama-ore-new-copper").attributes.set(Attribute.get("copper"), 0.225);
+    Vars.content.block("aeyama-floor-grassa").attributes.set(Attribute.get("iron"), 0.025);
+    Vars.content.block("aeyama-floor-grassa").attributes.set(Attribute.get("zinc"), 0.025);
+    Vars.content.block("aeyama-floor-grassa").attributes.set(Attribute.get("copper"), 0.025);
+    Vars.content.block("aeyama-floor-grassb").attributes.set(Attribute.get("iron"), 0.025);
+    Vars.content.block("aeyama-floor-grassb").attributes.set(Attribute.get("zinc"), 0.025);
+    Vars.content.block("aeyama-floor-grassb").attributes.set(Attribute.get("copper"), 0.025);
+    Vars.content.block("aeyama-floor-grassc").attributes.set(Attribute.get("iron"), 0.025);
+    Vars.content.block("aeyama-floor-grassc").attributes.set(Attribute.get("zinc"), 0.025);
+    Vars.content.block("aeyama-floor-grassc").attributes.set(Attribute.get("copper"), 0.025);
 
     // Adds the attributes to the miners and harvesters
     Vars.content.block("aeyama-wood-harvester").attribute = Attribute.get("wood");

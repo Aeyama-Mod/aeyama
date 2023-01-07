@@ -4,9 +4,9 @@
     size: 2,
     health: 600,
 
-    craftTime: 180,
+    craftTime: 45,
     baseEfficiency: 0,
-    outputItem: "aeyama-new-copper/1",
+    outputItem: "aeyama-new-copper-raw/1",
 
     research: {
         parent: "aeyama-wood-harvester",

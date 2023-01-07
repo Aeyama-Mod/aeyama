@@ -2,19 +2,25 @@
     type: "multicraft.MultiCrafter",
     category: "crafting",
 
-    size: 1,
-    health: 300,
+    size: 2,
+    health: 600,
 
     menu: "Simple",
     recipes: [
         {
-            input: "aeyama-iron/1",
+            input: "aeyama-iron-raw/5",
             output: "aeyama-iron/1",
             craftTime: 30
         },
         {
-            input: "aeyama-wood/1",
-            output: "aeyama-lumber/1",
+            input: "aeyama-zinc-raw/5",
+            output: "aeyama-zinc/1",
+            craftTime: 30
+        }
+        ,
+        {
+            input: "aeyama-new-copper-raw/5",
+            output: "aeyama-new-copper/1",
             craftTime: 30
         }
     ],
