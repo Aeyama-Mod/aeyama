@@ -10,7 +10,7 @@
         {
             input: {
                 items: [ "aeyama-iron-raw/5" ],
-                heat: 20
+                heat: 40
             },
             output: "aeyama-iron/1",
             craftTime: 60
@@ -18,7 +18,7 @@
         {
             input: {
                 items: [ "aeyama-zinc-raw/5" ],
-                heat: 20
+                heat: 40
             },
             output: "aeyama-zinc/1",
             craftTime: 60
@@ -27,7 +27,7 @@
         {
             input: {
                 items: [ "aeyama-new-copper-raw/5" ],
-                heat: 20
+                heat: 40
             },
             output: "aeyama-new-copper/1",
             craftTime: 60
@@ -35,7 +35,7 @@
     ],
 
     research: {
-        parent: "aeyama-lumber-mill",
+        parent: "aeyama-wood-burner",
         requirements: [
             "aeyama-iron/500",
             "aeyama-lumber/125"
