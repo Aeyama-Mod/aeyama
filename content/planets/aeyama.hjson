@@ -1,7 +1,6 @@
 {
     generator: "PlanetGenerator",
     parent: "sun",
-    localizedName: "Aeyama",
     iconColor: 158400,
     orbitRadius: 24,
     hasAtmosphere: true,
