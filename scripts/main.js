@@ -14,10 +14,13 @@ Events.on(ContentInitEvent, e => {
     p.generator = new ErekirPlanetGenerator();
 
     // Adds ores attributes to floor blocks, resources are everywhere.
-    Vars.content.block("aeyama-tree").attributes.set(Attribute.get("wood"), 1);
-    Vars.content.block("aeyama-ore-iron").attributes.set(Attribute.get("iron"), 0.225);
-    Vars.content.block("aeyama-ore-zinc").attributes.set(Attribute.get("zinc"), 0.225);
-    Vars.content.block("aeyama-ore-new-copper").attributes.set(Attribute.get("copper"), 0.225);
+    Vars.content.block("aeyama-treea").attributes.set(Attribute.get("wood"), 1);
+    Vars.content.block("aeyama-treeb").attributes.set(Attribute.get("wood"), 1);
+    Vars.content.block("aeyama-treec").attributes.set(Attribute.get("wood"), 1);
+    Vars.content.block("aeyama-treed").attributes.set(Attribute.get("wood"), 1);
+    Vars.content.block("aeyama-ore-iron").attributes.set(Attribute.get("iron"), 0.25);
+    Vars.content.block("aeyama-ore-zinc").attributes.set(Attribute.get("zinc"), 0.25);
+    Vars.content.block("aeyama-ore-new-copper").attributes.set(Attribute.get("copper"), 0.25);
     Vars.content.block("aeyama-floor-grassa").attributes.set(Attribute.get("iron"), 0.025);
     Vars.content.block("aeyama-floor-grassa").attributes.set(Attribute.get("zinc"), 0.025);
     Vars.content.block("aeyama-floor-grassa").attributes.set(Attribute.get("copper"), 0.025);
@@ -27,17 +30,13 @@ Events.on(ContentInitEvent, e => {
     Vars.content.block("aeyama-floor-grassc").attributes.set(Attribute.get("iron"), 0.025);
     Vars.content.block("aeyama-floor-grassc").attributes.set(Attribute.get("zinc"), 0.025);
     Vars.content.block("aeyama-floor-grassc").attributes.set(Attribute.get("copper"), 0.025);
+    Vars.content.block("aeyama-floor-grassd").attributes.set(Attribute.get("iron"), 0.025);
+    Vars.content.block("aeyama-floor-grassd").attributes.set(Attribute.get("zinc"), 0.025);
+    Vars.content.block("aeyama-floor-grassd").attributes.set(Attribute.get("copper"), 0.025);
 
     // Adds the attributes to the miners and harvesters
     Vars.content.block("aeyama-wood-harvester").attribute = Attribute.get("wood");
     Vars.content.block("aeyama-iron-miner").attribute = Attribute.get("iron");
     Vars.content.block("aeyama-zinc-miner").attribute = Attribute.get("zinc");
     Vars.content.block("aeyama-copper-miner").attribute = Attribute.get("copper");
-
-    // Apply custom consumers to specific blocks
-    Vars.content.block("aeyama-wood-burner").consume(new ConsumeItemFlammable()); // Can burn anything that has more than .5 flammability
-
-    // Test for multicrafting
-    //let smelter = Vars.content.block("aeyama-ore-smelter");
-    //smelter.configurations = Block.Sorter.class;
 });
