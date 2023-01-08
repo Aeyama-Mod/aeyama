@@ -34,7 +34,7 @@
             name: "infantry-weapon1",
             top: false,
             x: 5,
-            y: 4,
+            y: 3,
             shootY: 2,
             reload: 25,
             recoil: 2,

@@ -13,6 +13,7 @@
         }
     },
     heatOutput: 50,
+    outputItem: "carbon/1",
     
 
     research: {
@@ -29,7 +30,10 @@
 
     drawer: [
         {
-            type: "DrawRegion"
+            type: "DrawDefault"
+        }
+        {
+            type: "DrawFlame"
         }
     ]
 }
