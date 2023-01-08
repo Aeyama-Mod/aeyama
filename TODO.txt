@@ -1,28 +1,66 @@
 Blocks:
-     - 1x1 wooden harvester (directional)
-     - 2x2 wood burner
+     - 1x1 wood burner
+DONE   - code
+       - sprite
      - 2x2 ore smelter
+DONE   - code
+       - sprite
      - 3x3 wood -> lumber station
+DONE   - code
+       - sprite
      - 4x4 research station
-     - 3x3 brass mixer
+DONE   - code
+       - sprite
+     - 3x3 brass foundry
+DONE   - code
+       - sprite
+     - 3x3 steel foundry
+DONE   - code
+       - sprite
      - 2x2 ammunition fabricator
+       - code
+       - sprite
      - 1x1 stockpile (core expansion)
+DONE   - code
+       - sprite
 
-Floors:
-     - Stones, has minerals in it
-     - Another stone type
-
-Ores:
-REDO - Iron (with background)
-     - Copper (with background)
-     - Zinc (with background)
+Environment:
+DONE - 2 or 3 Grass types
+DONE   - code
+DONE   - sprites
+DONE - Trees
+DONE   - code
+DONE   - sprites
+     - 2 or 3 Stone types
+       - code
+       - sprites
+     - Water
+       - code
+       - sprite
+     - Iron (complete floor, not only ore chunks)
+       - code
+       - sprite
+     - Copper (complete floor, not only ore chunks)
+       - code
+       - sprite
+     - Zinc (complete floor, not only ore chunks)
+       - code
+       - sprite
 
 Items:
-DONE - research blueprints?
-DONE - wood planks
-DONE - brass
-DONE - copper
-     - battery
-     - ammunitions
+DONE - Blueprints
+DONE - Wood
+DONE - Lumber
+DONE - Carbon
+DONE - Brass
+DONE - Zinc
+DONE - Raw Zinc
+DONE - Copper
+DONE - Raw Copper
+DONE - Iron
+DONE - Raw Iron
+DONE - Steel
+     - Ammunitions
+       - Arrow (Balista bolts)
        - 5.56
        - shotgun
