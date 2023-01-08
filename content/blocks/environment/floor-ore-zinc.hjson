@@ -1,5 +1,5 @@
 {
     type: "Floor",
     itemDrop: "aeyama-zinc",
-    variants: 4
+    variants: 3
 }
