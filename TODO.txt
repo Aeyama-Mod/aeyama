@@ -1,7 +1,7 @@
 Blocks:
-     - 1x1 wood burner
+DONE - 1x1 wood burner
 DONE   - code
-       - sprite
+DONE   - sprite
      - 2x2 ore smelter
 DONE   - code
        - sprite
@@ -20,9 +20,9 @@ DONE   - code
      - 2x2 ammunition fabricator
        - code
        - sprite
-     - 1x1 stockpile (core expansion)
+DONE - 1x1 stockpile (core expansion)
 DONE   - code
-       - sprite
+DONE   - sprite
 
 Environment:
 DONE - 2 or 3 Grass types
@@ -31,20 +31,20 @@ DONE   - sprites
 DONE - Trees
 DONE   - code
 DONE   - sprites
-     - 2 or 3 Stone types
-       - code
-       - sprites
-     - Water
-       - code
-       - sprite
+DONE - 2 or 3 Stone types
+DONE   - code
+DONE   - sprites
+DONE - Water
+DONE   - code
+DONE   - sprite
      - Iron (complete floor, not only ore chunks)
-       - code
+DONE   - code
        - sprite
      - Copper (complete floor, not only ore chunks)
-       - code
+DONE   - code
        - sprite
      - Zinc (complete floor, not only ore chunks)
-       - code
+DONE   - code
        - sprite
 
 Items:
@@ -61,6 +61,6 @@ DONE - Iron
 DONE - Raw Iron
 DONE - Steel
      - Ammunitions
-       - Arrow (Balista bolts)
+       - Arrow (Ballista bolts)
        - 5.56
        - shotgun
