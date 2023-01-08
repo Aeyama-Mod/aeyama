@@ -7,11 +7,11 @@
     displayedSpeed: 16.8,
 
     research: {
-        parent: "aeyama-conveyor-normal",
+        parent: "aeyama-iron-conveyor",
         requirements: [
             aeyama-iron/2000,
             aeyama-steel/2000,
-            aeyama-blueprint/4
+            aeyama-advanced-blueprint/4
         ]
     },
 

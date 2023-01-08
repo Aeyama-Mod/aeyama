@@ -38,13 +38,13 @@
         parent: "aeyama-wood-burner",
         requirements: [
             "aeyama-iron/500",
-            "aeyama-lumber/125"
+            "aeyama-wood-lumber/125"
             "aeyama-blueprint/3"
         ]
     },
 
     requirements: [
         "aeyama-iron/100",
-        "aeyama-lumber/25"
+        "aeyama-wood-lumber/25"
     ]
 }

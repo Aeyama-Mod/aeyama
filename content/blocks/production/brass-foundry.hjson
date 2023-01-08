@@ -19,14 +19,14 @@
     research: {
         parent: "aeyama-ore-smelter",
         requirements: [
-            "aeyama-lumber/500",
+            "aeyama-wood-lumber/500",
             "aeyama-iron/400",
             "aeyama-blueprint/2"
         ]
     },
 
     requirements: [
-        "aeyama-lumber/100",
+        "aeyama-wood-lumber/100",
         "aeyama-iron/80"
     ]
 }

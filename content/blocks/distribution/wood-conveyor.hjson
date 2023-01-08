@@ -7,9 +7,9 @@
     displayedSpeed: 4.2,
 
     research: {
-        parent: "aeyama-research-station",
+        parent: "aeyama-core-frontline",
         requirements: [
-            aeyama-blueprint/1
+            "aeyama-wood/100"
         ]
     },
 

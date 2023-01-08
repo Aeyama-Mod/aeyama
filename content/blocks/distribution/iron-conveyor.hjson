@@ -7,11 +7,11 @@
     displayedSpeed: 8.4,
 
     research: {
-        parent: "aeyama-conveyor-slow",
+        parent: "aeyama-wood-conveyor",
         requirements: [
-            aeyama-iron/1000,
-            aeyama-wood/1000,
-            aeyama-blueprint/2
+            "aeyama-iron/500",
+            "aeyama-wood/1000",
+            "aeyama-blueprint/2"
         ]
     },
 

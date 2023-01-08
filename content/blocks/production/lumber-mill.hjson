@@ -10,7 +10,7 @@
         items: [
             "aeyama-wood/10"
         ]}
-    outputItem : "aeyama-lumber/1",
+    outputItem : "aeyama-wood-lumber/1",
 
     research: {
         parent: "aeyama-research-station",

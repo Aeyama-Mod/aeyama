@@ -8,7 +8,7 @@
     hardness: 0.1,
 
     research: {
-        parent: "aeyama-blueprint"
+        parent: "aeyama-core-frontline"
     },
 
     buildable: false,
