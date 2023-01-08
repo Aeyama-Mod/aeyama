@@ -25,5 +25,11 @@
 
     requirements: [
         "aeyama-wood/100"
+    ],
+
+    drawer: [
+        {
+            type: "DrawRegion"
+        }
     ]
 }

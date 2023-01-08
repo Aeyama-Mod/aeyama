@@ -1,5 +1,5 @@
 {
     type: "StaticTree",
     itemDrop: "aeyama-wood",
-    variants: 4
+    variants: 16
 }
