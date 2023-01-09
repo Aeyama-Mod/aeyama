@@ -21,7 +21,7 @@ Events.on(EventType.ClientLoadEvent, e => {
 
         table.image(Core.atlas.find("aeyama-logo", Core.atlas.find("clear"))).height(185).width(620).pad(3).center(); // Drawing logo
         table.row();
-        table.add(aeyamaNews).left().growX().wrap().width(600).maxWidth(600).pad(4).labelAlign(Align.left);
+        table.add(aeyamaNews + "\n\n").left().growX().wrap().width(600).maxWidth(600).pad(4).labelAlign(Align.left);
         table.row();
 
         table.button(Core.bundle.format("linkGithub"), run(() => {
