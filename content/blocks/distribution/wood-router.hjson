@@ -1,0 +1,18 @@
+{
+    type: "Router",
+    category: "distribution",
+
+    health: 45,
+
+    research: {
+        parent: "aeyama-wood-conveyor",
+        requirements: [
+            "aeyama-wood/100",
+            "aeyama-raw-iron/15"
+        ]
+    },
+
+    requirements: [
+        "aeyama-wood/6"
+    ]
+}
