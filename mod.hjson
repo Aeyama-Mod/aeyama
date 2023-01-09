@@ -2,9 +2,10 @@
     name: "aeyama",
     displayName: "Aeyama: The New World",
     author: "FredyJabe\nHelped by: RouterXdd & Jojo",
-    description: "New Planet. New TechTree. New Campaign.\n\nCheck Repo for more info.\n[green]In active development.\n[red]Currently unplayable.",
+    description: "\nNew Planet.\nNew Techtree.\nNew Campaign.\n\nCheck Repo for more info.",
+    subtitle:"[v0.0.2] In active development.",
     repo: "fredyjabe/aeyama-discovery",
-    version: "0.0.1",
+    version: "0.0.2",
     minGameVersion: 140,
     hidden: false,
 
