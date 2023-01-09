@@ -105,3 +105,12 @@ INCOMING PATCHNOTE (write your changes here)
 * Ore Smelter is 2x less efficient, used for early stages.
 * New bundles and french translation
 + Ore Foundry for faster metal refining.
++ New Stone material with its own miner
+* New sprites for:
+    Core: Frontline
+    Stockpile
+    Wood Harvester
+    Iron Miner
+    Copper Miner
+    Zinc Miner
+    Burner
