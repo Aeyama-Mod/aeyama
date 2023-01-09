@@ -1,28 +1,48 @@
 Blocks:
-DONE - 1x1 wood burner
+DONE - 1x1 burner
 DONE   - code
 DONE   - sprite
+DONE   - bundles
+
      - 2x2 ore smelter
 DONE   - code
        - sprite
+DONE   - bundles
+
+     - 3x3 ore foundry
+DONE   - code
+       - sprite
+DONE   - bundles
+
      - 3x3 wood -> lumber station
 DONE   - code
        - sprite
+DONE   - bundles
+
      - 4x4 research station
 DONE   - code
        - sprite
+DONE   - bundles
+
      - 3x3 brass foundry
 DONE   - code
        - sprite
+DONE   - bundles
+
      - 3x3 steel foundry
 DONE   - code
        - sprite
+DONE   - bundles
+
      - 2x2 ammunition fabricator
        - code
        - sprite
+       - bundles
+
 DONE - 1x1 stockpile (core expansion)
 DONE   - code
 DONE   - sprite
+DONE   - bundles
 
 Environment:
 DONE - 2 or 3 Grass types
@@ -80,4 +100,8 @@ Use:
 - removes
 
 INCOMING PATCHNOTE (write your changes here)
-* Fixed the output of manually mining iron, copper and zinc to raw ore instead of ingots
+* Fixed the output of manually mining iron, copper and zinc to raw ore instead of ingots.
+* Renamed "Wood Burner" to "Burner"
+* Ore Smelter is 2x less efficient, used for early stages.
+* New bundles and french translation
++ Ore Foundry for faster metal refining.

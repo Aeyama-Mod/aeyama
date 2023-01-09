@@ -1,0 +1,50 @@
+{
+    type: "multicraft.MultiCrafter",
+    category: "crafting",
+
+    size: 3,
+    health: 600,
+
+    menu: "Simple",
+    recipes: [
+        {
+            input: {
+                items: [ "aeyama-iron-raw/5" ], //Woods or future burnable.
+                heat: 40
+            },
+            output: "aeyama-iron/1",
+            craftTime: 450
+        },
+        {
+            input: {
+                items: [ "aeyama-zinc-raw/5" ], //Woods or future burnable.
+                heat: 40
+            },
+            output: "aeyama-zinc/1",
+            craftTime: 450
+        },
+        {
+            input: {
+                items: [ "aeyama-new-copper-raw/5" ], //Woods or future burnable.
+                heat: 40
+            },
+            output: "aeyama-new-copper/1",
+            craftTime: 450
+        }
+    ],
+
+    research: {
+        parent: "aeyama-ore-smelter",
+        requirements: [
+            "aeyama-steel/75"
+            "aeyama-iron/450",
+            "aeyama-wood-lumber/150"
+            "aeyama-advanced-blueprint/2"
+        ]
+    },
+
+    requirements: [
+        "aeyama-iron/250",
+        "aeyama-wood-lumber/100"
+    ]
+}
