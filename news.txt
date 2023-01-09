@@ -1,3 +1,4 @@
 [gray]January 9, 2023
 
-Testing the news panel. Now with a news panel!
+[white]Testing the news panel. Now with a news panel!
+
