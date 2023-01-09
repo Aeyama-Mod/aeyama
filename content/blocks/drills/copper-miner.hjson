@@ -6,10 +6,10 @@
 
     craftTime: 45,
     baseEfficiency: 0,
-    outputItem: "aeyama-new-copper-raw/1",
+    outputItem: "aeyama-raw-new-copper/1",
 
     research: {
-        parent: "aeyama-wood-harvester",
+        parent: "aeyama-stone-miner",
         requirements: [
             "aeyama-iron/200",
             "aeyama-blueprint/2"
