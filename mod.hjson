@@ -1,15 +1,26 @@
 {
     name: "aeyama",
+    repo: "fredyjabe/aeyama",
+    minGameVersion: 140,
+    version: "0.0.2",
+
     displayName: "Aeyama: The New World",
     author: "FredyJabe\nHelped by: RouterXdd & Jojo",
-    description: "\nNew Planet.\nNew Techtree.\nNew Campaign.\n\nCheck Repo for more info.",
     subtitle:"[v0.0.2] In active development.",
-    repo: "fredyjabe/aeyama",
-    version: "0.0.2",
-    minGameVersion: 140,
-    hidden: false,
+    description:
+'''
+New Planet
+New Tech Tree
+New Campaing
 
-    // MultiCrafterLib injection
+Check our Repo for more info.
+'''
+    
+    hideBrowser: false,
+    hidden: false,
+    dependencies: [],
+
+    // MultiCrafter-Lib injection
     java: true,
     main: "MultiCrafterAdapter"
 }
