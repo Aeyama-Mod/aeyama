@@ -5,7 +5,7 @@
     size: 1,
     health: 300,
 
-    craftTime: 60,
+    craftTime: 120,
     
     consumes: {
         itemFlammable: {

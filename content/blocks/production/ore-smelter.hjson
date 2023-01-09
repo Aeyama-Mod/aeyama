@@ -9,42 +9,41 @@
     recipes: [
         {
             input: {
-                items: [ "aeyama-iron-raw/5" ],
-                heat: 40
+                items: [ "aeyama-iron-raw/10" ],
+                heat: 80
             },
             output: "aeyama-iron/1",
-            craftTime: 60
+            craftTime: 900
         },
         {
             input: {
-                items: [ "aeyama-zinc-raw/5" ],
-                heat: 40
+                items: [ "aeyama-zinc-raw/10" ],
+                heat: 80
             },
             output: "aeyama-zinc/1",
-            craftTime: 60
-        }
-        ,
+            craftTime: 900
+        },
         {
             input: {
-                items: [ "aeyama-new-copper-raw/5" ],
-                heat: 40
+                items: [ "aeyama-new-copper-raw/10" ],
+                heat: 80
             },
             output: "aeyama-new-copper/1",
-            craftTime: 60
+            craftTime: 900
         }
     ],
 
     research: {
-        parent: "aeyama-wood-burner",
+        parent: "aeyama-burner",
         requirements: [
-            "aeyama-iron/500",
-            "aeyama-wood-lumber/125"
-            "aeyama-blueprint/3"
+            "aeyama-iron-raw/250",
+            "aeyama-wood-lumber/75"
+            "aeyama-blueprint/2"
         ]
     },
 
     requirements: [
-        "aeyama-iron/100",
+        "aeyama-iron-raw/100",
         "aeyama-wood-lumber/25"
     ]
 }
