@@ -4,7 +4,7 @@
     author: "FredyJabe\nHelped by: RouterXdd & Jojo",
     description: "\nNew Planet.\nNew Techtree.\nNew Campaign.\n\nCheck Repo for more info.",
     subtitle:"[v0.0.2] In active development.",
-    repo: "fredyjabe/aeyama-discovery",
+    repo: "fredyjabe/aeyama",
     version: "0.0.2",
     minGameVersion: 140,
     hidden: false,
