@@ -1,4 +1,5 @@
 [gray]January 9, 2023
 
-[white]Testing the news panel. Now with a news panel!
+[green]+ [white]Now with a news panel!
+[yellow]* [white]Updated the first sector to be somewhat playable, no objective yet.
 

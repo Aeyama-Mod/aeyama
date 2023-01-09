@@ -39,13 +39,13 @@ DONE   - code
 DONE   - sprite
      - Iron (complete floor, not only ore chunks)
 DONE   - code
-       - sprite
+REDO   - sprite
      - Copper (complete floor, not only ore chunks)
 DONE   - code
-       - sprite
+REDO   - sprite
      - Zinc (complete floor, not only ore chunks)
 DONE   - code
-       - sprite
+REDO   - sprite
 
 Items:
 DONE - Blueprints
@@ -64,3 +64,20 @@ DONE - Steel
        - Arrow (Ballista bolts)
        - 5.56
        - shotgun
+
+
+
+
+
+
+
+
+--------------------------------------------------------------
+
+Use:
+* changes
++ additions
+- removes
+
+INCOMING PATCHNOTE (write your changes here)
+* Fixed the output of manually mining iron, copper and zinc to raw ore instead of ingots

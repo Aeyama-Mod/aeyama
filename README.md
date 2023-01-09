@@ -1,6 +1,6 @@
 # Aeyama: The New World
 
-[![DiscordBadge]][Discord] [![DownloadBadge]][Download]
+[![DiscordBadge]][Discord] [![DownloadBadge]][Download][![LastCommit]]
 
 Welcome to a great new world, you are a ground robot that just discovered a new planet that is rich in ressources, your objective is to colonize it, to rediscover the technologies from the past using basic materials to maybe one day, finally have your own little planet. . .
 
@@ -23,6 +23,7 @@ In future updates we planned on adding more sectors, french translation, more bl
 <!---------------------------------------------------------------------------------->
 
 [Discord]: https://discord.gg/rNhkswkJst
-[Download]: https://github.com/FredyJabe/aeyama-discovery/releases/latest
+[Download]: https://github.com/FredyJabe/aeyama/releases/latest
 [DiscordBadge]: https://img.shields.io/discord/1061344630987292835?color=287e29&label=Discord&logo=Discord&style=for-the-badge
-[DownloadBadge]: https://img.shields.io/github/downloads/FredyJabe/aeyama-discovery/total?color=287e29&logo=github&style=for-the-badge
+[DownloadBadge]: https://img.shields.io/github/downloads/FredyJabe/aeyama/total?color=287e29&logo=github&style=for-the-badge
+[LastCommit]:https://img.shields.io/github/last-commit/fredyjabe/aeyama
