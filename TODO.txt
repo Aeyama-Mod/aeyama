@@ -114,3 +114,7 @@ INCOMING PATCHNOTE (write your changes here)
     Copper Miner
     Zinc Miner
     Burner
++ Stone Brick (WIP)
++ New wood router
++ New iron router/junction/bridge (WIP)
+* Renamed "metal-raw" to "raw-metal"
