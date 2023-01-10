@@ -108,6 +108,7 @@ INCOMING PATCHNOTE (write your changes here)
 + New Stone material with its own miner
 * New sprites for:
     Core: Frontline
+    Research Station
     Stockpile
     Wood Harvester
     Iron Miner
