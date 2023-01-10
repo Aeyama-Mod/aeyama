@@ -172,14 +172,14 @@ const aeyamagen = extend(PlanetGenerator, {
 
         this.inverseFloodFill(this.tiles.getn(spawn.x, spawn.y));
 
-        var ores = Seq.with(Vars.content.getByName(ContentType.block, "aeyama-ore-iron"));
+        var ores = Seq.with(Vars.content.getByName(ContentType.block, "aeyama-floor-ore-iron"));
         var poles = Math.abs(this.sector.tile.v.y);
         var nmag = 0.5;
         var scl = 1;
         var addscl = 1.3;
 
         if(this.noise.octaveNoise3D(2, 0.5, scl, this.sector.tile.v.x + 1, this.sector.tile.v.y, this.sector.tile.v.z) * nmag + poles > 0.5 * addscl){
-            ores.add(Vars.content.getByName(ContentType.block, "aeyama-ore-iron"));
+            ores.add(Vars.content.getByName(ContentType.block, "aeyama-floor-ore-zinc"));
         };
 
         var frequencies = new FloatSeq();
@@ -282,7 +282,10 @@ aeyamagen.basegen = new BaseGenerator();
 aeyamagen.scl = 5;
 aeyamagen.waterOffset = 0.07;
 aeyamagen.water = 2 / aeyamagen.arr[0].length;
-
+Events.on(ContentInitEvent, e => {
+    Vars.content.planet("aeyama").generator = aeyamagen();
+    Vars.content.planet("aeyama").meshLoader = () => new HexMesh(Vars.content.planet("aeyama"), 6);
+});
 //endregion planet Aeyama
 
 exports.gen = aeyamagen;
