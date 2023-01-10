@@ -44,7 +44,7 @@ Events.on(ContentInitEvent, e => {
     Vars.content.block("aeyama-floor-stonea").attributes.set(Attribute.get("copper"), 0.125);
     Vars.content.block("aeyama-floor-stoneb").attributes.set(Attribute.get("copper"), 0.125);
     Vars.content.block("aeyama-floor-stonec").attributes.set(Attribute.get("copper"), 0.125);
-    // Stone
+    // Stone (also has walls)
     Vars.content.block("aeyama-floor-ore-iron").attributes.set(Attribute.get("stone"), 0.125);
     Vars.content.block("aeyama-floor-ore-zinc").attributes.set(Attribute.get("stone"), 0.125);
     Vars.content.block("aeyama-floor-ore-new-copper").attributes.set(Attribute.get("stone"), 0.125);
@@ -58,6 +58,12 @@ Events.on(ContentInitEvent, e => {
     Vars.content.block("aeyama-floor-stonea").attributes.set(Attribute.get("stone"), 0.25);
     Vars.content.block("aeyama-floor-stoneb").attributes.set(Attribute.get("stone"), 0.25);
     Vars.content.block("aeyama-floor-stonec").attributes.set(Attribute.get("stone"), 0.25);
+    Vars.content.block("aeyama-wall-dirta").attributes.set(Attribute.get("stone"), 0.1);
+    Vars.content.block("aeyama-wall-dirtb").attributes.set(Attribute.get("stone"), 0.1);
+    Vars.content.block("aeyama-wall-dirtc").attributes.set(Attribute.get("stone"), 0.1);
+    Vars.content.block("aeyama-wall-stonea").attributes.set(Attribute.get("stone"), 0.25);
+    Vars.content.block("aeyama-wall-stoneb").attributes.set(Attribute.get("stone"), 0.25);
+    Vars.content.block("aeyama-wall-stonec").attributes.set(Attribute.get("stone"), 0.25);
 
     // Adds the attributes to the miners and harvesters
     Vars.content.block("aeyama-wood-harvester").attribute = Attribute.get("wood");
