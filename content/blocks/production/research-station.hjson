@@ -40,5 +40,22 @@
     requirements: [
         aeyama-wood/125,
         aeyama-iron/50
+    ],
+
+    drawer: [
+        {
+            type: "DrawRegion"
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-top"
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-antenna",
+            rotateSpeed: 0.3,
+            x: 4,
+            y: -4,
+        }
     ]
 }
