@@ -44,6 +44,11 @@ DONE   - code
 DONE   - sprite
 DONE   - bundles
 
+      - Wood Router - Iron Router/Junction/Bridge
+DONE   - code
+       - sprite
+       - bundles (description)
+
 Environment:
 DONE - 2 or 3 Grass types
 DONE   - code
@@ -70,6 +75,8 @@ REDO   - sprite
 Items:
 DONE - Blueprints
 DONE - Wood
+     - Stone
+     - Stone Brick
 DONE - Lumber
 DONE - Carbon
 DONE - Brass

@@ -1,5 +1,5 @@
 {
-    type: "WallCrafter",
+    type: "AttributeCrafter",
     category: "production",
     size: 2,
 
