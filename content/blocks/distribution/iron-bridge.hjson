@@ -1,0 +1,19 @@
+{
+    type: "ItemBridge",
+    category: "distribution",
+
+    health: 90,
+    range: 3,
+
+    research: {
+        parent: "aeyama-iron-router",
+        requirements: [
+            "aeyama-wood/175",
+            "aeyama-iron/55"
+        ]
+    },
+
+    requirements: [
+        "aeyama-iron/8"
+    ]
+}

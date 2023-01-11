@@ -6,18 +6,17 @@
 
     craftTime: 45,
     baseEfficiency: 0,
-    outputItem: "aeyama-raw-iron/1",
+    outputItem: "aeyama-stone/1",
 
     research: {
-        parent: "aeyama-stone-miner",
+        parent: "aeyama-wood-harvester",
         requirements: [
-            "aeyama-wood/200",
-            "aeyama-blueprint/1"
+            "aeyama-wood/50"
         ]
     },
 
     requirements: [
-        "aeyama-wood/40"
+        "aeyama-wood/20"
     ],
 
     drawer: [

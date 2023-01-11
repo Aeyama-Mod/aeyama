@@ -1,0 +1,18 @@
+{
+    type: "Junction",
+    category: "distribution",
+
+    health: 85,
+
+    research: {
+        parent: "aeyama-iron-router",
+        requirements: [
+            "aeyama-wood/125",
+            "aeyama-iron/40"
+        ]
+    },
+
+    requirements: [
+        "aeyama-iron/4"
+    ]
+}

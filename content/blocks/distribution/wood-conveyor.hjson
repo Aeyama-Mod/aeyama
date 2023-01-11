@@ -9,11 +9,11 @@
     research: {
         parent: "aeyama-core-frontline",
         requirements: [
-            "aeyama-wood/100"
+            "aeyama-wood/50"
         ]
     },
 
     requirements: [
-        aeyama-wood/2
+        "aeyama-wood/2"
     ]
 }
