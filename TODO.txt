@@ -3,51 +3,63 @@ DONE - 1x1 burner
 DONE   - code
 DONE   - sprite
 DONE   - bundles
+       - cost (balancing)
 
      - 2x2 ore smelter
 DONE   - code
        - sprite
 DONE   - bundles
+       - cost (balancing)
 
      - 3x3 ore foundry
 DONE   - code
        - sprite
 DONE   - bundles
+       - cost (balancing)
 
      - 3x3 wood -> lumber station
 DONE   - code
        - sprite
 DONE   - bundles
+       - cost (balancing)
 
      - 4x4 research station
 DONE   - code
 DONE   - sprite
 DONE   - bundles
+       - cost (balancing)
 
      - 3x3 brass foundry
 DONE   - code
        - sprite
 DONE   - bundles
+       - cost (balancing)
 
      - 3x3 steel foundry
 DONE   - code
        - sprite
 DONE   - bundles
+       - cost (balancing)
 
      - 2x2 ammunition fabricator
        - code
        - sprite
        - bundles
+       - cost (balancing)
 
 DONE - 1x1 stockpile (core expansion)
 DONE   - code
 DONE   - sprite
 DONE   - bundles
+       - cost (balancing)
 
       - Wood Router - Iron Router/Junction/Bridge
 DONE   - code
        - sprite
        - bundles (description)
+       - cost (balancing)
+
+      - LOTS OF BALANCING
 
 Environment:
 DONE - 2 or 3 Grass types
@@ -130,3 +142,4 @@ INCOMING PATCHNOTE (write your changes here)
 + New wood router
 + New iron router/junction/bridge (WIP)
 * Renamed "metal-raw" to "raw-metal"
+* Some balacing, more coming later
