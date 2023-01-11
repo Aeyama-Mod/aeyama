@@ -21,7 +21,7 @@ DONE   - bundles
 
      - 4x4 research station
 DONE   - code
-       - sprite
+DONE   - sprite
 DONE   - bundles
 
      - 3x3 brass foundry
@@ -85,7 +85,11 @@ DONE - Steel
        - 5.56
        - shotgun
 
-
+Campaign:
+     - new-world
+       - map
+       - objectives
+       - bundles
 
 
 
