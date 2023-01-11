@@ -2,9 +2,11 @@
     type: "AttributeCrafter",
     category: "production",
     size: 2,
+    health: 600,
 
-    drillTime: 180,
-    output: "aeyama-stone",
+    craftTime: 45,
+    baseEfficiency: 0,
+    outputItem: "aeyama-stone/1",
 
     research: {
         parent: "aeyama-wood-harvester",
@@ -15,5 +17,20 @@
 
     requirements: [
         "aeyama-wood/20"
+    ],
+
+    drawer: [
+        {
+            type: "DrawDefault"
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-rotator",
+            rotateSpeed: 1
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-top"
+        }
     ]
 }
