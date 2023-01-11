@@ -5,14 +5,14 @@
     health: 85,
 
     research: {
+        //Unlocked on: ??? sector
         parent: "aeyama-iron-router",
         requirements: [
-            "aeyama-wood/125",
-            "aeyama-iron/40"
+            "aeyama-wood/1" //TODO
         ]
     },
 
     requirements: [
-        "aeyama-iron/4"
+        "aeyama-iron/4" //TODO
     ]
 }

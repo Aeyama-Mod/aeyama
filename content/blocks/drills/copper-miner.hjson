@@ -4,20 +4,20 @@
     size: 2,
     health: 600,
 
-    craftTime: 45,
+    craftTime: 170,
     baseEfficiency: 0,
-    outputItem: "aeyama-raw-new-copper/1",
+    outputItem: "aeyama-raw-copper-new/1",
 
     research: {
+        //Unlocked on: ??? sector
         parent: "aeyama-stone-miner",
         requirements: [
-            "aeyama-iron/200",
-            "aeyama-blueprint/2"
+            "aeyama-wood/1", //TODO
         ]
     },
 
     requirements: [
-        "aeyama-iron/40"
+        "aeyama-iron/40" //TODO
     ],
 
     drawer: [

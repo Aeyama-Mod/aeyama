@@ -7,16 +7,15 @@
     displayedSpeed: 8.4,
 
     research: {
+        //Unlocked on: ??? sector
         parent: "aeyama-wood-conveyor",
         requirements: [
-            "aeyama-iron/500",
-            "aeyama-wood/1000",
-            "aeyama-blueprint/2"
+            "aeyama-wood/1" //TODO
         ]
     },
 
     requirements: [
-        aeyama-iron/2,
-        aeyama-wood/2
+        "aeyama-iron/2", //TODO
+        "aeyama-wood/2"
     ]
 }

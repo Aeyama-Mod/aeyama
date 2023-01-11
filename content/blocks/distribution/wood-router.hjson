@@ -5,14 +5,17 @@
     health: 45,
 
     research: {
+        //Unlocked on: 2nd or 3rd sector
         parent: "aeyama-wood-conveyor",
         requirements: [
             "aeyama-wood/100",
+            "aeyama-stone/50",
             "aeyama-raw-iron/15"
         ]
     },
 
     requirements: [
         "aeyama-wood/6"
+        "aeyama-stone/2"
     ]
 }

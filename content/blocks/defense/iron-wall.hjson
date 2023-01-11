@@ -5,14 +5,14 @@
     health: 480,
 
     research: {
+        //Unlocked on: ??? sector
         parent: "aeyama-wood-wall",
         requirements: [
-            "aeyama-iron/30",
-            "aeyama-blueprint/2"
+            "aeyama-wood/1", //TODO
         ]
     },
 
     requirements: [
-        "aeyama-iron/6"
+        "aeyama-iron/6" //TODO
     ]
 }

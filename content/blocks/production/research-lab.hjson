@@ -2,7 +2,7 @@
     type: "multicraft.MultiCrafter",
     category: "crafting",
 
-    size: 3,
+    size: 4,
     health: 1200,
 
     menu: "Simple",
@@ -30,34 +30,32 @@
     ],
 
     research: {
-        // Unlocked on: 1st or 2nd sector
-        parent: "aeyama-core-frontline",
+        // Unlocked on: ??? sector
+        parent: "aeyama-ore-foundry",
         requirements: [
-            "aeyama-wood/650",
-            "aeyama-stone/250"
-            "aeyama-raw-iron/150"
+            "aeyama-wood/1" //TODO
         ]
     },
 
-    requirements: [
+    requirements: [ //TODO
         "aeyama-wood/125",
         "aeyama-iron/50"
     ],
 
-    // drawer: [
-    //     {
-    //         type: "DrawRegion"
-    //     },
-    //     {
-    //         type: "DrawRegion",
-    //         suffix: "-top"
-    //     },
-    //     {
-    //         type: "DrawRegion",
-    //         suffix: "-antenna",
-    //         rotateSpeed: 0.3,
-    //         x: 4,
-    //         y: -4,
-    //     }
-    // ]
+    drawer: [
+        {
+            type: "DrawRegion"
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-top"
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-antenna",
+            rotateSpeed: 0.3,
+            x: 4,
+            y: -4,
+        }
+    ]
 }
