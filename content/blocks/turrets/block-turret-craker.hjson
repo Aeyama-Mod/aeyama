@@ -6,10 +6,10 @@
     health: 860,
 
     research: {
-        //Unlocked on: 1st or 2nd sector
+        //Unlocked on: 2nd sector
         parent: "aeyama-block-wall-wood",
         requirements: [
-            "aeyama-item-wood/1", //TODO
+            "aeyama-item-steel/9999", //TODO
         ]
     },
 
@@ -33,12 +33,21 @@
     ammoTypes: {
         aeyama-item-wood: {
             reloadMultiplier: 1,
-            ammoMultiplier: 3,
+            ammoMultiplier: 1,
             lifetime: 60,
-            damage: 13,
-            height: 14,
-            speed: 3,
-            width: 10
+            damage: 11,
+            height: 8,
+            speed: 1.2,
+            width: 4.5
+        },
+        aeyama-item-wood-dry: {
+            reloadMultiplier: 1,
+            ammoMultiplier: 1.5,
+            lifetime: 90,
+            damage: 16,
+            height: 9,
+            speed: 1.6,
+            width: 6.5
         }
     }
 }

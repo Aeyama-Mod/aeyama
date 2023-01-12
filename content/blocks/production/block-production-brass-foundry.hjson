@@ -23,7 +23,7 @@
         // Unlocked on: ??? sector
         parent: "aeyama-block-production-ore-smelter",
         requirements: [
-            "aeyama-item-wood/1"
+            "aeyama-item-steel/9999" //TODO
         ]
     },
 

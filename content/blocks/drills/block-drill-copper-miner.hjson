@@ -12,7 +12,7 @@
         //Unlocked on: ??? sector
         parent: "aeyama-block-drill-stone-miner",
         requirements: [
-            "aeyama-item-wood/1" //TODO
+            "aeyama-item-steel/9999" //TODO
         ]
     },
 

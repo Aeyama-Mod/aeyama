@@ -10,7 +10,7 @@
         //Unlocked on: ??? sector
         parent: "aeyama-block-distribution-wood-conveyor",
         requirements: [
-            "aeyama-item-wood/1" //TODO
+            "aeyama-item-steel/9999" //TODO
         ]
     },
 

@@ -9,7 +9,7 @@
         //Unlocked on: ??? sector
         parent: "aeyama-block-wall-iron",
         requirements: [
-            "aeyama-item-wood/1" //TODO
+            "aeyama-item-steel/9999" //TODO
         ]
     },
 

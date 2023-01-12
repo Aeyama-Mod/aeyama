@@ -9,15 +9,17 @@
     outputItem: "aeyama-item-raw-iron/1",
 
     research: {
-        //Unlocked on: ??? sector
+        //Unlocked on: 1st sector
         parent: "aeyama-block-drill-stone-miner",
         requirements: [
-            "aeyama-item-wood/1" //TODO
+            "aeyama-item-wood/200",
+            "aeyama-item-stone/150"
         ]
     },
 
     requirements: [
-        "aeyama-item-wood/40" //TODO
+        "aeyama-item-wood/100",
+        "aeyama-item-stone/100"
     ],
 
     drawer: [
