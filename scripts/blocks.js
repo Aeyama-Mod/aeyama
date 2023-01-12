@@ -5,7 +5,7 @@ Events.on(ContentInitEvent, e => {
     // Iron
     Vars.content.block("aeyama-floor-ore-iron").attributes.set(Attribute.get("iron"), 0.25);
     Vars.content.block("aeyama-floor-ore-zinc").attributes.set(Attribute.get("iron"), 0.075);
-    Vars.content.block("aeyama-floor-ore-new-copper").attributes.set(Attribute.get("iron"), 0.075);
+    Vars.content.block("aeyama-floor-ore-copper-new").attributes.set(Attribute.get("iron"), 0.075);
     Vars.content.block("aeyama-floor-grassa").attributes.set(Attribute.get("iron"), 0.025);
     Vars.content.block("aeyama-floor-grassb").attributes.set(Attribute.get("iron"), 0.025);
     Vars.content.block("aeyama-floor-grassc").attributes.set(Attribute.get("iron"), 0.025);
@@ -19,7 +19,7 @@ Events.on(ContentInitEvent, e => {
     // Zinc
     Vars.content.block("aeyama-floor-ore-iron").attributes.set(Attribute.get("zinc"), 0.075);
     Vars.content.block("aeyama-floor-ore-zinc").attributes.set(Attribute.get("zinc"), 0.25);
-    Vars.content.block("aeyama-floor-ore-new-copper").attributes.set(Attribute.get("zinc"), 0.075);
+    Vars.content.block("aeyama-floor-ore-copper-new").attributes.set(Attribute.get("zinc"), 0.075);
     Vars.content.block("aeyama-floor-grassa").attributes.set(Attribute.get("zinc"), 0.025);
     Vars.content.block("aeyama-floor-grassb").attributes.set(Attribute.get("zinc"), 0.025);
     Vars.content.block("aeyama-floor-grassc").attributes.set(Attribute.get("zinc"), 0.025);
@@ -33,7 +33,7 @@ Events.on(ContentInitEvent, e => {
     // Copper
     Vars.content.block("aeyama-floor-ore-iron").attributes.set(Attribute.get("copper"), 0.075);
     Vars.content.block("aeyama-floor-ore-zinc").attributes.set(Attribute.get("copper"), 0.075);
-    Vars.content.block("aeyama-floor-ore-new-copper").attributes.set(Attribute.get("copper"), 0.25);
+    Vars.content.block("aeyama-floor-ore-copper-new").attributes.set(Attribute.get("copper"), 0.25);
     Vars.content.block("aeyama-floor-grassa").attributes.set(Attribute.get("copper"), 0.025);
     Vars.content.block("aeyama-floor-grassb").attributes.set(Attribute.get("copper"), 0.025);
     Vars.content.block("aeyama-floor-grassc").attributes.set(Attribute.get("copper"), 0.025);
@@ -47,7 +47,7 @@ Events.on(ContentInitEvent, e => {
     // Stone (also has walls)
     Vars.content.block("aeyama-floor-ore-iron").attributes.set(Attribute.get("stone"), 0.125);
     Vars.content.block("aeyama-floor-ore-zinc").attributes.set(Attribute.get("stone"), 0.125);
-    Vars.content.block("aeyama-floor-ore-new-copper").attributes.set(Attribute.get("stone"), 0.125);
+    Vars.content.block("aeyama-floor-ore-copper-new").attributes.set(Attribute.get("stone"), 0.125);
     Vars.content.block("aeyama-floor-grassa").attributes.set(Attribute.get("stone"), 0.025);
     Vars.content.block("aeyama-floor-grassb").attributes.set(Attribute.get("stone"), 0.025);
     Vars.content.block("aeyama-floor-grassc").attributes.set(Attribute.get("stone"), 0.025);

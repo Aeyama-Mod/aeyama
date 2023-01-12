@@ -9,7 +9,7 @@
     recipes: [
         {
             input: {
-                items: [ "aeyama-new-copper/2", "aeyama-zinc/2" ],
+                items: [ "aeyama-copper-new/2", "aeyama-zinc/2" ],
                 heat: 50
             },
             output: "aeyama-brass/1",
@@ -17,15 +17,14 @@
     }],
 
     research: {
+        // Unlocked on: ??? sector
         parent: "aeyama-ore-smelter",
         requirements: [
-            "aeyama-wood-lumber/500",
-            "aeyama-iron/400",
-            "aeyama-blueprint/2"
+            "aeyama-wood/1"
         ]
     },
 
-    requirements: [
+    requirements: [ //TODO
         "aeyama-wood-lumber/100",
         "aeyama-iron/80"
     ]

@@ -6,14 +6,14 @@
     size: 2,
 
     research: {
+        //Unlocked on: ??? sector
         parent: "aeyama-iron-wall",
         requirements: [
-            aeyama-iron/120,
-            aeyama-blueprint/1
+            "aeyama-wood/1" //TODO
         ]
     },
 
     requirements: [
-        aeyama-iron/24
+        "aeyama-iron/24" //TODO
     ]
 }

@@ -6,14 +6,16 @@
     size: 2,
 
     research: {
+        //Unlocked on: 1st sector
         parent: "aeyama-wood-wall",
         requirements: [
-            aeyama-wood/120,
-            aeyama-blueprint/1
+            "aeyama-wood/450",
+            "aeyama-stone/175"
         ]
     },
 
     requirements: [
-        aeyama-wood/24
+        "aeyama-wood/24",
+        "aeyama-stone/6"
     ]
 }

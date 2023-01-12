@@ -4,20 +4,20 @@
     size: 2,
     health: 600,
 
-    craftTime: 45,
+    craftTime: 170,
     baseEfficiency: 0,
     outputItem: "aeyama-raw-iron/1",
 
     research: {
+        //Unlocked on: ??? sector
         parent: "aeyama-stone-miner",
         requirements: [
-            "aeyama-wood/200",
-            "aeyama-blueprint/1"
+            "aeyama-wood/1" //TODO
         ]
     },
 
     requirements: [
-        "aeyama-wood/40"
+        "aeyama-wood/40" //TODO
     ],
 
     drawer: [

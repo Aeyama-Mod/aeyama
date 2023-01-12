@@ -1,6 +1,6 @@
 {
     type: "Floor",
-    liquidDrop: "water",
+    liquidDrop: "aeyama-water-new",
     status: "wet",
     statusDuration: 90,
     isLiquid: true,

@@ -9,14 +9,12 @@
     research: {
         parent: "aeyama-core-frontline",
         requirements: [
-            aeyama-wood/1000,
-            aeyama-iron/800,
-            aeyama-blueprint/3
+            "aeyama-wood/1"
         ]
     },
 
-    requirements: [
-        aeyama-wood/200,
-        aeyama-iron/160
+    requirements: [ //TODO
+        "aeyama-wood/200",
+        "aeyama-iron/160"
     ]
 }

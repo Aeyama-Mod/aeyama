@@ -7,13 +7,16 @@
     displayedSpeed: 4.2,
 
     research: {
+        //Unlocked on: 1st sector
         parent: "aeyama-core-frontline",
         requirements: [
-            "aeyama-wood/50"
+            "aeyama-wood/25",
+            "aeyama-stone/5"
         ]
     },
 
     requirements: [
-        "aeyama-wood/2"
+        "aeyama-wood/1",
+        "aeyama-stone/1"
     ]
 }

@@ -4,3 +4,4 @@ Attribute.add("stone");
 Attribute.add("iron");
 Attribute.add("zinc");
 Attribute.add("copper");
+Attribute.add("water");

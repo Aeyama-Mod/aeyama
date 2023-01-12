@@ -4,17 +4,20 @@
     size: 2,
     health: 600,
 
-    drillTime: 180,
+    drillTime: 210,
     output: "aeyama-wood",
 
     research: {
+        //Unlocked on: 1st sector
         parent: "aeyama-core-frontline",
         requirements: [
-            "aeyama-wood/50"
+            "aeyama-wood/50",
+            "aeyama-stone/15"
         ]
     },
 
     requirements: [
-        "aeyama-wood/20"
+        "aeyama-wood/20",
+        "aeyama-stone/5"
     ]
 }

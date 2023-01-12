@@ -5,14 +5,16 @@
     health: 250,
 
     research: {
-        parent: "aeyama-craker",
+        //Unlocked on: 1st sector
+        parent: "aeyama-core-frontline",
         requirements: [
-            "aeyama-wood/30",
-            "aeyama-blueprint/1"
+            "aeyama-wood/20",
+            "aeyama-stone/15"
         ]
     },
 
     requirements: [
-        "aeyama-wood/6"
+        "aeyama-wood/6",
+        "aeyama-stone/3"
     ]
 }

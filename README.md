@@ -24,13 +24,13 @@
 
 [`Previous update: 0.0.1`][Download]
 
-In the last update... I don't know, maybe later you will have a changelog here.
+In the last update... We gave the first idea of what we are doing later.
 
 ### Plans
 
 [`Next update: 0.0.2`][NextUpdate]
 
-In the next update... still don't know, you will have to wait
+In the next update... the first sector will be playable! You will have acces to new materials, like wood and stone, and you will research lot of new stuff
 
 . . . and that's it for now.
 

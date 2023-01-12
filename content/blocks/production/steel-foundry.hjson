@@ -17,15 +17,14 @@
     }],
 
     research: {
+        // Unlocked on: ??? sector
         parent: "aeyama-ore-smelter",
         requirements: [
-            "aeyama-iron/500",
-            "aeyama-wood-lumber/125"
-            "aeyama-blueprint/3"
+            "aeyama-wood/1" //TODO
         ]
     },
 
-    requirements: [
+    requirements: [ //TODO
         "aeyama-iron/100",
         "aeyama-wood-lumber/25"
     ]

@@ -1,49 +1,44 @@
 {
-    targetGround : true
-    description : The first turret of Aeyama
-    inaccuracy : 4
-    targetAir : true
-    category : turret
+    type: "ItemTurret",
+    category: "turret",
+    size: 2,
+
+    health: 860,
+
     research: {
-        parent: "aeyama-core-frontline",
+        //Unlocked on: 1st or 2nd sector
+        parent: "aeyama-wood-wall-large",
         requirements: [
-            aeyama-wood/325,
-            aeyama-iron/150,
-            aeyama-blueprint/5
+            "aeyama-wood/1", //TODO
         ]
     },
-    health : 860
-    reload : 40
-    range : 180
-    type : ItemTurret
-    name : Craker
-    size : 2
-    shoot: {
-        type: ShootSpread
-        shots: 10
-        spread: 10
-    }
-    
-    requirements : [
-        iron/30
-        wood/65
+
+    requirements: [ //TODO
+        "iron/30",
+        "wood/65"
     ]
-    
-    ammoTypes : {
-        wood : {
-            reloadMultiplier : 1
-            ammoMultiplier : 3
-            lifetime : 60
-            damage : 13
-            height : 14
-            speed : 3
-            width : 10
-        }
-    }
-    
-    consumes : {
-        coolant : {
-            amount : 0.2
+
+    range: 90,
+    reload: 40,
+    inaccuracy: 4,
+    targetGround: true,
+    targetAir: false,
+
+    shoot: {
+        type: "ShootSpread",
+        shots: 10,
+        spread: 10
+    },
+
+    ammoTypes: {
+        wood: {
+            reloadMultiplier: 1,
+            ammoMultiplier: 3,
+            lifetime: 60,
+            damage: 13,
+            height: 14,
+            speed: 3,
+            width: 10
         }
     }
 }

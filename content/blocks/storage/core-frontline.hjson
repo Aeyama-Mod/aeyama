@@ -26,7 +26,8 @@
     },
 
     requirements: [
-        aeyama-wood/1000,
-        aeyama-iron/1000
+        "aeyama-wood/1000",
+        "aeyama-stone/750"
+        "aeyama-iron/300"
     ]
 }

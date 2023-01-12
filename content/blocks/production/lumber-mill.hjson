@@ -13,14 +13,14 @@
     outputItem : "aeyama-wood-lumber/1",
 
     research: {
+        // Unlocked on: ??? sector
         parent: "aeyama-research-station",
         requirements: [
-            "aeyama-wood/500",
-            "aeyama-blueprint/3"
+            "aeyama-wood/1" //TODO
         ]
     },
 
-    requirements: [
+    requirements: [ //TODO
         "aeyama-wood/100"
     ]
 }

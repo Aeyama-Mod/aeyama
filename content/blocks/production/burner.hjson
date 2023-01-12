@@ -17,15 +17,17 @@
     
 
     research: {
+        // Unlocked on: 1st or 2nd sector
         parent: "aeyama-research-station",
         requirements: [
-            "aeyama-wood/500",
-            "aeyama-blueprint/2"
+            "aeyama-wood/150",
+            "aeyama-stone/275"
         ]
     },
 
     requirements: [
-        "aeyama-wood/100"
+        "aeyama-wood/50",
+        "aeyama-stone/150"
     ],
 
     drawer: [

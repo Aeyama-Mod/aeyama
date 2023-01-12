@@ -6,10 +6,10 @@
     range: 3,
 
     research: {
+        //Unlocked on: ??? sector
         parent: "aeyama-iron-router",
         requirements: [
-            "aeyama-wood/175",
-            "aeyama-iron/55"
+            "aeyama-wood/1"
         ]
     },
 

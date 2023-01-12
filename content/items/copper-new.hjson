@@ -8,7 +8,7 @@
     hardness: 0.3,
 
     research: {
-        parent: "aeyama-raw-new-copper"
+        parent: "aeyama-raw-copper-new"
     },
 
     buildable: false,
