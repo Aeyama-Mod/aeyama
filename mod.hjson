@@ -1,19 +1,24 @@
 {
     name: "aeyama",
     repo: "fredyjabe/aeyama",
-    minGameVersion: 140,
-    version: "0.0.2",
+    minGameVersion: 141,
+    version: "0.0.2dev", //dev = Development Release - official = Official Release
 
     displayName: "Aeyama: The New World",
-    author: "FredyJabe\nHelped by: RouterXdd & Jojo",
-    subtitle:"[v0.0.2] In active development.",
+    author: "FredyJabe & Jojo",
+    subtitle:"v0.0.2 is now here!",
     description:
 '''
-New Planet
-New Tech Tree
-New Campaign
+This mod will allow you to explore a whole new world, with a new Tech Tree and a brand new campaign.
 
-Check our Repo for more info.
+    [[]gray]Version: [[]lightgray]0.0.2dev
+    [[]gray]Language: [[]white]- English
+                       [[]white]- French [[]red](WIP)
+                       [[]white]- Russian [[]red](WIP)
+    
+    [[]gray]Contributor: [[]white]- RouterXdd
+
+. . . check our GitHub repository for more info!
 '''
     
     hideBrowser: false,
