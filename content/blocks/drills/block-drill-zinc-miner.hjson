@@ -1,0 +1,37 @@
+{
+    type: "AttributeCrafter",
+    category: "production",
+    size: 2,
+    health: 600,
+
+    craftTime: 45,
+    baseEfficiency: 0,
+    outputItem: "aeyama-item-raw-zinc/1",
+
+    research: {
+        //Unlocked on: ??? sector
+        parent: "aeyama-block-drill-stone-miner",
+        requirements: [
+            "aeyama-item-wood/1" //TODO
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-iron/40" //TODO
+    ],
+
+    drawer: [
+        {
+            type: "DrawDefault"
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-rotator",
+            rotateSpeed: 1
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-top"
+        }
+    ]
+}

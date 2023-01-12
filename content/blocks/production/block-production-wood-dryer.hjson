@@ -1,0 +1,26 @@
+{
+    type: "GenericCrafter",
+    category: "crafting",
+
+    size: 2,
+    health: 600,
+
+    craftTime: 600,
+    consumes: {
+        items: [
+            "aeyama-item-wood/10"
+        ]}
+    outputItem : "aeyama-item-wood-dry/10",
+
+    research: {
+        //Unlocked on: ??? sector
+        parent: "aeyama-block-production-research-station",
+        requirements: [
+            "aeyama-item-wood/1" //TODO
+        ]
+    },
+
+    requirements: [ //TODO
+        "aeyama-item-wood/100"
+    ]
+}

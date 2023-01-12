@@ -1,0 +1,19 @@
+{
+    type: "ItemBridge",
+    category: "distribution",
+
+    health: 90,
+    range: 3,
+
+    research: {
+        //Unlocked on: ??? sector
+        parent: "aeyama-block-distribution-iron-router",
+        requirements: [
+            "aeyama-item-wood/1"
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-iron/8"
+    ]
+}

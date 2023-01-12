@@ -1,6 +1,6 @@
 {
     type: "Floor",
     wall: "aeyama-wall-stoneb",
-    itemDrop: "aeyama-stone",
+    itemDrop: "aeyama-item-stone",
     variants: 3
 }

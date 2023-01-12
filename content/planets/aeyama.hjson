@@ -11,7 +11,7 @@
     drawOrbit: true,
     accessible: true,
     alwaysUnlocked: true,
-    defaultCore: "aeyama-core-frontline",
+    defaultCore: "aeyama-block-storage-core-frontline",
     sectorSeed: 5948,
     startSector: 0,
     sectorSize: 1,

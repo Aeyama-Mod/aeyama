@@ -1,0 +1,63 @@
+{
+    type: "multicraft.MultiCrafter",
+    category: "crafting",
+
+    size: 3,
+    health: 900,
+
+    menu: "Simple",
+    recipes: [
+        {
+            input: [
+                "aeyama-item-wood/2"
+            ],
+            output: "aeyama-item-blueprint/1",
+            craftTime: 3600 //60 seconds
+        },
+        {
+            input: {
+                items: [
+                    "aeyama-item-blueprint/2",
+                    "aeyama-item-steel/3" //Might be too easy for now
+                ],
+                fluids: [
+                    "aeyama-liquid-water/0.1333333333333"
+                ]
+            },
+            output: "aeyama-item-advanced-blueprint/1",
+            craftTime: 7200 //120 seconds
+        }
+    ],
+
+    research: {
+        // Unlocked on: 1st or 2nd sector
+        parent: "aeyama-block-storage-core-frontline",
+        requirements: [
+            "aeyama-item-wood/650",
+            "aeyama-item-stone/250",
+            "aeyama-item-raw-iron/150"
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-wood/125",
+        "aeyama-item-iron/50"
+    ],
+
+    // drawer: [
+    //     {
+    //         type: "DrawRegion"
+    //     },
+    //     {
+    //         type: "DrawRegion",
+    //         suffix: "-top"
+    //     },
+    //     {
+    //         type: "DrawRegion",
+    //         suffix: "-antenna",
+    //         rotateSpeed: 0.3,
+    //         x: 4,
+    //         y: -4,
+    //     }
+    // ]
+}

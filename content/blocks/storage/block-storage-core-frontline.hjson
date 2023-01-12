@@ -1,0 +1,33 @@
+{
+    type: "CoreBlock",
+    category: "effect",
+
+    size: 2,
+    health: 2000,
+    itemCapacity: 1000,
+    unitType: "aeyama-unit-infantry",
+    alwaysUnlocked: true,
+
+// DEBUG TESTING STUFF
+    //hasPower: true,
+    //outputsPower: true,
+    //consumesPower: false,
+    //conductivePower: true,
+    //consPower: {
+    //    usage: -5,
+    //    capacity: 1000,
+    //    buffered: true
+    //},
+
+    research: {
+        root: true,
+        name: "Aeyama",
+        planet: "aeyama",
+    },
+
+    requirements: [
+        "aeyama-item-wood/1000",
+        "aeyama-item-stone/750"
+        "aeyama-item-iron/300"
+    ]
+}

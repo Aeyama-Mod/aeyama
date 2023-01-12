@@ -1,0 +1,18 @@
+{
+    type: "Junction",
+    category: "distribution",
+
+    health: 85,
+
+    research: {
+        //Unlocked on: ??? sector
+        parent: "aeyama-block-distribution-iron-router",
+        requirements: [
+            "aeyama-item-wood/1" //TODO
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-iron/4" //TODO
+    ]
+}

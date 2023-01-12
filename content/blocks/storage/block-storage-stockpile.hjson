@@ -1,0 +1,20 @@
+{
+    type: "StorageBlock",
+    category: "effect",
+
+    size: 1,
+    health: 500,
+    itemCapacity: 250,
+
+    research: {
+        parent: "aeyama-block-storage-core-frontline",
+        requirements: [
+            "aeyama-item-wood/1"
+        ]
+    },
+
+    requirements: [ //TODO
+        "aeyama-item-wood/200",
+        "aeyama-item-iron/160"
+    ]
+}

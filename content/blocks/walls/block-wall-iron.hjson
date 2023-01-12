@@ -1,0 +1,18 @@
+{
+    type: "Wall",
+    category: "defense",
+
+    health: 480,
+
+    research: {
+        //Unlocked on: ??? sector
+        parent: "aeyama-block-wall-wood-large",
+        requirements: [
+            "aeyama-item-wood/1", //TODO
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-iron/6" //TODO
+    ]
+}

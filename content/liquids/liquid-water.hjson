@@ -1,0 +1,17 @@
+{
+    color: "596ab8",
+    coolant: true,
+    effect: "wet",
+
+    heatCapacity: 0.4,
+    boilPoint: 0.5,
+
+    research: {
+        parent: "aeyama-item-wood"
+    },
+
+    hiddenOnPlanets: [
+        "serpulo",
+        "erekir"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    type: "Wall",
+    category: "defense",
+
+    health: 250,
+
+    research: {
+        //Unlocked on: 1st sector
+        parent: "aeyama-block-storage-core-frontline",
+        requirements: [
+            "aeyama-item-wood/20",
+            "aeyama-item-stone/15"
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-wood/6",
+        "aeyama-item-stone/3"
+    ]
+}

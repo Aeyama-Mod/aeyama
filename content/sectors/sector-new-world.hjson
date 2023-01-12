@@ -1,0 +1,9 @@
+{
+    sector: 0,
+    planet: "aeyama",
+    research: {
+        parent: "aeyama-block-storage-core-frontline"
+    },
+    difficulty: 0,
+    alwaysUnlocked: true
+}

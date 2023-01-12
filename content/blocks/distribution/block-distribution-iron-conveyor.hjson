@@ -1,0 +1,21 @@
+{
+    type: "Conveyor",
+    category: "distribution",
+
+    health: 100,
+    speed: 0.06,
+    displayedSpeed: 8.4,
+
+    research: {
+        //Unlocked on: ??? sector
+        parent: "aeyama-block-distribution-wood-conveyor",
+        requirements: [
+            "aeyama-item-wood/1" //TODO
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-iron/2", //TODO
+        "aeyama-item-wood/2"
+    ]
+}
