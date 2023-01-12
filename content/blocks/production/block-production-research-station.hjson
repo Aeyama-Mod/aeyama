@@ -9,7 +9,7 @@
     recipes: [
         {
             input: [
-                "aeyama-item-wood/2"
+                "aeyama-item-wood/4"
             ],
             output: "aeyama-item-blueprint/1",
             craftTime: 3600 //60 seconds

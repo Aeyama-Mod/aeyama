@@ -8,24 +8,17 @@
     menu: "Simple",
     recipes: [
         {
-            input: [
-                "aeyama-item-wood/2"
-            ],
-            output: "aeyama-item-blueprint/1",
-            craftTime: 3600 //60 seconds
-        },
-        {
             input: {
                 items: [
                     "aeyama-item-blueprint/2",
-                    "aeyama-item-steel/3" //Might be too easy for now
+                    "aeyama-item-steel/3"
                 ],
                 fluids: [
                     "aeyama-liquid-water/0.1333333333333"
                 ]
             },
             output: "aeyama-item-advanced-blueprint/1",
-            craftTime: 7200 //120 seconds
+            craftTime: 14400 //240 seconds
         }
     ],
 
@@ -33,8 +26,8 @@
         // Unlocked on: ??? sector
         parent: "aeyama-block-production-research-station",
         requirements: [
-            "aeyama-item-wood/1" //TODO
-        ],
+            "aeyama-item-steel/9999" //TODO
+        ]
         objectives: [
             "aeyama-block-production-ore-foundry"
         ]
