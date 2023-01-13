@@ -8,10 +8,13 @@
 
     research: {
         //Unlocked on: 1st sector
-        parent: "aeyama-block-storage-core-frontline",
+        parent: "aeyama-block-storage-core-drop-pod",
         requirements: [
             "aeyama-item-wood/25",
             "aeyama-item-stone/5"
+        ],
+        objectives: [
+            "aeyama-block-drill-wood-harvester"
         ]
     },
 

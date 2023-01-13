@@ -13,7 +13,7 @@
     speed: 1.5,
     drag: 1.25,
     flying: false,
-    rotateMoveFirst: true,
+    omniMovement: true,
     hitSize: 2,
     itemCapacity: 50,
 
@@ -24,7 +24,7 @@
     boostMultiplier: 0.5,
 
     canAttack: true,
-    mineSpeed: 1,
+    mineSpeed: 2,
     mineTier: 0,
     mineFloor: true,
     mineWalls: true,

@@ -12,14 +12,14 @@
         //Unlocked on: 1st sector
         parent: "aeyama-block-drill-stone-miner",
         requirements: [
-            "aeyama-item-wood/200",
-            "aeyama-item-stone/150"
+            "aeyama-item-wood/100",
+            "aeyama-item-stone/120"
         ]
     },
 
     requirements: [
-        "aeyama-item-wood/100",
-        "aeyama-item-stone/100"
+        "aeyama-item-wood/40",
+        "aeyama-item-stone/75"
     ],
 
     drawer: [
