@@ -7,7 +7,6 @@
     itemCapacity: 500,
     unitType: "aeyama-unit-infantry",
     isFirstTier: true,
-    replaceable: true,
     alwaysUnlocked: true,
     buildVisibility: "hidden",
 
