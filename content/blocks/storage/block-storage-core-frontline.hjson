@@ -4,30 +4,23 @@
 
     size: 2,
     health: 2000,
-    itemCapacity: 1000,
+    itemCapacity: 1500,
     unitType: "aeyama-unit-infantry",
-    alwaysUnlocked: true,
-
-// DEBUG TESTING STUFF
-    //hasPower: true,
-    //outputsPower: true,
-    //consumesPower: false,
-    //conductivePower: true,
-    //consPower: {
-    //    usage: -5,
-    //    capacity: 1000,
-    //    buffered: true
-    //},
+    buildVisibility: "shown",
 
     research: {
-        root: true,
-        name: "Aeyama",
-        planet: "aeyama",
+        parent: "aeyama-block-storage-core-drop-pod"
+        requirements: [
+            "aeyama-item-wood/8000",
+            "aeyama-item-stone/8000",
+            "aeyama-item-raw-iron/300",
+            "aeyama-item-blueprint/1"
+        ]
     },
 
     requirements: [
-        "aeyama-item-wood/1000",
-        "aeyama-item-stone/750"
-        "aeyama-item-iron/300"
+        "aeyama-item-wood/800",
+        "aeyama-item-stone/800",
+        "aeyama-item-raw-iron/300"
     ]
 }

@@ -29,6 +29,12 @@ DONE   - sprite
 DONE   - bundles
        - cost (balancing)
 
+     - 5x5 research laboratory
+DONE   - code
+       - sprite
+DONE   - bundles
+       - cost (balancing)
+
      - 3x3 brass foundry
 DONE   - code
        - sprite
@@ -55,7 +61,7 @@ DONE   - bundles
 
       - Wood Router - Iron Router/Junction/Bridge
 DONE   - code
-       - sprite
+DONE   - sprite
        - bundles (description)
        - cost (balancing)
 
@@ -76,13 +82,13 @@ DONE   - code
 DONE   - sprite
      - Iron (complete floor, not only ore chunks)
 DONE   - code
-REDO   - sprite
+       - sprite
      - Copper (complete floor, not only ore chunks)
 DONE   - code
-REDO   - sprite
+       - sprite
      - Zinc (complete floor, not only ore chunks)
 DONE   - code
-REDO   - sprite
+       - sprite
 
 Items:
 DONE - Blueprints
@@ -105,9 +111,9 @@ DONE - Steel
        - shotgun
 
 Campaign:
-     - new-world
-       - map
-       - objectives
+DONE - new-world
+DONE   - map
+DONE   - objectives
        - bundles
 
 
@@ -143,3 +149,6 @@ INCOMING PATCHNOTE (write your changes here)
 + New iron router/junction/bridge (WIP)
 * Renamed "metal-raw" to "raw-metal"
 * Some balacing, more coming later
++ New starting core for the campaign: Drop pod
++ Campaign first sector
+* Refactored EVERYTHING internally

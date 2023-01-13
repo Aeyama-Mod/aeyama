@@ -11,6 +11,9 @@
             "aeyama-item-wood/100",
             "aeyama-item-stone/50",
             "aeyama-item-raw-iron/15"
+        ],
+        objectives: [
+            "aeyama-item-raw-iron"
         ]
     },
 

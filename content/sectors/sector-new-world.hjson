@@ -2,8 +2,15 @@
     sector: 0,
     planet: "aeyama",
     research: {
-        parent: "aeyama-block-storage-core-frontline"
+        parent: "aeyama-block-storage-core-drop-pod",
+        objectives: [
+            {
+                type: "SectorComplete",
+                preset: "sector-new-world"
+            }
+        ]
     },
     difficulty: 0,
+    enemyBase: false,
     alwaysUnlocked: true
 }

@@ -5,7 +5,7 @@
     flammability: 0,
     radioactivity: 0,
     charge: 0.5,
-    hardness: 0,
+    hardness: 1,
 
     research: {
         parent: "aeyama-item-stone"

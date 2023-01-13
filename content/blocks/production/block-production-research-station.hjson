@@ -31,17 +31,23 @@
 
     research: {
         // Unlocked on: 1st or 2nd sector
-        parent: "aeyama-block-storage-core-frontline",
+        parent: "aeyama-block-storage-core-drop-pod",
         requirements: [
             "aeyama-item-wood/650",
             "aeyama-item-stone/250",
             "aeyama-item-raw-iron/150"
+        ],
+        objectives: [
+            "aeyama-item-wood",
+            "aeyama-item-stone",
+            "aeyama-item-raw-iron"
         ]
     },
 
     requirements: [
-        "aeyama-item-wood/125",
-        "aeyama-item-iron/50"
+        "aeyama-item-wood/200",
+        "aeyama-item-stone/100"
+        "aeyama-item-raw-iron/50"
     ],
 
     // drawer: [

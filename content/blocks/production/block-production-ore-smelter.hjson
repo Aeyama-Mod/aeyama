@@ -46,5 +46,14 @@
     requirements: [
         "aeyama-item-raw-iron/100",
         "aeyama-item-wood-lumber/25"
+    ],
+
+    drawer: [
+        {
+            type: "DrawDefault"
+        },
+        {
+            type: "DrawFlame"
+        }
     ]
 }

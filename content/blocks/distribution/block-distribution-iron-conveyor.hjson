@@ -11,6 +11,9 @@
         parent: "aeyama-block-distribution-wood-conveyor",
         requirements: [
             "aeyama-item-steel/9999" //TODO
+        ],
+        objectives: [
+            "aeyama-item-iron"
         ]
     },
 

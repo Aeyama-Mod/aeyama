@@ -10,7 +10,8 @@
         parent: "aeyama-block-wall-wood",
         requirements: [
             "aeyama-item-wood/450",
-            "aeyama-item-stone/175"
+            "aeyama-item-stone/175",
+            "aeyama-item-blueprint/1"
         ]
     },
 

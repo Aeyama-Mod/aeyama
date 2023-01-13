@@ -5,22 +5,26 @@
 
     mechSideSway: 0
     mechStepShake: 4
-    mechStepParticles: true
+    mechStepParticles: true,
+    legSpeed: 0.5,
 
     health: 300,
     armor: 2,
-    speed: 1,
+    speed: 1.5,
+    drag: 1.25,
     flying: false,
-    hitSize: 1.25,
+    omniMovement: true,
+    hitSize: 2,
     itemCapacity: 50,
 
     buildSpeed: 0.25,
+    buildRange: 150,
 
     canBoost: true,
     boostMultiplier: 0.5,
 
     canAttack: true,
-    mineSpeed: 1,
+    mineSpeed: 2,
     mineTier: 0,
     mineFloor: true,
     mineWalls: true,
