@@ -1,0 +1,24 @@
+{
+    type: "StorageBlock",
+    category: "effect",
+
+    size: 1,
+    health: 400,
+    itemCapacity: 250,
+
+    research: {
+        parent: "aeyama-block-storage-core-drop-pod",
+        requirements: [
+            "aeyama-item-wood/400",
+            "aeyama-item-stone/180"
+        ],
+        objectives: [
+            "aeyama-item-raw-iron"
+        ]
+    },
+
+    requirements: [ //TODO
+        "aeyama-item-wood/120",
+        "aeyama-item-stone/60"
+    ]
+}

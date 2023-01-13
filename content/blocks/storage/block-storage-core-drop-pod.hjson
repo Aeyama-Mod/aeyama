@@ -1,0 +1,18 @@
+{
+    type: "CoreBlock",
+    category: "effect",
+
+    size: 1,
+    health: 1000,
+    itemCapacity: 500,
+    unitType: "aeyama-unit-infantry",
+    isFirstTier: true,
+    alwaysUnlocked: true,
+    buildVisibility: "hidden",
+
+    research: {
+        root: true,
+        name: "Aeyama",
+        planet: "aeyama"
+    }
+}

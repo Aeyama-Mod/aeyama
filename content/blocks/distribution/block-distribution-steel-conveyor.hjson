@@ -1,0 +1,25 @@
+{
+    type: "Conveyor",
+    category: "distribution",
+
+    health: 200,
+    speed: 0.12,
+    displayedSpeed: 16.8,
+
+    research: {
+        //Unlocked on: ??? sector
+        parent: "aeyama-block-distribution-iron-conveyor",
+        requirements: [
+            "aeyama-item-steel/9999" //TODO
+        ],
+        objectives: [
+            "aeyama-item-iron",
+            "aeyama-item-steel"
+        ]
+    },
+
+    requirements: [ //TODO
+        "aeyama-item-iron/2",
+        "aeyama-item-steel/2"
+    ]
+}

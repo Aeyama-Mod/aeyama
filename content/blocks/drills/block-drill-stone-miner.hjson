@@ -1,0 +1,39 @@
+{
+    type: "AttributeCrafter",
+    category: "production",
+    size: 2,
+    health: 600,
+
+    craftTime: 210,
+    baseEfficiency: 0,
+    outputItem: "aeyama-item-stone/1",
+
+    research: {
+        //Unlocked on: 1st sector
+        parent: "aeyama-block-drill-wood-harvester",
+        requirements: [
+            "aeyama-item-wood/75",
+            "aeyama-item-stone/25"
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-wood/35",
+        "aeyama-item-stone/15"
+    ],
+
+    drawer: [
+        {
+            type: "DrawDefault"
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-rotator",
+            rotateSpeed: 1
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-top"
+        }
+    ]
+}

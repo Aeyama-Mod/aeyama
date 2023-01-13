@@ -1,0 +1,57 @@
+{
+    type: "multicraft.MultiCrafter",
+    category: "crafting",
+
+    size: 4,
+    health: 1200,
+
+    menu: "Simple",
+    recipes: [
+        {
+            input: {
+                items: [
+                    "aeyama-item-blueprint/2",
+                    "aeyama-item-steel/3"
+                ],
+                fluids: [
+                    "aeyama-liquid-water/0.1333333333333"
+                ]
+            },
+            output: "aeyama-item-advanced-blueprint/1",
+            craftTime: 14400 //240 seconds
+        }
+    ],
+
+    research: {
+        // Unlocked on: ??? sector
+        parent: "aeyama-block-production-research-station",
+        requirements: [
+            "aeyama-item-steel/9999" //TODO
+        ]
+        objectives: [
+            "aeyama-block-production-ore-foundry"
+        ]
+    },
+
+    requirements: [ //TODO
+        "aeyama-item-wood/125",
+        "aeyama-item-iron/50"
+    ],
+
+    drawer: [
+        {
+            type: "DrawRegion"
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-top"
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-antenna",
+            rotateSpeed: 0.3,
+            x: 4,
+            y: -4,
+        }
+    ]
+}

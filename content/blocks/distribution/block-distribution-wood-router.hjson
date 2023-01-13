@@ -1,0 +1,24 @@
+{
+    type: "Router",
+    category: "distribution",
+
+    health: 45,
+
+    research: {
+        //Unlocked on: 2nd or 3rd sector
+        parent: "aeyama-block-distribution-wood-conveyor",
+        requirements: [
+            "aeyama-item-wood/100",
+            "aeyama-item-stone/50",
+            "aeyama-item-raw-iron/15"
+        ],
+        objectives: [
+            "aeyama-item-raw-iron"
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-wood/6"
+        "aeyama-item-stone/2"
+    ]
+}

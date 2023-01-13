@@ -1,0 +1,24 @@
+{
+    type: "Wall",
+    category: "defense",
+
+    health: 250,
+
+    research: {
+        //Unlocked on: 1st sector
+        parent: "aeyama-block-storage-core-drop-pod",
+        requirements: [
+            "aeyama-item-wood/30",
+            "aeyama-item-stone/15",
+            "aeyama-item-blueprint/1"
+        ],
+        objectives: [
+            "aeyama-item-blueprint"
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-wood/6",
+        "aeyama-item-stone/3"
+    ]
+}

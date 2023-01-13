@@ -1,0 +1,39 @@
+{
+    type: "AttributeCrafter",
+    category: "production",
+    size: 2,
+    health: 600,
+
+    craftTime: 170,
+    baseEfficiency: 0,
+    outputItem: "aeyama-item-raw-iron/1",
+
+    research: {
+        //Unlocked on: 1st sector
+        parent: "aeyama-block-drill-stone-miner",
+        requirements: [
+            "aeyama-item-wood/100",
+            "aeyama-item-stone/120"
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-wood/40",
+        "aeyama-item-stone/75"
+    ],
+
+    drawer: [
+        {
+            type: "DrawDefault"
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-rotator",
+            rotateSpeed: 1
+        },
+        {
+            type: "DrawRegion",
+            suffix: "-top"
+        }
+    ]
+}

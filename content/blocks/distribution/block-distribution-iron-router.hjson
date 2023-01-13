@@ -1,0 +1,21 @@
+{
+    type: "Router",
+    category: "distribution",
+
+    health: 95,
+
+    research: {
+        //Unlocked on: ??? sector
+        parent: "aeyama-block-distribution-iron-conveyor",
+        requirements: [
+            "aeyama-item-steel/9999" //TODO
+        ],
+        objectives: [
+            "aeyama-item-iron"
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-iron/6" //TODO
+    ]
+}

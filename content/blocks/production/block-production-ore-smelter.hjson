@@ -1,0 +1,59 @@
+{
+    type: "multicraft.MultiCrafter",
+    category: "crafting",
+
+    size: 2,
+    health: 600,
+
+    menu: "Simple",
+    recipes: [
+        {
+            input: {
+                items: [ "aeyama-item-raw-iron/10" ],
+                heat: 80
+            },
+            output: "aeyama-item-iron/1",
+            craftTime: 900
+        },
+        {
+            input: {
+                items: [ "aeyama-item-raw-zinc/10" ],
+                heat: 80
+            },
+            output: "aeyama-item-zinc/1",
+            craftTime: 900
+        },
+        {
+            input: {
+                items: [ "aeyama-item-raw-copper/10" ],
+                heat: 80
+            },
+            output: "aeyama-item-copper/1",
+            craftTime: 900
+        }
+    ],
+
+    research: {
+        // Unlocked on: 1st or 2nd sector
+        parent: "aeyama-block-production-burner",
+        requirements: [
+            "aeyama-item-raw-iron/250",
+            "aeyama-item-wood-lumber/75"
+            "aeyama-item-blueprint/2"
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-raw-iron/100",
+        "aeyama-item-wood-lumber/25"
+    ],
+
+    drawer: [
+        {
+            type: "DrawDefault"
+        },
+        {
+            type: "DrawFlame"
+        }
+    ]
+}

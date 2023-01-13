@@ -1,0 +1,53 @@
+{
+    type: "ItemTurret",
+    category: "turret",
+    size: 2,
+
+    health: 860,
+
+    research: {
+        //Unlocked on: 2nd sector
+        parent: "aeyama-block-wall-wood",
+        requirements: [
+            "aeyama-item-steel/9999", //TODO
+        ]
+    },
+
+    requirements: [ //TODO
+        "aeyama-item-iron/30",
+        "aeyama-item-wood/65"
+    ]
+
+    range: 90,
+    reload: 40,
+    inaccuracy: 4,
+    targetGround: true,
+    targetAir: false,
+
+    shoot: {
+        type: "ShootSpread",
+        shots: 10,
+        spread: 10
+    },
+
+    ammoTypes: {
+        aeyama-item-wood: {
+            reloadMultiplier: 1,
+            ammoMultiplier: 1,
+            lifetime: 60,
+            damage: 11,
+            height: 8,
+            speed: 1.2,
+            width: 4.5
+        },
+        aeyama-item-wood-dry: {
+            reloadMultiplier: 1,
+            ammoMultiplier: 1.5,
+            lifetime: 90,
+            damage: 16,
+            height: 9,
+            speed: 1.6,
+            width: 6.5
+        }
+    }
+}
