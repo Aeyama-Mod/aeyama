@@ -1,6 +1,5 @@
 {
     type: "Floor",
     wall: "aeyama-wall-tree",
-    allowCorePlacement: true,
     variants: 3
 }
