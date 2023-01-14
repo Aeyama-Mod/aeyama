@@ -2,7 +2,7 @@ const mod = Vars.mods.getMod("aeyama");
 const urlGithub = "https://github.com/FredyJabe/aeyama";
 const urlDiscord = "https://discord.gg/rNhkswkJst";
 var aeyamaNews = "";
-Http.get("https://raw.githubusercontent.com/FredyJabe/aeyama/main/news.txt", response => {
+Http.get(Core.bundle.format("urlNews"), response => {
     aeyamaNews = response.getResultAsString();
 });
 
