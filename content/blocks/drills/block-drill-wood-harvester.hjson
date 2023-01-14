@@ -4,7 +4,7 @@
     size: 2,
     health: 600,
 
-    drillTime: 210,
+    drillTime: 240,
     output: "aeyama-item-wood",
 
     research: {

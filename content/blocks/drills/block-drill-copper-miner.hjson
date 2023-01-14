@@ -4,7 +4,7 @@
     size: 2,
     health: 600,
 
-    craftTime: 170,
+    craftTime: 180,
     baseEfficiency: 0,
     outputItem: "aeyama-item-raw-copper/1",
 

@@ -2,11 +2,11 @@
     name: "aeyama",
     repo: "fredyjabe/aeyama",
     minGameVersion: 141.2,
-    version: "0.1dev",
+    version: "0.2.0release",
     
     displayName: "Aeyama: The New World",
     author: "FredyJabe & Jojo",
-    subtitle:"v0.1 is soon here!",
+    subtitle:"v0.2.0 is here!",
     description:
 '''
 This mod will allow you to explore a whole new world, with a new Tech Tree and a brand new campaign.

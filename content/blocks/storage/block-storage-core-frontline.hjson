@@ -11,10 +11,13 @@
     research: {
         parent: "aeyama-block-storage-core-drop-pod"
         requirements: [
-            "aeyama-item-wood/8000",
-            "aeyama-item-stone/8000",
+            "aeyama-item-wood/800",
+            "aeyama-item-stone/800",
             "aeyama-item-raw-iron/300",
             "aeyama-item-blueprint/1"
+        ],
+        objectives: [
+            "aeyama-item-blueprint"
         ]
     },
 

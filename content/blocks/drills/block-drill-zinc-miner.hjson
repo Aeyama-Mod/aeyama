@@ -4,7 +4,7 @@
     size: 2,
     health: 600,
 
-    craftTime: 45,
+    craftTime: 180,
     baseEfficiency: 0,
     outputItem: "aeyama-item-raw-zinc/1",
 
