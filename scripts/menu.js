@@ -1,6 +1,7 @@
 const mod = Vars.mods.getMod("aeyama");
 const urlGithub = "https://github.com/FredyJabe/aeyama";
 const urlDiscord = "https://discord.gg/rNhkswkJst";
+const urlTrello = "https://trello.com/b/MUttXaEk/aeyama-the-new-world";
 var aeyamaNews = "";
 Http.get(Core.bundle.format("urlNews"), response => {
     aeyamaNews = response.getResultAsString();
@@ -28,6 +29,13 @@ Events.on(EventType.ClientLoadEvent, e => {
             if (!Core.app.openURI(urlGithub)) {
                 Vars.ui.showErrorMessage("@linkfail")
                 Core.app.setClipboardText(urlGithub)
+            }
+        })).size(256, 64);
+        table.row();
+        table.button(Core.bundle.format("linkTrello"), run(() => {
+            if (!Core.app.openURI(urlTrello)) {
+                Vars.ui.showErrorMessage("@linkfail")
+                Core.app.setClipboardText(urlDiscord)
             }
         })).size(256, 64);
         table.row();

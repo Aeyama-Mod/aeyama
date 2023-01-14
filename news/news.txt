@@ -1,5 +1,8 @@
+[gray]January 14, 2023
+
+[green]+ [white]We now have a Trello for you to follow what's planned
+
 [gray]January 9, 2023
 
 [green]+ [white]Now with a news panel!
 [yellow]* [white]Updated the first sector to be somewhat playable, no objective yet.
-
