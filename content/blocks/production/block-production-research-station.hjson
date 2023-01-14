@@ -9,7 +9,7 @@
     recipes: [
         {
             input: [
-                "aeyama-item-wood/4"
+                "aeyama-item-wood/8"
             ],
             output: "aeyama-item-blueprint/1",
             craftTime: 3600 //60 seconds
@@ -30,7 +30,7 @@
     ],
 
     research: {
-        // Unlocked on: 1st or 2nd sector
+        // Unlocked on: 1st sector
         parent: "aeyama-block-storage-core-drop-pod",
         requirements: [
             "aeyama-item-wood/650",
