@@ -50,10 +50,12 @@
 
     drawer: [
         {
-            type: "DrawDefault"
+            type: "DrawDefault",
         },
         {
-            type: "DrawFlame"
+            type: "DrawGlowRegion",
+            color: "ed0e0e",
+            glowIntensity: 0.4
         }
     ]
 }
