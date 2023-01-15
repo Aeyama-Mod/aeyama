@@ -22,15 +22,15 @@
 
 ### Changelog
 
-[`Previous update: 0.0.1`][Download]
+[`Previous update: 0.2.0`][Download]
 
-In the last update... We gave the first idea of what we are doing later.
+In the last update... the 1st was discovered, you were able to get the first ressources and unlock your very first technologies.
 
 ### Plans
 
-[`Next update: 0.0.2`][NextUpdate]
+[`Next update: 0.3.0`][NextUpdate]
 
-In the next update... the first sector will be playable! You will have acces to new materials, like wood and stone, and you will research lot of new stuff
+In the next update... the 2nd (and maybe 3rd) sector will be available, with even more research to unlock and some new "friends" to make.
 
 . . . and that's it for now.
 
