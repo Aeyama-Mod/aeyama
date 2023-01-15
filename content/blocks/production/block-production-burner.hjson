@@ -33,9 +33,11 @@
     drawer: [
         {
             type: "DrawDefault"
-        }
+        },
         {
-            type: "DrawFlame"
+            type: "DrawGlowRegion",
+            color: "ed0e0e",
+            glowIntensity: 0.5
         }
     ]
 }
