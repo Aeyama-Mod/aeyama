@@ -7,9 +7,9 @@
     charge: 0,
     hardness: 0,
 
-    // research: {
-    //     parent: "item-blueprint"
-    // },
+    research: {
+        parent: "item-blueprint"
+    },
 
     buildable: false,
     hiddenOnPlanets: [
