@@ -11,11 +11,12 @@ Thanks for you interest, and hopefully you'll enjoy your stay on Aeyama!
 If you guys wanna help or anything, feel free to come say hi on the discord!
 
 
-[gray]14 Января, 2023
+[gray]January 14, 2023
 
-[green]+ [white]Теперь у нас есть Trello, чтобы вы могли следить за тем, что запланировано
+[green]+ [white]We now have a Trello for you to follow what's planned
 
-[gray]9 Января, 2023
 
-[green]+ [white]Теперь с панелью новостей!
-[yellow]* [white]Обновлен первый сектор, чтобы сделать его более играбельным, но цели пока нет.
+[gray]January 9, 2023
+
+[green]+ [white]Now with a news panel!
+[yellow]* [white]Updated the first sector to be somewhat playable, no objective yet.

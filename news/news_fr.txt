@@ -1,0 +1,22 @@
+[gray]15 Janvier, 2023
+
+[white] Release date! Version 0.2.0 just came out and with it, the first campaign sector! You're about to discover something new down here! ;)
+Thanks for you interest, and hopefully you'll enjoy your stay on Aeyama!
+
+[green]+ [white]Quelques traduction (Anglais, Français, Polonais, Russe and Ukrainien)
+[green]+ [white]Nouveau matériaux, avec 5 d'entre eux disponible sur le premier secteur.
+[yellow]* [white]Tout a été refactorisé en interne, cela ne change rien pour vous mais ça nous aidera à continuer les mises à jour.
+[yellow]* [white]Quelques blocs ont été resprite !
+
+Si vous voulez nous aider (ou pas), n'hésitez pas à venir sur le Discord !
+
+
+[gray]14 Janvier, 2023
+
+[green]+ [white]Nous avons désormais un Trello pour suivre les nouveautés de prévu.
+
+
+[gray]9 Janvier, 2023
+
+[green]+ [white]Désormais avec un panel de nouveautés !
+[yellow]* [white]Mis à jour le premier secteur pour être en quelque sorte jouable, aucun objectifs.
