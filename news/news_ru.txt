@@ -1,14 +1,14 @@
-[gray]January 15, 2023
+[gray]15 января, 2023
 
-[white] Release date! Version 0.2.0 just came out and with it, the first campaign sector! You're about to discover something new down here! ;)
-Thanks for you interest, and hopefully you'll enjoy your stay on Aeyama!
+[white] Дата релиза! Версия 0.2.0 появилась, первый сектор в компании! Вы собираетесь открыть для себя что-то новое здесь внизу! ;)
+Спасибо за ваш интерес, и, надеюсь, вам понравится ваше пребывание на Aeyama!
 
-[green]+ [white]A bunch of translations (English, French, Polish, Russian and Ukrainian)
-[green]+ [white]New materials, with 5 of them available in the first sector
-[yellow]* [white]Refactored everything internally, doesn't change anything for you but it'll help us to keep updating
-[yellow]* [white]Bunch of buildings have been resprited!
+[green]+ [white]Перевод на многие языки(Английский, Французкий, Польский, Русский и Украинский)
+[green]+ [white]Новые материалы, 5 из них доступны в первом секторе
+[yellow]* [white]Все полностью переделанно, ничего не меняет для вас, но это поможет нам продолжать обновляться
+[yellow]* [white]Куча построек было перерисованно!
 
-If you guys wanna help or anything, feel free to come say hi on the discord!
+Если вы, ребята, хотите помочь или что-то еще, не стесняйтесь сказать привет в дискорде!
 
 
 [gray]14 Января, 2023
