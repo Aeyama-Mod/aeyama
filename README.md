@@ -15,7 +15,7 @@
 <div align="center">
     Welcome to a great new world, you are a ground robot that just discovered a new planet that is rich in ressources, your objective is to colonize it, to rediscover the technologies from the past using basic materials to maybe one day, finally have your own little planet. . .
     <br><br>
-    This mod is still in active development, and it's not playable for now. If you have any question join our <a href="https://discord.gg/rNhkswkJst">Discord</a>
+    This mod is still in active development, if you have any question join our <a href="https://discord.gg/rNhkswkJst">Discord</a>
 </div>
 
 ## Updates
