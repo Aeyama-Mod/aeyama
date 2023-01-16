@@ -1,0 +1,19 @@
+{
+    color: b3a377,
+
+    explosiveness: 2,
+    flammability: 0,
+    radioactivity: 0,
+    charge: 0,
+    hardness: 0,
+
+    research: {
+        parent: "aeyama-item-ammunition-rifle"
+    },
+
+    buildable: false,
+    hiddenOnPlanets: [
+        "serpulo",
+        "erekir"
+    ]
+}
