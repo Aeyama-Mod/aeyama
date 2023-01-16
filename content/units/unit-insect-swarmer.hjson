@@ -2,9 +2,11 @@
     type: "legs",
     controller: "GroundAI",
     isEnemy: true,
+    groundLayer: 60,
 
     legSpeed: 0.5,
     legCount: 6,
+    legLengthScl: 2,
     legGroupSize: 3,
     legMoveSpace: 0.5,
     legMinLength: 0.1,
@@ -12,10 +14,12 @@
     legExtension: -2,
     legStraightness: 0.5,
     legBaseOffset: 1,
-    rippleScale: 0.25,
+    legPairOffset: 0.5,
+    rippleScale: 0.15,
     lockLegBase: true,
     legContinuousMove: true,
     legPhysicsLayer: false,
+    allowLegStep: false,
 
     health: 12,
     armor: 0,
@@ -29,8 +33,6 @@
 
     createScorch: false,
     createWreck: false,
-    allowLegStep: false,
-    //rotateMoveSpeed: true,
 
     hidden: true,
 
