@@ -50,7 +50,7 @@
             shake: 0.25,
             alternate: false,
             mirror: true,
-            sound: "none",
+            shootSound: "none",
             bullet: {
                 type: "BasicBulletType",
                 damage: 3,
