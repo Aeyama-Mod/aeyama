@@ -1,0 +1,66 @@
+{
+    type: "legs",
+    controller: "GroundAI",
+    isEnemy: true,
+
+    legSpeed: 0.5,
+    legCount: 6,
+    legGroupSize: 3,
+    legMoveSpace: 0.5,
+    legMinLength: 0.1,
+    legMaxLength: 0.4,
+    legExtension: -2,
+    legStraightness: 0.5,
+    legBaseOffset: 1,
+    rippleScale: 0.25,
+    lockLegBase: true,
+    legContinuousMove: true,
+    legPhysicsLayer: false,
+
+    health: 12,
+    armor: 0,
+    speed: 1,
+    drag: 0.5,
+    flying: false,
+    hitSize: 2,
+    physics: true,
+    stepShake: 0,
+    rotateSpeed: 8,
+
+    createScorch: false,
+    createWreck: false,
+    allowLegStep: false,
+    //rotateMoveSpeed: true,
+
+    hidden: true,
+
+    canAttack: true,
+    targetFlags: [],
+    weapons: [
+        {
+            name: "weapon-insect-swarmer",
+            top: false,
+            reload: 25,
+            recoil: -1,
+            x: -0.8,
+            y: 2,
+            shootY: 3,
+            shake: 0.25,
+            alternate: false,
+            mirror: true,
+            sound: "none",
+            bullet: {
+                type: "BasicBulletType",
+                damage: 3,
+                speed: 10,
+                lifetime: 1,
+                hitEffect: "none",
+                despawnEffect: "none",
+                shootEffect: "none",
+                smokeEffect: "none",
+                frontColor: "ffffff00",
+                backColor: "98ffa900"
+            }
+        }
+    ]
+}
