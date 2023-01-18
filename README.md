@@ -13,31 +13,26 @@
 </div>
 
 <div align="center">
-    Welcome to a great new world, you are a ground robot that just discovered a new planet that is rich in ressources, your objective is to colonize it, to rediscover the technologies from the past using basic materials to maybe one day, finally have your own little planet. . .
-    <br><br>
+    With ground-based gameplay and focusing on your character development instead of army managing, expecience a whole new campaign
+    on a newly discovered world on which you've been tasked to explore. Using the new planet resources you'll have to rediscover
+    the technologies of the past to survive and deal with whatever this place throws at you.
+    <br>
+    Welcome to Aeyama, Soldier!
+    <br>
+    New resources mechanics are in place, new resources, new research tree and much more are here for your enjoyment!
+    <br><br><br><br>
     This mod is still in active development, if you have any question join our <a href="https://discord.gg/rNhkswkJst">Discord</a>
 </div>
 
 ## Updates
 
-### Changelog
-
-[`Previous update: 0.2.0`][Download]
-
-In the last update... the 1st was discovered, you were able to get the first ressources and unlock your very first technologies.
-
-### Plans
-
-[`Next update: 0.3.0`][NextUpdate]
-
-In the next update... the 2nd (and maybe 3rd) sector will be available, with even more research to unlock and some new "friends" to make.
-
-. . . and that's it for now.
+To see what we're up to next, go check our [`Trello`][trello]!
+And if the mod interests you, [`download it here`][Download] or use the mod browser ingame!
 
 <!---------------------------------------------------------------------------------->
 
 [Logo]: https://raw.githubusercontent.com/FredyJabe/aeyama/main/sprites/logo.png
-[NextUpdate]: https://github.com/FredyJabe/aeyama
+[trello]: https://trello.com/b/MUttXaEk/aeyama-the-new-world
 
 [Discord]: https://discord.gg/rNhkswkJst
 [Download]: https://github.com/FredyJabe/aeyama/releases/latest
