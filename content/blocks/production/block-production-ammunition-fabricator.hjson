@@ -1,0 +1,37 @@
+{
+    type: "multicraft.MultiCrafter",
+    category: "crafting",
+
+    size: 2,
+    health: 670,
+
+    menu: "Simple",
+    recipes: [ //TODO
+        {
+            input: {
+                items: [
+                    "aeyama-item-wood/2",
+                    ],
+            },
+            output: "aeyama-item-ammunition-rifle/1",
+            craftTime: 150
+    }],
+
+    research: {
+        // Unlocked on: 2nd sector
+        parent: "aeyama-block-production-ore-smelter",
+        requirements: [
+            {
+                type: "SectorComplete",
+                preset: "sector-encounter"
+            },
+
+            "aeyama-item-wood/10"
+        ]
+    },
+
+    requirements: [ //TODO
+        "aeyama-item-wood-lumber/100",
+        "aeyama-item-iron/80"
+    ]
+}
