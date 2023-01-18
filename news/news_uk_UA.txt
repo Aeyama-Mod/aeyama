@@ -1,21 +1,19 @@
-[gray]January 15, 2023
+[gray]15 січня, 2023
 
-[white] Release date! Version 0.2.0 just came out and with it, the first campaign sector! You're about to discover something new down here! ;)
-Thanks for you interest, and hopefully you'll enjoy your stay on Aeyama!
+[white] Дата виходу! Щойно вийшла версія 0.2.0, а разом з нею і перший сектор кампанії!  Ви збираєтеся відкрити тут щось нове!  ;)
+ Дякуємо за вам за те, що цікавитеся. Сподіваємося, вам сподобається перебування на Аеямі!
+[green]+ [white]Багато перекладів(Англійська, французька, польська, російська та українська мови).
+[green]+ [white]Нові матеріали, 5 з них доступні в першому секторі.
+[yellow]* [white]Перероблено все всередині, для вас нічого не зміниться, але це допоможе нам продовжити оновлення модифікації.
 
-[green]+ [white]A bunch of translations (English, French, Polish, Russian and Ukrainian)
-[green]+ [white]New materials, with 5 of them available in the first sector
-[yellow]* [white]Refactored everything internally, doesn't change anything for you but it'll help us to keep updating
-[yellow]* [white]Bunch of buildings have been resprited!
-
-If you guys wanna help or anything, feel free to come say hi on the discord!
+Якщо Ви, хочете допомогти чи щось інше, не соромтеся прийти й передати привіт на Discord!
 
 
 [gray]14 січня, 2023
 
-[green]+ [white]Тепер ми маємо Trello, щоб ви могли стежити за тим, що заплановано
+[green]+ [white]Тепер ми маємо Trello, щоб ви могли стежити за тим, що заплановано.
 
-[gray]9 Января, 2023
+[gray]9 січня, 2023
 
 [green]+ [white]Тепер із панеллю новин!
-[yellow]* [white]І ще: Оновлений перший сектор, щоб зробити його грабельнішим, але мети поки немає.
+[yellow]* [white]І ще: Оновлений перший сектор, щоб зробити його придатнішим для гри, але мети поки що немає.
