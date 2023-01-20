@@ -1,4 +1,4 @@
 {
     type: "Floor",
-    variants: 0 //TODO
+    variants: 1 //TODO
 }

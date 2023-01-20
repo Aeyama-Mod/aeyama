@@ -9,9 +9,9 @@ with open(f'{src}/mod.hjson', 'r+') as fileMod:
     if version.endswith('dev'): #Verify if it ends with 'dev'
         version = version.removesuffix('dev')
         suffix = 'dev' #Keep it for later
-    else: #If not 'dev', then 'release"
-        version = version.removesuffix('release')
-        suffix = 'release' #Keep it for later, maybe make automatic release?
+    else: #If not 'dev', then 'release'
+        print(f'Not a dev build, no auto incrementation of the build version.')
+        quit() #Stop the program
     
     actualVersion = ''
     for i in range(4): #Remove the 4 first values (x.x.)
