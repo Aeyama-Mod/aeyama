@@ -1,7 +1,7 @@
 const mod = Vars.mods.getMod("aeyama");
 const urlGithub = "https://github.com/FredyJabe/aeyama";
 const urlDiscord = "https://discord.gg/rNhkswkJst";
-const urlTrello = "https://trello.com/b/MUttXaEk/aeyama-the-new-world";
+const urlTrello = "https://github.com/users/FredyJabe/projects/2";
 var aeyamaNews = "";
 Http.get(Core.bundle.format("urlNews"), response => {
     aeyamaNews = response.getResultAsString();
