@@ -7,9 +7,13 @@
 
     research: {
         //Unlocked on: 2nd sector
-        parent: "aeyama-block-wall-wood",
+        parent: "aeyama-block-turret-thrower",
         requirements: [
             "aeyama-item-steel/9999", //TODO
+        ],
+        objectives: [
+            "aeyama-item-steel",
+            "aeyama-item-advanced-blueprint"
         ]
     },
 

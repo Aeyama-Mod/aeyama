@@ -6,14 +6,11 @@
 
     research: {
         //Unlocked on: 1st sector
-        parent: "aeyama-block-storage-core-drop-pod",
+        parent: "aeyama-block-turret-thrower",
         requirements: [
             "aeyama-item-wood/30",
             "aeyama-item-stone/15",
             "aeyama-item-blueprint/1"
-        ],
-        objectives: [
-            "aeyama-item-blueprint"
         ]
     },
 
