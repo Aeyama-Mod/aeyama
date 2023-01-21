@@ -1,0 +1,21 @@
+{
+    type: "Constructor",
+    category: "crafting",
+    buildVisibility: "shown",
+
+    size: 3,
+    health: 900,
+
+    minBlockSize: 1,
+    maxBlockSize: 1,
+
+    filter: [
+        "aeyama-block-payload-weapon-build-tool",
+        "aeyama-block-payload-weapon-rifle",
+        "aeyama-block-payload-weapon-shotgun",
+        "aeyama-block-payload-weapon-sniper-rifle",
+        "aeyama-block-payload-weapon-flamethrower",
+        "aeyama-block-payload-weapon-minigun",
+        "aeyama-block-payload-weapon-rocket-launcher"
+    ]
+}

@@ -3,14 +3,15 @@
     category: "crafting",
     buildVisibility: "shown",
 
-    size: 4,
-    health: 1200,
+    size: 3,
+    health: 900,
 
     minBlockSize: 1,
     maxBlockSize: 1,
 
     filter: [
-        "aeyama-block-wall-wood",
-        "aeyama-block-wall-iron"
+        "aeyama-block-payload-armor-scout",
+        "aeyama-block-payload-armor-sms",
+        "aeyama-block-payload-armor-heavy"
     ]
 }
