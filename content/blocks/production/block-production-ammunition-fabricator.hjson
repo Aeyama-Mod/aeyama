@@ -21,12 +21,14 @@
         // Unlocked on: 2nd sector
         parent: "aeyama-block-production-ore-smelter",
         requirements: [
+            "aeyama-item-wood/10"
+        ],
+        objectives: [
+            "aeyama-soon"
             {
                 type: "SectorComplete",
                 preset: "sector-encounter"
             },
-
-            "aeyama-item-wood/10"
         ]
     },
 

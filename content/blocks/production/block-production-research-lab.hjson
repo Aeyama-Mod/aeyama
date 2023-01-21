@@ -11,25 +11,12 @@
             input: {
                 items: [
                     "aeyama-item-blueprint/2",
-                    "aeyama-item-steel/3"
-                ],
-                fluids: [
-                    "aeyama-liquid-water/0.1333333333333"
-                ]
-            },
-            output: "aeyama-item-advanced-blueprint/1",
-            craftTime: 14400 //240 seconds
-        },
-        {
-            input: {
-                items: [
-                    "aeyama-item-blueprint/2",
                     "aeyama-item-wood-shreds/4",
                     "aeyama-item-stone-brick/1"
                 ],
             },
-            output: "aeyama-item-blueprint-offensive/1",
-            craftTime: 15000
+            output: "aeyama-item-blueprint-offense/1",
+            craftTime: 14400
         },
         {
             input: {
@@ -39,8 +26,8 @@
                     "aeyama-item-iron/8"
                 ],
             },
-            output: "aeyama-item-blueprint-defensive/1",
-            craftTime: 15000
+            output: "aeyama-item-blueprint-defense/1",
+            craftTime: 14400
         }
     ],
 
@@ -49,9 +36,10 @@
         parent: "aeyama-block-production-research-station",
         requirements: [
             "aeyama-item-steel/9999" //TODO
-        ]
+        ],
         objectives: [
             "aeyama-block-production-ore-foundry"
+            "aeyama-soon"
         ]
     },
 

@@ -8,7 +8,7 @@
     unitType: "aeyama-unit-infantry",
     isFirstTier: true,
     alwaysUnlocked: true,
-    buildVisibility: "hidden",
+    buildVisibility: "editorOnly",
 
     research: {
         root: true,

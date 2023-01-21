@@ -40,6 +40,9 @@
             "aeyama-item-raw-iron/250",
             "aeyama-item-wood-lumber/75"
             "aeyama-item-blueprint/2"
+        ],
+        objectives: [
+            "aeyama-soon"
         ]
     },
 

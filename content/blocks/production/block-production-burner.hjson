@@ -17,11 +17,14 @@
     
 
     research: {
-        // Unlocked on: 1st or 2nd sector
+        // Unlocked on: 2nd sector
         parent: "aeyama-block-production-research-station",
         requirements: [
             "aeyama-item-wood/150",
             "aeyama-item-stone/275"
+        ],
+        objectives: [
+            "aeyama-soon"
         ]
     },
 
