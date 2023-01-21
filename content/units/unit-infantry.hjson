@@ -35,6 +35,7 @@
     weapons: [
         {
             name: "weapon-infantry-gun",
+            aiControllable: false,
             top: false,
             x: 5,
             y: 3,

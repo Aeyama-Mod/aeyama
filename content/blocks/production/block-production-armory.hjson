@@ -1,0 +1,16 @@
+{
+    type: "Constructor",
+    category: "crafting",
+    buildVisibility: "shown",
+
+    size: 4,
+    health: 1200,
+
+    minBlockSize: 1,
+    maxBlockSize: 1,
+
+    filter: [
+        "aeyama-block-wall-wood",
+        "aeyama-block-wall-iron"
+    ]
+}
