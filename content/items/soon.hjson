@@ -1,0 +1,7 @@
+{
+    hiddenOnPlanets: [
+        "serpulo",
+        "erekir",
+        "aeyama"
+    ]
+}
