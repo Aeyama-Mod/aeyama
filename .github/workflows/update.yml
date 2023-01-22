@@ -1,0 +1,45 @@
+name: Update
+
+on: [push]
+
+permissions: {}
+jobs:
+  update:
+    permissions:
+      contents: write
+
+    if: ${{ github.repository == 'JojoFR1/aeyama' }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Verify Changed files
+      uses: tj-actions/changed-files@v35
+      id: verify
+      with:
+        files: |
+            **/bundles/bundle.properties
+
+    - name: Version Update
+      run: |
+        python .github/workflows/scripts/version.py
+        git config --global user.name "Github Actions"
+        git config --global user.email "actions@github.com"
+        git add .
+        git commit -m 'Automatic Version Update'
+        git push
+
+    - name: Bundle Update
+      if: steps.verify.outputs.only_changed == 'true'
+      run: |
+        python .github/workflows/scripts/bundle.py
+        git config --global user.name "Github Actions"
+        git config --global user.email "actions@github.com"
+        git add ./bundles/*
+        git commit -m 'Automatic Bundle Update'
+        git push
