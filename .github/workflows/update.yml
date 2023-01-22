@@ -8,7 +8,7 @@ jobs:
     permissions:
       contents: write
 
-    if: ${{ github.repository == 'JojoFR1/aeyama' }}
+    if: ${{ github.repository == 'FredyJabe/aeyama' }}
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
