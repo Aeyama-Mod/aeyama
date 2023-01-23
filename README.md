@@ -29,6 +29,11 @@
 To see what we're up to next, go check our [`Trello`][trello]!
 And if the mod interests you, [`download it here`][Download] or use the mod browser ingame!
 
+## Tech
+
+Here's the current Techtree, it is FAR from done and will keep expanding!
+<h1 align="center"><img src="https://raw.githubusercontent.com/FredyJabe/aeyama/main/sprites/tech.drawio.png"> </img></h1>
+
 <!---------------------------------------------------------------------------------->
 
 [Logo]: https://raw.githubusercontent.com/FredyJabe/aeyama/main/sprites/logo.png
