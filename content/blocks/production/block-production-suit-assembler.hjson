@@ -1,0 +1,31 @@
+{
+    type: "UnitFactory",
+    category: "crafting",
+    buildVisibility: "shown",
+
+    acceptsPayload: true,
+
+    size: 5,
+    health: 1500,
+
+    plans: [
+        {
+            unit: "alpha",
+            time: 990
+            requirements: [
+                copper/20
+                silicon/25
+                metaglass/20
+            ]
+        },
+        {
+            unit: "aeyama-unit-insect-crawler"
+            time: 1200
+            requirements: [
+                silicon/30
+                lead/15
+                graphite/10
+            ]
+        }
+    ]
+}

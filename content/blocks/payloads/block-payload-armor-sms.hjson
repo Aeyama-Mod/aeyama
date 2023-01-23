@@ -1,5 +1,5 @@
 {
-    type: "PayloadBlock",
+    type: "UnitBlock",
     placeablePlayer: false,
     buildVisibility: "shown"
 }
