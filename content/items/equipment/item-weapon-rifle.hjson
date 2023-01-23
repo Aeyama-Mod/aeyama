@@ -8,11 +8,7 @@
     hardness: 0,
 
     research: {
-        parent: "aeyama-block-storage-core-drop-pod",
-        objectives: [
-            "aeyama-item-brass",
-            //"aeyama-block-production-ammo-press"
-        ]
+        parent: "aeyama-block-production-weapon-locker"
     },
 
     buildable: false,

@@ -1,17 +1,58 @@
 {
-    type: "Constructor",
+    type: "multicraft.MultiCrafter",
     category: "crafting",
-    buildVisibility: "shown",
 
     size: 3,
     health: 900,
 
-    minBlockSize: 1,
-    maxBlockSize: 1,
+    menu: "Simple",
+    recipes: [
+        {
+            input: {
+                items: [
+                    "aeyama-item-wood/2"
+                ],
+            },
+            output: "aeyama-item-armor-scout/1",
+            craftTime: 600
+        },
+        {
+            input: {
+                items: [
+                    "aeyama-item-wood/2"
+                ],
+            },
+            output: "aeyama-item-armor-sms/1",
+            craftTime: 900
+        },
+        {
+            input: {
+                items: [
+                    "aeyama-item-wood/2"
+                ],
+            },
+            output: "aeyama-item-armor-heavy/1",
+            craftTime: 1200
+        }
+    ],
 
-    filter: [
-        "aeyama-block-payload-armor-scout",
-        "aeyama-block-payload-armor-sms",
-        "aeyama-block-payload-armor-heavy"
+    research: {
+        // Unlocked on: 2nd sector
+        parent: "aeyama-block-production-ammunition-press",
+        requirements: [
+            "aeyama-item-wood/10"
+        ],
+        objectives: [
+            "aeyama-soon"
+            {
+                type: "SectorComplete",
+                preset: "sector-encounter"
+            },
+        ]
+    },
+
+    requirements: [ //TODO
+        "aeyama-item-wood-lumber/100",
+        "aeyama-item-iron/80"
     ]
 }

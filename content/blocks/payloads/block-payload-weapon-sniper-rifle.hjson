@@ -1,5 +1,0 @@
-{
-    type: "UnitBlock",
-    placeablePlayer: false,
-    buildVisibility: "shown"
-}

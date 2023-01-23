@@ -1,9 +1,6 @@
 {
     type: "UnitFactory",
     category: "crafting",
-    buildVisibility: "shown",
-
-    acceptsPayload: true,
 
     size: 5,
     health: 1500,
@@ -19,7 +16,7 @@
             ]
         },
         {
-            unit: "aeyama-unit-insect-crawler"
+            unit: "aeyama-unit-infantry"
             time: 1200
             requirements: [
                 silicon/30
