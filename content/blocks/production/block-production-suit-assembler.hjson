@@ -24,5 +24,24 @@
                 graphite/10
             ]
         }
+    ],
+
+    research: {
+        parent: "aeyama-block-production-armory"
+        objectives: [
+            "aeyama-block-production-weapon-locker"
+        ],
+        requirements: [
+            "aeyama-item-advanced-blueprint/1",
+            "aeyama-item-lumber/500",
+            "aeyama-item-stone-brick/700",
+            "aeyama-item-steel/150"
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-lumber/100",
+        "aeyama-item-stone-brick/200",
+        "aeyama-item-steel/35"
     ]
 }
