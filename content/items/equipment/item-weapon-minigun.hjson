@@ -8,9 +8,9 @@
     hardness: 0,
 
     research: {
-        parent: "aeyama-item-weapon-rifle",
-        objectives: [
-            "aeyama-item-armor-heavy"
+        parent: "aeyama-item-armor-heavy",
+        requirements: [
+            "aeyama-item-blueprint/5"
         ]
     },
 

@@ -1,7 +1,7 @@
 {
     type: "UnitFactory",
-    category: "production",
-    buildVisibility: "shown",
+    category: "crafting",
+    //buildVisibility: "shown",
 
     size: 5,
     health: 1500,
@@ -19,7 +19,7 @@
     ],
 
     research: {
-        parent: "aeyama-block-production-armory",
+        parent: "aeyama-block-production-ammunition-press",
         requirements: [
             "aeyama-item-advanced-blueprint/1",
             "aeyama-item-wood-lumber/500",
@@ -27,6 +27,7 @@
             "aeyama-item-steel/150"
         ],
         objectives: [
+            "aeyama-block-production-armory",
             "aeyama-block-production-weapon-locker"
         ]
     },

@@ -8,7 +8,10 @@
     hardness: 0,
 
     research: {
-        parent: "aeyama-item-ammunition-rifle"
+        parent: "aeyama-item-ammunition-rifle",
+        objectives: [
+            "aeyama-item-carbon"
+        ]
     },
 
     buildable: false,

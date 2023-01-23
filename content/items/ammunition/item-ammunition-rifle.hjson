@@ -8,9 +8,9 @@
     hardness: 0,
 
     research: {
-        parent: "aeyama-block-production-ammunition-press",
+        parent: "aeyama-item-brass",
         objectives: [
-            "aeyama-item-brass"
+            "aeyama-block-production-ammunition-press"
         ]
     },
 

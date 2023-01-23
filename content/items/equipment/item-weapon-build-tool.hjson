@@ -8,9 +8,9 @@
     hardness: 0,
 
     research: {
-        parent: "aeyama-block-production-weapon-locker",
-        objectives: [
-            "aeyama-item-armor-sms"
+        parent: "aeyama-item-armor-sms",
+        requirements: [
+            "aeyama-item-blueprint/5"
         ]
     },
 

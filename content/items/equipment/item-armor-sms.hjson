@@ -7,8 +7,9 @@
     charge: 0,
     hardness: 0,
 
+    alwaysUnlocked: true,
     research: {
-        parent: "aeyama-block-production-armory",
+        parent: "aeyama-item-weapon-rifle",
         objectives: [
             "aeyama-item-steel"
         ]

@@ -8,7 +8,10 @@
     hardness: 0,
 
     research: {
-        parent: "aeyama-block-production-weapon-locker",
+        parent: "aeyama-item-armor-heavy",
+        requirements: [
+            "aeyama-item-blueprint/5"
+        ],
         objectives: [
             "aeyama-item-ammunition-combustible-canister"
         ]
