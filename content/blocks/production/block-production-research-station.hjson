@@ -48,22 +48,5 @@
         "aeyama-item-wood/200",
         "aeyama-item-stone/100"
         "aeyama-item-raw-iron/50"
-    ],
-
-    // drawer: [
-    //     {
-    //         type: "DrawRegion"
-    //     },
-    //     {
-    //         type: "DrawRegion",
-    //         suffix: "-top"
-    //     },
-    //     {
-    //         type: "DrawRegion",
-    //         suffix: "-antenna",
-    //         rotateSpeed: 0.3,
-    //         x: 4,
-    //         y: -4,
-    //     }
-    // ]
+    ]
 }

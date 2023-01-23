@@ -1,23 +1,15 @@
 {
     type: "UnitFactory",
-    category: "crafting",
+    category: "production",
+    buildVisibility: "shown",
 
     size: 5,
     health: 1500,
 
     plans: [
         {
-            unit: "alpha",
-            time: 990
-            requirements: [
-                copper/20
-                silicon/25
-                metaglass/20
-            ]
-        },
-        {
-            unit: "aeyama-unit-infantry"
-            time: 1200
+            unit: "aeyama-unit-infantry",
+            time: 1200,
             requirements: [
                 silicon/30
                 lead/15
@@ -27,20 +19,20 @@
     ],
 
     research: {
-        parent: "aeyama-block-production-armory"
-        objectives: [
-            "aeyama-block-production-weapon-locker"
-        ],
+        parent: "aeyama-block-production-armory",
         requirements: [
             "aeyama-item-advanced-blueprint/1",
-            "aeyama-item-lumber/500",
+            "aeyama-item-wood-lumber/500",
             "aeyama-item-stone-brick/700",
             "aeyama-item-steel/150"
+        ],
+        objectives: [
+            "aeyama-block-production-weapon-locker"
         ]
     },
 
     requirements: [
-        "aeyama-item-lumber/100",
+        "aeyama-item-wood-lumber/100",
         "aeyama-item-stone-brick/200",
         "aeyama-item-steel/35"
     ]

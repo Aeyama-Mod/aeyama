@@ -22,9 +22,6 @@
         requirements: [
             "aeyama-item-wood/150",
             "aeyama-item-stone/275"
-        ],
-        objectives: [
-            "aeyama-soon"
         ]
     },
 

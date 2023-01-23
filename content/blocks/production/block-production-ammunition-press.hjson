@@ -24,11 +24,10 @@
             "aeyama-item-wood/10"
         ],
         objectives: [
-            "aeyama-soon"
             {
                 type: "SectorComplete",
                 preset: "sector-encounter"
-            },
+            }
         ]
     },
 
