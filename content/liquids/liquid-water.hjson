@@ -7,6 +7,6 @@
     boilPoint: 0.5,
 
     research: {
-        parent: "aeyama-item-wood"
+        parent: "aeyama-item-sand"
     }
 }
