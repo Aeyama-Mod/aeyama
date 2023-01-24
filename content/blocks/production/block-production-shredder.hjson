@@ -11,8 +11,22 @@
             input: [
                 "aeyama-item-wood/1"
             ],
-            output: "aeyama-item-wood-shreds/4",
+            output: "aeyama-item-wood-shreds/2",
             craftTime: 360 //6 seconds
+        },
+        {
+            input: [
+                "aeyama-item-wood-dry/1"
+            ],
+            output: "aeyama-item-wood-shreds/2",
+            craftTime: 180 //3 seconds
+        },
+        {
+            input: [
+                "aeyama-item-wood-lumber/1" //TODO: Bad convertion
+            ],
+            output: "aeyama-item-wood-shreds/8",
+            craftTime: 540 //9 seconds
         },
         {
             input: {
@@ -22,6 +36,15 @@
             },
             output: "aeyama-item-stone-pebbles/2",
             craftTime: 360 //6 seconds
+        }
+        {
+            input: {
+                items: [
+                    "aeyama-item-stone-brick/1",
+                ],
+            },
+            output: "aeyama-item-stone-pebbles/8",
+            craftTime: 600 //10 seconds
         }
     ],
 
