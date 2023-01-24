@@ -2,8 +2,8 @@
     type: "multicraft.MultiCrafter",
     category: "crafting",
 
-    size: 3,
-    health: 620,
+    size: 2,
+    health: 440,
 
     menu: "Simple",
     recipes: [
