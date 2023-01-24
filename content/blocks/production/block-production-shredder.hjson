@@ -1,0 +1,52 @@
+{
+    type: "multicraft.MultiCrafter",
+    category: "crafting",
+
+    size: 3,
+    health: 620,
+
+    menu: "Simple",
+    recipes: [
+        {
+            input: [
+                "aeyama-item-wood/1"
+            ],
+            output: "aeyama-item-wood-shreds/4",
+            craftTime: 360 //6 seconds
+        },
+        {
+            input: {
+                items: [
+                    "aeyama-item-stone/1",
+                ],
+            },
+            output: "aeyama-item-stone-pebbles/2",
+            craftTime: 360 //6 seconds
+        }
+    ],
+
+    research: {
+        // Unlocked on: 2nd sector
+        parent: "aeyama-block-production-research-station", //TODO: Maybe other parent?
+        requirements: [
+            "aeyama-item-wood/200",
+            "aeyama-item-stone/125",
+            "aeyama-item-raw-iron/75"
+        ],
+        objectives: [
+            "aeyama-item-wood",
+            "aeyama-item-stone",
+            "aeyama-item-raw-iron"
+            {
+                type: "SectorComplete",
+                preset: "sector-new-world"
+            }
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-wood/125",
+        "aeyama-item-stone/50"
+        "aeyama-item-raw-iron/35"
+    ]
+}
