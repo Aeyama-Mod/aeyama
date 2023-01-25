@@ -6,7 +6,7 @@
 
     research: {
         //Unlocked on: ??? sector
-        parent: "aeyama-block-wall-wood",
+        parent: "aeyama-block-wall-stone",
         requirements: [
             "aeyama-item-steel/9999" //TODO
         ],
