@@ -3,7 +3,6 @@
     category: "crafting",
 
     size: 2,
-    health: 440,
 
     menu: "Simple",
     recipes: [

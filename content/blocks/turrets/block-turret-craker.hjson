@@ -3,8 +3,6 @@
     category: "turret",
     size: 2,
 
-    health: 860,
-
     research: {
         //Unlocked on: 2nd sector
         parent: "aeyama-block-turret-thrower",

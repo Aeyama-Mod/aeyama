@@ -3,7 +3,6 @@
     category: "effect",
 
     size: 1,
-    health: 400,
     itemCapacity: 250,
 
     research: {

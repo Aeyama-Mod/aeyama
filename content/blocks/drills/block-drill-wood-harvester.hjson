@@ -2,7 +2,6 @@
     type: "WallCrafter",
     category: "production",
     size: 2,
-    health: 600,
 
     drillTime: 240,
     output: "aeyama-item-wood",

@@ -3,7 +3,6 @@
     category: "effect",
 
     size: 2,
-    health: 2000,
     itemCapacity: 1500,
     unitType: "aeyama-unit-infantry",
     buildVisibility: "shown",

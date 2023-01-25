@@ -4,7 +4,6 @@
     //buildVisibility: "shown",
 
     size: 5,
-    health: 1500,
 
     plans: [
         {
