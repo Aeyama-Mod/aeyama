@@ -8,7 +8,7 @@
     hardness: 0,
 
     research: {
-        parent: "aeyama-item-ammunition-combustible-container"
+        parent: "aeyama-item-ammunition-combustible-canister"
     },
 
     buildable: false,
