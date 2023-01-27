@@ -2,8 +2,6 @@
     type: "Junction",
     category: "distribution",
 
-    health: 85,
-
     research: {
         //Unlocked on: ??? sector
         parent: "aeyama-block-distribution-iron-router",

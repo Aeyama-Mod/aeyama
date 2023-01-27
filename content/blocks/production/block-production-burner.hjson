@@ -3,7 +3,6 @@
     category: "crafting",
 
     size: 1,
-    health: 300,
 
     craftTime: 300,
     

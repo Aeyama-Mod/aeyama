@@ -2,8 +2,6 @@
     type: "Router",
     category: "distribution",
 
-    health: 95,
-
     research: {
         //Unlocked on: ??? sector
         parent: "aeyama-block-distribution-iron-conveyor",

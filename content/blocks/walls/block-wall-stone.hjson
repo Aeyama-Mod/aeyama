@@ -2,9 +2,6 @@
     type: "Wall",
     category: "defense",
 
-    health: 1100,
-    size: 2,
-
     research: {
         //Unlocked on: 1st sector
         parent: "aeyama-block-wall-wood",

@@ -2,8 +2,6 @@
     type: "Wall",
     category: "defense",
 
-    health: 480,
-
     research: {
         //Unlocked on: ??? sector
         parent: "aeyama-block-wall-iron",

@@ -2,8 +2,6 @@
     type: "Router",
     category: "distribution",
 
-    health: 45,
-
     research: {
         //Unlocked on: 2nd or 3rd sector
         parent: "aeyama-block-distribution-wood-conveyor",

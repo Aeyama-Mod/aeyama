@@ -2,7 +2,6 @@
     type: "Conveyor",
     category: "distribution",
 
-    health: 50,
     speed: 0.03,
     displayedSpeed: 4.2,
 
