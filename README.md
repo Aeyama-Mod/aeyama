@@ -13,7 +13,7 @@
 </div>
 
 <div align="center">
-    With ground-based gameplay and focusing on your character development instead of army managing, expecience a whole new campaign
+    With ground-based gameplay and focusing on your character development instead of army managing, experience a whole new campaign
     on a newly discovered world on which you've been tasked to explore. Using the new planet resources you'll have to rediscover
     the technologies of the past to survive and deal with whatever this place throws at you.
     <br>
