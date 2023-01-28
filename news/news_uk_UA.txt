@@ -1,3 +1,7 @@
+[gray]January 28, 2023
+
+[white] Hi everyone! Just a little message to tell you that we are still working hard on the next update! Are you ready to continue the story?
+
 [gray]15 січня, 2023
 
 [white] Дата виходу! Щойно вийшла версія 0.2.0, а разом з нею і перший сектор кампанії!  Ви збираєтеся відкрити тут щось нове!  ;)
