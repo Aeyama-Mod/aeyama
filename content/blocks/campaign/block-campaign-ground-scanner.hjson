@@ -1,0 +1,28 @@
+{
+    type: "Block",
+    category: "effect",
+    buildVisibility: "campaignOnly"
+
+    size: 4,
+
+    research: {
+        // Unlocked on: 2nd sector
+        parent: "aeyama-block-storage-core-frontline",
+        requirements: [
+            "aeyama-item-iron/300"
+        ],
+        objectives: [
+            "aeyama-item-iron",
+            "aeyama-item-copper",
+            "aeyama-item-zinc",
+            {
+                type: "SectorComplete",
+                preset: "sector-encounter"
+            }
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-iron/100",
+    ]
+}
