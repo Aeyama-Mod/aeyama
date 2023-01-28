@@ -19,7 +19,7 @@
 
     research: {
         // Unlocked on: 2nd sector
-        parent: "aeyama-block-production-research-station", //TODO: Maybe other parent?
+        parent: "aeyama-block-production-lumber-mill", //TODO: Maybe other parent?
         requirements: [ //TODO: Change?
             "aeyama-item-wood/200",
             "aeyama-item-stone/125",

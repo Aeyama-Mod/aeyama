@@ -18,7 +18,7 @@
     ],
 
     research: {
-        parent: "aeyama-block-production-ammunition-press",
+        parent: "aeyama-block-production-armory",
         requirements: [
             "aeyama-item-advanced-blueprint/1",
             "aeyama-item-wood-lumber/500",

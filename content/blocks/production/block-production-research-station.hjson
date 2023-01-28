@@ -30,7 +30,7 @@
 
     research: {
         // Unlocked on: 1st sector
-        parent: "aeyama-block-storage-core-drop-pod",
+        parent: "aeyama-block-production-brick-maker",
         requirements: [
             "aeyama-item-wood/650",
             "aeyama-item-stone/250",

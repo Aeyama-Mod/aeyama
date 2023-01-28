@@ -1,7 +1,7 @@
 {
-    type: "Block",
+    type: "GenericCrafter",
     category: "effect",
-    buildVisibility: "campaignOnly"
+    //buildVisibility: "campaignOnly"
 
     size: 4,
 
@@ -24,5 +24,22 @@
 
     requirements: [
         "aeyama-item-iron/100",
+    ],
+
+    drawer: [
+        {
+            type: "DrawDefault"
+        },
+        {
+            type: "DrawSpikes",
+            rotateSpeed: 0.5,
+            color: "FACF7F"
+        },
+        {
+            type: "DrawPulseShape",
+            radiusScl: 2.5,
+            square: false,
+            timeScl: 250
+        }
     ]
 }

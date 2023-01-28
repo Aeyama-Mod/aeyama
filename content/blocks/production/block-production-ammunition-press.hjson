@@ -18,7 +18,7 @@
 
     research: {
         // Unlocked on: 2nd sector
-        parent: "aeyama-block-production-ore-smelter",
+        parent: "aeyama-block-production-brass-foundry",
         requirements: [
             "aeyama-item-wood/10"
         ],

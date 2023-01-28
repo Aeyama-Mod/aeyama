@@ -73,11 +73,12 @@
 
     research: {
         // Unlocked on: 2nd sector
-        parent: "aeyama-block-production-ammunition-press",
+        parent: "aeyama-block-production-steel-foundry",
         requirements: [
             "aeyama-item-wood/10"
         ],
         objectives: [
+            "aeyama-block-production-ammunition-press",
             {
                 type: "SectorComplete",
                 preset: "sector-encounter"
