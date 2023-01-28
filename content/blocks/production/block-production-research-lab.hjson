@@ -14,7 +14,7 @@
                     "aeyama-item-stone-brick/1"
                 ],
             },
-            output: "aeyama-item-blueprint-offense/1",
+            output: "aeyama-item-special-blueprint-offense/1",
             craftTime: 14400
         },
         {
@@ -25,7 +25,7 @@
                     "aeyama-item-iron/8"
                 ],
             },
-            output: "aeyama-item-blueprint-defense/1",
+            output: "aeyama-item-special-blueprint-defense/1",
             craftTime: 14400
         }
     ],
