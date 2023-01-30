@@ -26,7 +26,7 @@
 
 ## Updates
 
-To see what we're up to next, go check our [`Trello`][trello]!
+To see what we're up to next, go check our [`Project`][trello]!
 And if the mod interests you, [`download it here`][Download] or use the mod browser ingame!
 
 ## Tech
@@ -37,7 +37,7 @@ Here's the current Techtree, it is FAR from done and will keep expanding!
 <!---------------------------------------------------------------------------------->
 
 [Logo]: https://raw.githubusercontent.com/FredyJabe/aeyama/main/sprites/logo.png
-[trello]: https://trello.com/b/MUttXaEk/aeyama-the-new-world
+[trello]: https://github.com/users/FredyJabe/projects/2
 
 [Discord]: https://discord.gg/rNhkswkJst
 [Download]: https://github.com/FredyJabe/aeyama/releases/latest
