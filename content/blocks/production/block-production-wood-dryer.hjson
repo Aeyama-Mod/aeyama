@@ -12,7 +12,7 @@
     outputItem : "aeyama-item-wood-dry/10",
 
     research: {
-        //Unlocked on: ??? sector
+        //Unlocked on: 2nd sector
         parent: "aeyama-block-production-research-station",
         requirements: [
             "aeyama-item-steel/9999" //TODO

@@ -5,7 +5,7 @@
     size: 2,
 
     research: {
-        //Unlocked on: 1st sector
+        //Unlocked on: 2nd sector
         parent: "aeyama-block-wall-wood",
         requirements: [
             "aeyama-item-wood/450",

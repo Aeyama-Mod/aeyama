@@ -21,8 +21,9 @@
     research: {
         // Unlocked on: ??? sector
         parent: "aeyama-block-production-ore-smelter",
-        requirements: [
-            "aeyama-item-steel/9999" //TODO
+        requirements: [],
+        objectives: [
+            "aeyama-soon"
         ]
     },
 

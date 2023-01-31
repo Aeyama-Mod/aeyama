@@ -18,27 +18,24 @@
     ],
 
     research: {
-        // Unlocked on: 2nd sector
-        parent: "aeyama-block-production-lumber-mill", //TODO: Maybe other parent?
-        requirements: [ //TODO: Change?
-            "aeyama-item-wood/200",
-            "aeyama-item-stone/125",
-            "aeyama-item-raw-iron/75"
+        // Unlocked on: 1st sector
+        parent: "aeyama-block-production-lumber-mill",
+        requirements: [
+            "aeyama-item-wood/180",
+            "aeyama-item-stone/145",
+            "aeyama-item-wood-lumber/75"
         ],
         objectives: [
             "aeyama-item-wood",
             "aeyama-item-stone",
-            "aeyama-item-raw-iron"
-            {
-                type: "SectorComplete",
-                preset: "sector-new-world"
-            }
+            "aeyama-item-wood-lumber"
+            "aeyama-block-production-lumber-mill"
         ]
     },
 
-    requirements: [ //TODO: Change?
-        "aeyama-item-wood/120",
-        "aeyama-item-stone/75"
-        "aeyama-item-raw-iron/40"
+    requirements: [
+        "aeyama-item-wood/100",
+        "aeyama-item-stone/80",
+        "aeyama-item-wood-lumber/35"
     ]
 }

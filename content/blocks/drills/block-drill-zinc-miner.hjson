@@ -8,13 +8,10 @@
     outputItem: "aeyama-item-raw-zinc/1",
 
     research: {
-        //Unlocked on: ??? sector
+        //Unlocked on: 2nd sector
         parent: "aeyama-block-drill-stone-miner",
         requirements: [
             "aeyama-item-steel/9999" //TODO
-        ],
-        objectives: [
-            "aeyama-soon"
         ]
     },
 

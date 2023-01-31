@@ -33,11 +33,10 @@
     research: {
         // Unlocked on: ??? sector
         parent: "aeyama-block-production-research-station",
-        requirements: [
-            "aeyama-item-steel/9999" //TODO
-        ],
+        requirements: [],
         objectives: [
             "aeyama-block-production-ore-foundry"
+            "aeyama-soon"
         ]
     },
 

@@ -33,7 +33,7 @@
     ],
 
     research: {
-        // Unlocked on: 1st or 2nd sector
+        // Unlocked on: 2nd sector
         parent: "aeyama-block-production-burner",
         requirements: [
             "aeyama-item-raw-iron/250",

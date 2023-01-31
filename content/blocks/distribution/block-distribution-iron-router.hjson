@@ -5,9 +5,7 @@
     research: {
         //Unlocked on: ??? sector
         parent: "aeyama-block-distribution-iron-conveyor",
-        requirements: [
-            "aeyama-item-steel/9999" //TODO
-        ],
+        requirements: [],
         objectives: [
             "aeyama-item-iron"
             "aeyama-soon"

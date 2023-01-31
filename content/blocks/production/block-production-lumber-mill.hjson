@@ -1,25 +1,37 @@
 {
-    type: "GenericCrafter",
+    type: "multicraft.MultiCrafter",
     category: "crafting",
-
+    
     size: 3,
 
-    craftTime: 240,
-    consumes: {
-        items: [
-            "aeyama-item-wood/10"
-        ]}
-    outputItem : "aeyama-item-wood-lumber/1",
+    menu: "Simple",
+    recipes: [
+        {
+            input: {
+                items: [
+                    "aeyama-item-wood/10",
+                ],
+            },
+            output: "aeyama-item-wood-lumber/1",
+            craftTime: 180 //3 seconds
+        }
+    ],
 
     research: {
-        // Unlocked on: ??? sector
+        // Unlocked on: 1st sector
         parent: "aeyama-block-storage-core-drop-pod",
         requirements: [
-            "aeyama-item-steel/9999" //TODO
+            "aeyama-item-wood/210",
+            "aeyama-item-stone/120"
+        ],
+        objectives: [
+            "aeyama-item-wood",
+            "aeyama-item-stone",
         ]
     },
 
-    requirements: [ //TODO
-        "aeyama-item-wood/100"
+    requirements: [
+        "aeyama-item-wood/160",
+        "aeyama-item-stone/80"
     ]
 }
