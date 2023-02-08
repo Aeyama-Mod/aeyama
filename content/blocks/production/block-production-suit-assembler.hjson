@@ -7,12 +7,11 @@
 
     plans: [
         {
-            unit: "aeyama-unit-infantry",
+            unit: "aeyama-unit-assault-rifle",
             time: 1200,
             requirements: [
-                silicon/30
-                lead/15
-                graphite/10
+                "aeyama-item-armor-assault/1",
+                "aeyama-item-weapon-rifle/1"
             ]
         }
     ],

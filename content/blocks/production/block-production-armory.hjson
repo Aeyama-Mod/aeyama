@@ -21,6 +21,15 @@
                     "aeyama-item-wood/2"
                 ],
             },
+            output: "aeyama-item-armor-assault/1",
+            craftTime: 900
+        },
+        {
+            input: {
+                items: [
+                    "aeyama-item-wood/2"
+                ],
+            },
             output: "aeyama-item-armor-sms/1",
             craftTime: 900
         },
