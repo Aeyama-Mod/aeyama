@@ -7,10 +7,34 @@
 
     plans: [
         {
+            unit: "aeyama-unit-scout-rifle",
+            time: 1200,
+            requirements: [
+                "aeyama-item-armor-scout/1",
+                "aeyama-item-weapon-rifle/1"
+            ]
+        },
+        {
             unit: "aeyama-unit-assault-rifle",
             time: 1200,
             requirements: [
                 "aeyama-item-armor-assault/1",
+                "aeyama-item-weapon-rifle/1"
+            ]
+        },
+        {
+            unit: "aeyama-unit-sms-rifle",
+            time: 1200,
+            requirements: [
+                "aeyama-item-armor-sms/1",
+                "aeyama-item-weapon-rifle/1"
+            ]
+        },
+        {
+            unit: "aeyama-unit-heavy-rifle",
+            time: 1200,
+            requirements: [
+                "aeyama-item-armor-heavy/1",
                 "aeyama-item-weapon-rifle/1"
             ]
         }
