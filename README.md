@@ -20,11 +20,11 @@
     Welcome to Aeyama, Soldier!
     <br>
     New resources mechanics are in place, new resources, new research tree and much more are here for your enjoyment!
-    <br><br><br><br>
+    <br><br><br>
     This mod is still in active development, if you have any question join our <a href="https://discord.gg/rNhkswkJst">Discord</a>
 </div>
 
-## Updates
+## Updates 
 
 To see what we're up to next, go check our [`Project`][trello]!
 And if the mod interests you, [`download it here`][Download] or use the mod browser ingame!
