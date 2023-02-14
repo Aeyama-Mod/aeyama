@@ -29,6 +29,6 @@
 
     requirements: [ //TODO
         "aeyama-item-iron/100",
-        "aeyama-item-wood-lumber/25"
+        "aeyama-item-lumber-lumber/25"
     ]
 }

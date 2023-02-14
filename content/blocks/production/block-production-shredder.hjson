@@ -8,23 +8,23 @@
     recipes: [
         {
             input: [
-                "aeyama-item-wood/1"
+                "aeyama-item-lumber/1"
             ],
-            output: "aeyama-item-wood-shreds/2",
+            output: "aeyama-item-lumber-shreds/2",
             craftTime: 360 //6 seconds
         },
         {
             input: [
-                "aeyama-item-wood-dry/1"
+                "aeyama-item-lumber-dry/1"
             ],
-            output: "aeyama-item-wood-shreds/2",
+            output: "aeyama-item-lumber-shreds/2",
             craftTime: 180 //3 seconds
         },
         {
             input: [
-                "aeyama-item-wood-lumber/1" //TODO: Bad convertion
+                "aeyama-item-lumber-lumber/1" //TODO: Bad convertion
             ],
-            output: "aeyama-item-wood-shreds/8",
+            output: "aeyama-item-lumber-shreds/8",
             craftTime: 540 //9 seconds
         },
         {
@@ -51,12 +51,12 @@
         // Unlocked on: 2nd sector
         parent: "aeyama-block-production-research-station", //TODO: Maybe other parent?
         requirements: [
-            "aeyama-item-wood/200",
+            "aeyama-item-lumber/200",
             "aeyama-item-stone/125",
             "aeyama-item-raw-iron/75"
         ],
         objectives: [
-            "aeyama-item-wood",
+            "aeyama-item-lumber",
             "aeyama-item-stone",
             "aeyama-item-raw-iron"
             {
@@ -67,7 +67,7 @@
     },
 
     requirements: [
-        "aeyama-item-wood/125",
+        "aeyama-item-lumber/125",
         "aeyama-item-stone/50"
         "aeyama-item-raw-iron/35"
     ]

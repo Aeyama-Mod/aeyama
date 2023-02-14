@@ -7,7 +7,7 @@
         //Unlocked on: 2nd sector
         parent: "aeyama-block-storage-core-drop-pod",
         requirements: [
-            "aeyama-item-wood/150",
+            "aeyama-item-lumber/150",
             "aeyama-item-stone/100"
         ],
         objectives: [
@@ -20,7 +20,7 @@
     },
 
     requirements: [ //TODO
-        "aeyama-item-wood/50",
+        "aeyama-item-lumber/50",
         "aeyama-item-stone/35"
     ]
 
@@ -41,7 +41,7 @@
             speed: 1.8,
             width: 7
         },
-        aeyama-item-wood: {
+        aeyama-item-lumber: {
             reloadMultiplier: 1,
             ammoMultiplier: 4,
             lifetime: 60,

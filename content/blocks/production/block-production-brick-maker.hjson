@@ -21,21 +21,21 @@
         // Unlocked on: 1st sector
         parent: "aeyama-block-production-lumber-mill",
         requirements: [
-            "aeyama-item-wood/180",
+            "aeyama-item-lumber/180",
             "aeyama-item-stone/145",
-            "aeyama-item-wood-lumber/75"
+            "aeyama-item-lumber-lumber/75"
         ],
         objectives: [
-            "aeyama-item-wood",
+            "aeyama-item-lumber",
             "aeyama-item-stone",
-            "aeyama-item-wood-lumber"
+            "aeyama-item-lumber-lumber"
             "aeyama-block-production-lumber-mill"
         ]
     },
 
     requirements: [
-        "aeyama-item-wood/100",
+        "aeyama-item-lumber/100",
         "aeyama-item-stone/80",
-        "aeyama-item-wood-lumber/35"
+        "aeyama-item-lumber-lumber/35"
     ]
 }

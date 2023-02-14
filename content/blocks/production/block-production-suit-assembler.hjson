@@ -44,7 +44,7 @@
         parent: "aeyama-block-production-armory",
         requirements: [
             "aeyama-item-advanced-blueprint/1",
-            "aeyama-item-wood-lumber/500",
+            "aeyama-item-lumber-lumber/500",
             "aeyama-item-stone-brick/700",
             "aeyama-item-steel/150"
         ],
@@ -56,7 +56,7 @@
     },
 
     requirements: [
-        "aeyama-item-wood-lumber/100",
+        "aeyama-item-lumber-lumber/100",
         "aeyama-item-stone-brick/200",
         "aeyama-item-steel/35"
     ]

@@ -17,7 +17,7 @@
 
     requirements: [ //TODO
         "aeyama-item-iron/30",
-        "aeyama-item-wood/65"
+        "aeyama-item-lumber/65"
     ]
 
     range: 90,
@@ -33,7 +33,7 @@
     },
 
     ammoTypes: {
-        aeyama-item-wood: {
+        aeyama-item-lumber: {
             reloadMultiplier: 1,
             ammoMultiplier: 1,
             lifetime: 60,
@@ -42,7 +42,7 @@
             speed: 1.2,
             width: 4.5
         },
-        aeyama-item-wood-dry: {
+        aeyama-item-lumber-dry: {
             reloadMultiplier: 1,
             ammoMultiplier: 1.5,
             lifetime: 90,

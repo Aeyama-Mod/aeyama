@@ -9,7 +9,7 @@
         {
             input: {
                 items: [
-                    "aeyama-item-wood/2"
+                    "aeyama-item-lumber/2"
                 ],
             },
             output: "aeyama-item-armor-scout/1",
@@ -18,7 +18,7 @@
         {
             input: {
                 items: [
-                    "aeyama-item-wood/2"
+                    "aeyama-item-lumber/2"
                 ],
             },
             output: "aeyama-item-armor-assault/1",
@@ -27,7 +27,7 @@
         {
             input: {
                 items: [
-                    "aeyama-item-wood/2"
+                    "aeyama-item-lumber/2"
                 ],
             },
             output: "aeyama-item-armor-sms/1",
@@ -36,7 +36,7 @@
         {
             input: {
                 items: [
-                    "aeyama-item-wood/2"
+                    "aeyama-item-lumber/2"
                 ],
             },
             output: "aeyama-item-armor-heavy/1",
@@ -54,7 +54,7 @@
     },
 
     requirements: [ //TODO
-        "aeyama-item-wood-lumber/100",
+        "aeyama-item-lumber-lumber/100",
         "aeyama-item-iron/80"
     ]
 }

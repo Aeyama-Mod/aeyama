@@ -43,7 +43,7 @@
 
     requirements: [ //TODO
         "aeyama-item-iron/250",
-        "aeyama-item-wood-lumber/100"
+        "aeyama-item-lumber-lumber/100"
     ],
 
     drawer: [

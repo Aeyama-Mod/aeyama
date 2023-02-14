@@ -9,7 +9,7 @@
         {
             input: {
                 items: [
-                    "aeyama-item-wood/2",
+                    "aeyama-item-lumber/2",
                     ],
             },
             output: "aeyama-item-ammunition-rifle/1",
@@ -20,7 +20,7 @@
         // Unlocked on: 2nd sector
         parent: "aeyama-block-production-brass-foundry",
         requirements: [
-            "aeyama-item-wood/10"
+            "aeyama-item-lumber/10"
         ],
         objectives: [
             {
@@ -31,7 +31,7 @@
     },
 
     requirements: [ //TODO
-        "aeyama-item-wood-lumber/100",
+        "aeyama-item-lumber-lumber/100",
         "aeyama-item-iron/80"
     ]
 }

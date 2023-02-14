@@ -9,10 +9,10 @@
         {
             input: {
                 items: [
-                    "aeyama-item-wood/10",
+                    "aeyama-item-lumber/10",
                 ],
             },
-            output: "aeyama-item-wood-lumber/1",
+            output: "aeyama-item-lumber-lumber/1",
             craftTime: 180 //3 seconds
         }
     ],
@@ -21,17 +21,17 @@
         // Unlocked on: 1st sector
         parent: "aeyama-block-storage-core-drop-pod",
         requirements: [
-            "aeyama-item-wood/210",
+            "aeyama-item-lumber/210",
             "aeyama-item-stone/120"
         ],
         objectives: [
-            "aeyama-item-wood",
+            "aeyama-item-lumber",
             "aeyama-item-stone",
         ]
     },
 
     requirements: [
-        "aeyama-item-wood/160",
+        "aeyama-item-lumber/160",
         "aeyama-item-stone/80"
     ]
 }

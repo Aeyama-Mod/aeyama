@@ -7,9 +7,9 @@
     craftTime: 600,
     consumes: {
         items: [
-            "aeyama-item-wood/10"
+            "aeyama-item-lumber/10"
         ]}
-    outputItem : "aeyama-item-wood-dry/10",
+    outputItem : "aeyama-item-lumber-dry/10",
 
     research: {
         //Unlocked on: 2nd sector
@@ -20,6 +20,6 @@
     },
 
     requirements: [ //TODO
-        "aeyama-item-wood/100"
+        "aeyama-item-lumber/100"
     ]
 }

@@ -11,7 +11,7 @@
     research: {
         parent: "aeyama-block-storage-core-frontline"
         requirements: [
-            "aeyama-item-wood-lumber/1000",
+            "aeyama-item-lumber-lumber/1000",
             "aeyama-item-stone-brick/1000",
             "aeyama-item-iron/500",
             "aeyama-item-special-blueprint-defense/3"
@@ -19,7 +19,7 @@
     },
 
     requirements: [
-        "aeyama-item-wood-lumber/1000",
+        "aeyama-item-lumber-lumber/1000",
         "aeyama-item-stone-brick/1000",
         "aeyama-item-iron/500"
     ]

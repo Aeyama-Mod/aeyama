@@ -6,14 +6,14 @@
         //Unlocked on: 2nd sector
         parent: "aeyama-block-turret-thrower",
         requirements: [
-            "aeyama-item-wood/30",
+            "aeyama-item-lumber/30",
             "aeyama-item-stone/15",
             "aeyama-item-blueprint/1"
         ]
     },
 
     requirements: [
-        "aeyama-item-wood/6",
+        "aeyama-item-lumber/6",
         "aeyama-item-stone/3"
     ]
 }

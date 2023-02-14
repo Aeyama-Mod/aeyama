@@ -8,14 +8,14 @@
         //Unlocked on: 1st sector
         parent: "aeyama-block-wall-stone",
         requirements: [
-            "aeyama-item-wood/450",
+            "aeyama-item-lumber/450",
             "aeyama-item-stone/175",
             "aeyama-item-blueprint/1"
         ]
     },
 
     requirements: [
-        "aeyama-item-wood/24",
+        "aeyama-item-lumber/24",
         "aeyama-item-stone/6"
     ]
 }
