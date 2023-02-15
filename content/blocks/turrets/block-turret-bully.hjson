@@ -7,7 +7,7 @@
         //Unlocked on: 2nd sector
         parent: "aeyama-block-turret-thrower",
         requirements: [
-            "aeyama-item-lumber/200",
+            "aeyama-item-wood-lumber/200",
             "aeyama-item-stone/200"
         ],
         objectives: [
@@ -19,7 +19,7 @@
     },
 
     requirements: [ //TODO
-        "aeyama-item-lumber/70",
+        "aeyama-item-wood-lumber/70",
         "aeyama-item-stone/70"
     ]
 
@@ -52,7 +52,7 @@
                 height: 4
             }
         },
-        aeyama-item-lumber-shreds: {
+        aeyama-item-wood-shreds: {
             reloadMultiplier: 1,
             ammoMultiplier: 4,
             lifetime: 60,

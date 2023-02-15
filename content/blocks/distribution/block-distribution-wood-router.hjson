@@ -6,7 +6,7 @@
         //Unlocked on: 2nd or 3rd sector
         parent: "aeyama-block-distribution-wood-conveyor",
         requirements: [
-            "aeyama-item-lumber/100",
+            "aeyama-item-wood-lumber/100",
             "aeyama-item-stone/50",
             "aeyama-item-raw-iron/15"
         ],
@@ -16,7 +16,7 @@
     },
 
     requirements: [
-        "aeyama-item-lumber/6"
+        "aeyama-item-wood-lumber/6"
         "aeyama-item-stone/2"
     ]
 }

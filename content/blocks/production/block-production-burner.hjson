@@ -19,13 +19,13 @@
         // Unlocked on: 2nd sector
         parent: "aeyama-block-production-research-station",
         requirements: [
-            "aeyama-item-lumber/150",
+            "aeyama-item-wood-lumber/150",
             "aeyama-item-stone/275"
         ]
     },
 
     requirements: [
-        "aeyama-item-lumber/50",
+        "aeyama-item-wood-lumber/50",
         "aeyama-item-stone/150"
     ],
 

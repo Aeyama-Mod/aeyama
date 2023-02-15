@@ -8,7 +8,7 @@
     recipes: [
         {
             input: [
-                "aeyama-item-lumber/8"
+                "aeyama-item-wood-lumber/8"
             ],
             output: "aeyama-item-blueprint/1",
             craftTime: 3600 //60 seconds
@@ -32,19 +32,19 @@
         // Unlocked on: 1st sector
         parent: "aeyama-block-production-brick-maker",
         requirements: [
-            "aeyama-item-lumber/650",
+            "aeyama-item-wood-lumber/650",
             "aeyama-item-stone/250",
             "aeyama-item-raw-iron/150"
         ],
         objectives: [
-            "aeyama-item-lumber",
+            "aeyama-item-wood-lumber",
             "aeyama-item-stone",
             "aeyama-item-raw-iron"
         ]
     },
 
     requirements: [
-        "aeyama-item-lumber/200",
+        "aeyama-item-wood-lumber/200",
         "aeyama-item-stone/100"
         "aeyama-item-raw-iron/50"
     ]

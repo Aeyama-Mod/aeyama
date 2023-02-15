@@ -8,7 +8,7 @@
     research: {
         parent: "aeyama-block-storage-core-drop-pod",
         requirements: [
-            "aeyama-item-lumber/400",
+            "aeyama-item-wood-lumber/400",
             "aeyama-item-stone/180"
         ],
         objectives: [
@@ -17,7 +17,7 @@
     },
 
     requirements: [ //TODO
-        "aeyama-item-lumber/120",
+        "aeyama-item-wood-lumber/120",
         "aeyama-item-stone/60"
     ]
 }

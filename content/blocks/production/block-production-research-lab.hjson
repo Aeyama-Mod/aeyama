@@ -10,7 +10,7 @@
             input: {
                 items: [
                     "aeyama-item-blueprint/2",
-                    "aeyama-item-lumber-shreds/4",
+                    "aeyama-item-wood-lumber-shreds/4",
                     "aeyama-item-stone-brick/1"
                 ],
             },
@@ -21,7 +21,7 @@
             input: {
                 items: [
                     "aeyama-item-blueprint/2",
-                    "aeyama-item-lumber-lumber/5",
+                    "aeyama-item-wood-lumber/5",
                     "aeyama-item-iron/8"
                 ],
             },
@@ -41,7 +41,7 @@
     },
 
     requirements: [ //TODO
-        "aeyama-item-lumber/125",
+        "aeyama-item-wood-lumber/125",
         "aeyama-item-iron/50"
     ],
 

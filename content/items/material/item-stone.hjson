@@ -7,8 +7,10 @@
     charge: 0,
     hardness: 0,
 
+    healthScaling: 10,
+
     research: {
-        parent: "aeyama-item-lumber"
+        parent: "aeyama-item-wood-lumber"
     },
 
     buildable: false,

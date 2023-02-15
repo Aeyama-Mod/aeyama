@@ -9,7 +9,7 @@
         {
             input: {
                 items: [
-                    "aeyama-item-lumber/2"
+                    "aeyama-item-wood-lumber/2"
                 ],
             },
             output: "aeyama-item-weapon-rifle/1",
@@ -18,7 +18,7 @@
         {
             input: {
                 items: [
-                    "aeyama-item-lumber/2"
+                    "aeyama-item-wood-lumber/2"
                 ],
             },
             output: "aeyama-item-weapon-build-tool/1",
@@ -27,7 +27,7 @@
         {
             input: {
                 items: [
-                    "aeyama-item-lumber/2"
+                    "aeyama-item-wood-lumber/2"
                 ],
             },
             output: "aeyama-item-weapon-shotgun/1",
@@ -36,7 +36,7 @@
         {
             input: {
                 items: [
-                    "aeyama-item-lumber/2"
+                    "aeyama-item-wood-lumber/2"
                 ],
             },
             output: "aeyama-item-weapon-sniper-rifle/1",
@@ -45,7 +45,7 @@
         {
             input: {
                 items: [
-                    "aeyama-item-lumber/2"
+                    "aeyama-item-wood-lumber/2"
                 ],
             },
             output: "aeyama-item-weapon-flamethrower/1",
@@ -54,7 +54,7 @@
         {
             input: {
                 items: [
-                    "aeyama-item-lumber/2"
+                    "aeyama-item-wood-lumber/2"
                 ],
             },
             output: "aeyama-item-weapon-minigun/1",
@@ -63,7 +63,7 @@
         {
             input: {
                 items: [
-                    "aeyama-item-lumber/2"
+                    "aeyama-item-wood-lumber/2"
                 ],
             },
             output: "aeyama-item-weapon-rocket-launcher/1",
@@ -82,7 +82,7 @@
     },
 
     requirements: [ //TODO
-        "aeyama-item-lumber-lumber/100",
+        "aeyama-item-wood-lumber/100",
         "aeyama-item-iron/80"
     ]
 }

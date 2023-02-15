@@ -4,19 +4,19 @@
     size: 2,
 
     drillTime: 180,
-    output: "aeyama-item-lumber",
+    output: "aeyama-item-wood-lumber",
 
     research: {
         //Unlocked on: 1st sector
         parent: "aeyama-block-storage-core-drop-pod",
         requirements: [
-            "aeyama-item-lumber/50",
+            "aeyama-item-wood-lumber/50",
             "aeyama-item-stone/15"
         ]
     },
 
     requirements: [
-        "aeyama-item-lumber/20",
+        "aeyama-item-wood-lumber/20",
         "aeyama-item-stone/5"
     ]
 }

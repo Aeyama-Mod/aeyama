@@ -11,13 +11,13 @@
         //Unlocked on: 1st sector
         parent: "aeyama-block-drill-wood-harvester",
         requirements: [
-            "aeyama-item-lumber/75",
+            "aeyama-item-wood-lumber/75",
             "aeyama-item-stone/25"
         ]
     },
 
     requirements: [
-        "aeyama-item-lumber/35",
+        "aeyama-item-wood-lumber/35",
         "aeyama-item-stone/15"
     ],
 

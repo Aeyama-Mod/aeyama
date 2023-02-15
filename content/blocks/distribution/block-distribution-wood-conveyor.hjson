@@ -9,7 +9,7 @@
         //Unlocked on: 1st sector
         parent: "aeyama-block-storage-core-drop-pod",
         requirements: [
-            "aeyama-item-lumber/25",
+            "aeyama-item-wood-lumber/25",
             "aeyama-item-stone/5"
         ],
         objectives: [
@@ -18,7 +18,7 @@
     },
 
     requirements: [
-        "aeyama-item-lumber/1",
+        "aeyama-item-wood-lumber/1",
         "aeyama-item-stone/1"
     ]
 }

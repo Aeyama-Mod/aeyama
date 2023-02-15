@@ -37,14 +37,14 @@
         parent: "aeyama-block-production-burner",
         requirements: [
             "aeyama-item-raw-iron/250",
-            "aeyama-item-lumber-lumber/75"
+            "aeyama-item-wood-lumber/75"
             "aeyama-item-blueprint/2"
         ]
     },
 
     requirements: [
         "aeyama-item-raw-iron/100",
-        "aeyama-item-lumber-lumber/25"
+        "aeyama-item-wood-lumber/25"
     ],
 
     drawer: [
