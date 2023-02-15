@@ -2,7 +2,7 @@
     type: "Wall",
     category: "defense",
 
-    //scaledHealth: 1,
+    scaledHealth: 1,
 
     research: {
         //Unlocked on: 2nd sector
