@@ -7,7 +7,7 @@
     charge: 0,
     hardness: 0,
 
-    healthScaling: 10, 
+    healthScaling: 0.075, // 3hp per stone needed to build
 
     research: {
         parent: "aeyama-item-wood-lumber"
