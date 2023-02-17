@@ -2,6 +2,7 @@
     type: "AttributeCrafter",
     category: "production",
     size: 2,
+    scaledHealth: 35,
 
     craftTime: 140,
     baseEfficiency: 0,
@@ -11,14 +12,12 @@
         //Unlocked on: 1st sector
         parent: "aeyama-block-drill-wood-harvester",
         requirements: [
-            "aeyama-item-wood-lumber/75",
-            "aeyama-item-stone/25"
+            "aeyama-item-wood-lumber/140"
         ]
     },
 
     requirements: [
-        "aeyama-item-wood-lumber/35",
-        "aeyama-item-stone/15"
+        "aeyama-item-wood-lumber/35"
     ],
 
     drawer: [

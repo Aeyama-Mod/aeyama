@@ -2,6 +2,7 @@
     type: "AttributeCrafter",
     category: "production",
     size: 2,
+    scaledHealth: 120,
 
     craftTime: 180,
     baseEfficiency: 0,
@@ -11,14 +12,14 @@
         //Unlocked on: 1st sector
         parent: "aeyama-block-drill-stone-miner",
         requirements: [
-            "aeyama-item-wood-lumber/100",
-            "aeyama-item-stone/120"
+            "aeyama-item-wood-lumber/80",
+            "aeyama-item-stone/200"
         ]
     },
 
     requirements: [
-        "aeyama-item-wood-lumber/40",
-        "aeyama-item-stone/75"
+        "aeyama-item-wood-lumber/20",
+        "aeyama-item-stone-brick/50"
     ],
 
     drawer: [

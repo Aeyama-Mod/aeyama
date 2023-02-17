@@ -3,39 +3,36 @@
     category: "crafting",
 
     size: 2,
+    scaledHealth: 105,
 
     menu: "Simple",
     recipes: [
         {
             input: {
                 items: [
-                    "aeyama-item-stone/4",
+                    "aeyama-item-stone/2",
                 ],
             },
             output: "aeyama-item-stone-brick/1",
-            craftTime: 300 //5 seconds
+            craftTime: 60 //1 second
         }
     ],
 
     research: {
         // Unlocked on: 1st sector
-        parent: "aeyama-block-production-lumber-mill",
+        parent: "aeyama-block-storage-core-drop-pod",
         requirements: [
-            "aeyama-item-wood-lumber/180",
-            "aeyama-item-stone/145",
-            "aeyama-item-wood-lumber/75"
+            "aeyama-item-wood-lumber/300",
+            "aeyama-item-stone/120"
         ],
         objectives: [
             "aeyama-item-wood-lumber",
             "aeyama-item-stone",
-            "aeyama-item-wood-lumber"
-            "aeyama-block-production-lumber-mill"
         ]
     },
 
     requirements: [
-        "aeyama-item-wood-lumber/100",
-        "aeyama-item-stone/80",
-        "aeyama-item-wood-lumber/35"
+        "aeyama-item-wood-lumber/75",
+        "aeyama-item-stone/30",
     ]
 }

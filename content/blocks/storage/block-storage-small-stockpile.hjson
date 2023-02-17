@@ -4,20 +4,22 @@
 
     size: 1,
     itemCapacity: 250,
+    scaledHealth: 48,
 
     research: {
         parent: "aeyama-block-storage-core-drop-pod",
         requirements: [
-            "aeyama-item-wood-lumber/400",
-            "aeyama-item-stone/180"
+            "aeyama-item-wood-lumber/120",
+            "aeyama-item-stone/300",
+            "aeyama-item-blueprint/1"
         ],
         objectives: [
             "aeyama-item-raw-iron"
         ]
     },
 
-    requirements: [ //TODO
-        "aeyama-item-wood-lumber/120",
-        "aeyama-item-stone/60"
+    requirements: [
+        "aeyama-item-wood-lumber/40",
+        "aeyama-item-stone-brick/100"
     ]
 }

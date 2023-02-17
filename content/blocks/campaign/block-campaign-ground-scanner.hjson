@@ -4,12 +4,14 @@
     //buildVisibility: "campaignOnly"
 
     size: 4,
+    scaledHealth: 50,
 
     research: {
         // Unlocked on: 2nd sector
         parent: "aeyama-block-storage-core-frontline",
         requirements: [
-            "aeyama-item-iron/300"
+            "aeyama-item-iron/600",
+            "aeyama-item-blueprint/1"
         ],
         objectives: [
             "aeyama-item-iron",

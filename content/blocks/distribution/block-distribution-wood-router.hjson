@@ -2,13 +2,14 @@
     type: "Router",
     category: "distribution",
 
+    scaledHealth: 20,
+
     research: {
         //Unlocked on: 2nd or 3rd sector
         parent: "aeyama-block-distribution-wood-conveyor",
         requirements: [
-            "aeyama-item-wood-lumber/100",
-            "aeyama-item-stone/50",
-            "aeyama-item-raw-iron/15"
+            "aeyama-item-wood-lumber/20",
+            "aeyama-item-stone-brick/10"
         ],
         objectives: [
             "aeyama-item-raw-iron"
@@ -17,6 +18,6 @@
 
     requirements: [
         "aeyama-item-wood-lumber/6"
-        "aeyama-item-stone/2"
+        "aeyama-item-stone-brick/2"
     ]
 }

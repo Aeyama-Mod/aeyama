@@ -3,27 +3,12 @@
     category: "crafting",
 
     size: 3,
+    scaledHealth: 263,
 
     menu: "Simple",
     recipes: [
         {
-            input: [
-                "aeyama-item-wood-lumber/8"
-            ],
             output: "aeyama-item-blueprint/1",
-            craftTime: 3600 //60 seconds
-        },
-        {
-            input: {
-                items: [
-                    "aeyama-item-blueprint/2",
-                    "aeyama-item-steel/3" //Might be too easy for now
-                ],
-                fluids: [
-                    "aeyama-liquid-water/0.1333333333333"
-                ]
-            },
-            output: "aeyama-item-advanced-blueprint/1",
             craftTime: 7200 //120 seconds
         }
     ],
@@ -32,20 +17,20 @@
         // Unlocked on: 1st sector
         parent: "aeyama-block-production-brick-maker",
         requirements: [
-            "aeyama-item-wood-lumber/650",
-            "aeyama-item-stone/250",
-            "aeyama-item-raw-iron/150"
+            "aeyama-item-wood-lumber/400",
+            "aeyama-item-stone-brick/600",
+            "aeyama-item-raw-iron/250"
         ],
         objectives: [
             "aeyama-item-wood-lumber",
-            "aeyama-item-stone",
+            "aeyama-item-stone-brick",
             "aeyama-item-raw-iron"
         ]
     },
 
     requirements: [
-        "aeyama-item-wood-lumber/200",
-        "aeyama-item-stone/100"
+        "aeyama-item-wood-lumber/80",
+        "aeyama-item-stone-brick/120"
         "aeyama-item-raw-iron/50"
     ]
 }
