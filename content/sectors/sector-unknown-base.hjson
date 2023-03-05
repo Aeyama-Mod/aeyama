@@ -1,0 +1,15 @@
+{
+    sector: 11,
+    planet: "aeyama",
+    research: {
+        parent: "sector-new-world",
+        objectives: [
+            {
+                type: "SectorComplete",
+                preset: "sector-new-world"
+            }
+        ]
+    },
+    difficulty: 4,
+    alwaysUnlocked: false
+}

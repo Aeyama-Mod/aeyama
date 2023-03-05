@@ -9,7 +9,8 @@
         {
             input: {
                 items: [
-                    "aeyama-item-wood-lumber/2"
+                    "aeyama-item-iron/4"
+                    "aeyama-item-zinc/3"
                 ],
             },
             output: "aeyama-item-armor-scout/1",
@@ -49,7 +50,10 @@
         parent: "aeyama-block-production-steel-foundry",
         requirements: [],
         objectives: [
-            "aeyama-soon"
+            {
+                type: OnSector
+                preset: sector-unknown-base
+            }
         ]
     },
 

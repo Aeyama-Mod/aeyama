@@ -12,6 +12,7 @@
     speed: 1.5,
     drag: 1.25,
     flying: false,
+    range: 120,
     omniMovement: true,
     hitSize: 2,
     itemCapacity: 10,
@@ -34,7 +35,6 @@
     weapons: [
         {
             name: "weapon-rifle",
-            aiControllable: false,
             top: false,
             x: 5,
             y: 3,
@@ -58,5 +58,4 @@
         }
     ],
 
-    drawBody: false
 }

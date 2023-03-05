@@ -8,6 +8,12 @@
     menu: "Simple",
     recipes: [
         {
+            input: {
+                items: [
+                    "aeyama-item-wood-lumber/4",
+                    "aeyama-item-stone-brick/2"
+                ],
+            },
             output: "aeyama-item-blueprint/1",
             craftTime: 7200 //120 seconds
         }

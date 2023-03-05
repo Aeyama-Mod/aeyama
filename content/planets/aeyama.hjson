@@ -17,6 +17,9 @@
     sectorSize: 1,
     clearSectorOnLose: true,
     allowSectorInvasion: false,
+    generator: {
+        defaultLoadout: "frontline"
+    }
     radius: 1,
     hiddenItems: [
         "copper",
