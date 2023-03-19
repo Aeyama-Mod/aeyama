@@ -8,6 +8,9 @@
     menu: "Simple",
     recipes: [
         {
+            input: [
+                "aeyama-item-wood-lumber/10"
+            ]
             output: "aeyama-item-blueprint/1",
             craftTime: 7200 //120 seconds
         }
