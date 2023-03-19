@@ -7,7 +7,7 @@
 
     research: {
         //Unlocked on: 2nd sector
-        parent: "aeyama-block-wall-stone",
+        parent: "aeyama-block-wall-stone-brick",
         requirements: [
             "aeyama-item-stone-brick/100"
         ]
