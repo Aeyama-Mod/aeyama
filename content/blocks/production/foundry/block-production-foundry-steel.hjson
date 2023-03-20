@@ -1,0 +1,33 @@
+{
+    type: "HeatCrafter",
+    category: "crafting",
+
+    size: 3,
+
+    craftTime: 150,
+    consumes: {
+        items: [
+            "aeyama-item-iron/2",
+            "aeyama-item-carbon/4"
+        ]}
+    outputItem : "aeyama-item-brass/1",
+    heatRequirement: 240,
+    overheatScale: 0.25,
+    maxEfficiency: 2,
+
+    research: {
+        parent: "aeyama-block-production-smelter-iron",
+        requirements: [
+            "aeyama-item-iron/300",
+            "aeyama-item-wood-lumber/75",
+            "aeyama-item-stone-brick/450",
+            "aeyama-item-blueprint/2"
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-stone-brick/150",
+        "aeyama-item-wood-lumber/25",
+        "aeyama-item-iron/100"
+    ],
+}

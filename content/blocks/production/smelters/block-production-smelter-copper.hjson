@@ -1,0 +1,32 @@
+{
+    type: "HeatCrafter",
+    category: "crafting",
+
+    size: 2,
+
+    craftTime: 300,
+    consumes: {
+        items: [
+            "aeyama-item-raw-copper/3"
+        ]}
+    outputItem : "aeyama-item-copper/1",
+    heatRequirement: 80,
+    overheatScale: 0.25,
+    maxEfficiency: 2,
+
+    research: {
+        parent: "aeyama-block-production-burner",
+        requirements: [
+            "aeyama-item-raw-copper/75",
+            "aeyama-item-wood-lumber/75",
+            "aeyama-item-stone-brick/300",
+            "aeyama-item-blueprint/1"
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-stone-brick/100",
+        "aeyama-item-wood-lumber/25",
+        "aeyama-item-raw-copper/25"
+    ],
+}
