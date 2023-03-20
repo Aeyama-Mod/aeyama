@@ -5,8 +5,15 @@
     size: 3,
     scaledHealth: 263,
 
-    outputItems: [
-        "aeyama-item-blueprint/1"
+    menu: "Simple",
+    recipes: [
+        {
+            input: [
+                "aeyama-item-wood-lumber/10"
+            ]
+            output: "aeyama-item-blueprint/1",
+            craftTime: 7200 //120 seconds
+        }
     ],
     craftTime: 3600, // 5 minutes
 
