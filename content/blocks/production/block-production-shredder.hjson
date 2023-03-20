@@ -21,13 +21,6 @@
             craftTime: 180 //3 seconds
         },
         {
-            input: [
-                "aeyama-item-wood-lumber/1" //TODO: Bad convertion
-            ],
-            output: "aeyama-item-wood-lumber-shreds/8",
-            craftTime: 540 //9 seconds
-        },
-        {
             input: {
                 items: [
                     "aeyama-item-stone/1",

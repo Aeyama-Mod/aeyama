@@ -1,8 +1,8 @@
 {
     name: "aeyama",
     repo: "fredyjabe/aeyama",
-    minGameVersion: 141.3,
-    version: "0.2.95dev",
+    minGameVersion: 142,
+    version: "0.2.101dev",
     
     displayName: "Aeyama: The New World",
     author: "FredyJabe & Jojo",

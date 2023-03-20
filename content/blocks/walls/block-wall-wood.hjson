@@ -2,20 +2,17 @@
     type: "Wall",
     category: "defense",
 
-    scaledHealth: 240,
+    scaledHealth: 108,
 
     research: {
-        //Unlocked on: 2nd sector
+        //Unlocked on: 1st sector
         parent: "aeyama-block-turret-thrower",
         requirements: [
-            "aeyama-item-wood-lumber/20",
-            "aeyama-item-stone-brick/10",
-            "aeyama-item-blueprint/1"
+            "aeyama-item-wood-lumber/20"
         ]
     },
 
     requirements: [
-        "aeyama-item-wood-lumber/6",
-        "aeyama-item-stone-brick/3"
+        "aeyama-item-wood-lumber/6"
     ]
 }

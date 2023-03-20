@@ -1,5 +1,5 @@
 {
-    type: "multicraft.MultiCrafter",
+    type: "GenericCrafter",
     category: "crafting",
 
     size: 3,
@@ -18,6 +18,7 @@
             craftTime: 7200 //120 seconds
         }
     ],
+    craftTime: 3600, // 5 minutes
 
     research: {
         // Unlocked on: 1st sector

@@ -2,11 +2,13 @@
     type: "Wall",
     category: "defense",
 
+    scaledHealth: 324,
+
     research: {
         //Unlocked on: ??? sector
         parent: "aeyama-block-wall-iron",
         requirements: [
-            "aeyama-item-steel/9999" //TODO
+            "aeyama-item-steel/20"
         ],
         objectives: [
             "aeyama-soon"
@@ -14,6 +16,6 @@
     },
 
     requirements: [
-        "aeyama-item-steel/6" //TODO
+        "aeyama-item-steel/6"
     ]
 }
