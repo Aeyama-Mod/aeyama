@@ -6,7 +6,7 @@
     
     displayName: "Aeyama: The New World",
     author: "FredyJabe & Jojo",
-    subtitle:"v0.3.0 soon...",
+    subtitle:"v0.3.0 one day...",
     description:
 '''
 This mod will allow you to explore a whole new world, with a new Tech Tree and a brand new campaign.
@@ -23,7 +23,7 @@ This mod will allow you to explore a whole new world, with a new Tech Tree and a
                             [[]white]- pepters
                             [[]white]- [[]blue]SUS [[]white]([[]yellow]1stvaliduser[[]white])
 
-. . . check our GitHub repository for more info!
+. . . check the Discord and our GitHub repository for more info!
 '''
     
     hideBrowser: false,
