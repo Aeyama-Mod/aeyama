@@ -2,18 +2,17 @@
     type: "Wall",
     category: "defense",
 
-    size: 2,
-    scaledHealth: 192,
+    scaledHealth: 216,
 
     research: {
-        //Unlocked on: 1st sector
+        //Unlocked on: 2nd sector
         parent: "aeyama-block-wall-wood",
         requirements: [
-            "aeyama-item-wood-lumber/100"
+            "aeyama-item-stone-brick/20"
         ]
     },
 
     requirements: [
-        "aeyama-item-wood-lumber/24",
+        "aeyama-item-stone-brick/6"
     ]
 }

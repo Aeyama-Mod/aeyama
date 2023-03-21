@@ -1,5 +1,5 @@
 {
-    type: "multicraft.MultiCrafter",
+    type: "GenericCrafter",
     category: "crafting",
 
     size: 3,
@@ -8,10 +8,14 @@
     menu: "Simple",
     recipes: [
         {
+            input: [
+                "aeyama-item-wood-lumber/10"
+            ]
             output: "aeyama-item-blueprint/1",
             craftTime: 7200 //120 seconds
         }
     ],
+    craftTime: 3600, // 5 minutes
 
     research: {
         // Unlocked on: 1st sector
