@@ -9,7 +9,7 @@ Http.get(Core.bundle.format("urlNews"), response => {
 
 // Shows news popup window
 Events.on(EventType.ClientLoadEvent, e => {
-    var dialog = new BaseDialog(Core.bundle.format("modname") + (Core.bundle.format("versiontitle") + mod.meta.version + " " + Core.bundle.format("title"));
+    var dialog = new BaseDialog(Core.bundle.format("modname") + Core.bundle.format("versiontitle") + mod.meta.version + " " + Core.bundle.format("title"));
 
     dialog.addCloseListener();// Pressing ESC
     dialog.buttons.defaults().size(192, 64);
