@@ -1,7 +1,6 @@
 {
     sector: 14,
     planet: "aeyama",
-    loadout: "BasicDropPod"
     research: {
         parent: "sector-new-world",
         objectives: [
