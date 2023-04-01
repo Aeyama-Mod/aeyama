@@ -1,7 +1,7 @@
 {
     name: "aeyama",
     repo: "fredyjabe/aeyama",
-    minGameVersion: 142,
+    minGameVersion: 143,
     version: "0.2.104dev",
     
     displayName: "Aeyama: The New World",
