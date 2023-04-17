@@ -1,3 +1,8 @@
+[gray]April 16, 2023
+
+[white] Hey all, we added a new channel on Discord to stream our dev sessions, everybody's welcome to come and chat with us while we dev! :)
+Also, a LOT of stuff will change in the next version as we're removing the multicrafter system, as much as it is nice to have, it's also very buggy so we're switching to all vanilla!
+
 [gray]March 19, 2023
 
 [white] Hey everyone, we slowed down progress but we are continuing to develop it, we will not let die this mod!

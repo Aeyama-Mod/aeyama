@@ -12,6 +12,10 @@
         parent: "aeyama-block-production-research-station",
         requirements: [],
         objectives: [
+<<<<<<< HEAD
+=======
+            // "aeyama-block-production-ore-foundry"
+>>>>>>> 57dbe1178de5cf71c2733e0d60c6e58dbc3c853a
             "aeyama-soon"
         ]
     },
