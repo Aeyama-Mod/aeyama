@@ -4,7 +4,7 @@
     size: 2,
     scaledHealth: 20,
 
-    drillTime: 180,
+    drillTime: 120,
     output: "aeyama-item-wood-lumber",
 
     research: {

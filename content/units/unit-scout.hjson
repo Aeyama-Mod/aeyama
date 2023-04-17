@@ -32,7 +32,10 @@
     createScorch: false,
 
     research: {
-        parent: "aeyama-unit-sms"
+        parent: "aeyama-unit-sms",
+        requirements: [
+            "aeyama-item-armor-plating/50"
+        ]
     },
 
     weapons: [

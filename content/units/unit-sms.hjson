@@ -32,7 +32,10 @@
     createScorch: false,
 
     research: {
-        parent: "aeyama-unit-colonist"
+        parent: "aeyama-unit-colonist",
+        requirements: [
+            "aeyama-item-armor-plating/100"
+        ]
     },
 
     weapons: [

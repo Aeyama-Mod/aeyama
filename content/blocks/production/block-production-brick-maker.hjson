@@ -8,9 +8,9 @@
     craftTime: 60,
     consumes: {
         items: [
-            "aeyama-item-stone/2"
+            "aeyama-item-stone/1"
         ]}
-    outputItem : "aeyama-item-stone-brick/1",
+    outputItem : "aeyama-item-stone-brick/2",
 
     research: {
         // Unlocked on: 1st sector

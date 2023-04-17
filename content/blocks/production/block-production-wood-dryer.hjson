@@ -3,6 +3,7 @@
     category: "crafting",
 
     size: 2,
+    scaledHealth: 200,
 
     craftTime: 600,
     consumes: {
@@ -15,11 +16,14 @@
         //Unlocked on: 2nd sector
         parent: "aeyama-block-production-research-station",
         requirements: [
-            "aeyama-item-steel/9999" //TODO
+            "aeyama-item-wood-lumber/300",
+            "aeyama-item-stone-brick/150",
+            "aeyama-item-blueprint/1"
         ]
     },
 
     requirements: [ //TODO
-        "aeyama-item-wood-lumber/100"
+        "aeyama-item-wood-lumber/100",
+        "aeyama-item-stone-brick/50"
     ]
 }

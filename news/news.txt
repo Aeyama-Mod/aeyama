@@ -1,3 +1,16 @@
+[gray]April 17, 2023
+
+[white] Good morning!
+A lot of errors have been popping up lately and we're sorry about that, we removed the MultiCrafter injection and thought that the game would still only receive the Released version but it seems it downloads the current dev build instead! So if you notice something wrong, please join the discord and tag FredyJabe with a screenshot of the error!
+Thanks for your patience and for downloading the mod!
+
+[green]+ [white]Procedural survival map
+[red]- [white]Removed MultiCrafter injection, now only using vanilla blocks
+[yellow]* [white]Reworking the whole tech tree because we changed a lot of the early progression
+[yellow]* [white]BUGS, GLITCHES AND CRASHES ARE EXPECTED, please report them on discord so we can fix them as soon as possible!
+
+The first sector is currently under massive rework, don't play the campaign yet, if you already have a caompaign save, please erase it as you won't even be able to open the map anymore.
+
 [gray]April 16, 2023
 
 [white] Hey all, we added a new channel on Discord to stream our dev sessions, everybody's welcome to come and chat with us while we dev! :)
