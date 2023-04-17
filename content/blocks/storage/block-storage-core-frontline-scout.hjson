@@ -5,7 +5,7 @@
     size: 2,
     scaledHealth: 470,
     itemCapacity: 1500,
-    unitType: "aeyama-unit-scout-rifle",
+    unitType: "aeyama-unit-scout",
     buildVisibility: "shown",
 
     research: {

@@ -8,7 +8,7 @@
     mechStepParticles: true,
     legSpeed: 0.5,
 
-    health: 300,
+    health: 100,
     armor: 2,
     speed: 1.5,
     drag: 1.25,
@@ -32,33 +32,9 @@
     coreUnitDock: true,
     createScorch: false,
 
-    weapons: [
-        {
-            name: "weapon-infantry-gun",
-            aiControllable: false,
-            top: false,
-            x: 5,
-            y: 3,
-            shootY: 2,
-            reload: 25,
-            recoil: 2,
-            shootSound: "pew",
-            shake: 0.25,
-            alternate: false,
-            mirror: false,
-            bullet: {
-                type: "BasicBulletType",
-                damage: 14,
-                buildingDamageMultiplier: 0.01,
-                speed: 8,
-                lifetime: 20,
-                collidesTeam: true,
-                healPercent: 5,
-                frontColor: ffffff,
-                backColor: 98ffa9
-            }
-        }
-    ]
+    research: {
+        parent: "aeyama-block-storage-core-drop-pod"
+    },
 }
 /*
 type: mech 

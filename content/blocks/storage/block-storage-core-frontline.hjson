@@ -5,7 +5,7 @@
     size: 2,
     scaledHealth: 470,
     itemCapacity: 1500,
-    unitType: "aeyama-unit-sms-rifle",
+    unitType: "aeyama-unit-sms",
     buildVisibility: "shown",
 
     research: {
@@ -17,7 +17,8 @@
             "aeyama-item-blueprint/1"
         ],
         objectives: [
-            "aeyama-item-blueprint"
+            "aeyama-item-blueprint",
+            "aeyama-item-armor-sms"
         ]
     },
 

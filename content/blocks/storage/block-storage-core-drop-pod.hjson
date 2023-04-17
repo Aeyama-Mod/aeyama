@@ -5,7 +5,7 @@
     size: 1,
     itemCapacity: 500,
     health: 550,
-    unitType: "aeyama-unit-sms-rifle",
+    unitType: "aeyama-unit-colonist",
     isFirstTier: true,
     alwaysUnlocked: true,
     buildVisibility: "editorOnly",

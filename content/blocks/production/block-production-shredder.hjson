@@ -7,7 +7,7 @@
     craftTime: 180,
     consumes: {
         items: [
-            "aeyama-item-wood-lumber-dry/11"
+            "aeyama-item-wood-lumber-dry/10"
         ]}
     outputItem : "aeyama-item-wood-shreds/2",
 
