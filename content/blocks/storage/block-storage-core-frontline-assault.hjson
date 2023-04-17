@@ -12,7 +12,7 @@
         parent: "aeyama-block-storage-core-frontline"
         objectives: [
             "aeyama-block-storage-core-frontline",
-            "aeyama-item-armor-assault"
+            "aeyama-unit-assault"
         ]
     },
 

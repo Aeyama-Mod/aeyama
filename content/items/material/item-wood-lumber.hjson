@@ -10,7 +10,7 @@
     healthScaling: 0.05, // 2hp per lumber needed to build
 
     research: {
-        parent: "aeyama-block-storage-core-drop-pod"
+        parent: "aeyama-planet"
     },
 
     buildable: false,
