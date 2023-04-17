@@ -10,19 +10,20 @@
     research: {
         // Unlocked on: ??? sector
         parent: "aeyama-block-production-research-station",
-        requirements: [],
+        requirements: [
+            "aeyama-item-wood-lumber/800",
+            "aeyama-item-stone-brick/1200",
+            "aeyama-item-raw-iron/500",
+            "aeyama-item-blueprint/10"
+        ],
         objectives: [
-<<<<<<< HEAD
-=======
-            // "aeyama-block-production-ore-foundry"
->>>>>>> 57dbe1178de5cf71c2733e0d60c6e58dbc3c853a
             "aeyama-soon"
         ]
     },
 
     requirements: [ //TODO
-        "aeyama-item-wood-lumber/125",
-        "aeyama-item-iron/50"
+        "aeyama-item-wood-lumber/250",
+        "aeyama-item-iron/100"
     ],
 
     drawer: [

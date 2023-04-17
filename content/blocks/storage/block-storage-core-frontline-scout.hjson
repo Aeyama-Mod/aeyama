@@ -5,19 +5,14 @@
     size: 2,
     scaledHealth: 470,
     itemCapacity: 1500,
-    unitType: "aeyama-unit-sms-rifle",
+    unitType: "aeyama-unit-scout-rifle",
     buildVisibility: "shown",
 
     research: {
-        parent: "aeyama-block-storage-core-drop-pod"
-        requirements: [
-            "aeyama-item-wood-lumber/900",
-            "aeyama-item-stone-brick/2400",
-            "aeyama-item-raw-iron/900",
-            "aeyama-item-blueprint/1"
-        ],
+        parent: "aeyama-block-storage-core-frontline"
         objectives: [
-            "aeyama-item-blueprint"
+            "aeyama-block-storage-core-frontline",
+            "aeyama-item-armor-scout"
         ]
     },
 
