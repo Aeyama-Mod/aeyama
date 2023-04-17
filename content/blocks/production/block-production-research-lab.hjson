@@ -1,41 +1,17 @@
 {
-    type: "multicraft.MultiCrafter",
+    type: "GenericCrafter",
     category: "crafting",
 
     size: 4,
 
-    menu: "Simple",
-    recipes: [
-        {
-            input: {
-                items: [
-                    "aeyama-item-blueprint/2",
-                    "aeyama-item-wood-lumber-shreds/4",
-                    "aeyama-item-stone-brick/1"
-                ],
-            },
-            output: "aeyama-item-special-blueprint-offense/1",
-            craftTime: 14400
-        },
-        {
-            input: {
-                items: [
-                    "aeyama-item-blueprint/2",
-                    "aeyama-item-wood-lumber/5",
-                    "aeyama-item-iron/8"
-                ],
-            },
-            output: "aeyama-item-special-blueprint-defense/1",
-            craftTime: 14400
-        }
-    ],
+    craftTime: 7200,
+    outputItem : "aeyama-item-advanced-blueprint/1",
 
     research: {
         // Unlocked on: ??? sector
         parent: "aeyama-block-production-research-station",
         requirements: [],
         objectives: [
-            "aeyama-block-production-ore-foundry"
             "aeyama-soon"
         ]
     },

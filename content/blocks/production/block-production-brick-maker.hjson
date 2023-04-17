@@ -1,22 +1,16 @@
 {
-    type: "multicraft.MultiCrafter",
+    type: "GenericCrafter",
     category: "crafting",
 
     size: 2,
     scaledHealth: 105,
 
-    menu: "Simple",
-    recipes: [
-        {
-            input: {
-                items: [
-                    "aeyama-item-stone/2",
-                ],
-            },
-            output: "aeyama-item-stone-brick/1",
-            craftTime: 60 //1 second
-        }
-    ],
+    craftTime: 60,
+    consumes: {
+        items: [
+            "aeyama-item-stone/2"
+        ]}
+    outputItem : "aeyama-item-stone-brick/1",
 
     research: {
         // Unlocked on: 1st sector

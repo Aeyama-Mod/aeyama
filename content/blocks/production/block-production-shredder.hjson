@@ -1,44 +1,15 @@
 {
-    type: "multicraft.MultiCrafter",
+    type: "GenericCrafter",
     category: "crafting",
 
     size: 2,
 
-    menu: "Simple",
-    recipes: [
-        {
-            input: [
-                "aeyama-item-wood-lumber/1"
-            ],
-            output: "aeyama-item-wood-lumber-shreds/2",
-            craftTime: 360 //6 seconds
-        },
-        {
-            input: [
-                "aeyama-item-wood-lumber-dry/1"
-            ],
-            output: "aeyama-item-wood-lumber-shreds/2",
-            craftTime: 180 //3 seconds
-        },
-        {
-            input: {
-                items: [
-                    "aeyama-item-stone/1",
-                ],
-            },
-            output: "aeyama-item-stone-pebbles/2",
-            craftTime: 360 //6 seconds
-        }
-        {
-            input: {
-                items: [
-                    "aeyama-item-stone-brick/1",
-                ],
-            },
-            output: "aeyama-item-stone-pebbles/8",
-            craftTime: 600 //10 seconds
-        }
-    ],
+    craftTime: 180,
+    consumes: {
+        items: [
+            "aeyama-item-wood-lumber-dry/11"
+        ]}
+    outputItem : "aeyama-item-wood-shreds/2",
 
     research: {
         // Unlocked on: 2nd sector

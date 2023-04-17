@@ -28,9 +28,5 @@ This mod will allow you to explore a whole new world, with a new Tech Tree and a
     
     hideBrowser: false,
     hidden: false,
-    dependencies: [],
-
-    // MultiCrafter-Lib injection
-    java: true,
-    main: "MultiCrafterAdapter"
+    dependencies: []
 }
