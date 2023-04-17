@@ -12,7 +12,7 @@
         }
     },
     heatOutput: 50,
-    outputItem: "aeyama-item-carbon/1",
+    //outputItem: "aeyama-item-carbon/1",
     
 
     research: {
@@ -20,13 +20,14 @@
         parent: "aeyama-block-production-research-station",
         requirements: [
             "aeyama-item-wood-lumber/150",
-            "aeyama-item-stone/275"
+            "aeyama-item-stone-brick/300",
+            "aeyama-item-blueprint/1"
         ]
     },
 
     requirements: [
         "aeyama-item-wood-lumber/50",
-        "aeyama-item-stone/150"
+        "aeyama-item-stone-brick/100"
     ],
 
     drawer: [
@@ -36,7 +37,7 @@
         {
             type: "DrawGlowRegion",
             color: "ed0e0e",
-            glowIntensity: 0.5
+            glowIntensity: 0.3
         }
     ]
 }
