@@ -10,7 +10,7 @@
         parent: "aeyama-block-storage-core-drop-pod",
         requirements: [
             "aeyama-item-wood-lumber/120",
-            "aeyama-item-stone/300",
+            "aeyama-item-stone-brick/300",
             "aeyama-item-blueprint/1"
         ],
         objectives: [

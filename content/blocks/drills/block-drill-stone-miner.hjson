@@ -1,12 +1,13 @@
 {
     type: "AttributeCrafter",
     category: "production",
+    
     size: 2,
     scaledHealth: 35,
 
     craftTime: 140,
     baseEfficiency: 0,
-    outputItem: "aeyama-item-stone/1",
+    outputItem: "aeyama-item-stone/2",
 
     research: {
         //Unlocked on: 1st sector

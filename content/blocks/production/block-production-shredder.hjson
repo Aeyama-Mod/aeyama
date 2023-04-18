@@ -3,26 +3,26 @@
     category: "crafting",
 
     size: 2,
+    scaledHealth: 278,
 
     craftTime: 180,
     consumes: {
         items: [
-            "aeyama-item-wood-lumber-dry/11"
+            "aeyama-item-wood-lumber-dry/10"
         ]}
     outputItem : "aeyama-item-wood-shreds/2",
 
     research: {
-        // Unlocked on: 2nd sector
-        parent: "aeyama-block-production-research-station", //TODO: Maybe other parent?
+        parent: "aeyama-block-production-wood-dryer",
         requirements: [
-            "aeyama-item-wood-lumber/200",
-            "aeyama-item-stone/125",
-            "aeyama-item-raw-iron/75"
+            "aeyama-item-wood-lumber/500",
+            "aeyama-item-stone-brick/200",
+            "aeyama-item-raw-iron/140"
         ],
         objectives: [
             "aeyama-item-wood-lumber",
-            "aeyama-item-stone",
-            "aeyama-item-raw-iron"
+            "aeyama-item-stone-brick",
+            "aeyama-item-raw-iron",
             {
                 type: "SectorComplete",
                 preset: "sector-new-world"
@@ -32,7 +32,7 @@
 
     requirements: [
         "aeyama-item-wood-lumber/125",
-        "aeyama-item-stone/50"
+        "aeyama-item-stone-brick/50"
         "aeyama-item-raw-iron/35"
     ]
 }

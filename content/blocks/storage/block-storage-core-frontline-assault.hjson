@@ -1,0 +1,24 @@
+{
+    type: "CoreBlock",
+    category: "effect",
+
+    size: 2,
+    scaledHealth: 470,
+    itemCapacity: 1500,
+    unitType: "aeyama-unit-assault",
+    buildVisibility: "shown",
+
+    research: {
+        parent: "aeyama-block-storage-core-frontline"
+        objectives: [
+            "aeyama-block-storage-core-frontline",
+            "aeyama-unit-assault"
+        ]
+    },
+
+    requirements: [
+        "aeyama-item-wood-lumber/300",
+        "aeyama-item-stone-brick/800",
+        "aeyama-item-raw-iron/300"
+    ]
+}

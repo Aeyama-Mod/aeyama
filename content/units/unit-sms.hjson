@@ -31,6 +31,13 @@
     coreUnitDock: true,
     createScorch: false,
 
+    research: {
+        parent: "aeyama-unit-colonist",
+        requirements: [
+            "aeyama-item-armor-plating/100"
+        ]
+    },
+
     weapons: [
         {
             name: "weapon-rifle",

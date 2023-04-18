@@ -1,19 +1,20 @@
 {
     type: "AttributeCrafter",
     category: "production",
+    
     size: 2,
     scaledHealth: 120,
 
     craftTime: 180,
     baseEfficiency: 0,
-    outputItem: "aeyama-item-raw-iron/1",
+    outputItem: "aeyama-item-raw-iron/2",
 
     research: {
         //Unlocked on: 1st sector
         parent: "aeyama-block-drill-stone-miner",
         requirements: [
             "aeyama-item-wood-lumber/80",
-            "aeyama-item-stone/200"
+            "aeyama-item-stone-brick/200"
         ]
     },
 

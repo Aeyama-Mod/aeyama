@@ -2,7 +2,7 @@
     sector: 0,
     planet: "aeyama",
     research: {
-        parent: "aeyama-block-storage-core-drop-pod",
+        parent: "aeyama-planet",
         objectives: [
             {
                 type: "SectorComplete",
@@ -11,5 +11,7 @@
         ]
     },
     difficulty: 0,
-    alwaysUnlocked: true
+    alwaysUnlocked: true,
+    generateEnemyBase: false,
+    threat: 0
 }

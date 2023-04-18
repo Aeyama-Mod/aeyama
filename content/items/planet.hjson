@@ -1,0 +1,14 @@
+{
+    alwaysUnlocked: true,
+    
+    research: {
+        root: true,
+        name: "Aeyama",
+        planet: "aeyama"
+    },
+
+    hiddenOnPlanets: [
+        "serpulo",
+        "erekir"
+    ]
+}

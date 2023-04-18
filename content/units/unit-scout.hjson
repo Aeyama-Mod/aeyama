@@ -9,19 +9,18 @@
     legSpeed: 0.5,
 
     health: 300,
-    armor: 2,
     speed: 1.5,
     drag: 1.25,
     flying: false,
     omniMovement: true,
     hitSize: 2,
-    itemCapacity: 50,
+    itemCapacity: 10,
 
     buildSpeed: 0.25,
-    buildRange: 150,
+    buildRange: 100,
 
     canBoost: true,
-    boostMultiplier: 0.5,
+    boostMultiplier: 0.3,
 
     canAttack: true,
     mineSpeed: 2,
@@ -32,9 +31,16 @@
     coreUnitDock: true,
     createScorch: false,
 
+    research: {
+        parent: "aeyama-unit-sms",
+        requirements: [
+            "aeyama-item-armor-plating/50"
+        ]
+    },
+
     weapons: [
         {
-            name: "weapon-infantry-gun",
+            name: "weapon-rifle",
             aiControllable: false,
             top: false,
             x: 5,
@@ -49,8 +55,7 @@
             bullet: {
                 type: "BasicBulletType",
                 damage: 14,
-                buildingDamageMultiplier: 0.01,
-                speed: 8,
+                speed: 6,
                 lifetime: 20,
                 collidesTeam: true,
                 healPercent: 5,
@@ -58,28 +63,7 @@
                 backColor: 98ffa9
             }
         }
-    ]
+    ],
+
+    drawBody: false
 }
-/*
-type: mech 
-hitSize: 50
-health: 150000
-armor: 40
-speed: 0.4
-canDrown: false
-rotateSpeed: 1.8
-baseRotateSpeed: 1.8
-buildSpeed: 4.5
-mineSpeed: 6
-mineTier: 4
-shadowElevationScl: 0.4
-mechSideSway: 0
-mechStepShake: 4
-mechStepParticles: true
-groundLayer: 80
-drawBody: false
-lightRadius: 90
-lightColor: 83f793
-range: 480
-maxRange: 480
-*/

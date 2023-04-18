@@ -31,6 +31,13 @@
     coreUnitDock: true,
     createScorch: false,
 
+    research: {
+        parent: "aeyama-unit-sms",
+        requirements: [
+            "aeyama-item-armor-plating/500"
+        ]
+    },
+
     weapons: [
         {
             name: "weapon-rifle",

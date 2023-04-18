@@ -5,14 +5,19 @@
     size: 1,
     itemCapacity: 500,
     health: 550,
-    unitType: "aeyama-unit-infantry",
+    unitType: "aeyama-unit-colonist",
     isFirstTier: true,
     alwaysUnlocked: true,
     buildVisibility: "editorOnly",
 
     research: {
+        parent: "aeyama-planet"
+    }
+    /*
+    research: {
         root: true,
         name: "Aeyama",
         planet: "aeyama"
     }
+    */
 }

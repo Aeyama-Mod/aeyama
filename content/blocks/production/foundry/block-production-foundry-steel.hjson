@@ -10,7 +10,7 @@
             "aeyama-item-iron/2",
             "aeyama-item-carbon/4"
         ]}
-    outputItem : "aeyama-item-brass/1",
+    outputItem : "aeyama-item-steel/1",
     heatRequirement: 240,
     overheatScale: 0.25,
     maxEfficiency: 2,
