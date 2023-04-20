@@ -9,9 +9,6 @@
         parent: "aeyama-block-wall-stone-brick",
         requirements: [
             "aeyama-item-iron/20"
-        ],
-        objectives: [
-            "aeyama-soon"
         ]
     },
 

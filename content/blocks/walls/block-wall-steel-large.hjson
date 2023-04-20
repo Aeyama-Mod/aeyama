@@ -10,9 +10,6 @@
         parent: "aeyama-block-wall-steel",
         requirements: [
             "aeyama-item-steel/100"
-        ],
-        objectives: [
-            "aeyama-soon"
         ]
     },
 

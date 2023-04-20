@@ -1,3 +1,5 @@
+Events.on(ContentInitEvent, e => {
+// The generator itself
 const aeyamagen = extend(PlanetGenerator, {
     rawHeight(position){
         position = Tmp.v33.set(position).scl(this.scl);
@@ -267,6 +269,7 @@ const aeyamagen = extend(PlanetGenerator, {
         };
     } 
 });
+
 const grassa = Vars.content.block("aeyama-floor-grassa");
 const grassb = Vars.content.block("aeyama-floor-grassb");
 const grassc = Vars.content.block("aeyama-floor-grassc");
@@ -277,12 +280,14 @@ aeyamagen.arr = [
     [grassa, grassa, grassb, grassb],
     [grassa, grassb, grassb, grassb, grassa]
 ];
+
 aeyamagen.rid = new Packages.arc.util.noise.RidgedPerlin(1, 2);
 aeyamagen.basegen = new BaseGenerator();
 aeyamagen.scl = 5;
 aeyamagen.waterOffset = 0.07;
 aeyamagen.water = 2 / aeyamagen.arr[0].length;
-Events.on(ContentInitEvent, e => {
+
+//Events.on(ContentInitEvent, e => {
     Vars.content.planet("aeyama").generator = aeyamagen();
     Vars.content.planet("aeyama").meshLoader = () => new HexMesh(Vars.content.planet("aeyama"), 6);
 });
