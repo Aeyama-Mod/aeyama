@@ -11,7 +11,5 @@
         ]
     },
     difficulty: 0,
-    alwaysUnlocked: true,
-    generateEnemyBase: false,
-    threat: 0
+    alwaysUnlocked: true
 }
