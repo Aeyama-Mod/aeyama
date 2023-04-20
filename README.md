@@ -35,14 +35,14 @@ Here's the current Techtree, it is FAR from done and will keep expanding!
 <h1 align="center"><img src="https://raw.githubusercontent.com/FredyJabe/aeyama/main/sprites/tech.drawio.png"> </img></h1>
 
 ## Contributors
-<li>
-    <ul>RouterXdd</ul>
-    <ul>Pepters</ul>
-    <ul>SUS (1stvaliduser)</ul>
-    <ul>SunkyMP3G</ul>
-    <ul>soppi666</ul>
-    <ul>UAdustry</ul>
-</li>
+<ul>
+    <li>RouterXdd</li>
+    <li>Pepters</li>
+    <li>SUS (1stvaliduser)</li>
+    <li>SunkyMP3G</li>
+    <li>soppi666</li>
+    <li>UAdustry</li>
+</ul>
 
 <!---------------------------------------------------------------------------------->
 
