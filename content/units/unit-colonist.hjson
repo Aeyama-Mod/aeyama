@@ -53,7 +53,6 @@ mechSideSway: 0
 mechStepShake: 4
 mechStepParticles: true
 groundLayer: 80
-drawBody: false
 lightRadius: 90
 lightColor: 83f793
 range: 480

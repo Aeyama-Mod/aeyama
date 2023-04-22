@@ -2,18 +2,18 @@
     name: "aeyama",
     repo: "fredyjabe/aeyama",
     minGameVersion: 143,
-    version: "123",
+    version: "127",
     
     displayName: "Aeyama: The New World",
     author: "FredyJabe & Jojo",
-    subtitle:"A brand new world..",
+    subtitle:"A brand new world...",
     description:
 '''
 This mod will allow you to explore a whole new world, with a new Tech Tree and a brand new campaign.
 
     [[]gray]Language: [[]white]- English
-                       [[]white]- French
-                       [[]white]- Russian [[]red](WIP)
+                       [[]white]- French [[]red](WIP)
+                       [[]white]- Russian
                        [[]white]- Polish [[]red](WIP)
                        [[]white]- Ukrainian [[]red](WIP)
                        [[]white]- Simplified Chinese [[]red](WIP)
