@@ -63,7 +63,5 @@
                 backColor: 98ffa9
             }
         }
-    ],
-
-    drawBody: false
+    ]
 }
