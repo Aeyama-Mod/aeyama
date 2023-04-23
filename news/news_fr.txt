@@ -1,30 +1,33 @@
-[gray]19 Mars, 2023
+[gray]22 Avril 2023
 
-[white] Salut tout le monde, on a un peu ralenti l'avancement mais on continue le développement du mod, on ne va pas laisser ce mod mourrir !
+[green]+ [white]Nouvelle numérotation de version, plus simple pour tout le monde !
+[yellow]* [white]Maintenant, nous ne gardons que les 5 derniers messages d'actualité, ce qui facilite la bande passante du client et nous n'avons pas besoin de vivre dans le passé ;P
 
-[gray]January 28, 2023
+Si quelqu'un veut aider à la traduction, n'hésitez pas à nous contacter sur Discord ou Github !
+Nous avons également besoin d'aide d'artistes, si quelqu'un est intéressé.
 
-[white] Hi everyone! Just a little message to tell you that we are still working hard on the next update! Are you ready to continue the story?
+[gray]20 Avril 2023
 
-[gray]15 Janvier, 2023
+[white] Hey hey ! La carte de survie devrait être [green]RÉPARÉE[white] !!
 
-[white] Release date! Version 0.2.0 just came out and with it, the first campaign sector! You're about to discover something new down here! ;)
-Thanks for you interest, and hopefully you'll enjoy your stay on Aeyama!
+[gray]17 Avril 2023
 
-[green]+ [white]Quelques traduction (Anglais, Français, Polonais, Russe and Ukrainien)
-[green]+ [white]Nouveau matériaux, avec 5 d'entre eux disponible sur le premier secteur.
-[yellow]* [white]Tout a été refactorisé en interne, cela ne change rien pour vous mais ça nous aidera à continuer les mises à jour.
-[yellow]* [white]Quelques blocs ont été resprite !
+[white] Bonjour !
+Beaucoup d'erreurs ont surgi dernièrement et nous en sommes désolés, nous avons supprimé l'injection MultiCrafter et pensions que le jeu ne recevrait que la version publiée mais il semble qu'il télécharge plutôt la version de développement actuelle ! Donc, si vous remarquez quelque chose d'anormal, veuillez rejoindre le Discord et taguer FredyJabe avec une capture d'écran de l'erreur !
+Merci pour votre patience et pour avoir téléchargé le mod !
 
-Si vous voulez nous aider (ou pas), n'hésitez pas à venir sur le Discord !
+[green]+ [white]Carte de survie procédurale
+[red]- [white]Suppression de l'injection MultiCrafter, n'utilisant désormais que des blocs vanilla
+[yellow]* [white]Restructuration de tout l'arbre technologique car nous avons beaucoup modifié la progression précoce
+[yellow]* [white]DES BUGS, DES GLITCHES ET DES PLANTAGES SONT À PRÉVOIR, veuillez les signaler sur Discord afin que nous puissions les corriger dès que possible !
 
+Le premier secteur est actuellement en révision massive, ne jouez pas encore à la campagne, si vous avez déjà une sauvegarde de la campagne, veuillez l'effacer car vous ne pourrez même plus ouvrir la carte.
 
-[gray]14 Janvier, 2023
+[gray]16 Avril 2023
 
-[green]+ [white]Nous avons désormais un Trello pour suivre les nouveautés de prévu.
+[white] Salut à tous, nous avons ajouté un nouveau canal sur Discord pour diffuser nos sessions de développement, tout le monde est le bienvenu pour venir discuter avec nous pendant que nous développons ! :)
+Aussi, BEAUCOUP de choses vont changer dans la prochaine version car nous supprimons le système MultiCrafter, aussi agréable que cela puisse être, c'est aussi très buggy, donc nous passons en vanilla pur !
 
+[gray]19 Mars 2023
 
-[gray]9 Janvier, 2023
-
-[green]+ [white]Désormais avec un panel de nouveautés !
-[yellow]* [white]Mis à jour le premier secteur pour être en quelque sorte jouable, aucun objectifs.
+[white] Salut tout le monde, nous avons ralenti les progrès mais nous continuons à le développer, nous ne laisserons pas mourir ce mod !
