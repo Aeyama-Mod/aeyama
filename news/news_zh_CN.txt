@@ -1,8 +1,8 @@
-[gray]March 19, 2023
+[gray]2023年3月19日
 
-[white] Hey everyone, we slowed down progress but we are continuing to develop it, we will not let die this mod!
+[white] 大家好，我们放慢了进度，但我们仍在继续开发它，我们不会让这个模组阵亡！
 
-[gray]January 28, 2023
+[gray]2023年1月28日
 
 [white] 大家好！只是一个小消息告诉你，我们仍在努力下一次更新！你准备好继续这个游戏了吗？
 
@@ -17,12 +17,12 @@
  如果你们想帮忙什么的，随时来和我打招呼！
   
   
- [gray]January 14, 2023 
+ [gray]2023年1月14日
   
  [green]+ [white]我们现在有一个Trello供您按照计划进行操作
   
   
- [gray]January 9, 2023 
+ [gray]2023年1月9日
   
  [green]+ [white]现在有一个新闻面板！
  [yellow]* [white]更新了第一个部门，使其具有一定的可玩性，但还没有目标。
