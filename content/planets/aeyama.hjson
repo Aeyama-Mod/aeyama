@@ -7,7 +7,7 @@
     updateLighting: false,
     atmosphereRadIn: 0.1,
     atmosphereRadOut: 0.3,
-    atmosphereColor: 925115,
+    atmosphereColor: 21c7eb,
     drawOrbit: true,
     accessible: true,
     alwaysUnlocked: true,
