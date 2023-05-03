@@ -1,5 +1,5 @@
 {
-    //color:
+    color: "#3b3b3b",
 
     explosiveness: 0,
     flammability: 1,
