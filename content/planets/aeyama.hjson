@@ -8,6 +8,7 @@
     atmosphereRadIn: 0.1,
     atmosphereRadOut: 0.3,
     atmosphereColor: 21c7eb,
+    landCloudColor: d5e3eb
     drawOrbit: true,
     accessible: true,
     alwaysUnlocked: true,
@@ -43,6 +44,19 @@
         "fissile-matter",
         "dormant-cyst"
     ],
+    cloudMesh: {
+        type: HexSkyMesh
+        planet: aeyama
+        seed: 5
+        speed: 2
+        radius: 0.12
+        divisions: 5
+        color: 7eb6debb
+        octaves: 1.5
+        persistence: 2
+        scl: 2
+        thresh: 0.45
+        }
     mesh: {
         type: "NoiseMesh",  //NoiseMesh NoiseMesh
         seed: 262436,
