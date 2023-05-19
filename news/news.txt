@@ -21,7 +21,7 @@ Thanks for your patience and for downloading the mod!
 [yellow]* [white]Reworking the whole tech tree because we changed a lot of the early progression
 [yellow]* [white]BUGS, GLITCHES AND CRASHES ARE EXPECTED, please report them on discord so we can fix them as soon as possible!
 
-The first sector is currently under massive rework, don't play the campaign yet, if you already have a caompaign save, please erase it as you won't even be able to open the map anymore.
+The first sector is currently under massive rework, don't play the campaign yet, if you already have a campaign save, please erase it as you won't even be able to open the map anymore.
 
 [gray]April 16, 2023
 
