@@ -1,0 +1,33 @@
+[gray]Abril 22, 2023
+
+[green]+ [white]Nuevo enumeramiento de versiones, ¡Simple para todos!
+[yellow]* [white]Ahora solo se quedan los últimos 5 mensajes, ¡Mejor para el ancho de banda del cliente y no necesitamos vivir en el pasado! ;P
+
+Si alguien quiere ayudar con la traducción, ¡Siéntete libre de comunicarte por Discord o Github!
+También necesitamos ayuda de artistas, si a alguien le interesa.
+
+[gray]Abril 20, 2023
+
+[white] ¡Hola hola! El mapa de supervivencia debería estar [green]ARREGLADO[white]!!
+
+[gray]Abril 17, 2023
+
+[white] ¡Buendía!
+Un montón de errores aparecieron últimamente y lo sentimos, removimos la unión del MultiCrafter y pensamos que el juego solo recibiría la versión lanzada ¡Pero parece que descarga la versión de desarrollo! Así que si notas algo raro, ¡Únete al Discord y etiqueta a FredyJabe con una captura de pantalla!
+¡Gracias por tu paciencia y por descargar el mod!
+
+[green]+ [white]Mapa de supervivencia procedural
+[red]- [white]Removimos la unión del MultiCrafter, ahora solo usamos bloques vanilla
+[yellow]* [white]Rehaciendo el árbol de tecnología entero porque cambiamos un montón de la progresión temprana
+[yellow]* [white]SE ESPERAN BUGS, GLITCHES Y CRASHEOS, ¡Por favor, repórtalos en nuestro Discord para arreglarlos lo antes posible!
+
+El primer sector está rehaciéndose, no jueguen la campaña todavía, si ya tienes un guardado en la campaña, elimínalo ya que no podrás abrir el mapa.
+
+[gray]Abril 16, 2023
+
+[white] Hola a todos, añadimos un canal en Discord para transmitir nuestras sesiones de desarrollo, ¡Todos son invitados a entrar y chatear mientras desarrollamos! :)
+También, un MONTÓN de cosas cambiarán en la siguiente versión porque estamos removiendo el sistema del multicrafter, aunque está muy chulo, ¡También está muy bugueado, así que nos pasamos al vanilla!
+
+[gray]Marzo 19, 2023
+
+[white] Hola a todos, bajamos el ritmo, pero seguimos desarrollando, ¡No dejaremos que este mod muera!
