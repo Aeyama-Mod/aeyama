@@ -12,3 +12,6 @@ bin/
 ## Gradle
 .gradle/
 build/
+
+## IDE
+.vscode/
