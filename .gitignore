@@ -1,6 +1,14 @@
+## Aeyama
 gitIgnore/Building basics palette.gpl
 gitIgnore/Teams.gpl
 gitIgnore/AeyamaResearchTree.pdf
 gitIgnore/ResearchTree.drawio
 gitIgnore/Untitled Diagram.drawio.png
 sprites/techPerSector.drawio.png
+
+## Java
+bin/
+
+## Gradle
+.gradle/
+build/

@@ -1,5 +1,0 @@
-{
-    type: "StaticWall",
-    itemDrop: "aeyama-item-wood-lumber",
-    variants: 16
-}

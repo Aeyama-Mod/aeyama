@@ -1,5 +1,0 @@
-{
-    type: "StaticWall",
-    itemDrop: "aeyama-item-stone",
-    variants: 2
-}

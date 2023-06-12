@@ -1,0 +1,31 @@
+{
+    "name": "aeyama",
+    "repo": "fredyjabe/aeyama",
+    "minGameVersion": 144,
+    "version": "151",
+
+    "java": true,
+    "main": "aeyama.Aeyama",
+    
+    "displayName": "Aeyama: The New World",
+    "author": "FredyJabe & Jojo",
+    "subtitle": "A brand new world...",
+    "description":
+"
+This mod will allow you to explore a whole new world, with a new Tech Tree and a brand new campaign.
+
+    [[]gray]Language: [[]white]- English
+                       [[]white]- Français
+                       [[]white]- Русский
+                       [[]white]- Polski [[]red](WIP)
+                       [[]white]- Українська [[]red](WIP)
+                       [[]white]- 简体中文 [[]red](WIP)
+                       [[]white]- Español [[]red](WIP)
+
+[[]white]. . . check our Discord and GitHub repository for more info!
+",
+    
+    "hideBrowser": false,
+    "hidden": false,
+    "dependencies": []
+}
