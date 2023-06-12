@@ -41,7 +41,7 @@ public class NewsDialog {
             }).size(256, 64);
             dialog.cont.row();
             dialog.cont.button(Core.bundle.format("linkDiscord"), Icon.discord, () -> {
-                if (!Core.app.openURI(urlGithub)) {
+                if (!Core.app.openURI(urlDiscord)) {
                     Vars.ui.showErrorMessage("@linkfail");
                     Core.app.setClipboardText(urlDiscord);
                 }
