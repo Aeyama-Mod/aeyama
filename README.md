@@ -28,25 +28,28 @@ And if the mod interests you, [`download it here`][Download] or use the mod brow
 
 ## Tech
 Here's the current Techtree, it is FAR from done and will keep expanding!
-<img src="https://raw.githubusercontent.com/FredyJabe/aeyama/main/sprites/tech.drawio.png"/>
+<img src="https://raw.githubusercontent.com/FredyJabe/aeyama/main/src/assets/sprites/tech.drawio.png"/>
 
 ## Building
 The mod has 2 different branches:<br><br>
     - The [`main branch`][BranchMain], wich is the stable release.<br>
     - The [`dev branch`][BranchDev], wich is the latest release (can contain bugs, crashes, etc...).<br>
 
-To build the mod you can either get the [Github Action build][GithubBuild] or  you can manually build the mod, you will need `Java 19` (or change it in the `build.gradle` file) and execute `./gradlew jar` or `./gradlew deploy` for Desktop & Mobile (require Android SDK).
+To build the mod you can either get the [Github Action build][GithubBuild] or you can manually build the mod, you will need `Java 17` or above and execute `./gradlew jar` or `./gradlew deploy` for Desktop & Mobile (require `Android SDK 30` or above).
 </div>
 
 ## Contributors
 <ul>
     <li>RouterXdd</li>
-    <li>Pepters</li>
+    <li>pepters</li>
     <li>1stvaliduser</li>
     <li>SunkyMP3G</li>
     <li>soppi666</li>
     <li>UAdustry</li>
-    <li>TheFuryBumblebee</li>
+    <li>ZielonyTrojkat</li>
+    <li>nehulos</li>
+    <li>RGBProductions</li>
+    <li>Taras4k</li>
 </ul>
 
 <!--------------------------------------------------------------------------------->
