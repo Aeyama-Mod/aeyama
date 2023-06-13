@@ -13,7 +13,7 @@ import static mindustry.Vars.*;
 public class NewsDialog {
     LoadedMod mod = Vars.mods.getMod("aeyama");
     String urlGithub = "https://github.com/FredyJabe/aeyama";
-    String urlDiscord = "https://discord.gg/rNhkswkJst";
+    String urlDiscord = "https://discord.gg/YVY9Y3uA85";
     String urlProject = "https://github.com/users/FredyJabe/projects/2";
     // String news = "[red] FAILED TO GET HTTP CONTENT.";
 
@@ -41,9 +41,9 @@ public class NewsDialog {
             }).size(256, 64);
             dialog.cont.row();
             dialog.cont.button(Core.bundle.format("linkDiscord"), Icon.discord, () -> {
-                if (!Core.app.openURI(urlGithub)) {
+                if (!Core.app.openURI(urlDiscord)) {
                     Vars.ui.showErrorMessage("@linkfail");
-                    Core.app.setClipboardText(urlGithub);
+                    Core.app.setClipboardText(urlDiscord);
                 }
             }).size(256, 64);
             dialog.cont.row();

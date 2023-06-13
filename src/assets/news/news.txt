@@ -1,3 +1,9 @@
+[gray]June 13, 2023
+
+[white]Hey everyone, big news for the mod! We now are a [red]Java [white]mod! You can update it by redownloading the mod via the mod browser, a release might come soon there's still some things left to finish.
+
+Until then, cya!
+
 [gray]April 22, 2023
 
 [green]+ [white]New versionning number, simpler for everyone!
@@ -27,7 +33,3 @@ The first sector is currently under massive rework, don't play the campaign yet,
 
 [white] Hey all, we added a new channel on Discord to stream our dev sessions, everybody's welcome to come and chat with us while we dev! :)
 Also, a LOT of stuff will change in the next version as we're removing the multicrafter system, as much as it is nice to have, it's also very buggy so we're switching to all vanilla!
-
-[gray]March 19, 2023
-
-[white] Hey everyone, we slowed down progress but we are continuing to develop it, we will not let die this mod!
