@@ -158,34 +158,44 @@ public class AeyamaEnvironmentBlocks {
         wallDirtA = new StaticWall("wall-dirta") {{
             variants = 2;
             attributes.set(Attribute.get("stone"), .1f);
+            floorDirtA.asFloor().wall = this;
         }};
         wallDirtB = new StaticWall("wall-dirtb") {{
             variants = 2;
             attributes.set(Attribute.get("stone"), .1f);
+            floorDirtB.asFloor().wall = this;
         }};
         wallDirtC = new StaticWall("wall-dirtc") {{
             variants = 2;
             attributes.set(Attribute.get("stone"), .1f);
+            floorDirtC.asFloor().wall = this;
         }};
         wallStoneA = new StaticWall("wall-stonea") {{
             variants = 2;
             itemDrop = AeyamaItems.stone;
             attributes.set(Attribute.get("stone"), .25f);
+            floorStoneA.asFloor().wall = this;
         }};
         wallStoneB = new StaticWall("wall-stoneb") {{
             variants = 2;
             itemDrop = AeyamaItems.stone;
             attributes.set(Attribute.get("stone"), .25f);
+            floorStoneB.asFloor().wall = this;
         }};
         wallStoneC = new StaticWall("wall-stonec") {{
             variants = 2;
             itemDrop = AeyamaItems.stone;
             attributes.set(Attribute.get("stone"), .25f);
+            floorStoneC.asFloor().wall = this;
         }};
         wallTree = new StaticWall("wall-tree") {{
             variants = 16;
             itemDrop = AeyamaItems.woodLumber;
             attributes.set(Attribute.get("wood"), 1f);
+            floorGrassA.asFloor().wall = this;
+            floorGrassB.asFloor().wall = this;
+            floorGrassC.asFloor().wall = this;
+            floorGrassD.asFloor().wall = this;
         }};
     }
 }
