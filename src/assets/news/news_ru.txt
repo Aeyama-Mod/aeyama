@@ -1,3 +1,9 @@
+[gray]June 13, 2023
+
+[white]Hey everyone, big news for the mod! We now are a [red]Java [white]mod! You can update it by redownloading the mod via the mod browser, a release might come soon there's still some things left to finish.
+
+Until then, cya!
+
 [gray]22 Апреля, 2023
 
 [green]+ [white]Новая, упрощённая нумерация версий!
@@ -27,7 +33,3 @@
 
 [white] Всем привет, мы добавили новый канал на Discord для трансляции наших сессий разработки, любой может прийти и пообщаться с нами, пока мы разрабатываем! :)
 Кроме того, многое изменится в следующей версии, поскольку мы удаляем систему multicrafter, как бы она ни была приятна, в ней также очень много багов, поэтому мы переходим на ваниллу!
-
-[gray]19 Марта, 2023
-
-[white] Всем привет, мы замедлили прогресс, но мы продолжаем разрабатывать его, мы не позволим умереть этому моду!
