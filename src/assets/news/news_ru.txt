@@ -1,8 +1,8 @@
 [gray]June 13, 2023
 
-[white]Hey everyone, big news for the mod! We now are a [red]Java [white]mod! You can update it by redownloading the mod via the mod browser, a release might come soon there's still some things left to finish.
+[white]Всем привет, есть большие новости! Теперь этот мод сделан на [red]Java [white]! Вы можете обновить его, переустановив мод с помощью браузера, релиз выйдет, когда будут доделан весь контент.
 
-Until then, cya!
+А пока, увидимся!
 
 [gray]22 Апреля, 2023
 
