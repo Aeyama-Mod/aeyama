@@ -17,17 +17,17 @@ jobs:
     - name: Set up PATH
       run: |
         echo "${ANDROID_HOME}/build-tools/30.0.1" >> $GITHUB_PATH
-    - name: Set up JDK 19
+    - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
-        java-version: 19.0.2
+        java-version: 17.0.7
         distribution: oracle
         cache: gradle
     - name: Grant execution permission to gradlew
       run: chmod +x ./gradlew
-    - name: Build mod jar
+    - name: Build mod JAR
       run: ./gradlew deploy
-    - name: Upload built jar file
+    - name: Upload built JAR file
       uses: actions/upload-artifact@v3
       with:
         name: ${{ github.event.repository.name }}

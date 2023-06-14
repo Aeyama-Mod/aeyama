@@ -1,6 +1,6 @@
-### Script by 🌟 Jojo#6430
+### Script by @jojofr_
 
-with open('./src/assets/mod.json', 'r+', encoding="utf8") as fileMod:
+with open('mod.json', 'r+', encoding="utf8") as fileMod:
     lineMod = fileMod.readlines()
     version = lineMod[4].split() #Get the line with version value
     version = version[1].replace('"', '').replace(',', '') #Get the build version number and remove some values
