@@ -3,6 +3,8 @@ package aeyama.content;
 import arc.graphics.*;
 
 import mindustry.ai.types.*;
+import mindustry.content.Fx;
+import mindustry.content.StatusEffects;
 import mindustry.entities.bullet.*;
 import mindustry.gen.*;
 import mindustry.type.*;
@@ -80,26 +82,34 @@ public class AeyamaUnitTypes {
             coreUnitDock = true;
             createScorch = false;
 
-            weapons.add(new Weapon("aeyama-rifle") {{
+            weapons.add(new Weapon("aeyama-taser") {{
                 aiControllable = false;
                 top = false;
                 x = 5f;
                 y = 3f;
                 shootY = 2f;
-                reload = 25f;
+                reload = 36f;
                 recoil = 2f;
-                shootSound = Sounds.pew;
-                shake = .25f;
+                shootSound = Sounds.spark;
+                shake = 0.1f;
                 alternate = false;
                 mirror = false;
-                bullet = new BasicBulletType() {{
-                    damage = 14f;
-                    speed = 6f;
-                    lifetime = 20f;
+                bullet = new LightningBulletType(){{
+                    lightningLength = 4;
+                    damage = 20f;
+                    speed = 0f;
                     collidesTeam = true;
-                    healPercent = 5f;
-                    frontColor = Color.valueOf("#ffffff");
-                    backColor = Color.valueOf("#98ffa9");
+                    healPercent = 2f;
+                    lifetime = Fx.lightning.lifetime;
+                    hitEffect = Fx.hitLancer;
+                    despawnEffect = Fx.none;
+                    status = StatusEffects.shocked;
+                    statusDuration = 10f;
+                    hittable = false;
+                    lightColor = Color.white;
+                    collidesAir = false;
+                    buildingDamageMultiplier = 0.25f;
+                    lightningColor = Color.valueOf("#98ffa9");
                 }};
             }});
         }};
@@ -421,7 +431,7 @@ public class AeyamaUnitTypes {
             canAttack = true;
             weapons.add(new Weapon("insect-spit") {{
                 top = false;
-                reload = 16f;
+                reload = 20f;
                 recoil = 1f;
                 x = 0f;
                 y = 2f;
@@ -433,7 +443,7 @@ public class AeyamaUnitTypes {
                 bullet = new BasicBulletType(3, 7) {{
                     lifetime = 26f;
                     frontColor = Color.valueOf("#16942e");
-                    backColor = Color.valueOf("#108225");
+                    backColor = Color.valueOf("#16942e");
                     trailColor = Color.valueOf("#16942e");
                     trailWidth = 1.2f;
                     trailLength = 5;
