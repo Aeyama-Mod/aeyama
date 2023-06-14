@@ -83,7 +83,6 @@ public class AeyamaUnitTypes {
             createScorch = false;
 
             weapons.add(new Weapon("aeyama-taser") {{
-                aiControllable = false;
                 top = false;
                 x = 5f;
                 y = 3f;
@@ -94,9 +93,11 @@ public class AeyamaUnitTypes {
                 shake = 0.1f;
                 alternate = false;
                 mirror = false;
+                shoot.shots = 3;
+                shoot.shotDelay = 0.5f;
                 bullet = new LightningBulletType(){{
                     lightningLength = 4;
-                    damage = 10f;
+                    damage = 6f;
                     speed = 0f;
                     collidesTeam = true;
                     healPercent = 2f;
@@ -107,9 +108,8 @@ public class AeyamaUnitTypes {
                     statusDuration = 10f;
                     hittable = false;
                     lightColor = Color.white;
-                    collidesAir = false;
                     buildingDamageMultiplier = 0.25f;
-                    lightningColor = Color.valueOf("#98ffa9");
+                    lightningColor = hitColor =Color.valueOf("#5b6ee1");
                 }};
             }});
         }};
