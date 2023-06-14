@@ -410,7 +410,7 @@ public class AeyamaUnitTypes {
             speed = 0.7f;
             drag = 0.5f;
             flying = false;
-            hitSize = 6f;
+            hitSize = 12f;
             physics = true;
             stepShake = 0.1f;
             rotateSpeed = 8f;
