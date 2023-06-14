@@ -96,7 +96,7 @@ public class AeyamaUnitTypes {
                 mirror = false;
                 bullet = new LightningBulletType(){{
                     lightningLength = 4;
-                    damage = 20f;
+                    damage = 10f;
                     speed = 0f;
                     collidesTeam = true;
                     healPercent = 2f;
