@@ -1,3 +1,9 @@
+[gray]13 Juin 2023
+
+[white]Salut tout le monde, grande nouvelle pour le mod ! Nous sommes désormais un mod en [red]Java [white]! Vous pouvez le mettre à jour en le téléchargeant à nouveau via le navigateur de mods, une mise à jour pourrait bientôt arriver, il reste encore quelques choses à terminer.
+
+D'ici là, à plus tard !
+
 [gray]22 Avril 2023
 
 [green]+ [white]Nouvelle numérotation de version, plus simple pour tout le monde !
@@ -27,7 +33,3 @@ Le premier secteur est actuellement en révision massive, ne jouez pas encore à
 
 [white] Salut à tous, nous avons ajouté un nouveau canal sur Discord pour diffuser nos sessions de développement, tout le monde est le bienvenu pour venir discuter avec nous pendant que nous développons ! :)
 Aussi, BEAUCOUP de choses vont changer dans la prochaine version car nous supprimons le système MultiCrafter, aussi agréable que cela puisse être, c'est aussi très buggy, donc nous passons en vanilla pur !
-
-[gray]19 Mars 2023
-
-[white] Salut tout le monde, nous avons ralenti les progrès mais nous continuons à le développer, nous ne laisserons pas mourir ce mod !

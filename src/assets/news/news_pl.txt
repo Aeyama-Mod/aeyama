@@ -1,30 +1,35 @@
-[gray]March 19, 2023
+[gray]June 13, 2023
 
-[white] Hey everyone, we slowed down progress but we are continuing to develop it, we will not let die this mod!
+[white]Hey everyone, big news for the mod! We now are a [red]Java [white]mod! You can update it by redownloading the mod via the mod browser, a release might come soon there's still some things left to finish.
 
-[gray]January 28, 2023
+Until then, cya!
 
-[white] Hi everyone! Just a little message to tell you that we are still working hard on the next update! Are you ready to continue the story?
+[gray]April 22, 2023
 
-[gray]January 15, 2023
+[green]+ [white]New versionning number, simpler for everyone!
+[yellow]* [white]Now only keeping the last 5 news messages, easier for client's bandwidth and we don't need to keep living in the past ;P
 
-[white] Release date! Version 0.2.0 just came out and with it, the first campaign sector! You're about to discover something new down here! ;)
-Thanks for you interest, and hopefully you'll enjoy your stay on Aeyama!
+If anyone wanna help out with translation, feel free to reach out of either Discord or Github!
+We also need help from artists, if anyone's interested.
 
-[green]+ [white]A bunch of translations (English, French, Polish, Russian and Ukrainian)
-[green]+ [white]New materials, with 5 of them available in the first sector
-[yellow]* [white]Refactored everything internally, doesn't change anything for you but it'll help us to keep updating
-[yellow]* [white]Bunch of buildings have been resprited!
+[gray]April 20, 2023
 
-If you guys wanna help or anything, feel free to come say hi on the discord!
+[white] Hey hey! Survival map should be [green]FIXED[white]!!
 
+[gray]April 17, 2023
 
-[gray]January 14, 2023
+[white] Good morning!
+A lot of errors have been popping up lately and we're sorry about that, we removed the MultiCrafter injection and thought that the game would still only receive the Released version but it seems it downloads the current dev build instead! So if you notice something wrong, please join the discord and tag FredyJabe with a screenshot of the error!
+Thanks for your patience and for downloading the mod!
 
-[green]+ [white]We now have a Trello for you to follow what's planned
+[green]+ [white]Procedural survival map
+[red]- [white]Removed MultiCrafter injection, now only using vanilla blocks
+[yellow]* [white]Reworking the whole tech tree because we changed a lot of the early progression
+[yellow]* [white]BUGS, GLITCHES AND CRASHES ARE EXPECTED, please report them on discord so we can fix them as soon as possible!
 
+The first sector is currently under massive rework, don't play the campaign yet, if you already have a campaign save, please erase it as you won't even be able to open the map anymore.
 
-[gray]January 9, 2023
+[gray]April 16, 2023
 
-[green]+ [white]Now with a news panel!
-[yellow]* [white]Updated the first sector to be somewhat playable, no objective yet.
+[white] Hey all, we added a new channel on Discord to stream our dev sessions, everybody's welcome to come and chat with us while we dev! :)
+Also, a LOT of stuff will change in the next version as we're removing the multicrafter system, as much as it is nice to have, it's also very buggy so we're switching to all vanilla!
