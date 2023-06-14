@@ -12,7 +12,7 @@ public class AeyamaUnitTypes {
         colonist,
         sms, assault, heavy, scout,
         
-        insectCrawler, insectSwarmer;
+        insectCrawler, insectSwarmer, insectSpit;
     
     public static void load() {
         colonist = new UnitType("colonist") {{
@@ -80,7 +80,7 @@ public class AeyamaUnitTypes {
             coreUnitDock = true;
             createScorch = false;
 
-            weapons.add(new Weapon("riffle") {{
+            weapons.add(new Weapon("aeyama-rifle") {{
                 aiControllable = false;
                 top = false;
                 x = 5f;
@@ -379,6 +379,64 @@ public class AeyamaUnitTypes {
                     lifetime = 1f;
                     frontColor = Color.valueOf("#ffffff00");
                     backColor = Color.valueOf("#98ffa900");
+                }};
+            }});
+        }};
+        insectSpit = new UnitType("insect-spit") {{
+            aiController = GroundAI::new;
+            constructor = LegsUnit::create;
+            isEnemy = true;
+            groundLayer = 60f;
+
+            legSpeed = 0.7f;
+            legCount = 6;
+            legLengthScl = 3f;
+            legGroupSize = 3;
+            legMoveSpace = 0.6f;
+            legMinLength = 0.2f;
+            legMaxLength = 0.5f;
+            legExtension = 1f;
+            legStraightness = 0.5f;
+            legBaseOffset = 1f;
+            legPairOffset = 0.6f;
+            rippleScale = 0.15f;
+            lockLegBase = true;
+            legContinuousMove = true;
+            legPhysicsLayer = false;
+            allowLegStep = false;
+
+            health = 36f;
+            armor = 2f;
+            speed = 0.7f;
+            drag = 0.5f;
+            flying = false;
+            hitSize = 6f;
+            physics = true;
+            stepShake = 0.1f;
+            rotateSpeed = 8f;
+
+            createScorch = false;
+            createWreck = false;
+
+            canAttack = true;
+            weapons.add(new Weapon("insect-spit") {{
+                top = false;
+                reload = 16f;
+                recoil = 1f;
+                x = 0f;
+                y = 2f;
+                shootY = 3f;
+                shake = 0.25f;
+                alternate = false;
+                mirror = false;
+                shootSound = Sounds.none;
+                bullet = new BasicBulletType(3, 7) {{
+                    lifetime = 26f;
+                    frontColor = Color.valueOf("#16942e");
+                    backColor = Color.valueOf("#108225");
+                    trailColor = Color.valueOf("#16942e");
+                    trailWidth = 1.2f;
+                    trailLength = 5;
                 }};
             }});
         }};
