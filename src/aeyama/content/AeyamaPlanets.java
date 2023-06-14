@@ -3,7 +3,6 @@ package aeyama.content;
 import arc.graphics.*;
 
 import mindustry.content.*;
-import mindustry.graphics.Pal;
 import mindustry.graphics.g3d.*;
 import mindustry.type.*;
 
@@ -46,10 +45,14 @@ public class AeyamaPlanets {
 
             itemWhitelist = AeyamaItems.aeyamaItems;
 
-            meshLoader = () -> new HexMesh(this, 6);
-
-            cloudMeshLoader = () -> new MultiMesh(
-                    new HexSkyMesh(this, 5, 1.5f, .12f, 5, Color.valueOf("#7eb6debb"), 1, 2f, 2f, .45f)
+            meshLoader = () -> new MultiMesh(
+                new NoiseMesh(this, 262436,
+                              5, .9f, 4, 1f, .75f, 1.2f,
+                              Color.valueOf("#158400"), Color.valueOf("#7070ff"),
+                              4, .5f, .5f, .5f),
+                
+                new HexSkyMesh(this, 5,     
+                               1.5f, .12f, 5, Color.valueOf("#7eb6debb"), 1, 2f, 2f, .45f)
             );
         }};
 

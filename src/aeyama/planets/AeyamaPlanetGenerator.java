@@ -252,7 +252,7 @@ public class AeyamaPlanetGenerator extends PlanetGenerator {
             state.rules.winWave = sector.info.winWave = (int) (10 + 5 * Math.max(difficulty * 10, 1));
         }
 
-        float waveTimeDec = 4f;
+        float waveTimeDec = .4f;
 
         state.rules.waveSpacing = Mathf.lerp(60 * 65 * 2, 60 * 60 * 1, (float) Math.floor(Math.max(difficulty - waveTimeDec, 0) / .8f));
         state.rules.waves = sector.info.waves = true;
