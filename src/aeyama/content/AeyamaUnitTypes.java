@@ -3,6 +3,8 @@ package aeyama.content;
 import arc.graphics.*;
 
 import mindustry.ai.types.*;
+import mindustry.content.Fx;
+import mindustry.content.StatusEffects;
 import mindustry.entities.bullet.*;
 import mindustry.gen.*;
 import mindustry.type.*;
@@ -12,7 +14,7 @@ public class AeyamaUnitTypes {
         colonist,
         sms, assault, heavy, scout,
         
-        insectCrawler, insectSwarmer;
+        insectCrawler, insectSwarmer, insectSpit;
     
     public static void load() {
         colonist = new UnitType("colonist") {{
@@ -80,26 +82,34 @@ public class AeyamaUnitTypes {
             coreUnitDock = true;
             createScorch = false;
 
-            weapons.add(new Weapon("riffle") {{
-                aiControllable = false;
+            weapons.add(new Weapon("aeyama-taser") {{
                 top = false;
                 x = 5f;
                 y = 3f;
                 shootY = 2f;
-                reload = 25f;
+                reload = 36f;
                 recoil = 2f;
-                shootSound = Sounds.pew;
-                shake = .25f;
+                shootSound = Sounds.spark;
+                shake = 0.1f;
                 alternate = false;
                 mirror = false;
-                bullet = new BasicBulletType() {{
-                    damage = 14f;
-                    speed = 6f;
-                    lifetime = 20f;
+                shoot.shots = 3;
+                shoot.shotDelay = 0.5f;
+                bullet = new LightningBulletType(){{
+                    lightningLength = 4;
+                    damage = 6f;
+                    speed = 0f;
                     collidesTeam = true;
-                    healPercent = 5f;
-                    frontColor = Color.valueOf("#ffffff");
-                    backColor = Color.valueOf("#98ffa9");
+                    healPercent = 2f;
+                    lifetime = Fx.lightning.lifetime;
+                    hitEffect = Fx.hitLancer;
+                    despawnEffect = Fx.none;
+                    status = StatusEffects.shocked;
+                    statusDuration = 10f;
+                    hittable = false;
+                    lightColor = Color.white;
+                    buildingDamageMultiplier = 0.25f;
+                    lightningColor = hitColor =Color.valueOf("#5b6ee1");
                 }};
             }});
         }};
@@ -305,7 +315,7 @@ public class AeyamaUnitTypes {
             createWreck = false;
             
             canAttack = true;
-            weapons.add(new Weapon("insect-swarmer") {{
+            weapons.add(new Weapon("aeyama-insect-swarmer") {{
                 top = false;
                 reload = 25f;
                 recoil = -1f;
@@ -362,7 +372,7 @@ public class AeyamaUnitTypes {
             createWreck = false;
             
             canAttack = true;
-            weapons.add(new Weapon("insect-swarmer") {{
+            weapons.add(new Weapon("aeyama-insect-swarmer") {{
                 top = false;
                 reload = 5f;
                 recoil = -1f;
@@ -379,6 +389,64 @@ public class AeyamaUnitTypes {
                     lifetime = 1f;
                     frontColor = Color.valueOf("#ffffff00");
                     backColor = Color.valueOf("#98ffa900");
+                }};
+            }});
+        }};
+        insectSpit = new UnitType("insect-spit") {{
+            aiController = GroundAI::new;
+            constructor = LegsUnit::create;
+            isEnemy = true;
+            groundLayer = 60f;
+
+            legSpeed = 0.7f;
+            legCount = 6;
+            legLengthScl = 3f;
+            legGroupSize = 3;
+            legMoveSpace = 0.6f;
+            legMinLength = 0.2f;
+            legMaxLength = 0.5f;
+            legExtension = 1f;
+            legStraightness = 0.5f;
+            legBaseOffset = 1f;
+            legPairOffset = 0.6f;
+            rippleScale = 0.15f;
+            lockLegBase = true;
+            legContinuousMove = true;
+            legPhysicsLayer = false;
+            allowLegStep = false;
+
+            health = 36f;
+            armor = 2f;
+            speed = 0.7f;
+            drag = 0.5f;
+            flying = false;
+            hitSize = 12f;
+            physics = true;
+            stepShake = 0.1f;
+            rotateSpeed = 8f;
+
+            createScorch = false;
+            createWreck = false;
+
+            canAttack = true;
+            weapons.add(new Weapon("insect-spit") {{
+                top = false;
+                reload = 20f;
+                recoil = 1f;
+                x = 0f;
+                y = 2f;
+                shootY = 3f;
+                shake = 0.25f;
+                alternate = false;
+                mirror = false;
+                shootSound = Sounds.none;
+                bullet = new BasicBulletType(3, 7) {{
+                    lifetime = 26f;
+                    frontColor = Color.valueOf("#16942e");
+                    backColor = Color.valueOf("#16942e");
+                    trailColor = Color.valueOf("#16942e");
+                    trailWidth = 1.2f;
+                    trailLength = 5;
                 }};
             }});
         }};
