@@ -3,8 +3,7 @@ package aeyama.content;
 import arc.graphics.*;
 
 import mindustry.ai.types.*;
-import mindustry.content.Fx;
-import mindustry.content.StatusEffects;
+import mindustry.content.*;
 import mindustry.entities.bullet.*;
 import mindustry.gen.*;
 import mindustry.type.*;
