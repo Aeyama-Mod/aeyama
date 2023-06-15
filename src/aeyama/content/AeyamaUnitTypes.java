@@ -315,7 +315,7 @@ public class AeyamaUnitTypes {
             createWreck = false;
             
             canAttack = true;
-            weapons.add(new Weapon("insect-swarmer") {{
+            weapons.add(new Weapon("aeyama-insect-swarmer") {{
                 top = false;
                 reload = 25f;
                 recoil = -1f;
@@ -372,7 +372,7 @@ public class AeyamaUnitTypes {
             createWreck = false;
             
             canAttack = true;
-            weapons.add(new Weapon("insect-swarmer") {{
+            weapons.add(new Weapon("aeyama-insect-swarmer") {{
                 top = false;
                 reload = 5f;
                 recoil = -1f;
