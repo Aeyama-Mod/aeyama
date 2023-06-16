@@ -306,7 +306,7 @@ public class AeyamaUnitTypes {
             speed = .75f;
             drag = 1f;
             flying = false;
-            hitSize = 12f;
+            hitSize = 8f;
             physics = true;
             stepShake = 0f;
             rotateSpeed = 8f;
@@ -315,12 +315,12 @@ public class AeyamaUnitTypes {
             createWreck = false;
             
             canAttack = true;
-            weapons.add(new Weapon("aeyama-insect-swarmer") {{
+            weapons.add(new Weapon("aeyama-insect-claw") {{
                 top = false;
                 reload = 25f;
                 recoil = -1f;
-                x = -.8f;
-                y = 4f;
+                x = -0.8f;
+                y = 3.25f;
                 shootY = 4f;
                 shake = .35f;
                 alternate = false;
@@ -372,7 +372,7 @@ public class AeyamaUnitTypes {
             createWreck = false;
             
             canAttack = true;
-            weapons.add(new Weapon("aeyama-insect-swarmer") {{
+            weapons.add(new Weapon("aeyama-insect-claw") {{
                 top = false;
                 reload = 5f;
                 recoil = -1f;
@@ -420,7 +420,7 @@ public class AeyamaUnitTypes {
             speed = 0.7f;
             drag = 0.5f;
             flying = false;
-            hitSize = 12f;
+            hitSize = 10f;
             physics = true;
             stepShake = 0.1f;
             rotateSpeed = 8f;
