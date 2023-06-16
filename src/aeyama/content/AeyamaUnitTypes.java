@@ -3,8 +3,7 @@ package aeyama.content;
 import arc.graphics.*;
 
 import mindustry.ai.types.*;
-import mindustry.content.Fx;
-import mindustry.content.StatusEffects;
+import mindustry.content.*;
 import mindustry.entities.bullet.*;
 import mindustry.gen.*;
 import mindustry.type.*;
@@ -315,6 +314,7 @@ public class AeyamaUnitTypes {
             createWreck = false;
             
             canAttack = true;
+
             weapons.add(new Weapon("aeyama-insect-claw") {{
                 top = false;
                 reload = 25f;
@@ -372,6 +372,7 @@ public class AeyamaUnitTypes {
             createWreck = false;
             
             canAttack = true;
+
             weapons.add(new Weapon("aeyama-insect-claw") {{
                 top = false;
                 reload = 5f;
