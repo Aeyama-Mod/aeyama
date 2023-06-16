@@ -110,6 +110,11 @@ public class AeyamaProductionBlocks {
             craftTime = 180f;
             consumeItem(AeyamaItems.woodLumberDry, 10);
             outputItems = with(AeyamaItems.woodShreds, 2);
+            drawer = new DrawMulti(
+                    new DrawDefault(),
+                    new DrawRegion("-blade", 3, true),
+                    new DrawRegion("-blade", -3, true)
+            );
 
             requirements(Category.crafting, with(AeyamaItems.woodLumber, 125, AeyamaItems.stoneBrick, 50, AeyamaItems.rawIron, 35));
         }};
@@ -127,7 +132,7 @@ public class AeyamaProductionBlocks {
             health = 360;
 
             craftTime = 600f;
-            consume(new ConsumeItemFlammable() {{ minFlammability = .8f; }});
+            consume(new ConsumeItemFlammable() {{ minFlammability = 0.8f; }});
             heatOutput = 50f;
             drawer = new DrawMulti(
                 new DrawDefault(),
