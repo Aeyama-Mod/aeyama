@@ -27,7 +27,7 @@ public class AeyamaUnitTypes {
 
             health = 100f;
             armor = 2f;
-            speed = 1.5f;
+            speed = 1.75f;
             drag = 1.25f;
             flying = false;
             omniMovement = true;
@@ -38,7 +38,7 @@ public class AeyamaUnitTypes {
             buildRange = 150f;
 
             canBoost = true;
-            boostMultiplier = .5f;
+            boostMultiplier = .75f; // Fly speed over obstacle/far from camera
 
             canAttack = true;
             mineSpeed = 2f;
@@ -59,14 +59,14 @@ public class AeyamaUnitTypes {
             legSpeed = .5f;
 
             health = 300f;
-            speed = 1.5f;
+            speed = 1.75f;
             drag = 1.25f;
             flying = false;
             omniMovement = true;
             hitSize = 2f;
             itemCapacity = 10;
 
-            buildSpeed = .25f;
+            buildSpeed = .75f;
             buildRange = 100f;
 
             canBoost = true;

@@ -54,6 +54,9 @@ public class NewsDialog {
                 }
             }).size(256, 64).center();
             dialog.cont.row();
+        }, err -> {
+            dialog.cont.add("[red] FAILED TO GET NEWS.");
+            Log.err(err.getMessage());
         });
 
         dialog.show();
