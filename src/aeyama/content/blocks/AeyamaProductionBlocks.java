@@ -129,14 +129,20 @@ public class AeyamaProductionBlocks {
             requirements(Category.crafting, with(AeyamaItems.woodLumber, 100, AeyamaItems.stoneBrick, 50)); //TODO
         }};
         burner = new HeatProducer("burner") {{
-            // scaledHealth =
+            health = 360;
 
             craftTime = 600f;
             consume(new ConsumeItemFlammable() {{ minFlammability = 0.8f; }});
             heatOutput = 50f;
             drawer = new DrawMulti(
                 new DrawDefault(),
-                new DrawFlame(Color.valueOf("#FF6230"))
+                new DrawFlame(Color.valueOf("#FF6230")) {{
+                    flameRadius = 1f;
+                    flameRadiusIn = .7f;
+                    flameRadiusScl = 7f;
+                    flameRadiusMag = .8f;
+                    flameRadiusInMag = .5f;
+                }}
             );
 
             requirements(Category.crafting, with(AeyamaItems.woodLumber, 50, AeyamaItems.stoneBrick, 100));
