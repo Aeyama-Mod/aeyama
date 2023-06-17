@@ -254,7 +254,7 @@ public class AeyamaProductionBlocks {
             scaledHealth = 263f;
             size = 3;
 
-            craftTime = 3600f;
+            craftTime = 30f * 60f; // Seconds / Game Tick
             outputItems = with(AeyamaItems.blueprint, 1);
 
             requirements(Category.crafting, with(AeyamaItems.woodLumber, 80, AeyamaItems.stoneBrick, 120, AeyamaItems.rawIron, 50));
@@ -263,7 +263,7 @@ public class AeyamaProductionBlocks {
             scaledHealth = 263f;
             size = 4;
 
-            craftTime = 7200f;
+            craftTime = 60f * 60f; // Seconds / Game Tick
             outputItems = with(AeyamaItems.advancedBlueprint, 1);
             drawer = new DrawMulti(
                 new DrawDefault(),
