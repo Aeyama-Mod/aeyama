@@ -1,4 +1,10 @@
-[gray]June 13, 2023
+[gray]June 17th, 2023
+
+[white]Holà! The [yellow]first sector [white]was [green]updated[white]! The objectives are all back.
+
+If you have any issue or feedback come on our [blue]Discord [white]or create an issue on GitHub! Adiós!
+
+[gray]June 13rd, 2023
 
 [white]Hey everyone, big news for the mod! We now are a [red]Java [white]mod! You can update it by redownloading the mod via the mod browser, a release might come soon there's still some things left to finish.
 
@@ -28,8 +34,3 @@ Un montón de errores aparecieron últimamente y lo sentimos, removimos la unió
 [yellow]* [white]SE ESPERAN BUGS, GLITCHES Y CRASHEOS, ¡Por favor, repórtalos en nuestro Discord para arreglarlos lo antes posible!
 
 El primer sector está rehaciéndose, no jueguen la campaña todavía, si ya tienes un guardado en la campaña, elimínalo ya que no podrás abrir el mapa.
-
-[gray]Abril 16, 2023
-
-[white] Hola a todos, añadimos un canal en Discord para transmitir nuestras sesiones de desarrollo, ¡Todos son invitados a entrar y chatear mientras desarrollamos! :)
-También, un MONTÓN de cosas cambiarán en la siguiente versión porque estamos removiendo el sistema del multicrafter, aunque está muy chulo, ¡También está muy bugueado, así que nos pasamos al vanilla!
