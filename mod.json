@@ -2,7 +2,7 @@
     "name": "aeyama",
     "repo": "fredyjabe/aeyama",
     "minGameVersion": 144,
-    "version": "158",
+    "version": "159",
 
     "java": true,
     "main": "aeyama.Aeyama",
