@@ -1,3 +1,9 @@
+[gray]17 Juin 2023
+
+[white]Holà! Le [yellow]premier secteur [white]a été [green]mis à jour[white] ! Les objectifs sont tous de retour.
+
+Si vous rencontrez un problème ou si vous avez des commentaires, rejoignez notre [blue]Discord [white]ou créez un issue sur GitHub ! Adiós!
+
 [gray]13 Juin 2023
 
 [white]Salut tout le monde, grande nouvelle pour le mod ! Nous sommes désormais un mod en [red]Java [white]! Vous pouvez le mettre à jour en le téléchargeant à nouveau via le navigateur de mods, une mise à jour pourrait bientôt arriver, il reste encore quelques choses à terminer.
@@ -28,8 +34,3 @@ Merci pour votre patience et pour avoir téléchargé le mod !
 [yellow]* [white]DES BUGS, DES GLITCHES ET DES PLANTAGES SONT À PRÉVOIR, veuillez les signaler sur Discord afin que nous puissions les corriger dès que possible !
 
 Le premier secteur est actuellement en révision massive, ne jouez pas encore à la campagne, si vous avez déjà une sauvegarde de la campagne, veuillez l'effacer car vous ne pourrez même plus ouvrir la carte.
-
-[gray]16 Avril 2023
-
-[white] Salut à tous, nous avons ajouté un nouveau canal sur Discord pour diffuser nos sessions de développement, tout le monde est le bienvenu pour venir discuter avec nous pendant que nous développons ! :)
-Aussi, BEAUCOUP de choses vont changer dans la prochaine version car nous supprimons le système MultiCrafter, aussi agréable que cela puisse être, c'est aussi très buggy, donc nous passons en vanilla pur !
