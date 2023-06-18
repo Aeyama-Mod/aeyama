@@ -1,7 +1,7 @@
 {
     "name": "aeyama",
     "repo": "fredyjabe/aeyama",
-    "minGameVersion": 144,
+    "minGameVersion": 145,
     "version": "160",
 
     "java": true,
