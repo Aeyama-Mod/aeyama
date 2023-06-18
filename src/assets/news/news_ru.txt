@@ -1,8 +1,8 @@
-[gray]June 17th, 2023
+[gray]17 Июня, 2023
 
-[white]Holà! The [yellow]first sector [white]was [green]updated[white]! The objectives are all back.
+[white]Привет! [yellow]Первый сектор [white]был [green]обновлён[white]! Задания возвращены.
 
-If you have any issue or feedback come on our [blue]Discord [white]or create an issue on GitHub! Adiós!
+Если у вас есть какие-либо проблемы или отзывы, пишите в наш сервер [blue]Discord [white]или откройте проблему [gray](Issue) [white]на GitHub! Адьос!
 
 [gray]13 Июня, 2023
 
