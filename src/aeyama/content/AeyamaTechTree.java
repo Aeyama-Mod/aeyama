@@ -14,7 +14,7 @@ public class AeyamaTechTree {
     public static void load() {
         AeyamaPlanets.aeyama.techTree = nodeRoot("Aeyama", AeyamaItems.planet, () -> {
             node(AeyamaStorageBlocks.coreDropPod, () -> {
-                node(AeyamaDistributionBlocks.woodConveyor, with(AeyamaItems.woodLumber, 10, AeyamaItems.stoneBrick, 5), Seq.with(new Research(AeyamaProductionBlocks.woodHarvester)), () -> {
+                node(AeyamaDistributionBlocks.woodConveyor, with(AeyamaItems.woodLumber, 10, AeyamaItems.stone, 5), Seq.with(new Research(AeyamaProductionBlocks.woodHarvester)), () -> {
                     node(AeyamaDistributionBlocks.ironConveyor, with(/*TODO*/), Seq.with(new Produce(AeyamaItems.iron)), () -> {
                         node(AeyamaDistributionBlocks.steelConveyor, with(/*TODO*/), Seq.with(new Produce(AeyamaItems.iron), new Produce(AeyamaItems.steel)), () -> {
 
@@ -28,7 +28,7 @@ public class AeyamaTechTree {
                             });
                         });
                     });
-                    node(AeyamaDistributionBlocks.woodRouter, with(AeyamaItems.woodLumber, 20, AeyamaItems.stoneBrick, 10), Seq.with(new Produce(AeyamaItems.rawIron)), () -> {
+                    node(AeyamaDistributionBlocks.woodRouter, with(AeyamaItems.woodLumber, 20, AeyamaItems.stone, 10), Seq.with(new Produce(AeyamaItems.rawIron)), () -> {
 
                     });
                 });

@@ -19,12 +19,12 @@ public class AeyamaDistributionBlocks {
             speed = 0.03f;
             displayedSpeed = speed * 140;
 
-            requirements(Category.distribution, with(AeyamaItems.woodLumber, 2, AeyamaItems.stoneBrick, 1));
+            requirements(Category.distribution, with(AeyamaItems.woodLumber, 2));
         }};
         woodRouter = new Router("wood-router") {{
             scaledHealth = 20f;
 
-            requirements(Category.distribution, with(AeyamaItems.woodLumber, 6, AeyamaItems.stoneBrick, 2));
+            requirements(Category.distribution, with(AeyamaItems.woodLumber, 6, AeyamaItems.stone, 2));
         }};
         ironConveyor = new Conveyor("iron-conveyor") {{
             // scaledHealth = 
