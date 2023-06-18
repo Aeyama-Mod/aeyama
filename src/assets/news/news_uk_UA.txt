@@ -1,36 +1,36 @@
-[gray]June 17th, 2023
+[gray]17 Червня, 2023
 
-[white]Holà! The [yellow]first sector [white]was [green]updated[white]! The objectives are all back.
+[white]Привіт! [yellow]Перший сектор [white]був [green]оновлений[white]! Усі цілі повернулися.
 
-If you have any issue or feedback come on our [blue]Discord [white]or create an issue on GitHub! Adiós!
+Якщо у вас є проблеми або вам потрібен зворотній зв'язок, приєднуйтесь до нас у [blue]Discord [white]або оповістіть о проблемі на GitHub! Адіос!
 
-[gray]June 13rd, 2023
+[gray]13 Червня, 2023
 
-[white]Hey everyone, big news for the mod! We now are a [red]Java [white]mod! You can update it by redownloading the mod via the mod browser, a release might come soon there's still some things left to finish.
+[white]Всім привеіт, є важлива новина! Тепер цей мод зроблений на [red]Java [white]!Ви можете оновити його, перевстановивши мод за допомогою браузера. Реліз вийде, коли коли весь контент буде закінчений.
 
-Until then, cya!
+А поки, побачимось!
 
-[gray]April 22nd, 2023
+[gray]22 Квітня, 2023
 
-[green]+ [white]New versionning number, simpler for everyone!
-[yellow]* [white]Now only keeping the last 5 news messages, easier for client's bandwidth and we don't need to keep living in the past ;P
+[green]+ [white]Новий та простіший для всіх номер версій!
+[yellow]* [white]Тепер тут показуються тільки останні 5 повідомлень, буде легше прокручувати й нам не треба буде жити у минулому ;P
 
-If anyone wanna help out with translation, feel free to reach out of either Discord or Github!
-We also need help from artists, if anyone's interested.
+Якщо хтось хоче допомогти нам з перекладом, то не соромтесь заходити на Discord або Github, вам будуть тільки раді!
+Також нам потрібна допомога зі спрайтами та текстурами від художників, кому цікаво.
 
-[gray]April 20th, 2023
+[gray]20 Квітня, 2023
 
-[white] Hey hey! Survival map should be [green]FIXED[white]!!
+[white] Привіт! Карту виживання скоріш за все [green]ПОЧИНЕНО[white]!!
 
-[gray]April 17th, 2023
+[gray]17 Квітня, 2023
 
-[white] Good morning!
-A lot of errors have been popping up lately and we're sorry about that, we removed the MultiCrafter injection and thought that the game would still only receive the Released version but it seems it downloads the current dev build instead! So if you notice something wrong, please join the discord and tag FredyJabe with a screenshot of the error!
-Thanks for your patience and for downloading the mod!
+[white] Доброго ранку!
+Останнім часом з'являлося багато помилок, і ми шкодуємо за це, ми видалили розширення MultiCrafter та гадали, що гра як раніше буде завантажувати тільки реліз, але вона завантажує останнію тестову розробницьку версію! Тому якщо ви помітите якусь помилку, заходьте на наш Discord та згадуйте FredyJabe зі скриншотом помилки!
+Дякуємо за терпіння та за завантаження модифікації!
 
-[green]+ [white]Procedural survival map
-[red]- [white]Removed MultiCrafter injection, now only using vanilla blocks
-[yellow]* [white]Reworking the whole tech tree because we changed a lot of the early progression
-[yellow]* [white]BUGS, GLITCHES AND CRASHES ARE EXPECTED, please report them on discord so we can fix them as soon as possible!
+[green]+ [white]Процедурно-згенерована карта виживання
+[red]- [white]Видалене розширення MultiCrafter, тепер використовуються тільки ванильні блоки
+[yellow]* [white]Переробка цілого дерева технологій, тому що ми дуже сильно змінили ранній розвиток
+[yellow]* [white]ОЧІКУЮТЬСЯ БАГИ, ГЛЮКИ ТА ВИЛІТИ, будь ласка, говоріть про них у Discord, щоби ми могли виправити їх якомога швидше!
 
-The first sector is currently under massive rework, don't play the campaign yet, if you already have a campaign save, please erase it as you won't even be able to open the map anymore.
+Перший сектор очікує массивна переробка, так що не грайте в кампанію. Якщо у вас є збереженна компанія, зітріть його, так як ви не зможете відкрити карту.
