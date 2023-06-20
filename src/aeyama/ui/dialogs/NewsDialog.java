@@ -12,7 +12,7 @@ import static mindustry.Vars.*;
 
 public class NewsDialog {
     LoadedMod mod = Vars.mods.getMod("aeyama");
-    String urlGithub = "https://github.com/FredyJabe/aeyama";
+    String urlGithub = "https://github.com/Aeyama-Mod/aeyama";
     String urlDiscord = "https://discord.gg/YVY9Y3uA85";
     String urlProject = "https://github.com/users/FredyJabe/projects/2";
     // String news = "[red] FAILED TO GET HTTP CONTENT.";
