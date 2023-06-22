@@ -23,7 +23,6 @@ body:
     attributes:
       label: Issue Description
       description: Explain the issue in details.
-      placeholder: Issue description
     validations:
       required: true
   - type: textarea
