@@ -1,0 +1,43 @@
+name: Bug report
+description: Create a report to help us fix issues
+labels: ["Bug"]
+body:
+  - type: input
+    id: modbuild
+    attributes:
+      label: Mod Build
+      description: Found on top of the news screen.
+      placeholder: ex. 153
+    validations:
+      required: true
+  - type: input
+    id: gamebuild
+    attributes:
+      label: Game Build
+      description: Found under the title in the main menu.
+      placeholder: ex. 145.1
+    validations:
+      required: true
+  - type: textarea
+    id: desc
+    attributes:
+      label: Issue Description
+      description: Explain the issue in details.
+      placeholder: Issue description
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Make a list of all the steps.
+      placeholder: 1. ...
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If you have something to show.
+    validations:
+      required: false
