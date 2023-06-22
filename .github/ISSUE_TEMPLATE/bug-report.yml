@@ -32,7 +32,7 @@ body:
       description: Make a list of all the steps.
       placeholder: 1. ...
     validations:
-      required: false
+      required: true
   - type: textarea
     id: screenshots
     attributes:
