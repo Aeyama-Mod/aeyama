@@ -68,19 +68,10 @@ public class AeyamaTechTree {
                             });
                         });
                         node(AeyamaProductionBlocks.burner, with(AeyamaItems.woodLumber, 150, AeyamaItems.stoneBrick, 375, AeyamaItems.rawIron, 75, AeyamaItems.blueprint, 2), () -> {
-                            node(AeyamaProductionBlocks.smelterIron, with(AeyamaItems.woodLumber, 500, AeyamaItems.stoneBrick, 800, AeyamaItems.rawIron, 300, AeyamaItems.blueprint, 4), () -> {
-                                node(AeyamaProductionBlocks.foundrySteel, with(AeyamaItems.iron, 300, AeyamaItems.woodLumber, 75, AeyamaItems.stoneBrick, 450, AeyamaItems.blueprint, 2), () -> {
+                            node(AeyamaProductionBlocks.oreSmelter, with(AeyamaItems.woodLumber, 450, AeyamaItems.stoneBrick, 650, AeyamaItems.rawIron, 300, AeyamaItems.blueprint, 2), () -> {
+                                node(AeyamaProductionBlocks.oreFoundry, with(AeyamaItems.iron, 280, AeyamaItems.woodLumber, 725, AeyamaItems.stoneBrick, 800, AeyamaItems.blueprint, 4), () -> {
     
                                 });
-                            });
-                            node(AeyamaProductionBlocks.smelterCopper, with(AeyamaItems.woodLumber, 500, AeyamaItems.stoneBrick, 800, AeyamaItems.rawCopper, 300, AeyamaItems.blueprint, 4), () -> {
-                                
-                            });
-                            node(AeyamaProductionBlocks.smelterZinc, with(AeyamaItems.woodLumber, 500, AeyamaItems.stoneBrick, 800, AeyamaItems.rawZinc, 300, AeyamaItems.blueprint, 4), () -> {
-                                node(AeyamaProductionBlocks.foundryBrass, with(AeyamaItems.iron, 150, AeyamaItems.woodLumber, 75, AeyamaItems.stoneBrick, 450, AeyamaItems.blueprint, 2), () -> {
-        
-                                });
-    
                             });
                         });
                         node(AeyamaProductionBlocks.researchLab, with(AeyamaItems.woodLumber, 800, AeyamaItems.stoneBrick, 1200, AeyamaItems.rawIron, 500, AeyamaItems.blueprint, 10), () -> {

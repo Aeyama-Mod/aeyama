@@ -43,7 +43,6 @@ public class AeyamaItems {
             buildable = false;
         }};
         stone = new Item("stone", Color.valueOf("#e0b28d")) {{            
-            hardness = 0;
             buildable = false;
         }};
         stonePebbles = new Item("stone-pebbles", Color.valueOf("#e0b28c")) {{

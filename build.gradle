@@ -5,7 +5,7 @@ version '1.0'
 targetCompatibility = JavaVersion.VERSION_1_8
 sourceCompatibility = JavaVersion.VERSION_17
 
-sourceSets.main.java.srcDirs = ["src"]
+sourceSets.main.java.srcDirs = ["src/"]
 
 repositories {
     mavenCentral()
@@ -17,6 +17,8 @@ ext {
     mindustryVersion = 'v145'
     jabelVersion = "93fde537c7"
     sdkRoot = System.getenv("ANDROID_HOME") ?: System.getenv("ANDROID_SDK_ROOT")
+
+    multicrafterVersion = '1.6' // Official 1.7 is broken
 }
 
 //java 8 backwards compatibility flag
@@ -29,6 +31,9 @@ allprojects {
 dependencies {
     compileOnly "com.github.Anuken.Arc:arc-core:$mindustryVersion"
     compileOnly "com.github.Anuken.MindustryJitpack:core:$mindustryVersion"
+
+    // implementation("com.github.liplum:MultiCrafterLib:$multicrafterVersion") 
+    implementation("com.github.jojofr1:MultiCrafterLib:c1.7") //Custom Build
 
     annotationProcessor "com.github.Anuken:jabel:$jabelVersion"
 }
