@@ -11,7 +11,7 @@ public class AeyamaItems {
     woodLumber, woodShreds, woodLumberDry, carbon,
     stone, stonePebbles, stoneBrick, rawIron, iron,
     steel, rawCopper, copper, brass, rawZinc, zinc,
-    rawTin, tin, bronze, rawAluminium, aluminium,
+    rawTin, tin, bronze, rawAluminum, aluminum,
     rawTitanium, titanium, sand, blueprint, advancedBlueprint,
     specialBPDefense, specialBPOffense,
 
@@ -95,11 +95,11 @@ public class AeyamaItems {
         bronze = new Item("bronze", Color.valueOf("#000000")) {{
             buildable = false;
         }};
-        rawAluminium = new Item("raw-aluminium", Color.valueOf("#000000")) {{
+        rawAluminum = new Item("raw-aluminum", Color.valueOf("#000000")) {{
             hardness = 2;
             buildable = false;
         }};
-        aluminium = new Item("aluminium", Color.valueOf("#000000")) {{
+        aluminum = new Item("aluminum", Color.valueOf("#000000")) {{
             buildable = false;
         }};
         rawTitanium = new Item("raw-titanium", Color.valueOf("#000000")) {{
@@ -167,7 +167,7 @@ public class AeyamaItems {
             woodLumber, woodShreds, woodLumberDry, carbon,
             stone, stonePebbles, stoneBrick, rawIron, iron,
             steel, rawCopper, copper, brass, rawZinc, zinc,
-            rawTin, tin, bronze, rawAluminium, aluminium,
+            rawTin, tin, bronze, rawAluminum, aluminum,
             rawTitanium, titanium, sand, blueprint, advancedBlueprint,
             specialBPDefense, specialBPOffense, rifle, highCaliber,
             combustibleCanister, rocket, shotgunShell, shotgunSlug,

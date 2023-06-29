@@ -171,8 +171,8 @@ public class AeyamaTechTree {
                             });
                         });
                         nodeProduce(AeyamaItems.rawZinc, () -> {
-                            nodeProduce(AeyamaItems.rawAluminium, () -> {
-                                nodeProduce(AeyamaItems.aluminium, () -> {
+                            nodeProduce(AeyamaItems.rawAluminum, () -> {
+                                nodeProduce(AeyamaItems.aluminum, () -> {
                                     
                                 });
                             });
