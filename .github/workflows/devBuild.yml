@@ -23,12 +23,33 @@ jobs:
         java-version: 17.0.7
         distribution: oracle
         cache: gradle
-    - name: Grant execution permission to gradlew
-      run: chmod +x ./gradlew
     - name: Build mod JAR
-      run: ./gradlew deploy
+      run: chmod +x ./gradlew; ./gradlew deploy
     - name: Upload built JAR file
       uses: actions/upload-artifact@v3
       with:
         name: ${{ github.event.repository.name }}
         path: build/libs/${{ github.event.repository.name }}.jar
+  
+  updateVersion:
+    permissions:
+      contents: write
+
+    if: ${{ github.repository == 'Aeyama-Mod/aeyama' }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Build Version Update
+      run: |
+        python .github/workflows/scripts/version.py
+        git config --global user.name "Github Actions"
+        git config --global user.email "actions@github.com"
+        git add .
+        git commit -m 'Automatic Build Version Update'
+        git push
