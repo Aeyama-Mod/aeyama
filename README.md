@@ -1,15 +1,15 @@
 <div align="center">
-<img src="https://raw.githubusercontent.com/FredyJabe/aeyama/main/src/assets/sprites/logo.png"/>
+<img src="https://raw.githubusercontent.com/Aeyama-Mod/aeyama/main/src/assets/sprites/logo.png"/>
 <br><br>
 
 <a href="https://discord.gg/rNhkswkJst">
     <img src="https://img.shields.io/discord/1061344630987292835?color=287e29&label=Discord&logo=Discord&style=for-the-badge"/>
 </a>
-<a href="https://github.com/FredyJabe/aeyama/releases/latest">
-    <img src="https://img.shields.io/github/downloads/FredyJabe/aeyama/total?color=287e29&logo=github&style=for-the-badge"/>
+<a href="https://github.com/Aeyama-Mod/aeyama/releases/latest">
+    <img src="https://img.shields.io/github/downloads/Aeyama-Mod/aeyama/total?color=287e29&logo=github&style=for-the-badge"/>
 </a>
-<a href="https://github.com/FredyJabe/aeyama/commits/main">
-    <img src="https://img.shields.io/github/last-commit/fredyjabe/aeyama?color=287e29&style=for-the-badge"/>
+<a href="https://github.com/Aeyama-Mod/aeyama/commits/main">
+    <img src="https://img.shields.io/github/last-commit/Aeyama-Mod/aeyama?color=287e29&style=for-the-badge"/>
 </a>
 
 With ground-based gameplay and focusing on your character development instead of army management, experience a whole new campaign
@@ -28,7 +28,7 @@ And if the mod interests you, [`download it here`][Download] or use the mod brow
 
 ## Tech
 Here's the current Techtree, it is FAR from done and will keep expanding!
-<img src="https://raw.githubusercontent.com/FredyJabe/aeyama/main/src/assets/sprites/tech.drawio.png"/>
+<img src="https://raw.githubusercontent.com/Aeyama-Mod/aeyama/main/src/assets/sprites/tech.drawio.png"/>
 
 ## Building
 The mod has 2 different branches:<br><br>
