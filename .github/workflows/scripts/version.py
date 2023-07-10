@@ -1,15 +1,14 @@
-### Script by @jojofr_
+### Script by @jojofr.
 
-with open('mod.json', 'r+', encoding="utf8") as fileMod:
-    lineMod = fileMod.readlines()
-    version = lineMod[4].split() #Get the line with version value
-    version = version[1].replace('"', '').replace(',', '') #Get the build version number and remove some values
+with open('mod.json', 'r+', encoding="utf8") as f:
+    lines = f.readlines()
 
-    newVersion = str(int(version) + 1) #Increment the build version by 1
-    
-    lineMod[4] = f'    "version": "{newVersion}",\n' #Change the version in the list
-    fileMod.seek(0)
-    fileMod.truncate() #Remove all data
-    for lineNum, line in enumerate(lineMod):
-        fileMod.write(lineMod[lineNum]) #Write one by one the value again
-    fileMod.close()
+    f.seek(0)
+    f.truncate() #Remove all data from the files
+    for num, line in enumerate(lines): 
+        if line.strip().startswith("\"version\":"):
+            versionLine = lines[num].split()
+            # Yes it's a mess. Yes it's unreadble. Yes I don't care.
+            lines[num] = "    " + versionLine[0] + " " + versionLine[1].split('dev.')[0] + 'dev.' + str(int(versionLine[1].split('dev.')[1].strip(',').strip('"')) + 1) + "\",\n"    
+        f.write(lines[num]) #Rewrite the updated value
+    f.close()

@@ -1,8 +1,8 @@
 {
     "name": "aeyama",
-    "repo": "fredyjabe/aeyama",
+    "repo": "aeyama-mod/aeyama",
     "minGameVersion": 145,
-    "version": "164",
+    "version": "0.3-dev.172",
 
     "java": true,
     "main": "aeyama.Aeyama",
