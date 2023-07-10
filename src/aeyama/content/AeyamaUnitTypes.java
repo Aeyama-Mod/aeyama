@@ -432,7 +432,7 @@ public class AeyamaUnitTypes {
             canAttack = true;
             weapons.add(new Weapon("insect-spit") {{
                 top = false;
-                reload = 20f;
+                reload = 34f;
                 recoil = 1f;
                 x = 0f;
                 y = 2f;
@@ -441,8 +441,10 @@ public class AeyamaUnitTypes {
                 alternate = false;
                 mirror = false;
                 shootSound = Sounds.none;
-                bullet = new BasicBulletType(3, 7) {{
-                    lifetime = 26f;
+                bullet = new BasicBulletType(5, 7) {{
+                    status = AeyamaStatuses.knockdown;
+                    statusDuration = 30;
+                    lifetime = 14f;
                     frontColor = Color.valueOf("#16942e");
                     backColor = Color.valueOf("#16942e");
                     trailColor = Color.valueOf("#16942e");

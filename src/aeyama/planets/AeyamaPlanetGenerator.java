@@ -1,5 +1,6 @@
 package aeyama.planets;
 
+import aeyama.content.AeyamaLoadouts;
 import arc.graphics.*;
 import arc.math.*;
 import arc.math.geom.*;
@@ -24,6 +25,9 @@ public class AeyamaPlanetGenerator extends PlanetGenerator {
     float waterOffset = 0.07f;
     
     Block[] terrain = {floorGrassA, floorGrassA, floorGrassB, floorGrassB, floorGrassB, floorGrassC, floorGrassC, floorGrassD, floorGrassD};
+    {
+        defaultLoadout = AeyamaLoadouts.basicFrontline;
+    }
 
     float water = 2f / terrain.length;
     

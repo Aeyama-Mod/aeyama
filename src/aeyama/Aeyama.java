@@ -14,11 +14,13 @@ public class Aeyama extends Mod {
 
     @Override
     public void loadContent() { // The load order is VERY IMPORTANT
+        AeyamaStatuses.load();
         AeyamaAttributes.load();
         AeyamaUnitTypes.load();
         AeyamaItems.load();
         AeyamaLiquids.load();
         AeyamaBlocks.load();
+        AeyamaLoadouts.load();
         AeyamaPlanets.load();
         AeyamaSectors.load();
         AeyamaTechTree.load();

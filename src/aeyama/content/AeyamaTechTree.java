@@ -93,7 +93,9 @@ public class AeyamaTechTree {
     
                     });
                     node(AeyamaDefenseBlocks.craker, with(/*TODO*/), Seq.with(new Produce(AeyamaItems.steel), new Produce(AeyamaItems.advancedBlueprint)), () -> {
-    
+                        node(AeyamaDefenseBlocks.penetration, with(), Seq.with(new SectorComplete(AeyamaSectors.encounter)), () -> {
+
+                        });
                     });
                     node(AeyamaDefenseBlocks.woodWall, with(AeyamaItems.woodLumber, 20), () -> {
                         node(AeyamaDefenseBlocks.stoneBrickWall, with(AeyamaItems.stoneBrick, 20), () -> {

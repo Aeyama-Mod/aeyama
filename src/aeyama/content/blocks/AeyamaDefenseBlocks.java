@@ -14,7 +14,7 @@ import static mindustry.type.ItemStack.*;
 public class AeyamaDefenseBlocks {
     public static Block
     /* Turrets */
-    bully, craker, thrower,
+    bully, craker, thrower, penetration,
 
     /* Walls */
     woodWall, largeWoodWall, stoneBrickWall, largeStoneBrickWall, ironWall, largeIronWall, steelWall, largeSteelWall;
@@ -132,6 +132,37 @@ public class AeyamaDefenseBlocks {
             }});
 
             requirements(Category.turret, with(AeyamaItems.woodLumber, 15, AeyamaItems.stoneBrick, 10)); //TODO
+        }};
+
+        penetration = new ItemTurret("penetration") {{
+            scaledHealth = 100f;
+            size = 2;
+            range = 150f;
+            reload = 70f;
+            maxAmmo = 50;
+            targetGround = true;
+            targetAir = true;
+            ammoPerShot = 5;
+            shootY = 0;
+            ammo(AeyamaItems.iron, new BasicBulletType(6, 40) {{
+                reloadMultiplier = 1f;
+                ammoMultiplier = 2f;
+                lifetime = 25f;
+                height = 10f;
+                width = 6f;
+                pierce = true;
+                pierceCap = 3;
+            }}, AeyamaItems.copper, new BasicBulletType(6, 25) {{
+                reloadMultiplier = 1f;
+                ammoMultiplier = 3f;
+                lifetime = 25f;
+                height = 10f;
+                width = 6f;
+                pierce = true;
+                pierceCap = 5;
+            }});
+            researchCostMultiplier = 0.4f;
+            requirements(Category.turret, with(AeyamaItems.woodLumber, 90, AeyamaItems.iron, 45, AeyamaItems.zinc, 30)); //TODO
         }};
 
         /* Walls */
