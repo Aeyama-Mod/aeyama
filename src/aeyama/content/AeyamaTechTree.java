@@ -39,7 +39,7 @@ public class AeyamaTechTree {
                     node(AeyamaStorageBlocks.coreControl, with(AeyamaItems.woodLumber, 1000, AeyamaItems.stoneBrick, 1000, AeyamaItems.iron, 500, AeyamaItems.specialBPDefense, 3), () -> {
 
                     });
-                    node(AeyamaStorageBlocks.groundScanner, with(AeyamaItems.stoneBrick, 450, AeyamaItems.iron, 250, AeyamaItems.blueprint, 2), Seq.with(new Produce(AeyamaItems.iron), new SectorComplete(AeyamaSectors.encounter)), () -> {
+                    node(AeyamaStorageBlocks.groundScanner, with(AeyamaItems.stoneBrick, 450, AeyamaItems.iron, 200, AeyamaItems.blueprint, 2), Seq.with(new Produce(AeyamaItems.iron)), () -> {
 
                     });
                 });
