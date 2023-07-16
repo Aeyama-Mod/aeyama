@@ -1,14 +1,23 @@
+[gray]July 16th, 2023
+
+[white]Hi everybody! The [yellow]v0.3 release [white]is out with the 2nd sector finally here! It might be a little unbalanced.
+
+The next update (v0.4) is planned to be content focused, with a lot of new content and very needed balancing (it's time to give your suggestion on our [blue]Discord[white]!).
+
+
 [gray]June 17th, 2023
 
 [white]Holà! The [yellow]first sector [white]was [green]updated[white]! The objectives are all back.
 
 If you have any issue or feedback come on our [blue]Discord [white]or create an issue on GitHub! Adiós!
 
-[gray]June 13rd, 2023
+
+[gray]June 13th, 2023
 
 [white]Hey everyone, big news for the mod! We now are a [red]Java [white]mod! You can update it by redownloading the mod via the mod browser, a release might come soon there's still some things left to finish.
 
 Until then, cya!
+
 
 [gray]April 22nd, 2023
 
@@ -18,19 +27,7 @@ Until then, cya!
 If anyone wanna help out with translation, feel free to reach out of either Discord or Github!
 We also need help from artists, if anyone's interested.
 
+
 [gray]April 20th, 2023
 
 [white] Hey hey! Survival map should be [green]FIXED[white]!!
-
-[gray]April 17th, 2023
-
-[white] Good morning!
-A lot of errors have been popping up lately and we're sorry about that, we removed the MultiCrafter injection and thought that the game would still only receive the Released version but it seems it downloads the current dev build instead! So if you notice something wrong, please join the discord and tag FredyJabe with a screenshot of the error!
-Thanks for your patience and for downloading the mod!
-
-[green]+ [white]Procedural survival map
-[red]- [white]Removed MultiCrafter injection, now only using vanilla blocks
-[yellow]* [white]Reworking the whole tech tree because we changed a lot of the early progression
-[yellow]* [white]BUGS, GLITCHES AND CRASHES ARE EXPECTED, please report them on discord so we can fix them as soon as possible!
-
-The first sector is currently under massive rework, don't play the campaign yet, if you already have a campaign save, please erase it as you won't even be able to open the map anymore.

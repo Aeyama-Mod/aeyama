@@ -10,21 +10,27 @@ import static mindustry.type.ItemStack.*;
 
 public class AeyamaDistributionBlocks {
     public static Block
-    woodConveyor, woodRouter, ironConveyor, ironRouter,
-    ironJunction, ironBridge, steelConveyor;
+    woodConveyor, woodRouter, woodJunction,
+    ironConveyor, ironRouter, ironJunction, ironBridge,
+    steelConveyor;
 
     public static void load() {
         woodConveyor = new Conveyor("wood-conveyor") {{
-            scaledHealth = 8f;
+            health = 8;
             speed = 0.03f;
             displayedSpeed = speed * 140;
 
-            requirements(Category.distribution, with(AeyamaItems.woodLumber, 2, AeyamaItems.stoneBrick, 1));
+            requirements(Category.distribution, with(AeyamaItems.woodLumber, 2));
         }};
         woodRouter = new Router("wood-router") {{
-            scaledHealth = 20f;
+            health = 20;
 
-            requirements(Category.distribution, with(AeyamaItems.woodLumber, 6, AeyamaItems.stoneBrick, 2));
+            requirements(Category.distribution, with(AeyamaItems.woodLumber, 6, AeyamaItems.stone, 2));
+        }};
+        woodJunction = new Junction("wood-junction") {{
+            health = 15;
+
+            requirements(Category.distribution, with(AeyamaItems.woodLumber, 4, AeyamaItems.stoneBrick, 4));
         }};
         ironConveyor = new Conveyor("iron-conveyor") {{
             // scaledHealth = 

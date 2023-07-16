@@ -16,6 +16,8 @@ import mindustry.maps.generators.*;
 import mindustry.type.*;
 import mindustry.world.*;
 
+import aeyama.content.*;
+
 import static aeyama.content.blocks.AeyamaEnvironmentBlocks.*;
 
 public class AeyamaPlanetGenerator extends PlanetGenerator {
@@ -24,6 +26,9 @@ public class AeyamaPlanetGenerator extends PlanetGenerator {
     float waterOffset = 0.07f;
     
     Block[] terrain = {floorGrassA, floorGrassA, floorGrassB, floorGrassB, floorGrassB, floorGrassC, floorGrassC, floorGrassD, floorGrassD};
+    {
+        defaultLoadout = AeyamaLoadouts.basicFrontline;
+    }
 
     float water = 2f / terrain.length;
     

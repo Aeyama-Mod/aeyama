@@ -1,14 +1,23 @@
+[gray]July 16th, 2023
+
+[white]Hi everybody! The [yellow]v0.3 release [white]is out with the 2nd sector finally here! It might be a little unbalanced.
+
+The next update (v0.4) is planned to be content focused, with a lot of new content and very needed balancing (it's time to give your suggestion on our [blue]Discord[white]!).
+
+
 [gray]June 17th, 2023
 
 [white]Holà! The [yellow]first sector [white]was [green]updated[white]! The objectives are all back.
 
 If you have any issue or feedback come on our [blue]Discord [white]or create an issue on GitHub! Adiós!
 
+
 [gray]June 13rd, 2023
 
 [white]Hey everyone, big news for the mod! We now are a [red]Java [white]mod! You can update it by redownloading the mod via the mod browser, a release might come soon there's still some things left to finish.
 
 Until then, cya!
+
 
 [gray]Abril 22, 2023
 
@@ -18,19 +27,7 @@ Until then, cya!
 Si alguien quiere ayudar con la traducción, ¡Siéntete libre de comunicarte por Discord o Github!
 También necesitamos ayuda de artistas, si a alguien le interesa.
 
+
 [gray]Abril 20, 2023
 
 [white] ¡Hola hola! El mapa de supervivencia debería estar [green]ARREGLADO[white]!!
-
-[gray]Abril 17, 2023
-
-[white] ¡Buendía!
-Un montón de errores aparecieron últimamente y lo sentimos, removimos la unión del MultiCrafter y pensamos que el juego solo recibiría la versión lanzada ¡Pero parece que descarga la versión de desarrollo! Así que si notas algo raro, ¡Únete al Discord y etiqueta a FredyJabe con una captura de pantalla!
-¡Gracias por tu paciencia y por descargar el mod!
-
-[green]+ [white]Mapa de supervivencia procedural
-[red]- [white]Removimos la unión del MultiCrafter, ahora solo usamos bloques vanilla
-[yellow]* [white]Rehaciendo el árbol de tecnología entero porque cambiamos un montón de la progresión temprana
-[yellow]* [white]SE ESPERAN BUGS, GLITCHES Y CRASHEOS, ¡Por favor, repórtalos en nuestro Discord para arreglarlos lo antes posible!
-
-El primer sector está rehaciéndose, no jueguen la campaña todavía, si ya tienes un guardado en la campaña, elimínalo ya que no podrás abrir el mapa.

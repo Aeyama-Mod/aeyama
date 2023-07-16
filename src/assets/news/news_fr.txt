@@ -1,36 +1,33 @@
+[gray]16 Juillet 2023
+
+[white]Salut tout le monde ! La [yellow]v0.3 [white]est disponible avec enfin le 2ème secteur ! La mise à jour pourrait être un peu déséquilibré.
+
+La prochaine mise à jour (v0.4) est prévue pour se concentrer sur le contenu, avec beaucoup de nouveaux éléments et un rééquilibrage très nécessaire (il est temps de donner vos suggestions sur notre [blue]Discord[white] !).
+
+
 [gray]17 Juin 2023
 
-[white]Holà! Le [yellow]premier secteur [white]a été [green]mis à jour[white] ! Les objectifs sont tous de retour.
+[white]Holà ! Le [yellow]premier secteur [white]a été [green]mis à jour[white] ! Les objectifs sont tous de retour.
 
-Si vous rencontrez un problème ou si vous avez des commentaires, rejoignez notre [blue]Discord [white]ou créez un issue sur GitHub ! Adiós!
+Si vous rencontrez un problème ou si vous avez des commentaires, rejoignez notre [blue]Discord [white]ou créez une issue sur GitHub ! Adiós !
+
 
 [gray]13 Juin 2023
 
-[white]Salut tout le monde, grande nouvelle pour le mod ! Nous sommes désormais un mod en [red]Java [white]! Vous pouvez le mettre à jour en le téléchargeant à nouveau via le navigateur de mods, une mise à jour pourrait bientôt arriver, il reste encore quelques choses à terminer.
+[white]Salut tout le monde, grande nouvelle pour le mod ! Nous sommes désormais un mod en [red]Java [white] ! Vous pouvez le mettre à jour en le téléchargeant à nouveau via le navigateur de mods, une mise à jour pourrait bientôt arriver, il reste encore quelques choses à terminer.
 
 D'ici là, à plus tard !
+
 
 [gray]22 Avril 2023
 
 [green]+ [white]Nouvelle numérotation de version, plus simple pour tout le monde !
 [yellow]* [white]Maintenant, nous ne gardons que les 5 derniers messages d'actualité, ce qui facilite la bande passante du client et nous n'avons pas besoin de vivre dans le passé ;P
 
-Si quelqu'un veut aider à la traduction, n'hésitez pas à nous contacter sur Discord ou Github !
+Si quelqu'un veut aider à la traduction, n'hésitez pas à nous contacter sur Discord ou GitHub !
 Nous avons également besoin d'aide d'artistes, si quelqu'un est intéressé.
+
 
 [gray]20 Avril 2023
 
-[white] Hey hey ! La carte de survie devrait être [green]RÉPARÉE[white] !!
-
-[gray]17 Avril 2023
-
-[white] Bonjour !
-Beaucoup d'erreurs ont surgi dernièrement et nous en sommes désolés, nous avons supprimé l'injection MultiCrafter et pensions que le jeu ne recevrait que la version publiée mais il semble qu'il télécharge plutôt la version de développement actuelle ! Donc, si vous remarquez quelque chose d'anormal, veuillez rejoindre le Discord et taguer FredyJabe avec une capture d'écran de l'erreur !
-Merci pour votre patience et pour avoir téléchargé le mod !
-
-[green]+ [white]Carte de survie procédurale
-[red]- [white]Suppression de l'injection MultiCrafter, n'utilisant désormais que des blocs vanilla
-[yellow]* [white]Restructuration de tout l'arbre technologique car nous avons beaucoup modifié la progression précoce
-[yellow]* [white]DES BUGS, DES GLITCHES ET DES PLANTAGES SONT À PRÉVOIR, veuillez les signaler sur Discord afin que nous puissions les corriger dès que possible !
-
-Le premier secteur est actuellement en révision massive, ne jouez pas encore à la campagne, si vous avez déjà une sauvegarde de la campagne, veuillez l'effacer car vous ne pourrez même plus ouvrir la carte.
+[white] Hey, hey ! La carte de survie devrait être [green]RÉPARÉE[white] !!

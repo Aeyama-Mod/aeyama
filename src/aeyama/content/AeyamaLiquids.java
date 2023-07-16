@@ -6,8 +6,7 @@ import mindustry.content.*;
 import mindustry.type.*;
 
 public class AeyamaLiquids {
-    public static Liquid
-        water;
+    public static Liquid water;
     
     public static void load() {
         water = new Liquid("water", Color.valueOf("#596ab8")) {{

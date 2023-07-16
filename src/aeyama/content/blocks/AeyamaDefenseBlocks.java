@@ -14,15 +14,16 @@ import static mindustry.type.ItemStack.*;
 public class AeyamaDefenseBlocks {
     public static Block
     /* Turrets */
-    bully, craker, thrower,
+    bully, thrower, craker, penetration,
 
     /* Walls */
-    woodWall, largeWoodWall, stoneBrickWall, largeStoneBrickWall, ironWall, largeIronWall, steelWall, largeSteelWall;
+    woodWall, largeWoodWall, stoneBrickWall, largeStoneBrickWall,
+    ironWall, largeIronWall, steelWall, largeSteelWall;
 
     public static void load() {
         /* Turrets */
         bully = new ItemTurret("bully") {{
-            // scaledHealth =
+            health = 240;
 
             range = 70f;
             reload = 15f;
@@ -69,10 +70,39 @@ public class AeyamaDefenseBlocks {
                 }};
             }});
 
-            requirements(Category.turret, with(AeyamaItems.woodLumber, 70, AeyamaItems.stone, 70)); //TODO
+            requirements(Category.turret, with(AeyamaItems.woodLumber, 25, AeyamaItems.stoneBrick, 45, AeyamaItems.iron, 5));
+        }};
+        thrower = new ItemTurret("thrower") {{
+            health = 270;
+
+            range = 100f;
+            reload = 40f;
+            maxAmmo = 40;
+            inaccuracy = 4f;
+            targetGround = true;
+            targetAir = true;
+            ammo(AeyamaItems.stone, new BasicBulletType() {{
+                reloadMultiplier = 1f;
+                ammoMultiplier = 2f;
+                lifetime = 60f;
+                damage = 24f;
+                height = 9.5f;
+                speed = 1.8f;
+                width = 7f;
+            }}, AeyamaItems.woodLumber, new BasicBulletType() {{
+                reloadMultiplier = 1f;
+                ammoMultiplier = 4f;
+                lifetime = 60f;
+                damage = 16f;
+                height = 7.5f;
+                speed = 1.8f;
+                width = 5.5f;
+            }});
+
+            requirements(Category.turret, with(AeyamaItems.woodLumber, 45, AeyamaItems.stoneBrick, 70, AeyamaItems.iron, 15));
         }};
         craker = new ItemTurret("craker") {{
-            // scaledHealth = 
+            health = 310;
             size = 2;
 
             range = 90f;
@@ -102,57 +132,58 @@ public class AeyamaDefenseBlocks {
                 width = 6.5f;
             }});
 
-            requirements(Category.turret, with(AeyamaItems.iron, 30, AeyamaItems.woodLumber, 65)); //TODO
+            requirements(Category.turret, with(AeyamaItems.iron, 30, AeyamaItems.woodLumber, 65));
         }};
-        thrower = new ItemTurret("thrower") {{
-            scaledHealth = 70f;
-
-            range = 100f;
-            reload = 40f;
-            maxAmmo = 40;
-            inaccuracy = 4f;
+        penetration = new ItemTurret("penetration") {{
+            scaledHealth = 100f;
+            size = 2;
+            range = 150f;
+            reload = 70f;
+            maxAmmo = 50;
             targetGround = true;
             targetAir = true;
-            ammo(AeyamaItems.stone, new BasicBulletType() {{
+            ammoPerShot = 5;
+            shootY = 0;
+            ammo(AeyamaItems.iron, new BasicBulletType(6, 40) {{
                 reloadMultiplier = 1f;
                 ammoMultiplier = 2f;
-                lifetime = 60f;
-                damage = 24f;
-                height = 9.5f;
-                speed = 1.8f;
-                width = 7f;
-            }}, AeyamaItems.woodLumber, new BasicBulletType() {{
+                lifetime = 25f;
+                height = 10f;
+                width = 6f;
+                pierce = true;
+                pierceCap = 3;
+            }}, AeyamaItems.copper, new BasicBulletType(6, 25) {{
                 reloadMultiplier = 1f;
-                ammoMultiplier = 4f;
-                lifetime = 60f;
-                damage = 16f;
-                height = 7.5f;
-                speed = 1.8f;
-                width = 5.5f;
+                ammoMultiplier = 3f;
+                lifetime = 25f;
+                height = 10f;
+                width = 6f;
+                pierce = true;
+                pierceCap = 5;
             }});
-
-            requirements(Category.turret, with(AeyamaItems.woodLumber, 15, AeyamaItems.stoneBrick, 10)); //TODO
+            researchCostMultiplier = 0.4f;
+            requirements(Category.turret, with(AeyamaItems.woodLumber, 90, AeyamaItems.iron, 45, AeyamaItems.zinc, 30)); //TODO
         }};
 
         /* Walls */
         woodWall = new Wall("wall-wood") {{
-            scaledHealth = 108f;
+            health = 120;
 
             requirements(Category.defense, with(AeyamaItems.woodLumber, 6));
         }};
         largeWoodWall = new Wall("wall-wood-large") {{
-            scaledHealth = 192f;
+            health = woodWall.health * 4;
             size = 2;
 
             requirements(Category.defense, with(AeyamaItems.woodLumber, 24));
         }};
         stoneBrickWall = new Wall("wall-stone-brick") {{
-            scaledHealth = 216f;
+            health = 240;
 
             requirements(Category.defense, with(AeyamaItems.stoneBrick, 6));
         }};
         largeStoneBrickWall = new Wall("wall-stone-brick-large") {{
-            scaledHealth = 384f;
+            health = stoneBrickWall.health * 4;
             size = 2;
 
             requirements(Category.defense, with(AeyamaItems.stoneBrick, 24));
@@ -163,7 +194,7 @@ public class AeyamaDefenseBlocks {
             requirements(Category.defense, with(AeyamaItems.iron, 6));
         }};
         largeIronWall = new Wall("wall-iron-large") {{
-            scaledHealth = 480f;
+            scaledHealth = ironWall.health * 4;
             size = 2;
 
             requirements(Category.defense, with(AeyamaItems.iron, 24));
@@ -174,7 +205,7 @@ public class AeyamaDefenseBlocks {
             requirements(Category.defense, with(AeyamaItems.steel, 6));
         }};
         largeSteelWall = new Wall("wall-steel-large") {{
-            scaledHealth = 576f;
+            scaledHealth = steelWall.health * 4;
             size = 2;
 
             requirements(Category.defense, with(AeyamaItems.steel, 24));

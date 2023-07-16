@@ -20,7 +20,7 @@ public class AeyamaPlanets {
 
             accessible = true;
             alwaysUnlocked = true;
-            defaultCore = AeyamaStorageBlocks.coreDropPod;
+            defaultCore = AeyamaStorageBlocks.coreFrontline;
 
             drawOrbit = true;
             orbitRadius = 32f;

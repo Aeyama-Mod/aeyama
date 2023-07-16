@@ -14,7 +14,7 @@ public class AeyamaTechTree {
     public static void load() {
         AeyamaPlanets.aeyama.techTree = nodeRoot("Aeyama", AeyamaItems.planet, () -> {
             node(AeyamaStorageBlocks.coreDropPod, () -> {
-                node(AeyamaDistributionBlocks.woodConveyor, with(AeyamaItems.woodLumber, 10, AeyamaItems.stoneBrick, 5), Seq.with(new Research(AeyamaProductionBlocks.woodHarvester)), () -> {
+                node(AeyamaDistributionBlocks.woodConveyor, with(AeyamaItems.woodLumber, 10, AeyamaItems.stone, 5), Seq.with(new Research(AeyamaProductionBlocks.woodHarvester)), () -> {
                     node(AeyamaDistributionBlocks.ironConveyor, with(/*TODO*/), Seq.with(new Produce(AeyamaItems.iron)), () -> {
                         node(AeyamaDistributionBlocks.steelConveyor, with(/*TODO*/), Seq.with(new Produce(AeyamaItems.iron), new Produce(AeyamaItems.steel)), () -> {
 
@@ -28,27 +28,30 @@ public class AeyamaTechTree {
                             });
                         });
                     });
-                    node(AeyamaDistributionBlocks.woodRouter, with(AeyamaItems.woodLumber, 20, AeyamaItems.stoneBrick, 10), Seq.with(new Produce(AeyamaItems.rawIron)), () -> {
+                    node(AeyamaDistributionBlocks.woodRouter, with(AeyamaItems.woodLumber, 20, AeyamaItems.stone, 10), () -> {
+
+                    });
+                    node(AeyamaDistributionBlocks.woodJunction, with(AeyamaItems.woodLumber, 50, AeyamaItems.stone, 10), Seq.with(new SectorComplete(AeyamaSectors.newWorld)), () -> {
 
                     });
                 });
-                node(AeyamaStorageBlocks.coreFrontline, with(AeyamaItems.woodLumber, 900, AeyamaItems.stoneBrick, 2400, AeyamaItems.rawIron, 900, AeyamaItems.blueprint, 1), Seq.with(new Produce(AeyamaItems.blueprint)/*, new Produce(AeyamaUnitTypes.sms)*/), () -> {
+                node(AeyamaStorageBlocks.coreFrontline, with(AeyamaItems.woodLumber, 600, AeyamaItems.stoneBrick, 950, AeyamaItems.rawIron, 250, AeyamaItems.blueprint, 2), Seq.with(new Produce(AeyamaItems.blueprint)/*, new Produce(AeyamaUnitTypes.sms)*/), () -> {
                     node(AeyamaStorageBlocks.coreControl, with(AeyamaItems.woodLumber, 1000, AeyamaItems.stoneBrick, 1000, AeyamaItems.iron, 500, AeyamaItems.specialBPDefense, 3), () -> {
 
                     });
-                    node(AeyamaStorageBlocks.groundScanner, with(AeyamaItems.iron, 600, AeyamaItems.blueprint, 1), Seq.with(new Produce(AeyamaItems.iron), new Produce(AeyamaItems.copper), new Produce(AeyamaItems.zinc), new SectorComplete(AeyamaSectors.encounter)), () -> {
+                    node(AeyamaStorageBlocks.groundScanner, with(AeyamaItems.stoneBrick, 450, AeyamaItems.iron, 250, AeyamaItems.blueprint, 2), Seq.with(new Produce(AeyamaItems.iron), new SectorComplete(AeyamaSectors.encounter)), () -> {
 
                     });
                 });
                 node(AeyamaProductionBlocks.woodHarvester, with(AeyamaItems.woodLumber, 80), () -> {
-                    node(AeyamaProductionBlocks.stoneMiner, with(AeyamaItems.woodLumber, 140), () -> {
-                        node(AeyamaProductionBlocks.ironMiner, with(AeyamaItems.woodLumber, 80, AeyamaItems.stoneBrick, 200), () -> {
+                    node(AeyamaProductionBlocks.stoneMiner, with(AeyamaItems.woodLumber, 120), () -> {
+                        node(AeyamaProductionBlocks.ironMiner, with(AeyamaItems.woodLumber, 110, AeyamaItems.stoneBrick, 185), () -> {
                             
                         });
-                        node(AeyamaProductionBlocks.copperMiner, with(AeyamaItems.iron, 80, AeyamaItems.stoneBrick, 200, AeyamaItems.blueprint, 1), () -> {
+                        node(AeyamaProductionBlocks.copperMiner, with(AeyamaItems.woodLumber, 210, AeyamaItems.stoneBrick, 270, AeyamaItems.iron, 45, AeyamaItems.blueprint, 2), () -> {
                             
                         });
-                        node(AeyamaProductionBlocks.zincMiner, with(AeyamaItems.iron, 80, AeyamaItems.stoneBrick, 200, AeyamaItems.blueprint, 1), () -> {
+                        node(AeyamaProductionBlocks.zincMiner, with(AeyamaItems.woodLumber, 210, AeyamaItems.stoneBrick, 270, AeyamaItems.iron, 45, AeyamaItems.blueprint, 2), () -> {
                             
                         });
                     });
@@ -68,19 +71,10 @@ public class AeyamaTechTree {
                             });
                         });
                         node(AeyamaProductionBlocks.burner, with(AeyamaItems.woodLumber, 150, AeyamaItems.stoneBrick, 375, AeyamaItems.rawIron, 75, AeyamaItems.blueprint, 2), () -> {
-                            node(AeyamaProductionBlocks.smelterIron, with(AeyamaItems.woodLumber, 500, AeyamaItems.stoneBrick, 800, AeyamaItems.rawIron, 300, AeyamaItems.blueprint, 4), () -> {
-                                node(AeyamaProductionBlocks.foundrySteel, with(AeyamaItems.iron, 300, AeyamaItems.woodLumber, 75, AeyamaItems.stoneBrick, 450, AeyamaItems.blueprint, 2), () -> {
+                            node(AeyamaProductionBlocks.oreSmelter, with(AeyamaItems.woodLumber, 450, AeyamaItems.stoneBrick, 650, AeyamaItems.rawIron, 300, AeyamaItems.blueprint, 2), () -> {
+                                node(AeyamaProductionBlocks.oreFoundry, with(AeyamaItems.iron, 280, AeyamaItems.woodLumber, 725, AeyamaItems.stoneBrick, 800, AeyamaItems.blueprint, 4), () -> {
     
                                 });
-                            });
-                            node(AeyamaProductionBlocks.smelterCopper, with(AeyamaItems.woodLumber, 500, AeyamaItems.stoneBrick, 800, AeyamaItems.rawCopper, 300, AeyamaItems.blueprint, 4), () -> {
-                                
-                            });
-                            node(AeyamaProductionBlocks.smelterZinc, with(AeyamaItems.woodLumber, 500, AeyamaItems.stoneBrick, 800, AeyamaItems.rawZinc, 300, AeyamaItems.blueprint, 4), () -> {
-                                node(AeyamaProductionBlocks.foundryBrass, with(AeyamaItems.iron, 150, AeyamaItems.woodLumber, 75, AeyamaItems.stoneBrick, 450, AeyamaItems.blueprint, 2), () -> {
-        
-                                });
-    
                             });
                         });
                         node(AeyamaProductionBlocks.researchLab, with(AeyamaItems.woodLumber, 800, AeyamaItems.stoneBrick, 1200, AeyamaItems.rawIron, 500, AeyamaItems.blueprint, 10), () -> {
@@ -88,17 +82,19 @@ public class AeyamaTechTree {
                         });
                     });
                 });
-                node(AeyamaDefenseBlocks.thrower, with(AeyamaItems.woodLumber, 45, AeyamaItems.stoneBrick, 30, AeyamaItems.blueprint, 1), Seq.with(new Produce(AeyamaItems.blueprint), new SectorComplete(AeyamaSectors.newWorld)), () -> {
-                    node(AeyamaDefenseBlocks.bully, with(AeyamaItems.woodLumber, 200, AeyamaItems.stone, 200), Seq.with(new SectorComplete(AeyamaSectors.newWorld)), () -> {
+                node(AeyamaDefenseBlocks.thrower, with(AeyamaItems.woodLumber, 100, AeyamaItems.stoneBrick, 130, AeyamaItems.iron, 20, AeyamaItems.blueprint, 2), Seq.with(new Produce(AeyamaItems.blueprint), new SectorComplete(AeyamaSectors.newWorld)), () -> {
+                    node(AeyamaDefenseBlocks.bully, with(AeyamaItems.woodLumber, 165, AeyamaItems.stone, 195, AeyamaItems.iron, 45, AeyamaItems.blueprint, 2), Seq.with(new SectorComplete(AeyamaSectors.newWorld)), () -> {
     
                     });
                     node(AeyamaDefenseBlocks.craker, with(/*TODO*/), Seq.with(new Produce(AeyamaItems.steel), new Produce(AeyamaItems.advancedBlueprint)), () -> {
-    
+                        node(AeyamaDefenseBlocks.penetration, with(), Seq.with(new SectorComplete(AeyamaSectors.encounter)), () -> {
+
+                        });
                     });
-                    node(AeyamaDefenseBlocks.woodWall, with(AeyamaItems.woodLumber, 20), () -> {
-                        node(AeyamaDefenseBlocks.stoneBrickWall, with(AeyamaItems.stoneBrick, 20), () -> {
-                            node(AeyamaDefenseBlocks.ironWall, with(AeyamaItems.iron, 20), () -> {
-                                node(AeyamaDefenseBlocks.steelWall, with(AeyamaItems.steel, 20), () -> {
+                    node(AeyamaDefenseBlocks.woodWall, with(AeyamaItems.woodLumber, 20), Seq.with(new Produce(AeyamaItems.woodLumber), new SectorComplete(AeyamaSectors.newWorld)), () -> {
+                        node(AeyamaDefenseBlocks.stoneBrickWall, with(AeyamaItems.stoneBrick, 20), Seq.with(new Produce(AeyamaItems.stoneBrick), new SectorComplete(AeyamaSectors.newWorld)), () -> {
+                            node(AeyamaDefenseBlocks.ironWall, with(AeyamaItems.iron, 20), Seq.with(new Produce(AeyamaItems.iron), new SectorComplete(AeyamaSectors.encounter)), () -> {
+                                node(AeyamaDefenseBlocks.steelWall, with(AeyamaItems.steel, 20), Seq.with(new Produce(AeyamaItems.steel)), () -> {
                                     node(AeyamaDefenseBlocks.largeSteelWall, with(AeyamaItems.steel, 100), () -> {
                                         
                                     });
@@ -180,8 +176,8 @@ public class AeyamaTechTree {
                             });
                         });
                         nodeProduce(AeyamaItems.rawZinc, () -> {
-                            nodeProduce(AeyamaItems.rawAluminium, () -> {
-                                nodeProduce(AeyamaItems.aluminium, () -> {
+                            nodeProduce(AeyamaItems.rawAluminum, () -> {
+                                nodeProduce(AeyamaItems.aluminum, () -> {
                                     
                                 });
                             });
@@ -211,12 +207,12 @@ public class AeyamaTechTree {
                 });
             });
 
-            node(AeyamaUnitTypes.colonist, () -> {
-                node(AeyamaUnitTypes.sms, with(AeyamaItems.armorPlating, 100), () -> {
-                    node(AeyamaUnitTypes.assault, with(AeyamaItems.armorPlating, 200), () -> {
+            node(AeyamaUnits.colonist, () -> {
+                node(AeyamaUnits.sms, with(AeyamaItems.armorPlating, 100), () -> {
+                    node(AeyamaUnits.assault, with(AeyamaItems.armorPlating, 200), () -> {
     
                     });
-                    node(AeyamaUnitTypes.heavy, with(AeyamaItems.armorPlating, 500), () -> {
+                    node(AeyamaUnits.heavy, with(AeyamaItems.armorPlating, 500), () -> {
     
                     });
                 });

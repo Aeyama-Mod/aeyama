@@ -1,14 +1,23 @@
+[gray]July 16th, 2023
+
+[white]Hi everybody! The [yellow]v0.3 release [white]is out with the 2nd sector finally here! It might be a little unbalanced.
+
+The next update (v0.4) is planned to be content focused, with a lot of new content and very needed balancing (it's time to give your suggestion on our [blue]Discord[white]!).
+
+
 [gray]June 17th, 2023
 
 [white]Holà! The [yellow]first sector [white]was [green]updated[white]! The objectives are all back.
 
 If you have any issue or feedback come on our [blue]Discord [white]or create an issue on GitHub! Adiós!
 
-[gray]June 13, 2023
+
+[gray]June 13th, 2023
 
 [white]Hey everyone, big news for the mod! We now are a [red]Java [white]mod! You can update it by redownloading the mod via the mod browser, a release might come soon there's still some things left to finish.
 
 Until then, cya!
+
 
 [gray]2023年4月22日
 
@@ -18,19 +27,7 @@ Until then, cya!
 如果有人想帮助翻译，请随时联系 Discord 或 Github！
 如果有人感兴趣，我们还需要画家的帮助。
 
+
 [gray]2023年4月20日
 
 [white]嗯∽地图应该是[green]修好了[white]!! 
-
-[gray]2023年4月17日
-
-[white] 早上好! 
-最近出现了很多错误，我们对此感到抱歉，我们删除了 MultiCrafter 注入，并认为游戏仍然只会收到已发布版本，但似乎它下载了当前的开发版本！因此，如果您发现错误，请放入bug并用错误的屏幕截图并标记 FredyJabe！
-感谢您的耐心等待和下载模组！
-
-[green]+ [white]程序生存地图
-[red]- [white]移除MultiCrafter注入，现在只使用普通模块
-[yellow]* [white] 重新设计了整个科技树，因为我们更改了很多早期进展
-[yellow]* [white]预计会出现错误、故障和崩溃，请在 Discord 上报告，以便我们尽快修复它们！
-
- 第一个区域目前正在大规模重做中，暂时不要玩战役，如果你已经有模组地图存档，请删除它，因为你甚至无法再打开地图了。

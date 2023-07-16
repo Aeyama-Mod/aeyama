@@ -1,14 +1,23 @@
-[gray]17 Июня, 2023
+[gray]July 16th, 2023
 
-[white]Привет! [yellow]Первый сектор [white]был [green]обновлён[white]! Задания возвращены.
+[white]Hi everybody! The [yellow]v0.3 release [white]is out with the 2nd sector finally here! It might be a little unbalanced.
 
-Если у вас есть какие-либо проблемы или отзывы, пишите в наш сервер [blue]Discord [white]или откройте проблему [gray](Issue) [white]на GitHub! Адьос!
+The next update (v0.4) is planned to be content focused, with a lot of new content and very needed balancing (it's time to give your suggestion on our [blue]Discord[white]!).
+
+
+[gray]June 17th, 2023
+
+[white]Holà! The [yellow]first sector [white]was [green]updated[white]! The objectives are all back.
+
+If you have any issue or feedback come on our [blue]Discord [white]or create an issue on GitHub! Adiós!
+
 
 [gray]13 Июня, 2023
 
 [white]Всем привет, есть большие новости! Теперь этот мод сделан на [red]Java [white]! Вы можете обновить его, переустановив мод с помощью браузера, релиз выйдет, когда будут доделан весь контент.
 
 А пока, увидимся!
+
 
 [gray]22 Апреля, 2023
 
@@ -18,19 +27,7 @@
 Если кто-нибудь хочет помочь с переводом, не стесняйтесь обращаться либо в Discord, либо на Github!
 Нам также нужна помощь художников, если кому-то это интересно.
 
+
 [gray]20 Апреля, 2023
 
 [white] Привет! Карта выживания скорее всего [green]ПОЧИНЕНА[white]!!
-
-[gray]17 Апреля, 2023
-
-[white] Доброе утро!
-В последнее время появилось много ошибок, и мы сожалеем об этом, мы удалили систему MultiCrafter и думали, что игра по-прежнему будет загружать только релиз, но, похоже, вместо этого загружается текущая сборка разработки! Поэтому, если вы заметили что-то не так, пожалуйста, присоединяйтесь к Discord и упомяните FredyJabe со скриншотом ошибки!
-Спасибо за ваше терпение и за скачивание мода!
-
-[green]+ [white]Процедурно-сгенерированная карта выживания
-[red]- [white]Удалена система MultiCrafter, теперь используются только ванильные блоки
-[yellow]* [white]Переработка дерева технологий из-за большого изменения ранней прогрессии
-[yellow]* [white]БАГИ, ГЛЮКИ И ВЫЛЕТЫ ОЖИДАЕМЫ, пожалуйста, доложите о них на Discord сервере, мы постараемся их исправить как можно скорее!
-
-Первый сектор находится на переработке, не играйте в кампанию. Если у вас есть сохранение кампании, сотрите его, так как вы не сможете зайти в карту.
