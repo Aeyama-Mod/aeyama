@@ -2,6 +2,8 @@ package aeyama.content;
 
 import mindustry.type.*;
 
+import static mindustry.type.ItemStack.*;
+
 public class AeyamaSectors {
     public static SectorPreset
     newWorld, encounter;
@@ -10,11 +12,10 @@ public class AeyamaSectors {
         newWorld = new SectorPreset("new-world", AeyamaPlanets.aeyama, 0) {{
             difficulty = 0;
             alwaysUnlocked = true;
-            allowLaunchLoadout = true;
 
             rules = r -> {
                 r.loadout.clear();
-                r.loadout.addAll(ItemStack.with(AeyamaItems.woodLumber, 75, AeyamaItems.stone, 50));
+                r.loadout.addAll(with(AeyamaItems.woodLumber, 75, AeyamaItems.stone, 50));
                 r.canGameOver = false;
             };
         }};
@@ -25,6 +26,7 @@ public class AeyamaSectors {
             
             rules = r -> {
                 r.loadout.clear();
+                r.loadout.addAll(with(AeyamaItems.woodLumber, 100, AeyamaItems.stoneBrick, 50, AeyamaItems.rawIron, 10));
             };
         }};
     }
