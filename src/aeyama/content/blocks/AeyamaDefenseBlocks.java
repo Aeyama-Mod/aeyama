@@ -25,8 +25,8 @@ public class AeyamaDefenseBlocks {
         bully = new ItemTurret("bully") {{
             health = 240;
 
-            range = 70f;
-            reload = 15f;
+            range = 80f;
+            reload = 10f;
             maxAmmo = 40;
             inaccuracy = 4f;
             targetGround = true;
@@ -36,7 +36,7 @@ public class AeyamaDefenseBlocks {
                 reloadMultiplier = 1f;
                 ammoMultiplier = 2f;
                 lifetime = 60f;
-                damage = 7f;
+                damage = 10f;
                 speed = 1.8f;
                 inaccuracy = 12f;
 
@@ -44,7 +44,7 @@ public class AeyamaDefenseBlocks {
                 fragRandomSpread = 15f;
                 fragBullets = 4;
                 fragBullet = new BasicBulletType() {{
-                    damage = 4f;
+                    damage = 6f;
                     speed = 1.8f;
                     lifetime = 40f;
                     width = 4f;
@@ -54,7 +54,7 @@ public class AeyamaDefenseBlocks {
                 reloadMultiplier = 1f;
                 ammoMultiplier = 4f;
                 lifetime = 60f;
-                damage = 3f;
+                damage = 8f;
                 speed = 1.8f;
                 inaccuracy = 12f;
 
@@ -62,7 +62,7 @@ public class AeyamaDefenseBlocks {
                 fragRandomSpread = 30f;
                 fragBullets = 8;
                 fragBullet = new BasicBulletType() {{
-                    damage = 2f;
+                    damage = 4f;
                     speed = 1.8f;
                     lifetime = 30f;
                     width = 2f;
@@ -76,7 +76,7 @@ public class AeyamaDefenseBlocks {
             health = 270;
 
             range = 100f;
-            reload = 40f;
+            reload = 30f;
             maxAmmo = 40;
             inaccuracy = 4f;
             targetGround = true;
