@@ -299,7 +299,7 @@ public class AeyamaUnits {
             legPhysicsLayer = false;
             allowLegStep = false;
 
-            health = 85f;
+            health = 65f;
             armor = 1f;
             speed = .75f;
             drag = 1f;
@@ -326,8 +326,8 @@ public class AeyamaUnits {
                 mirror = true;
                 shootSound = Sounds.none;
                 bullet = new BasicBulletType() {{
-                    damage = 9f;
-                    speed = 10f;
+                    damage = 8f;
+                    speed = 30f;
                     lifetime = 1f;
                     frontColor = Color.valueOf("#ffffff00");
                     backColor = Color.valueOf("#98ffa900");
@@ -357,9 +357,9 @@ public class AeyamaUnits {
             legPhysicsLayer = false;
             allowLegStep = false;
 
-            health = 12f;
+            health = 16f;
             armor = 0f;
-            speed = 1f;
+            speed = 0.75f;
             drag = .5f;
             flying = false;
             hitSize = 4f;
@@ -385,7 +385,7 @@ public class AeyamaUnits {
                 shootSound = Sounds.none;
                 bullet = new BasicBulletType() {{
                     damage = 2f;
-                    speed = 10f;
+                    speed = 20f;
                     lifetime = 1f;
                     frontColor = Color.valueOf("#ffffff00");
                     backColor = Color.valueOf("#98ffa900");

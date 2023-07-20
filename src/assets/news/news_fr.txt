@@ -4,6 +4,8 @@
 
 La prochaine mise à jour (v0.4) est prévue pour se concentrer sur le contenu, avec beaucoup de nouveaux éléments et un rééquilibrage très nécessaire (il est temps de donner vos suggestions sur notre [blue]Discord[white] !).
 
+[red]UPDATE: [white]It seems like player are missing some objectives, at one point (before it ask you to get copper and zinc) you have to build walls and turrets to be able to survive! It seems like this sector was too hard and some balancing was made.
+
 
 [gray]17 Juin 2023
 

@@ -1,31 +1,32 @@
-[gray]July 16th, 2023
+[gray]16 липня, 2023
 
-[white]Hi everybody! The [yellow]v0.3 release [white]is out with the 2nd sector finally here! It might be a little unbalanced.
+[white]Привіт всім! [yellow]Реліз v0.3 [white]вийшов, і другий сектор нарешті тут! Але він може буде трохи незбалансований.
 
-The next update (v0.4) is planned to be content focused, with a lot of new content and very needed balancing (it's time to give your suggestion on our [blue]Discord[white]!).
+Наступне оновлення (v0.4) планується бути сфокусованим на новому контенті та дуже потрібному балансі (час запропонувати свою ідею на нашому[blue]Discord[white]!).
 
-
-[gray]June 17th, 2023
-
-[white]Holà! The [yellow]first sector [white]was [green]updated[white]! The objectives are all back.
-
-If you have any issue or feedback come on our [blue]Discord [white]or create an issue on GitHub! Adiós!
+[red]ОНОВЛЕННЯ: [white]Здається, що людям не вистачало цілей, в одній точці (перед тим, як воно просить здобути мідь та цинк) тобі треба побудувати стіни та башти, щоби вижити! Здається, цей сектор був забагато складним, тому ми його збалансували.
 
 
-[gray]June 13th, 2023
+[gray]17 червня, 2023
+
+[white]Привіт! [yellow]Перший сектор [white]був [green]оновлений[white]! Усі цілі повернулися.
+
+Якщо у вас є проблеми або вам потрібен зворотній зв'язок, приєднуйтесь до нас у [blue]Discord [white]або оповістіть о проблемі на GitHub! Адіос!
+
+[gray]13 червня, 2023
 
 [white]Привіт! [yellow]Перший сектор [white]був [green]оновлений[white]! Усі цілі повернулися.
 
 Якщо у вас є проблеми або вам потрібен зворотній зв'язок, приєднуйтесь до нас у [blue]Discord [white]або оповістіть о проблемі на GitHub! Адіос!
 
 
-[gray]April 22nd, 2023
+[gray]22 квітня, 2023
 
-[white]Всім привеіт, є важлива новина! Тепер цей мод зроблений на [red]Java [white]!Ви можете оновити його, перевстановивши мод за допомогою браузера. Реліз вийде, коли коли весь контент буде закінчений.
+[white]Всім привіт, є важлива новина! Тепер цей мод зроблений на [red]Java [white]!Ви можете оновити його, перевстановивши мод за допомогою браузера. Реліз вийде, коли весь контент буде закінчений.
 
 А поки, побачимось!
 
 
-[gray]April 20th, 2023
+[gray]20 квітня, 2023
 
-[white] Hey hey! Survival map should be [green]FIXED[white]!!
+[white] Хей хей! Карта виживання напевно [green]ПОЧИНЕНА[white]!!
