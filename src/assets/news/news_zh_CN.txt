@@ -1,35 +1,35 @@
-[gray]July 16th, 2023
+[gray]2023年7月16号
 
-[white]Hi everybody! The [yellow]v0.3 release [white]is out with the 2nd sector finally here! It might be a little unbalanced.
+[white]大家好，在 [yellow]v0.3 发布 [white]第二地区终于来了，但可能有点不平衡
 
-The next update (v0.4) is planned to be content focused, with a lot of new content and very needed balancing (it's time to give your suggestion on our [blue]Discord[white]!).
+在下一次更新 (v0.4)计划以内容为中心，有很多新内容和非常需要平衡（是时候在我们的 [blue]Discord[white]提出建议了！). 
 
-[red]UPDATE: [white]It seems like player are missing some objectives, at one point (before it ask you to get copper and zinc) you have to build walls and turrets to be able to survive! It seems like this sector was too hard and some balancing was made.
-
-
-[gray]June 17th, 2023
-
-[white]Holà! The [yellow]first sector [white]was [green]updated[white]! The objectives are all back.
-
-If you have any issue or feedback come on our [blue]Discord [white]or create an issue on GitHub! Adiós!
+[red]更新: [white]似乎玩家在某一时刻缺少了目标(在您获得铜和锌之前)，你必须亲自为些泡他的和防御才能生存。这似乎有点难，我们做了一些平衡
 
 
-[gray]June 13th, 2023
+[gray]2023年6月17号
 
-[white]Hey everyone, big news for the mod! We now are a [red]Java [white]mod! You can update it by redownloading the mod via the mod browser, a release might come soon there's still some things left to finish.
+[white]Holà! 现在 [yellow]第一区域 [white]已 [green]更新[white]! 目标都回来了
 
-Until then, cya!
-
-
-[gray]2023年4月22日
-
-[green]+ [white]新的版本号，对每个人来说都更加简单！
-[yellow]* [white]现在只保留最后5条新闻消息，使客户端的带宽更容易，我们不需要一直生活在过去;P
-
-如果有人想帮助翻译，请随时联系 Discord 或 Github！
-如果有人感兴趣，我们还需要画家的帮助。
+如果您有任何的反馈或建议请访问我们的 [blue]Discord [white]或者前往GitHub! Adiós! 
 
 
-[gray]2023年4月20日
+[gray]2023年6月13号
+
+[white]大家好，mod将会有一个大新闻！ 我们现在是一个 [red]Java [white]mod！ 您可以通过 mod 浏览器重新下载 mod 来更新它，发布版可能很快就会发布，不过还有一些事情要完成。
+
+不过再那之前，cya。
+
+
+[gray]2023年4月22日 
+
+[green]+ [white]新的版本号，对每个人来说都更加简单！ 
+[yellow]* [white]现在只保留最后5条新闻消息，使客户端的带宽更容易，我们不需要一直生活在过去;P 
+
+如果有人想帮助翻译，请随时联系 Discord 或 Github！ 
+如果有人感兴趣，我们还需要画家的帮助。 
+
+
+[gray]2023年4月20日 
 
 [white]嗯∽地图应该是[green]修好了[white]!! 
