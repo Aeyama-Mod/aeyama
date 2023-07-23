@@ -1,17 +1,21 @@
-[gray]July 16th, 2023
+[gray]16 Июля, 2023
 
-[white]Hi everybody! The [yellow]v0.3 release [white]is out with the 2nd sector finally here! It might be a little unbalanced.
+[white]Всем привет! Версия [yellow]v0.3 [white]вышла вместе со вторым сектором! Он может быть несбалансированным.
 
-The next update (v0.4) is planned to be content focused, with a lot of new content and very needed balancing (it's time to give your suggestion on our [blue]Discord[white]!).
+Следующее обновление (v0.4) будет сфокусированно на контенте, с множеством новых вещей и долгожданного баланса! (время предложить что нибудь на нашем [blue]Discord'е[white]!).
 
-[red]UPDATE: [white]It seems like player are missing some objectives, at one point (before it ask you to get copper and zinc) you have to build walls and turrets to be able to survive! It seems like this sector was too hard and some balancing was made.
+[red]UPDATE: [white]Похоже, что некоторые задания перепутаны, до получения меди и цинка требуется построить стены и турели для выживания. Сектор оказался слишком сложным, поэтому мы его исправили.
+
+[red]Заметка: [white]Русский переводчик сейчас на отпуске, ждите перевод в конце месяца! 
+[gray](Боже, этот мобильный текстовый редактор такой медленный!)
 
 
-[gray]June 17th, 2023
+[gray]17 Июня, 2023
 
-[white]Holà! The [yellow]first sector [white]was [green]updated[white]! The objectives are all back.
+[white]Holà! [yellow]Первый сектор [white]был [green]обновлён[white]! Задания возвращены.
 
-If you have any issue or feedback come on our [blue]Discord [white]or create an issue on GitHub! Adiós!
+Если у вас есть проблемы или отзывы по моду, зайдите на наш сервер [blue]Discord [white], или откройте проблему (issue) на GitHub!
+Adiós!
 
 
 [gray]13 Июня, 2023
