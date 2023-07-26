@@ -10,8 +10,7 @@ import mindustry.type.*;
 
 public class AeyamaUnits {
     public static UnitType
-        colonist,
-        sms, assault, heavy, scout,
+        colonist, sms, assault, heavy, scout,
         
         insectCrawler, insectSwarmer, insectSpit;
     
@@ -441,7 +440,7 @@ public class AeyamaUnits {
                 mirror = false;
                 shootSound = Sounds.none;
                 bullet = new BasicBulletType(5, 7) {{
-                    status = AeyamaStatuses.knockdown;
+                    status = AeyamaStatusEffects.knockdown;
                     statusDuration = 30;
                     lifetime = 14f;
                     frontColor = Color.valueOf("#16942e");

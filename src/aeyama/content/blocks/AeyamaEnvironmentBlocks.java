@@ -14,7 +14,7 @@ public class AeyamaEnvironmentBlocks {
     propsGrass, floorDirtA, floorDirtB, floorDirtC, floorGrassA,
     floorGrassB, floorGrassC, floorGrassD, floorCopper, floorIron,
     floorZinc, floorSand, floorStoneA, floorStoneB, floorStoneC,
-    floorDeepWater, floorSandWater,
+    floorDeepWater, floorSandWater, floorSulfuricAcid,
     
     /* Walls */
     wallDirtA, wallDirtB, wallDirtC, wallStoneA, wallStoneB,
@@ -134,8 +134,8 @@ public class AeyamaEnvironmentBlocks {
             supportsOverlay = true;
             cacheLayer = CacheLayer.water;
 
-            albedo = .6f;
-            speedMultiplier = .8f;
+            albedo = 0.6f;
+            speedMultiplier = 0.8f;
             status = StatusEffects.wet;
             statusDuration = 30f;
         }};
@@ -147,11 +147,23 @@ public class AeyamaEnvironmentBlocks {
             supportsOverlay = true;
             cacheLayer = CacheLayer.water;
 
-            albedo = .9f;
-            speedMultiplier = .1f;
+            albedo = 0.9f;
+            speedMultiplier = 0.1f;
             drownTime = 200f;
             status = StatusEffects.wet;
             statusDuration = 90f;
+        }};
+        floorSulfuricAcid = new Floor("floor-sulfuric-acid", 0) {{
+            isLiquid = true;
+            liquidDrop = AeyamaLiquids.sulfuricAcid;
+
+            supportsOverlay = true;
+            cacheLayer = CacheLayer.water;
+
+            albedo = 0.3f;
+            speedMultiplier = 0.7f;
+            status = AeyamaStatusEffects.corrosion;
+            statusDuration = 7.5f * 60f;
         }};
 
         /* Walls */
