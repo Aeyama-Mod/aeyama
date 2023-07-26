@@ -54,17 +54,17 @@ To build the mod you can either get the [Github Action build][GithubBuild] or yo
 
 <!--------------------------------------------------------------------------------->
 
-[Logo]: https://raw.githubusercontent.com/FredyJabe/aeyama/main/src/assets/sprites/logo.png
+[Logo]: https://raw.githubusercontent.com/Aeyama-Mod/aeyama/main/src/assets/sprites/logo.png
 
 [GithubProject]: https://github.com/users/FredyJabe/projects/2
-[GithubBuild]: https://github.com/FredyJabe/aeyama/actions
-[BranchMain]: https://github.com/FredyJabe/aeyama/tree/main
-[BranchDev]: https://github.com/FredyJabe/aeyama/tree/dev
+[GithubBuild]: https://github.com/Aeyama-Mod/aeyama/actions
+[BranchMain]: https://github.com/Aeyama-Mod/aeyama/tree/main
+[BranchDev]: https://github.com/Aeyama-Mod/aeyama/tree/dev
 
 [Discord]: https://discord.gg/rNhkswkJst
-[Download]: https://github.com/FredyJabe/aeyama/releases/latest
-[LastCommit]: https://github.com/FredyJabe/aeyama/commits/main
+[Download]: https://github.com/Aeyama-Mod/aeyama/releases/latest
+[LastCommit]: https://github.com/Aeyama-Mod/aeyama/commits/main
 
 [DiscordBadge]: https://img.shields.io/discord/1061344630987292835?color=287e29&label=Discord&logo=Discord&style=for-the-badge
-[DownloadBadge]: https://img.shields.io/github/downloads/FredyJabe/aeyama/total?color=287e29&logo=github&style=for-the-badge
-[LastCommitBadge]: https://img.shields.io/github/last-commit/fredyjabe/aeyama?color=287e29&style=for-the-badge
+[DownloadBadge]: https://img.shields.io/github/downloads/Aeyama-Mod/aeyama/total?color=287e29&logo=github&style=for-the-badge
+[LastCommitBadge]: https://img.shields.io/github/last-commit/Aeyama-Mod/aeyama?color=287e29&style=for-the-badge
