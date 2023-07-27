@@ -33,7 +33,7 @@ dependencies {
     compileOnly "com.github.Anuken.MindustryJitpack:core:$mindustryVersion"
 
     // implementation("com.github.liplum:MultiCrafterLib:$multicrafterVersion") 
-    implementation("com.github.jojofr1:MultiCrafterLib:c1.7.1") //Custom Build
+    implementation "com.github.jojofr1:MultiCrafterLib:v1.7.2" //Custom Build
 
     annotationProcessor "com.github.Anuken:jabel:$jabelVersion"
 }

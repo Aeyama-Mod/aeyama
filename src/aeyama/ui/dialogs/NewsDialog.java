@@ -20,8 +20,6 @@ public class NewsDialog extends BaseDialog {
         super(Core.bundle.format("title") + Core.bundle.format("installedVersion") + " " + mod.meta.version);
 
         addCloseListener();
-        buttons.button("@close", Icon.cancel, this::hide).size(256f, 64f);
-
         Table news = getNews();
 
         onResize(() -> {
@@ -63,12 +61,14 @@ public class NewsDialog extends BaseDialog {
                 }).row();
             }).center().fillX().row();
             cont.table(t -> {
+                t.defaults().size(256f*2f, 64f).pad(3f);
                 t.button(Core.bundle.format("linkProject"), Icon.trello, () -> {
                     if (!Core.app.openURI(urlProject)) {
                         Vars.ui.showErrorMessage("@linkfail");
                         Core.app.setClipboardText(urlProject);
                     }
-                }).size(256f*2f, 64f);
+                }).row();
+                t.button("@close", Icon.cancel, this::hide);
             }).center().fillX();
         } else { // If on landscape mobile
             cont.table(t -> {
@@ -90,7 +90,8 @@ public class NewsDialog extends BaseDialog {
                         Vars.ui.showErrorMessage("@linkfail");
                         Core.app.setClipboardText(urlProject);
                     }
-                });
+                }).row();
+                t.button("@close", Icon.cancel, this::hide);
             }).center().fillX();
         }
     }
