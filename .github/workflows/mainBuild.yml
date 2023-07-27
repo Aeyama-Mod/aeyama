@@ -2,8 +2,6 @@ name: Main Build
 
 on:
   workflow_dispatch:
-    branches:
-      - main
 
 jobs:
   buildJar:
@@ -22,8 +20,12 @@ jobs:
         cache: gradle 
     - name: Build mod JAR
       run: chmod +x ./gradlew; ./gradlew deploy
+    - name: Get current version
+      run: |
+        version=$(${{github.workspace}}/gradlew -q printVersion)
+        echo "version=$version" >> $GITHUB_ENV
     - name: Upload built JAR file
       uses: actions/upload-artifact@v3
       with:
-        name: ${{ github.event.repository.name }}
-        path: build/libs/${{ github.event.repository.name }}.jar
+        name: ${{ github.event.repository.name }}-${{ env.version }}
+        path: build/libs/${{ github.event.repository.name }}-${{ env.version }}.jar

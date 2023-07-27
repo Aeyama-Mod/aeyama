@@ -47,6 +47,10 @@ configurations.all {
     }
 }
 
+task printVersion {
+    println version
+}
+
 task jarAndroid {
     dependsOn "jar"
 

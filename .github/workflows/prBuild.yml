@@ -22,8 +22,12 @@ jobs:
       run: chmod +x ./gradlew
     - name: Build mod JAR
       run: ./gradlew deploy
+    - name: Get current version
+      run: |
+        version=$(${{github.workspace}}/gradlew -q printVersion)
+        echo "version=$version" >> $GITHUB_ENV
     - name: Upload built JAR file
       uses: actions/upload-artifact@v3
       with:
-        name: ${{ github.event.repository.name }} Pull Request
-        path: build/libs/${{ github.event.repository.name }}.jar
+        name: PR-${{ github.event.repository.name }}-${{ env.version }}
+        path: build/libs/${{ github.event.repository.name }}-${{ env.version }}.jar
