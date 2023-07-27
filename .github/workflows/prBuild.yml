@@ -1,10 +1,7 @@
-name: Dev Build
+name: Pull Request Building
 
 on:
-  push:
-    branches:
-      - dev
-  workflow_dispatch:
+  pull_request:
 
 jobs:
   buildJar:
@@ -21,8 +18,10 @@ jobs:
         java-version: 17.0.7
         distribution: oracle
         cache: gradle
+    - name: Grant execution permission to gradlew
+      run: chmod +x ./gradlew
     - name: Build mod JAR
-      run: chmod +x ./gradlew; ./gradlew deploy
+      run: ./gradlew deploy
     - name: Get current version
       run: |
         version=$(${{github.workspace}}/gradlew -q printVersion)
@@ -30,28 +29,5 @@ jobs:
     - name: Upload built JAR file
       uses: actions/upload-artifact@v3
       with:
-        name: ${{ github.event.repository.name }}-${{ env.version }}
+        name: PR-${{ github.event.repository.name }}-${{ env.version }}
         path: build/libs/${{ github.event.repository.name }}-${{ env.version }}.jar
-  
-  updateVersion:
-    permissions:
-      contents: write
-
-    if: ${{ github.repository == 'Aeyama-Mod/aeyama' }}
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    
-    - name: Setup Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-
-    - name: Build Version Update
-      run: |
-        python .github/workflows/scripts/version.py
-        git config --global user.name "Github Actions"
-        git config --global user.email "actions@github.com"
-        git add .
-        git commit -m 'Automatic Build Version Update'
-        git push
