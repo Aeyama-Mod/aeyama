@@ -36,43 +36,50 @@ public class MultiCoreBlock extends CoreBlock {
     public void setStats() {
         super.setStats();
 
-        if (unitTypes.size > 1) {
-            stats.remove(Stat.unitType);
-            stats.add(new Stat("unitTypes", StatCat.function), t -> {
-                t.row();
-                for(UnitType unit : unitTypes) {
-                    t.table(Styles.grayPanel, b -> {
-                        b.image(unit.uiIcon).size(40f).pad(10f).left().scaling(Scaling.fit);
-                        b.table(i -> {
-                            i.add(unit.localizedName).left();
-                            if (Core.settings.getBool("console")) {
-                                i.row();
-                                i.add(unit.name).left().color(Color.lightGray);
-                            }
-                        });
-                        b.button("?", Styles.flatBordert, () -> ui.content.show(unit)).size(40f).pad(10).right().grow().visible(() -> unit.unlockedNow());
-                    }).growX().pad(5f).row();
-                }
-            });
-        }
+        stats.remove(Stat.unitType);
+        stats.add(new Stat("unitTypes", StatCat.function), t -> {
+            t.row();
+            for(UnitType unit : unitTypes) {
+                t.table(Styles.grayPanel, b -> {
+                    b.image(unit.uiIcon).size(40f).pad(10f).left().scaling(Scaling.fit);
+                    b.table(i -> {
+                        i.add(unit.localizedName).left();
+                        if (Core.settings.getBool("console")) {
+                            i.row();
+                            i.add(unit.name).left().color(Color.lightGray);
+                        }
+                    });
+                    b.button("?", Styles.flatBordert, () -> ui.content.show(unit)).size(40f).pad(10).right().grow().visible(() -> unit.unlockedNow());
+                }).growX().pad(5f).row();
+            }
+        });
     }
 
     public class MultiCoreBuild extends CoreBuild {
-
+        
         public void setCurrentUnit(UnitType unit) {
             if (unitType != unit)
                 unitType = unit;
+            
+            requestSpawn(player);
         }
 
         public void build(MultiCoreBlock b, MultiCoreBuild c, Table table) {
-            table.table(Styles.grayPanel, t -> {
-                for (UnitType unit : unitTypes) {
+            for (UnitType unit : unitTypes) {
+                int index = unitTypes.indexOf(unit);
+                if (index != 0 && index % 2 == 0)
+                    table.row();
+                
+                table.table(Styles.grayPanel, t -> {
                     ImageButton button = new ImageButton(unit.uiIcon, Styles.clearTogglei);
                     button.changed(() -> c.configure(unit));
                     button.update(() -> button.setChecked(b.unitType == unit));
-                    t.add(button).grow().pad(8f).margin(10f);
-                }
-            });
+                    t.add(button).size(40f).row();
+                    t.add(unit.localizedName).center();
+                }).grow().pad(2f).margin(5f);
+            }
+
+            table.left().setSize(128f);
         }
 
         @Override
