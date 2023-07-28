@@ -1,6 +1,7 @@
 package aeyama.content.blocks;
 
 import arc.graphics.*;
+import arc.struct.*;
 
 import mindustry.type.*;
 import mindustry.world.*;
@@ -10,6 +11,7 @@ import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
 import aeyama.content.*;
+import aeyama.world.blocks.storage.*;
 
 import static mindustry.type.ItemStack.*;
 
@@ -59,12 +61,17 @@ public class AeyamaStorageBlocks {
 
             requirements(Category.effect, BuildVisibility.shown, with(AeyamaItems.woodLumber, 300, AeyamaItems.stoneBrick, 600, AeyamaItems.rawIron, 150));
         }};
-        coreControl = new CoreBlock("core-control") {{
+        coreControl = new MultiCoreBlock("core-control") {{
             health = 2000;
             size = 3;
             itemCapacity = 3000;
 
-            unitType = AeyamaUnits.sms;
+            unitTypes = Seq.with(
+                AeyamaUnits.sms,
+                AeyamaUnits.assault,
+                AeyamaUnits.heavy,
+                AeyamaUnits.scout
+            );
 
             requirements(Category.effect, BuildVisibility.shown, with(AeyamaItems.woodLumber, 1000, AeyamaItems.stoneBrick, 1000, AeyamaItems.iron, 500));
         }};
