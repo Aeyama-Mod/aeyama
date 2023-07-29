@@ -27,61 +27,62 @@ public class AeyamaEnvironmentBlocks {
             variants = 9;
         }};
         floorSand = new Floor("floor-sand", 1) {{
+            floorSand.asFloor().wall = Blocks.sandWall;
             itemDrop = AeyamaItems.sand;
             attributes.set(Attribute.get("sand"), .25f);
             attributes.set(Attribute.get("stone"), .0875f);
         }};
         floorGrassA = new Floor("floor-grassa", 3) {{
-            wall = wallTree;
+            floorGrassA.asFloor().wall = wallTree;
             attributes.set(Attribute.get("iron"), .025f);
             attributes.set(Attribute.get("zinc"), .025f);
             attributes.set(Attribute.get("copper"), .025f);
             attributes.set(Attribute.get("stone"), .025f);
         }};
         floorGrassB = new Floor("floor-grassb", 3) {{
-            wall = wallTree;
+            floorGrassB.asFloor().wall = wallTree;
             attributes.set(Attribute.get("iron"), .025f);
             attributes.set(Attribute.get("zinc"), .025f);
             attributes.set(Attribute.get("copper"), .025f);
             attributes.set(Attribute.get("stone"), .025f);
         }};
         floorGrassC = new Floor("floor-grassc", 3) {{
-            wall = wallTree;
+            floorGrassC.asFloor().wall = wallTree;
             attributes.set(Attribute.get("iron"), .025f);
             attributes.set(Attribute.get("zinc"), .025f);
             attributes.set(Attribute.get("copper"), .025f);
             attributes.set(Attribute.get("stone"), .025f);
         }};
         floorGrassD = new Floor("floor-grassd", 3) {{
-            wall = wallTree;
+            floorGrassD.asFloor().wall = wallTree;
             attributes.set(Attribute.get("iron"), .025f);
             attributes.set(Attribute.get("zinc"), .025f);
             attributes.set(Attribute.get("copper"), .025f);
             attributes.set(Attribute.get("stone"), .025f);
         }};
         floorDirtA = new Floor("floor-dirta", 3) {{
-            wall = wallDirtA;
+            floorDirtA.asFloor().wall = wallDirtA;
             attributes.set(Attribute.get("iron"), .05f);
             attributes.set(Attribute.get("zinc"), .05f);
             attributes.set(Attribute.get("copper"), .05f);
             attributes.set(Attribute.get("stone"), .05f);
         }};
         floorDirtB = new Floor("floor-dirtb", 3) {{
-            wall = wallDirtB;
+            floorDirtB.asFloor().wall = wallDirtB;
             attributes.set(Attribute.get("iron"), .05f);
             attributes.set(Attribute.get("zinc"), .05f);
             attributes.set(Attribute.get("copper"), .05f);
             attributes.set(Attribute.get("stone"), .05f);
         }};
         floorDirtC = new Floor("floor-dirtc", 3) {{
-            wall = wallDirtC;
+            floorDirtC.asFloor().wall = wallDirtC;
             attributes.set(Attribute.get("iron"), .05f);
             attributes.set(Attribute.get("zinc"), .05f);
             attributes.set(Attribute.get("copper"), .05f);
             attributes.set(Attribute.get("stone"), .05f);
         }};
         floorStoneA = new Floor("floor-stonea", 3) {{
-            wall = wallStoneC;
+            floorStoneA.asFloor().wall = wallStoneA;
             itemDrop = AeyamaItems.stone;
             attributes.set(Attribute.get("iron"), .125f);
             attributes.set(Attribute.get("zinc"), .125f);
@@ -89,7 +90,7 @@ public class AeyamaEnvironmentBlocks {
             attributes.set(Attribute.get("stone"), .25f);
         }};
         floorStoneB = new Floor("floor-stoneb", 3) {{
-            wall = wallStoneB;
+            floorStoneB.asFloor().wall = wallStoneB;
             itemDrop = AeyamaItems.stone;
             attributes.set(Attribute.get("iron"), .125f);
             attributes.set(Attribute.get("zinc"), .125f);
@@ -97,7 +98,7 @@ public class AeyamaEnvironmentBlocks {
             attributes.set(Attribute.get("stone"), .25f);
         }};
         floorStoneC = new Floor("floor-stonec", 3) {{
-            wall = wallStoneC;
+            floorStoneC.asFloor().wall = wallStoneC;
             itemDrop = AeyamaItems.stone;
             attributes.set(Attribute.get("iron"), .125f);
             attributes.set(Attribute.get("zinc"), .125f);
@@ -127,6 +128,7 @@ public class AeyamaEnvironmentBlocks {
         }};
         
         floorSandWater = new Floor("floor-sand-water", 0) {{
+            floorSandWater.asFloor().wall = Blocks.sandWall;
             isLiquid = true;
             liquidDrop = AeyamaLiquids.water;
             attributes.set(Attribute.get("water"), 1f);
@@ -140,6 +142,7 @@ public class AeyamaEnvironmentBlocks {
             statusDuration = 30f;
         }};
         floorDeepWater = new Floor("floor-deep-water", 0) {{
+            floorDeepWater.asFloor().wall = Blocks.sandWall;
             isLiquid = true;
             liquidDrop = AeyamaLiquids.water;
             attributes.set(Attribute.get("water"), 1f);
