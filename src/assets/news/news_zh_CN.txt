@@ -1,7 +1,7 @@
 [gray]July 30th, 2023
 
-[white]A small update was released, the [yellow]v0.3.1 [white]wich has some small changes, mainly translation and some small changes.
-
+[white]A small update was released, the [yellow]v0.3.1 [white]which has some small changes, mainly translation and balancing.
+    
 As of today, beta release will be made, only if enough content is added, every week or two on Monday! Basically you now have the stable release, the beta release every 1 or 2 weeks and the dev version, available on each commits via GitHub Actions!
 
 Like usual report bugs on the GitHub repository Issue and come on our [blue]Discord [white]to get help or give your idea!
