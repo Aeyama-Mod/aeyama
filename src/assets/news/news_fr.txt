@@ -1,3 +1,12 @@
+[gray]30 Juillet 2023
+
+[white]Une petite mise à jour a été publiée, la [yellow]v0.3.1 [white]qui contient quelques petits changements, principalement des traductions et quelques modifications.
+
+À partir d'aujourd'hui, une version bêta sera publiée, uniquement si suffisamment de contenu est ajouté, toutes les une ou deux semaine le lundi ! Basiquement, vous avez maintenant la version stable, la version bêta toutes les 1 ou 2 semaines, et la version de développement, disponible à chaque commits via GitHub Actions !
+
+Comme d'habitude, signalez les bugs sur le GitHub Issue et rendez-vous sur notre [blue]Discord [white]pour obtenir de l'aide ou partager vos idées !
+
+
 [gray]16 Juillet 2023
 
 [white]Salut tout le monde ! La [yellow]v0.3 [white]est disponible avec enfin le 2ème secteur ! La mise à jour pourrait être un peu déséquilibré.
@@ -28,8 +37,3 @@ D'ici là, à plus tard !
 
 Si quelqu'un veut aider à la traduction, n'hésitez pas à nous contacter sur Discord ou GitHub !
 Nous avons également besoin d'aide d'artistes, si quelqu'un est intéressé.
-
-
-[gray]20 Avril 2023
-
-[white] Hey, hey ! La carte de survie devrait être [green]RÉPARÉE[white] !!

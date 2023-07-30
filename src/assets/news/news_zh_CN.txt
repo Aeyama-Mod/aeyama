@@ -1,3 +1,12 @@
+[gray]July 30th, 2023
+
+[white]A small update was released, the [yellow]v0.3.1 [white]which has some small changes, mainly translation and balancing.
+    
+As of today, beta release will be made, only if enough content is added, every week or two on Monday! Basically you now have the stable release, the beta release every 1 or 2 weeks and the dev version, available on each commits via GitHub Actions!
+
+Like usual report bugs on the GitHub repository Issue and come on our [blue]Discord [white]to get help or give your idea!
+
+
 [gray]2023年7月16号
 
 [white]大家好，在 [yellow]v0.3 发布 [white]第二地区终于来了，但可能有点不平衡
@@ -30,8 +39,3 @@
 
 如果有人想帮助翻译，请随时联系 Discord 或 Github！ 
 如果有人感兴趣，我们还需要画家的帮助。 
-
-
-[gray]2023年4月20日 
-
-[white]嗯∽地图应该是[green]修好了[white]!! 

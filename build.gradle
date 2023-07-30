@@ -93,10 +93,7 @@ jar {
         exclude(
             "news/**",
             "sprites/tech.drawio.png",
-            "sprites/blocks/2x2-placeholder.png",
-            "sprites/blocks/3x3-placeholder.png",
-            "sprites/blocks/4x4-placeholder.png",
-            "sprites/blocks/5x5-placeholder.png"
+            "sprites/blocks/**-placeholder.png"
         )  
     }
 }

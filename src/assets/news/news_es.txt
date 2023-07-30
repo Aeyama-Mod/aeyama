@@ -1,3 +1,12 @@
+[gray]July 30th, 2023
+
+[white]A small update was released, the [yellow]v0.3.1 [white]which has some small changes, mainly translation and balancing.
+
+As of today, beta release will be made, only if enough content is added, every week or two on Monday! Basically you now have the stable release, the beta release every 1 or 2 weeks and the dev version, available on each commits via GitHub Actions!
+
+Like usual report bugs on the GitHub repository Issue and come on our [blue]Discord [white]to get help or give your idea!
+
+
 [gray]July 16th, 2023
 
 [white]Hi everybody! The [yellow]v0.3 release [white]is out with the 2nd sector finally here! It might be a little unbalanced.
@@ -28,8 +37,3 @@ Until then, cya!
 
 Si alguien quiere ayudar con la traducción, ¡Siéntete libre de comunicarte por Discord o Github!
 También necesitamos ayuda de artistas, si a alguien le interesa.
-
-
-[gray]Abril 20, 2023
-
-[white] ¡Hola hola! El mapa de supervivencia debería estar [green]ARREGLADO[white]!!

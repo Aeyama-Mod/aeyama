@@ -1,3 +1,12 @@
+[gray]July 30th, 2023
+
+[white]A small update was released, the [yellow]v0.3.1 [white]which has some small changes, mainly translation and balancing.
+
+As of today, beta release will be made, only if enough content is added, every week or two on Monday! Basically you now have the stable release, the beta release every 1 or 2 weeks and the dev version, available on each commits via GitHub Actions!
+
+Like usual report bugs on the GitHub repository Issue and come on our [blue]Discord [white]to get help or give your idea:
+
+
 [gray]16 липня, 2023
 
 [white]Привіт всім! [yellow]Реліз v0.3 [white]вийшов, і другий сектор нарешті тут! Але він може буде трохи незбалансований.
@@ -25,8 +34,11 @@
 [white]Всім привіт, є важлива новина! Тепер цей мод зроблений на [red]Java [white]!Ви можете оновити його, перевстановивши мод за допомогою браузера. Реліз вийде, коли весь контент буде закінчений.
 
 А поки, побачимось!
+<<<<<<< HEAD
 
 
 [gray]20 квітня, 2023
 
 [white] Хей хей! Карта виживання напевно [green]ПОЧИНЕНА[white]!!
+=======
+>>>>>>> main
