@@ -1,10 +1,10 @@
-[gray]July 30th, 2023
+[gray]30 Июля, 2023
 
-[white]A small update was released, the [yellow]v0.3.1 [white]wich has some small changes, mainly translation and some small changes.
+[white]Вышло маленькое обновление - [yellow]v0.3.1[white], которое содержит в основном переводы и мелкие изменения.
 
-As of today, beta release will be made, only if enough content is added, every week or two on Monday! Basically you now have the stable release, the beta release every 1 or 2 weeks and the dev version, available on each commits via GitHub Actions!
+С сегодняшнего дня, при достаточном количестве контента, каждые 1-2 недели будут выходить бета релизы! Теперь у вас будет стабильная версия, бета релизы и dev версия, доступная при каждом изменении кода в действиях (Actions) на GitHub!
 
-Like usual report bugs on the GitHub repository Issue and come on our [blue]Discord [white]to get help or give your idea!
+Как обычно, сообщайте о багах на репозитории GitHub и заходите на наш [blue]Discord [white] сервер за помощью, или предложите идею!
 
 
 [gray]16 Июля, 2023
@@ -18,7 +18,7 @@ Like usual report bugs on the GitHub repository Issue and come on our [blue]Disc
 [red]Заметка (23.07): [white]Русский переводчик сейчас на отпуске, ждите перевод в конце месяца! 
 [gray](Боже, этот мобильный текстовый редактор такой медленный!)
 
-[red]Заметка 2 (29.07): [white]Перевод готов, ждите.
+[red]Заметка 2 (29.07): [white]Перевод готов.
 
 
 [gray]17 Июня, 2023
@@ -31,7 +31,7 @@ Adiós!
 
 [gray]13 Июня, 2023
 
-[white]Всем привет, есть большие новости! Теперь этот мод сделан на [red]Java [white]! Вы можете обновить его, переустановив мод с помощью браузера, релиз выйдет, когда будут доделан весь контент.
+[white]Всем привет, есть большие новости! Теперь этот мод сделан на [red]Java [white]! Вы можете обновить его, переустановив мод с помощью браузера, релиз выйдет, когда будет доделан весь контент.
 
 А пока, увидимся!
 
