@@ -6,6 +6,8 @@
 
 [red]更新: [white]似乎玩家在某一时刻缺少了目标(在您获得铜和锌之前)，你必须亲自为些泡他的和防御才能生存。这似乎有点难，我们做了一些平衡
 
+[red]UPDATE: [white]It seems like player are missing some objectives, at one point (before it ask you to get copper and zinc) you have to build walls and turrets to be able to survive! It seems like this sector was too hard and some balancing was made.
+
 
 [gray]2023年6月17号
 

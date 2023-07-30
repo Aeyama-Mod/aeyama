@@ -15,7 +15,7 @@ public class Aeyama extends Mod {
     @Override
     public void loadContent() { // The load order is VERY IMPORTANT, don't change it.
         AeyamaAttributes.load();
-        AeyamaStatuses.load();
+        AeyamaStatusEffects.load();
         AeyamaLoadouts.load();
 
         AeyamaUnits.load();
