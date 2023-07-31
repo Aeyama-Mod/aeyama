@@ -23,7 +23,7 @@ New resources mechanics are in place, new resources, new research tree and much 
 This mod is still in active development, if you have any question join our <a href="https://discord.gg/rNhkswkJst">Discord</a>
 
 ## Updates
-To see what we're up to next, go check our [`Project`][GithubProject]!
+To see what we're up to next, go check our [`Project`][GitHubProject]!
 And if the mod interests you, [`download it here`][Download] or use the mod browser ingame!
 
 ## Tech
@@ -35,7 +35,7 @@ The mod has 2 different branches:<br><br>
     - The [`main branch`][BranchMain], wich is the stable release.<br>
     - The [`dev branch`][BranchDev], wich is the latest release (can contain bugs, crashes, etc...).<br>
 
-To build the mod you can either get the [Github Action build][GithubBuild] or you can manually build the mod, you will need `Java 17` or above and execute `./gradlew jar` or `./gradlew deploy` for Desktop & Mobile (require `Android SDK 30` or above).
+To build the mod you can either get the [GitHub Action build][GitHubBuild] or you can manually build the mod, you will need `Java 17` or above and execute `./gradlew jar` or `./gradlew deploy` for Desktop & Mobile (require `Android SDK 30` or above).
 </div>
 
 ## Contributors
@@ -56,8 +56,8 @@ To build the mod you can either get the [Github Action build][GithubBuild] or yo
 
 [Logo]: https://raw.githubusercontent.com/Aeyama-Mod/aeyama/main/src/assets/sprites/logo.png
 
-[GithubProject]: https://github.com/users/FredyJabe/projects/2
-[GithubBuild]: https://github.com/Aeyama-Mod/aeyama/actions
+[GitHubProject]: https://github.com/users/FredyJabe/projects/2
+[GitHubBuild]: https://github.com/Aeyama-Mod/aeyama/actions
 [BranchMain]: https://github.com/Aeyama-Mod/aeyama/tree/main
 [BranchDev]: https://github.com/Aeyama-Mod/aeyama/tree/dev
 

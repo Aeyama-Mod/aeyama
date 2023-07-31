@@ -37,5 +37,5 @@ Like usual report bugs on the GitHub repository Issue and come on our [blue]Disc
 [green]+ [white]新的版本号，对每个人来说都更加简单！ 
 [yellow]* [white]现在只保留最后5条新闻消息，使客户端的带宽更容易，我们不需要一直生活在过去;P 
 
-如果有人想帮助翻译，请随时联系 Discord 或 Github！ 
+如果有人想帮助翻译，请随时联系 Discord 或 GitHub！ 
 如果有人感兴趣，我们还需要画家的帮助。 

@@ -14,7 +14,7 @@ import static aeyama.AeyamaVars.*;
 public class NewsDialog extends BaseDialog {
     static LoadedMod mod = Vars.mods.getMod("aeyama");
     String urlNews = "https://raw.githubusercontent.com/" + repo + (isDev ? "dev" : "main") + "/src/assets/news/" + Core.bundle.get("newsFile");
-    String urlGithub = "https://github.com/Aeyama-Mod/aeyama";
+    String urlGitHub = "https://github.com/Aeyama-Mod/aeyama";
     String urlDiscord = "https://discord.gg/YVY9Y3uA85";
     String urlProject = "https://github.com/users/FredyJabe/projects/2";
 
@@ -49,10 +49,10 @@ public class NewsDialog extends BaseDialog {
             
             cont.table(t -> {
                 t.defaults().size(256f, 64f).pad(3f);
-                t.button(Core.bundle.format("linkGithub"), Icon.githubSquare, () -> {
-                    if (!Core.app.openURI(urlGithub)) {
+                t.button(Core.bundle.format("linkGitHub"), Icon.githubSquare, () -> {
+                    if (!Core.app.openURI(urlGitHub)) {
                         Vars.ui.showErrorMessage("@linkfail");
-                        Core.app.setClipboardText(urlGithub);
+                        Core.app.setClipboardText(urlGitHub);
                     }
                 });
                 t.button(Core.bundle.format("linkDiscord"), Icon.discord, () -> {
@@ -75,10 +75,10 @@ public class NewsDialog extends BaseDialog {
         } else { // If on landscape mobile
             cont.table(t -> {
                 t.defaults().size(256f, 64f).pad(3f);
-                t.button(Core.bundle.format("linkGithub"), Icon.githubSquare, () -> {
-                    if (!Core.app.openURI(urlGithub)) {
+                t.button(Core.bundle.format("linkGitHub"), Icon.githubSquare, () -> {
+                    if (!Core.app.openURI(urlGitHub)) {
                         Vars.ui.showErrorMessage("@linkfail");
-                        Core.app.setClipboardText(urlGithub);
+                        Core.app.setClipboardText(urlGitHub);
                     }
                 }).row();
                 t.button(Core.bundle.format("linkDiscord"), Icon.discord, () -> {

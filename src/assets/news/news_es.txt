@@ -35,5 +35,5 @@ Until then, cya!
 [green]+ [white]Nuevo enumeramiento de versiones, ¡Simple para todos!
 [yellow]* [white]Ahora solo se quedan los últimos 5 mensajes, ¡Mejor para el ancho de banda del cliente y no necesitamos vivir en el pasado! ;P
 
-Si alguien quiere ayudar con la traducción, ¡Siéntete libre de comunicarte por Discord o Github!
+Si alguien quiere ayudar con la traducción, ¡Siéntete libre de comunicarte por Discord o GitHub!
 También necesitamos ayuda de artistas, si a alguien le interesa.
