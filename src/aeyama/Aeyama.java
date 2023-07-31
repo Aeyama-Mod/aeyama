@@ -9,6 +9,7 @@ public class Aeyama extends Mod {
 
     @Override
     public void init() {
+        AeyamaVars.load();
         AeyamaDialogs.load();
     }
 

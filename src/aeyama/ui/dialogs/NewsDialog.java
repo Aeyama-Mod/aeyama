@@ -9,9 +9,11 @@ import mindustry.mod.Mods.*;
 import mindustry.ui.dialogs.*;
 
 import static mindustry.Vars.*;
+import static aeyama.AeyamaVars.*;
 
 public class NewsDialog extends BaseDialog {
     static LoadedMod mod = Vars.mods.getMod("aeyama");
+    String urlNews = "https://raw.githubusercontent.com/" + repo + (isDev ? "dev" : "main") + "/src/assets/news/" + Core.bundle.get("newsFile");
     String urlGithub = "https://github.com/Aeyama-Mod/aeyama";
     String urlDiscord = "https://discord.gg/YVY9Y3uA85";
     String urlProject = "https://github.com/users/FredyJabe/projects/2";
@@ -100,9 +102,9 @@ public class NewsDialog extends BaseDialog {
         Table table = new Table();
         Log.info("[green][Aeyama][lightgray] Fetching news...");
 
-        Http.get(Core.bundle.format("urlNews")).error(err -> {
+        Http.get(urlNews).error(err -> {
             table.add("[red][ERROR] FAILED TO GET NEWS.").center();
-            Log.err(err.getMessage());
+            Log.err("[red][Aeyama][lightgray] " + err.getMessage());
         }).block(res -> {
             table.add(res.getResultAsString()).left().growX().wrap().labelAlign(Align.left);
         });
