@@ -2,7 +2,7 @@
     "name": "aeyama",
     "repo": "aeyama-mod/aeyama",
     "minGameVersion": 145,
-    "version": "0.4-dev.18",
+    "version": "0.4-dev.19",
 
     "java": true,
     "main": "aeyama.Aeyama",
