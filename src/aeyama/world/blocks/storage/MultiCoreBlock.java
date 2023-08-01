@@ -16,6 +16,7 @@ import static mindustry.Vars.*;
 
 public class MultiCoreBlock extends CoreBlock {
     public Seq<UnitType> unitTypes = new Seq<>();
+    public Seq<ItemStack[]> unitCosts = new Seq<>();
 
     public MultiCoreBlock(String name) {
         super(name);
@@ -40,13 +41,19 @@ public class MultiCoreBlock extends CoreBlock {
         stats.add(new Stat("unitTypes", StatCat.function), t -> {
             t.row();
             for(UnitType unit : unitTypes) {
+                int index = unitTypes.indexOf(unit);
                 t.table(Styles.grayPanel, b -> {
                     b.image(unit.uiIcon).size(40f).pad(10f).left().scaling(Scaling.fit);
                     b.table(i -> {
-                        i.add(unit.localizedName).left();
-                        if (Core.settings.getBool("console")) {
-                            i.row();
-                            i.add(unit.name).left().color(Color.lightGray);
+                        i.add(unit.localizedName).left().row();;
+                        i.add(unit.name).left().color(Color.lightGray).row();
+                        if (unitCosts.get(index).length < 0){
+                            i.add(Core.bundle.get("stat.unitcosts") + Core.bundle.get("none")).left();
+                        } else {
+                            i.add(Core.bundle.get("stat.unitcosts"));
+                            for(ItemStack items : unitCosts.get(index)) {
+                                i.add(new ItemDisplay(items.item, items.amount, false)).padRight(5f).left();
+                            }
                         }
                     });
                     b.button("?", Styles.flatBordert, () -> ui.content.show(unit)).size(40f).pad(10).right().grow().visible(() -> unit.unlockedNow());
@@ -70,13 +77,16 @@ public class MultiCoreBlock extends CoreBlock {
                 if (index != 0 && index % 2 == 0)
                     table.row();
                 
-                table.table(Styles.grayPanel, t -> {
-                    ImageButton button = new ImageButton(unit.uiIcon, Styles.clearTogglei);
-                    button.changed(() -> c.configure(unit));
-                    button.update(() -> button.setChecked(b.unitType == unit));
-                    t.add(button).size(40f).row();
-                    t.add(unit.localizedName).center();
-                }).grow().pad(2f).margin(5f);
+                ImageButton button = new ImageButton(Styles.clearTogglei);
+                Table t = new Table();
+                t.image(unit.uiIcon).size(40f).pad(10f).center().scaling(Scaling.fit).row();
+                t.add(unit.localizedName).center();
+
+                button.replaceImage(t);
+                button.changed(() -> c.configure(unit));
+                button.update(() -> button.setChecked(b.unitType == unit));
+
+                table.add(button);
             }
 
             table.left().setSize(128f);

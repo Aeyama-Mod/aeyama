@@ -24,16 +24,16 @@ This mod is still in active development, if you have any question join our <a hr
 
 ## Updates
 To see what we're up to next, go check our [`Project`][GitHubProject]!
-And if the mod interests you, [`download it here`][Download] or use the mod browser ingame!
+And if the mod interests you, [`download it here`][Download] or use the mod browser in game!
 
 ## Tech
-Here's the current Techtree, it is FAR from done and will keep expanding!
+Here's the Tech tree (outdated), it is FAR from done and will keep expanding!
 <img src="https://raw.githubusercontent.com/Aeyama-Mod/aeyama/main/src/assets/sprites/tech.drawio.png"/>
 
 ## Building
 The mod has 2 different branches:<br><br>
-    - The [`main branch`][BranchMain], wich is the stable release.<br>
-    - The [`dev branch`][BranchDev], wich is the latest release (can contain bugs, crashes, etc...).<br>
+    - The [`main branch`][BranchMain], which is the stable release.<br>
+    - The [`dev branch`][BranchDev], which is the latest release (can contain bugs, crashes, etc...).<br>
 
 To build the mod you can either get the [GitHub Action build][GitHubBuild] or you can manually build the mod, you will need `Java 17` or above and execute `./gradlew jar` or `./gradlew deploy` for Desktop & Mobile (require `Android SDK 30` or above).
 </div>

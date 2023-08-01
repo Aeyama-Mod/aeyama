@@ -73,6 +73,13 @@ public class AeyamaStorageBlocks {
                 AeyamaUnits.scout
             );
 
+            unitCosts = Seq.with(
+                with(AeyamaItems.woodLumber, 50),
+                with(AeyamaItems.stoneBrick, 50,AeyamaItems.woodLumber, 10),
+                with(),
+                with(AeyamaItems.steel, 5000)
+            );
+
             requirements(Category.effect, BuildVisibility.shown, with(AeyamaItems.woodLumber, 1000, AeyamaItems.stoneBrick, 1000, AeyamaItems.iron, 500));
         }};
         smallStockpile = new StorageBlock("stockpile-small") {{
