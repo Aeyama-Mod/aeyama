@@ -7,18 +7,19 @@ import arc.scene.ui.layout.*;
 import arc.struct.*;
 import arc.util.*;
 
-import mindustry.gen.*;
-import mindustry.graphics.*;
+import mindustry.core.*;
 import mindustry.type.*;
 import mindustry.ui.*;
 import mindustry.world.blocks.storage.*;
 import mindustry.world.meta.*;
 
+import aeyama.ui.*;
+
 import static mindustry.Vars.*;
 
 public class MultiCoreBlock extends CoreBlock {
     public Seq<UnitType> unitTypes = new Seq<>(UnitType.class);
-    public Seq<INeedANameClass> cost = new Seq<>(INeedANameClass.class);
+    public Seq<INeedANameClass> costs = new Seq<>(INeedANameClass.class);
 
     public MultiCoreBlock(String name) {
         super(name);
@@ -45,51 +46,31 @@ public class MultiCoreBlock extends CoreBlock {
             for(UnitType unit : unitTypes) {
                 int index = unitTypes.indexOf(unit);
                 t.table(Styles.grayPanel, b -> {
-                    b.image(unit.uiIcon).size(40f).pad(10f).left().scaling(Scaling.fit);
+                    b.image(unit.uiIcon).size(iconLarge).pad(10f).left().scaling(Scaling.fit);
                     b.table(i -> {
                         i.add(unit.localizedName).left().row();
                         i.add(unit.name).left().color(Color.lightGray).row();
-                        
-                        i.add(Core.bundle.get("stat.unitcosts")).left();
-                        if (!cost.get(index).allEmtpy()) {
-                            if (cost.get(index).hasItems()) {
-                                for (ItemStack items : cost.get(index).items) {
-                                    i.add(new ItemDisplay(items.item, items.amount, false)).padRight(5f);
-                                }
-                            };
-                            if (cost.get(index).hasLiquids()) {
-                                for (LiquidStack liquids : cost.get(index).liquids) {
-                                    Table liquidsTable = new Table(); //Yes I remade LiquidDisplay because it was showing the name of the liquid, wich I didn't want to do soooo
 
-                                    liquidsTable.add(new Stack(){{
-                                        add(new Image(liquids.liquid.uiIcon).setScaling(Scaling.fit));
-                            
-                                        if(liquids.amount != 0){
-                                            Table t = new Table().left().bottom();
-                                            t.add(Strings.autoFixed(liquids.amount, 2)).style(Styles.outlineLabel);
-                                            add(t);
-                                        }
-                                    }}).size(iconMed).padRight(3  + (liquids.amount != 0 && Strings.autoFixed(liquids.amount, 2).length() > 2 ? 8 : 0));
-                            
-
-                                    i.add(liquidsTable);
-                                }
-                            };
-                            if (cost.get(index).hasPower()) {
-                                i.image(Icon.powerSmall).color(Pal.power).padRight(2.5f);
-                                i.add(Integer.toString((int) (cost.get(index).power * 60f))).padRight(5f);
-                            };
-                            if (cost.get(index).hasHeat()) {
-                                i.image(Icon.wavesSmall).color(new Color(1f, 0.22f, 0.22f, 0.8f)).padRight(2.5f);
-                                i.add(Integer.toString((int) (cost.get(index).heat))).padRight(5f);
-                            };
-                        } else i.add("[gray]" + Core.bundle.get("stat.none"));
-                        i.row();
-                        i.add("Time: " + (int) (cost.get(index).time * 60f));
-
-
+                        INeedANameClass cost = costs.get(index);
+                        i.table(c -> {
+                            c.add(Core.bundle.get("stat.unitcosts"));
+                            if (!cost.allEmtpy()) {
+                                if (cost.hasItems())
+                                    for (ItemStack items : cost.items)
+                                        c.add(new ItemDisplay(items.item, items.amount, false)).padRight(5f);
+                                if (cost.hasLiquids())
+                                    for (LiquidStack liquids : cost.liquids)
+                                        c.add(new ALiquidDisplay(liquids.liquid, liquids.amount));
+                                if (cost.hasPower())
+                                    c.add(new PowerDisplay((cost.power * 60f)));
+                                if (cost.hasHeat())
+                                    c.add(new HeatDisplay(cost.heat));
+                            } else c.add("[gray]" + Core.bundle.get("stat.none")).pad(0f);
+                            c.row();
+                            c.add(Core.bundle.format("stat.time", UI.formatTime(cost.time * 60f))).pad(0f);
+                        }).left();
                     });
-                    b.button("?", Styles.flatBordert, () -> ui.content.show(unit)).size(40f).pad(10).right().grow().visible(() -> unit.unlockedNow());
+                    b.button("?", Styles.flatBordert, () -> ui.content.show(unit)).size(40f).pad(10f).right().grow().visible(() -> unit.unlockedNow());
                 }).growX().pad(5f).row();
             }
         });

@@ -74,31 +74,31 @@ public class AeyamaStorageBlocks {
                 AeyamaUnits.colonist
             );
 
-            cost = Seq.with(
+            costs = Seq.with(
                 new INeedANameClass(
-                    0f
+                    10f
                 ),
                 new INeedANameClass(
-                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 50, AeyamaItems.woodLumber, 10)),
-                    0f
+                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 10, AeyamaItems.woodLumber, 10)),
+                    20f
                 ),
                 new INeedANameClass(
-                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 50, AeyamaItems.woodLumber, 10)),
-                    Seq.with(LiquidStack.with(AeyamaLiquids.water, 50)),
-                    0f
+                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 100, AeyamaItems.woodLumber, 100)),
+                    Seq.with(LiquidStack.with(AeyamaLiquids.water, 10)),
+                    30f
                 ),
                 new INeedANameClass(
-                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 50, AeyamaItems.woodLumber, 10)),
-                    Seq.with(LiquidStack.with(AeyamaLiquids.water, 50)),
+                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 1000, AeyamaItems.woodLumber, 1000)),
+                    Seq.with(LiquidStack.with(AeyamaLiquids.water, 100)),
                     10f,
-                    0f
+                    40f
                 ),
                 new INeedANameClass(
-                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 50, AeyamaItems.woodLumber, 10)),
-                    Seq.with(LiquidStack.with(AeyamaLiquids.water, 50)),
+                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 10000, AeyamaItems.woodLumber, 10000)),
+                    Seq.with(LiquidStack.with(AeyamaLiquids.water, 1000)),
+                    100f,
                     10f,
-                    10f,
-                    0f
+                    50f
                 )
             );
 
