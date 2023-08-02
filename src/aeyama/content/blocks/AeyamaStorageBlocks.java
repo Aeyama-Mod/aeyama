@@ -70,14 +70,36 @@ public class AeyamaStorageBlocks {
                 AeyamaUnits.sms,
                 AeyamaUnits.assault,
                 AeyamaUnits.heavy,
-                AeyamaUnits.scout
+                AeyamaUnits.scout,
+                AeyamaUnits.colonist
             );
 
-            unitCosts = Seq.with(
-                with(AeyamaItems.woodLumber, 50),
-                with(AeyamaItems.stoneBrick, 50,AeyamaItems.woodLumber, 10),
-                with(),
-                with(AeyamaItems.steel, 5000)
+            cost = Seq.with(
+                new INeedANameClass(
+                    0f
+                ),
+                new INeedANameClass(
+                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 50, AeyamaItems.woodLumber, 10)),
+                    0f
+                ),
+                new INeedANameClass(
+                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 50, AeyamaItems.woodLumber, 10)),
+                    Seq.with(LiquidStack.with(AeyamaLiquids.water, 50)),
+                    0f
+                ),
+                new INeedANameClass(
+                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 50, AeyamaItems.woodLumber, 10)),
+                    Seq.with(LiquidStack.with(AeyamaLiquids.water, 50)),
+                    10f,
+                    0f
+                ),
+                new INeedANameClass(
+                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 50, AeyamaItems.woodLumber, 10)),
+                    Seq.with(LiquidStack.with(AeyamaLiquids.water, 50)),
+                    10f,
+                    10f,
+                    0f
+                )
             );
 
             requirements(Category.effect, BuildVisibility.shown, with(AeyamaItems.woodLumber, 1000, AeyamaItems.stoneBrick, 1000, AeyamaItems.iron, 500));
