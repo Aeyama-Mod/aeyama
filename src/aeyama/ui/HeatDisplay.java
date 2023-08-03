@@ -5,10 +5,9 @@ import arc.scene.ui.*;
 import arc.scene.ui.layout.*;
 import arc.util.*;
 
+import mindustry.core.*;
 import mindustry.gen.*;
 import mindustry.ui.*;
-
-import static mindustry.Vars.*;
 
 /** An ItemDisplay, but for heat. */
 public class HeatDisplay extends Table {
@@ -18,16 +17,18 @@ public class HeatDisplay extends Table {
         this.amount = amount;
 
         add(new Stack() {{
-            Image image = new Image(Icon.waves).setScaling(Scaling.fit);
-            image.setColor(new Color(1f, 0.22f, 0.22f, 0.8f));
-            add(image);
+            add(new Table(o -> {
+                o.left();
+                o.add(new Image(Icon.waves)).size(32f).scaling(Scaling.fit).color(new Color(1f, 0.22f, 0.22f, 0.8f));
+            }));
 
             if(amount != 0) {
-                Table t = new Table().left().bottom();
-                t.add(Strings.autoFixed(amount, 2)).style(Styles.outlineLabel);
-                t.pack();
-                add(t);
+                add(new Table(t -> {
+                    t.left().bottom();
+                    t.add(amount >= 1000f ? UI.formatAmount((int) amount) : (int) amount + "").style(Styles.outlineLabel);
+                    t.pack();
+                }));
             }
-        }}).size(iconMed).padRight(5 * Strings.autoFixed(amount, 2).length());
+        }});
     }
 }

@@ -4,11 +4,10 @@ import arc.scene.ui.*;
 import arc.scene.ui.layout.*;
 import arc.util.*;
 
+import mindustry.core.*;
 import mindustry.gen.*;
 import mindustry.graphics.*;
 import mindustry.ui.*;
-
-import static mindustry.Vars.*;
 
 /** An ItemDisplay, but for power. */
 public class PowerDisplay extends Table {
@@ -18,15 +17,18 @@ public class PowerDisplay extends Table {
         this.amount = amount;
 
         add(new Stack() {{
-            Image image = new Image(Icon.power).setScaling(Scaling.fit);
-            image.setColor(Pal.power);
-            add(image);
+            add(new Table(o -> {
+                o.left();
+                o.add(new Image(Icon.power)).size(32f).scaling(Scaling.fit).color(Pal.power);
+            }));
 
             if(amount != 0) {
-                Table t = new Table().left().bottom();
-                t.add(Strings.autoFixed(amount, 2)).style(Styles.outlineLabel);
-                add(t);
+                add(new Table(t -> {
+                    t.left().bottom();
+                    t.add(amount >= 1000f ? UI.formatAmount((int) amount) : (int) amount + "").style(Styles.outlineLabel);
+                    t.pack();
+                }));
             }
-        }}).size(iconMed).padRight(5 * Strings.autoFixed(amount, 2).length());
+        }});
     }
 }

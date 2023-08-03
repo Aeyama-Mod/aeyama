@@ -60,14 +60,14 @@ public class MultiCoreBlock extends CoreBlock {
                                         c.add(new ItemDisplay(items.item, items.amount, false)).padRight(5f);
                                 if (cost.hasLiquids())
                                     for (LiquidStack liquids : cost.liquids)
-                                        c.add(new ALiquidDisplay(liquids.liquid, liquids.amount));
+                                        c.add(new ALiquidDisplay(liquids.liquid, liquids.amount)).padRight(5f);
                                 if (cost.hasPower())
-                                    c.add(new PowerDisplay((cost.power * 60f)));
+                                    c.add(new PowerDisplay((cost.power * 60f))).padRight(5f);
                                 if (cost.hasHeat())
-                                    c.add(new HeatDisplay(cost.heat));
+                                    c.add(new HeatDisplay(cost.heat)).padRight(5f);
                             } else c.add("[gray]" + Core.bundle.get("stat.none")).pad(0f);
                             c.row();
-                            c.add(Core.bundle.format("stat.time", UI.formatTime(cost.time * 60f))).pad(0f);
+                            c.add(Core.bundle.format("stat.time", UI.formatTime(cost.time * 60f)));
                         }).left();
                     });
                     b.button("?", Styles.flatBordert, () -> ui.content.show(unit)).size(40f).pad(10f).right().grow().visible(() -> unit.unlockedNow());
