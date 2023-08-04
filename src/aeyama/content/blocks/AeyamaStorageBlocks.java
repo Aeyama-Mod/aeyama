@@ -66,40 +66,30 @@ public class AeyamaStorageBlocks {
             size = 3;
             itemCapacity = 3000;
 
-            unitTypes = Seq.with(
-                AeyamaUnits.sms,
-                AeyamaUnits.assault,
-                AeyamaUnits.heavy,
-                AeyamaUnits.scout,
-                AeyamaUnits.colonist
-            );
-
-            costs = Seq.with(
-                new INeedANameClass(
-                    10f
-                ),
-                new INeedANameClass(
+            unitChoices = Seq.with(
+                new UnitChoice(AeyamaUnits.sms, new UnitCost(10f)),
+                new UnitChoice(AeyamaUnits.assault, new UnitCost(
                     Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 10, AeyamaItems.woodLumber, 10)),
                     20f
-                ),
-                new INeedANameClass(
+                )),
+                new UnitChoice(AeyamaUnits.heavy, new UnitCost(
                     Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 100, AeyamaItems.woodLumber, 100)),
                     Seq.with(LiquidStack.with(AeyamaLiquids.water, 10)),
                     30f
-                ),
-                new INeedANameClass(
+                )),
+                new UnitChoice(AeyamaUnits.scout, new UnitCost(
                     Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 1000, AeyamaItems.woodLumber, 1000)),
                     Seq.with(LiquidStack.with(AeyamaLiquids.water, 100)),
                     10f,
                     40f
-                ),
-                new INeedANameClass(
+                )),
+                new UnitChoice(AeyamaUnits.colonist, new UnitCost(
                     Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 10000, AeyamaItems.woodLumber, 10000)),
                     Seq.with(LiquidStack.with(AeyamaLiquids.water, 1000)),
                     100f,
                     10f,
                     50f
-                )
+                ))
             );
 
             requirements(Category.effect, BuildVisibility.shown, with(AeyamaItems.woodLumber, 1000, AeyamaItems.stoneBrick, 1000, AeyamaItems.iron, 500));
