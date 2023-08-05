@@ -2,10 +2,12 @@ package aeyama.world.blocks.storage;
 
 import arc.*;
 import arc.graphics.*;
+import arc.math.*;
 import arc.scene.ui.*;
 import arc.scene.ui.layout.*;
 import arc.struct.*;
 import arc.util.*;
+import arc.util.io.*;
 
 import mindustry.core.*;
 import mindustry.type.*;
@@ -19,7 +21,6 @@ import static mindustry.Vars.*;
 
 public class MultiCoreBlock extends CoreBlock {
     public Seq<UnitChoice> unitChoices = new Seq<>(UnitChoice.class);
-    public UnitType currentUnit;
 
     public MultiCoreBlock(String name) {
         super(name);
@@ -27,13 +28,14 @@ public class MultiCoreBlock extends CoreBlock {
         configurable = true;
 
         config(UnitType.class, MultiCoreBuild::setCurrentUnit);
+        config(Integer.class, MultiCoreBuild::setCurrentIndex);
     }
 
     @Override
     public void init() {
         super.init();
 
-        unitType = currentUnit = unitChoices.first().unit;
+        unitType = unitChoices.first().unit;
     }
 
     @Override
@@ -80,12 +82,19 @@ public class MultiCoreBlock extends CoreBlock {
     }
 
     public class MultiCoreBuild extends CoreBuild {
+        public int currentUnitIndex = 0;
         
         public void setCurrentUnit(UnitType unit) {
             if (unitType != unit)
-                unitType = currentUnit = unit;
+                unitType = unit;
             
             requestSpawn(player);
+        }
+        
+        public void setCurrentIndex(int index) {
+            index = Mathf.clamp(index, 0, unitChoices.size - 1);
+            if (index != currentUnitIndex)
+                currentUnitIndex = index;
         }
 
         public void build(MultiCoreBlock b, MultiCoreBuild c, Table table) {
@@ -95,40 +104,41 @@ public class MultiCoreBlock extends CoreBlock {
                     table.row();
                 
                 ImageButton button = new ImageButton(Styles.clearTogglei);
-                Table t = new Table();
-                t.image(unitChoice.unit.uiIcon).size(32f).pad(10f).center().scaling(Scaling.fit).row();
-                t.add(unitChoice.unit.localizedName).center().row();
-
-                // INeedANameClass cost = costs.get(index);
-                // t.add(new Table(i -> {
-                //     if (!cost.allEmtpy()) {
-                //         if (cost.hasItems())
-                //             for (ItemStack items : cost.items)
-                //                 i.add(new ItemDisplay(items.item, items.amount, false)).padRight(2.5f);
-                //         if (cost.hasLiquids())
-                //             for (LiquidStack liquids : cost.liquids)
-                //                 i.add(new ALiquidDisplay(liquids.liquid, liquids.amount)).padRight(2.5f);
-                //         if (cost.hasPower())
-                //             i.add(new PowerDisplay((cost.power * 60f))).padRight(2.5f);
-                //         if (cost.hasHeat())
-                //             i.add(new HeatDisplay(cost.heat)).padRight(2.5f);
-                //     } else i.add("[gray]" + Core.bundle.get("stat.none")).pad(0f);
-                //     i.row();
-                // }).center());
-
-                button.replaceImage(t);
-                button.changed(() -> c.configure(unitChoice.unit));
-                button.update(() -> button.setChecked(b.unitType == unitChoice.unit));
+                button.replaceImage(new Table(t -> {
+                    t.image(unitChoice.unit.uiIcon).size(32f).scaling(Scaling.fit).center().row();
+                    t.add(unitChoice.unit.localizedName).center().row();
+                    t.setSize(64f);
+                    t.pack();
+                }));
+                button.changed(() -> {
+                    c.configure(unitChoice.unit);
+                    c.configure(index);
+                });
+                button.update(() -> button.setChecked(unitChoices.get(currentUnitIndex).unit == unitChoice.unit));
 
                 table.add(button);
             }
 
-            table.left().setSize(128f);
+            table.left().pack();
         }
 
         @Override
         public void buildConfiguration(Table table) {
             build(MultiCoreBlock.this, this, table);
+        }
+
+        @Override
+        public void write(Writes write) {
+            super.write(write);
+
+            write.i(currentUnitIndex);
+        }
+
+        @Override
+        public void read(Reads read, byte revision) {
+            super.read(read, revision);
+
+            currentUnitIndex = Mathf.clamp(read.i(), 0, unitChoices.size - 1);
         }
     }
 
