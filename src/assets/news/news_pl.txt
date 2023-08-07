@@ -1,3 +1,27 @@
+[gray]August 07th, 2023
+
+[white]Hi everyone, after a long time, we finally decided to make a big decision for the mod...
+
+[red]We will stop the campaign.
+
+[yellow]Why?
+[white]It's simple, we were not ready. Fredy was just making a mod for fun, then I joined not long after to have fun with someone else, and then suddenly... the mod blew up.
+We weren't expecting that the mod would become this big so quickly and because of that we felt oppressed, forced and having way less liberty, even making this announcement was a long decision because we know this decision will not please anyone.
+I burned out once when the v0.2 released, then I slowly came back and took Fredy's place as the main developer when he was fed up with Mindustry, and then I forced myself once again for the v0.3 where I almost burned out once again.
+
+[yellow]When will it come back?
+[white]Probably after the v1.0 official release, when content and progression will be completely reworked and stable. Then after the planet and the campaign will be focused until v2.0 official release, where the main planet will be done.
+
+[yellow]What's the mod future?
+[white]Simple, expanding the content which is currently small and new, making it better, more balanced and enjoyable for everyone.
+Since the mod migrated to Java, I became the main developer and have since total control (Fredy's still in the shadow), but there's a very important thing missing... feedbacks.
+Feedback, even for small things, are really important for us, we can't know what's the problem when you don't tell us, that's also why I started making polls to "force" you to give your opinion, making the beta version to give easy access to the latest change and being able to fix problem before the official release.
+
+ 
+
+It was hard to make this decision but we finally did it, I hope that the mod content and community keep expanding (slowly please) and that Fredy will get back soon. That's all for now, see you all next time!
+
+
 [gray]July 30th, 2023
 
 [white]A small update was released, the [yellow]v0.3.1 [white]which has some small changes, mainly translation and balancing.
@@ -28,12 +52,3 @@ If you have any issue or feedback come on our [blue]Discord [white]or create an 
 [white]Hey everyone, big news for the mod! We now are a [red]Java [white]mod! You can update it by redownloading the mod via the mod browser, a release might come soon there's still some things left to finish.
 
 Until then, cya!
-
-
-[gray]April 22nd, 2023
-
-[green]+ [white]New versionning number, simpler for everyone!
-[yellow]* [white]Now only keeping the last 5 news messages, easier for client's bandwidth and we don't need to keep living in the past ;P
-
-If anyone wanna help out with translation, feel free to reach out of either Discord or GitHub!
-We also need help from artists, if anyone's interested.
