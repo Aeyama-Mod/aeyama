@@ -1,3 +1,27 @@
+[gray]August 07th, 2023
+
+[white]Hi everyone, after a long time, we finally decided to make a big decision for the mod...
+
+[red]We will stop the campaign.
+
+[yellow]Why?
+[white]It's simple, we were not ready. Fredy was just making a mod for fun, then I joined not long after to have fun with someone else, and then suddenly... the mod blew up.
+We weren't expecting that the mod would become this big so quickly and because of that we felt oppressed, forced and having way less liberty, even making this announcement was a long decision because we know this decision will not please anyone.
+I burned out once when the v0.2 released, then I slowly came back and took Fredy's place as the main developer when he was fed up with Mindustry, and then I forced myself once again for the v0.3 where I almost burned out once again.
+
+[yellow]When will it come back?
+[white]Probably after the v1.0 official release, when content and progression will be completely reworked and stable. Then after the planet and the campaign will be focused until v2.0 official release, where the main planet will be done.
+
+[yellow]What's the mod future?
+[white]Simple, expanding the content which is currently small and new, making it better, more balanced and enjoyable for everyone.
+Since the mod migrated to Java, I became the main developer and have since total control (Fredy's still in the shadow), but there's a very important thing missing... feedbacks.
+Feedback, even for small things, are really important for us, we can't know what's the problem when you don't tell us, that's also why I started making polls to "force" you to give your opinion, making the beta version to give easy access to the latest change and being able to fix problem before the official release.
+
+ 
+
+It was hard to make this decision but we finally did it, I hope that the mod content and community keep expanding (slowly please) and that Fredy will get back soon. That's all for now, see you all next time!
+
+
 [gray]30 липня, 2023
 [white]Маленьке оновлення вийшло, [yellow]v0.3.1 [white] в якому є невеликі зміни, в основному переклад на баланс.
 
@@ -26,12 +50,3 @@
 [white]Привіт всім, є великі новини для моду! Тепер ми працюємо на [red]Java [white]! Ви можете оновити його, перевстановивши його через браузер модів, реліз вийде скоро, є незавершені справи.
 
 А поки, побачимось!
-
-
-[gray]22 квітня, 2023
-
-[green]+ [white]Новий номер версії, простий для всіх!
-[yellow]* [white]Тепер зберігаємо тільки 5 останніх повідомлень, легше для клієнта, та нам не треба буде жити у минулому ;P
-
-Якщо хтось хоче допомогти з перекладом або виправити помилки в ньому, не бійтесь заходити на наш Discord або GitHub!
-Також нам нужні художники, якщо якщо комусь цікаво.

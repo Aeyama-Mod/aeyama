@@ -1,3 +1,29 @@
+[gray]07 Août 2023
+
+[white]Bonjour tout le monde, après un long moment, nous avons finalement décidé de prendre une grande décision pour le mod...
+
+[red]Nous allons arrêter la campagne.
+
+
+[yellow]Pourquoi ?
+[white]C'est simple, nous n'étions pas prêts. Fredy faisait juste un mod pour s'amuser, puis je l'ai rejoint peu de temps après pour m'amuser avec quelqu'un d'autre, et puis soudain... le mod a explosé.
+Nous ne nous attendions pas à ce que le mod devienne si gros si rapidement et à cause de cela nous nous sommes sentis oppressés, forcés et avec beaucoup moins de liberté, même faire cette annonce a été une longue décision parce que nous savons que cette décision ne plaira à personne.
+J'ai burned out une fois quand la v0.2 est sortie, puis je suis revenu lentement et j'ai pris la place de Fredy en tant que développeur principal quand il en a eu marre de Mindustry, et puis je me suis forcé une fois de plus pour la v0.3 où j'ai failli burned out une fois de plus.
+
+
+[yellow]Quand reviendra la campagne ?
+[white]Probablement après la sortie officielle de la v1.0, quand le contenu et la progression seront complètement retravaillés et stables. Ensuite, la planète et la campagne seront prioritisé jusqu'à la sortie officielle de la v2.0, où la planète principale sera terminée. 
+ 
+
+[yellow]Quel est l'avenir du mod ?
+[white]C'est simple, développer le contenu qui est actuellement petit et nouveau, le rendre meilleur, plus équilibré et agréable pour tout le monde.
+Depuis que le mod a migré vers Java, je suis devenu le développeur principal et j'ai depuis le contrôle total (Fredy est toujours dans l'ombre), mais il y a une chose très importante qui manque... les feedbacks.
+Les feedbacks, même pour de petites choses, sont vraiment importants pour nous, nous ne pouvons pas savoir quel est le problème si vous ne nous le dites pas, c'est aussi pourquoi j'ai commencé à faire des sondages pour vous "forcer" à donner votre avis, à faire la version beta pour donner un accès facile aux derniers changements et être en mesure de corriger les problèmes avant la sortie officielle. 
+
+
+J'espère que le contenu du mod et la communauté continueront à se développer (lentement s'il vous plaît) [lightgray]et que Fredy reviendra bientôt. [white]C'est tout pour l'instant, à la prochaine !
+
+
 [gray]30 Juillet 2023
 
 [white]Une petite mise à jour a été publiée, la [yellow]v0.3.1 [white]qui contient quelques petits changements, principalement des traductions et quelques modifications.
@@ -28,12 +54,3 @@ Si vous rencontrez un problème ou si vous avez des commentaires, rejoignez notr
 [white]Salut tout le monde, grande nouvelle pour le mod ! Nous sommes désormais un mod en [red]Java [white] ! Vous pouvez le mettre à jour en le téléchargeant à nouveau via le navigateur de mods, une mise à jour pourrait bientôt arriver, il reste encore quelques choses à terminer.
 
 D'ici là, à plus tard !
-
-
-[gray]22 Avril 2023
-
-[green]+ [white]Nouvelle numérotation de version, plus simple pour tout le monde !
-[yellow]* [white]Maintenant, nous ne gardons que les 5 derniers messages d'actualité, ce qui facilite la bande passante du client et nous n'avons pas besoin de vivre dans le passé ;P
-
-Si quelqu'un veut aider à la traduction, n'hésitez pas à nous contacter sur Discord ou GitHub !
-Nous avons également besoin d'aide d'artistes, si quelqu'un est intéressé.
