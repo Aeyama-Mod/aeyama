@@ -14,11 +14,13 @@ repositories {
 
 ext {
     //the build number that this mod is made for
-    mindustryVersion = 'v145'
+    mindustryVersion = 'fd23b8d' // Commit for ConsumeLiquidsDynamic
+    arcVersion = 'v145'
     jabelVersion = "93fde537c7"
-    sdkRoot = System.getenv("ANDROID_HOME") ?: System.getenv("ANDROID_SDK_ROOT")
 
-    multicrafterVersion = '1.6' // Official 1.7 is broken
+    multicrafterVersion = 'v1.7.2' // Custom build
+
+    sdkRoot = System.getenv("ANDROID_HOME") ?: System.getenv("ANDROID_SDK_ROOT")
 }
 
 //java 8 backwards compatibility flag
@@ -29,11 +31,11 @@ allprojects {
 }
 
 dependencies {
-    compileOnly "com.github.Anuken.Arc:arc-core:$mindustryVersion"
+    compileOnly "com.github.Anuken.Arc:arc-core:$arcVersion"
     compileOnly "com.github.Anuken.MindustryJitpack:core:$mindustryVersion"
 
     // implementation("com.github.liplum:MultiCrafterLib:$multicrafterVersion") 
-    implementation "com.github.jojofr1:MultiCrafterLib:v1.7.2" //Custom Build
+    implementation "com.github.jojofr1:MultiCrafterLib:$multicrafterVersion" //Custom Build
 
     annotationProcessor "com.github.Anuken:jabel:$jabelVersion"
 }
@@ -42,7 +44,7 @@ dependencies {
 configurations.all {
     resolutionStrategy.eachDependency { details ->
         if(details.requested.group == 'com.github.Anuken.Arc') {
-            details.useVersion "$mindustryVersion"
+            details.useVersion "$arcVersion"
         }
     }
 }

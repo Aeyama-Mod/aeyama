@@ -12,13 +12,17 @@ import arc.util.io.*;
 import mindustry.core.*;
 import mindustry.type.*;
 import mindustry.ui.*;
+import mindustry.world.blocks.heat.*;
 import mindustry.world.blocks.storage.*;
+import mindustry.world.consumers.*;
 import mindustry.world.meta.*;
 
 import aeyama.ui.*;
 
 import static mindustry.Vars.*;
 
+//Will no longer be used
+@Deprecated
 public class MultiCoreBlock extends CoreBlock {
     public Seq<UnitChoice> unitChoices = new Seq<>(UnitChoice.class);
 
@@ -36,6 +40,16 @@ public class MultiCoreBlock extends CoreBlock {
         super.init();
 
         unitType = unitChoices.first().unit;
+
+        consume(new ConsumeItemDynamic(
+            (MultiCoreBuild b) -> b.getCurrentChoice().hasCost() ? b.getCurrentChoice().cost.items : ItemStack.empty
+        ));
+        consume(new ConsumeLiquidsDynamic(
+            (MultiCoreBuild b) -> b.getCurrentChoice().hasCost() ? b.getCurrentChoice().cost.liquids : LiquidStack.empty
+        ));
+        consume(new ConsumePowerDynamic(
+            b -> ((MultiCoreBuild) b).getCurrentChoice().hasCost() ? ((MultiCoreBuild) b).getCurrentChoice().cost.power : 0f
+        ));
     }
 
     @Override
@@ -79,9 +93,18 @@ public class MultiCoreBlock extends CoreBlock {
     @Override
     public void setBars() {
         super.setBars();
+
+        removeBar("items");
     }
 
-    public class MultiCoreBuild extends CoreBuild {
+    public void updateBars() {
+        barMap.clear();
+        setBars();
+    }
+
+    public class MultiCoreBuild extends CoreBuild implements HeatConsumer {
+        public float[] sideHeat = new float[4];
+        public float heat = 0f;
         public int currentUnitIndex = 0;
         
         public void setCurrentUnit(UnitType unit) {
@@ -95,6 +118,14 @@ public class MultiCoreBlock extends CoreBlock {
             index = Mathf.clamp(index, 0, unitChoices.size - 1);
             if (index != currentUnitIndex)
                 currentUnitIndex = index;
+        }
+
+        public int getCurrentIndex() {
+            return Mathf.clamp(currentUnitIndex, 0, unitChoices.size - 1);
+        }
+
+        public UnitChoice getCurrentChoice() {
+            return unitChoices.get(getCurrentIndex());
         }
 
         public void build(MultiCoreBlock b, MultiCoreBuild c, Table table) {
@@ -113,8 +144,9 @@ public class MultiCoreBlock extends CoreBlock {
                 button.changed(() -> {
                     c.configure(unitChoice.unit);
                     c.configure(index);
+                    updateBars();
                 });
-                button.update(() -> button.setChecked(unitChoices.get(currentUnitIndex).unit == unitChoice.unit));
+                button.update(() -> button.setChecked(getCurrentChoice().unit == unitChoice.unit));
 
                 table.add(button);
             }
@@ -125,6 +157,24 @@ public class MultiCoreBlock extends CoreBlock {
         @Override
         public void buildConfiguration(Table table) {
             build(MultiCoreBlock.this, this, table);
+        }
+
+        @Override
+        public void updateTile() {
+            if (getCurrentChoice().cost.hasHeat())
+                heat = calculateHeat(sideHeat);
+
+            super.updateTile();
+        }
+        
+        @Override
+        public float heatRequirement() {
+            return getCurrentChoice().cost.heat;
+        }
+
+        @Override
+        public float[] sideHeat() {
+            return sideHeat;
         }
 
         @Override
@@ -161,29 +211,29 @@ public class MultiCoreBlock extends CoreBlock {
     }
 
     public class UnitCost {
-        public Seq<ItemStack> items = new Seq<>(ItemStack.class);
-        public Seq<LiquidStack> liquids = new Seq<>(LiquidStack.class);
+        public ItemStack[] items;
+        public LiquidStack[] liquids;
         public float power = 0f;
         public float heat = 0f;
         public float time = 0f;
 
         public UnitCost(float time) {
-            this(null, null, 0f, 0f, time);
+            this(ItemStack.empty, LiquidStack.empty, 0f, 0f, time);
         }
         
-        public UnitCost(Seq<ItemStack> items, float time) {
-            this(items, null, 0f, 0f, time);
+        public UnitCost(ItemStack[] items, float time) {
+            this(items, LiquidStack.empty, 0f, 0f, time);
         }
 
-        public UnitCost(Seq<ItemStack> items, Seq<LiquidStack> liquids, float time) {
+        public UnitCost(ItemStack[] items, LiquidStack[] liquids, float time) {
             this(items, liquids, 0f, 0f, time);
         }
 
-        public UnitCost(Seq<ItemStack> items, Seq<LiquidStack> liquids, float power, float time) {
+        public UnitCost(ItemStack[] items, LiquidStack[] liquids, float power, float time) {
             this(items, liquids, power, 0f, time);
         }
 
-        public UnitCost(Seq<ItemStack> items, Seq<LiquidStack> liquids, float power, float heat, float time) {
+        public UnitCost(ItemStack[] items, LiquidStack[] liquids, float power, float heat, float time) {
             this.items = items;
             this.liquids = liquids;
             this.power = power;
@@ -192,11 +242,11 @@ public class MultiCoreBlock extends CoreBlock {
         }
 
         public boolean hasItems() {
-            return items != null;
+            return items.length > 0;
         }
 
         public boolean hasLiquids() {
-            return liquids != null;
+            return liquids.length > 0;
         }
 
         public boolean hasPower() {

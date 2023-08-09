@@ -69,23 +69,23 @@ public class AeyamaStorageBlocks {
             unitChoices = Seq.with(
                 new UnitChoice(AeyamaUnits.sms, new UnitCost(10f)),
                 new UnitChoice(AeyamaUnits.assault, new UnitCost(
-                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 10, AeyamaItems.woodLumber, 10)),
+                    ItemStack.with(AeyamaItems.stoneBrick, 10, AeyamaItems.woodLumber, 10),
                     20f
                 )),
                 new UnitChoice(AeyamaUnits.heavy, new UnitCost(
-                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 100, AeyamaItems.woodLumber, 100)),
-                    Seq.with(LiquidStack.with(AeyamaLiquids.water, 10)),
+                    ItemStack.with(AeyamaItems.stoneBrick, 100, AeyamaItems.woodLumber, 100),
+                    LiquidStack.with(AeyamaLiquids.water, 10),
                     30f
                 )),
                 new UnitChoice(AeyamaUnits.scout, new UnitCost(
-                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 1000, AeyamaItems.woodLumber, 1000)),
-                    Seq.with(LiquidStack.with(AeyamaLiquids.water, 100)),
+                    ItemStack.with(AeyamaItems.stoneBrick, 1000, AeyamaItems.woodLumber, 1000),
+                    LiquidStack.with(AeyamaLiquids.water, 100),
                     10f,
                     40f
                 )),
                 new UnitChoice(AeyamaUnits.colonist, new UnitCost(
-                    Seq.with(ItemStack.with(AeyamaItems.stoneBrick, 10000, AeyamaItems.woodLumber, 10000)),
-                    Seq.with(LiquidStack.with(AeyamaLiquids.water, 1000)),
+                    ItemStack.with(AeyamaItems.stoneBrick, 10000, AeyamaItems.woodLumber, 10000),
+                    LiquidStack.with(AeyamaLiquids.water, 1000),
                     100f,
                     10f,
                     50f
