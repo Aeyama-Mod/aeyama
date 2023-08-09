@@ -9,5 +9,7 @@ public class AeyamaBlocks {
         AeyamaProductionBlocks.load();
         AeyamaStorageBlocks.load();
         AeyamaEnvironmentBlocks.load();
+
+        AeyamaTestBlock.load();
     }
 }
