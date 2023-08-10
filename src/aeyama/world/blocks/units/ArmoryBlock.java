@@ -13,10 +13,13 @@ import mindustry.*;
 import mindustry.core.*;
 import mindustry.game.*;
 import mindustry.gen.*;
+import mindustry.graphics.*;
 import mindustry.type.*;
 import mindustry.ui.*;
 import mindustry.world.*;
-import mindustry.world.blocks.storage.*;
+import mindustry.world.blocks.heat.*;
+import mindustry.world.blocks.storage.CoreBlock.*;
+import mindustry.world.consumers.*;
 import mindustry.world.meta.*;
 
 import aeyama.ui.*;
@@ -25,10 +28,18 @@ import aeyama.world.Cost;
 
 import static mindustry.Vars.*;
 
+/*
+ TODO Complete "Stats" UI (build time, etc...)
+ TODO Fix "Time" offset in "Stats" UI
+ TODO Update bars depending on the current selected armor
+ TODO Make it consume the necessary items/liquids/power/heat
+ TODO Comment the function/variable
+ */
 public class ArmoryBlock extends Block {
     public Seq<Choice> armorChoices = new Seq<>(Choice.class);
     public UnitType currentArmor;
     private int index = 0;
+    public Building core;
 
     public ArmoryBlock(String name) {
         super(name);
@@ -40,6 +51,10 @@ public class ArmoryBlock extends Block {
         configurable = true;
         group = BlockGroup.units;
         flags = EnumSet.of(BlockFlag.unitAssembler);
+
+        hasItems = acceptsItems = false;
+        hasLiquids = false;
+        hasPower = consumesPower = false;
         
         config(Integer.class, ArmoryBuild::setIndex);
     }
@@ -48,9 +63,40 @@ public class ArmoryBlock extends Block {
     public void init() {
         super.init();
 
-        setVariable();
+        Cost cost = getCurrentChoice().cost;
+        if (cost != null) {
+            hasItems |= acceptsItems |= cost.hasItems();
+            hasLiquids |= cost.hasLiquids();
+            hasPower |= consumesPower |= cost.hasPower();
+        }
 
         currentArmor = armorChoices.first().unit;
+    }
+
+    /** Act as a core extension */
+    @Override
+    public boolean canPlaceOn(Tile tile, Team team, int rotation) {
+        Seq<Tile> tileAround = new Seq<>();
+
+        /* Thanks to @_agzam_ */
+        final int to = (this.size + 2) / 2;
+        final int from = to + 1 - (this.size + 2);
+        for (int ty = from; ty <= to; ty++) {
+            for (int tx = from; tx <= to; tx++) {
+                //Skip corners
+                if ((ty == from || ty == to) && (tx == from ||tx == to))
+                    continue;
+                
+                if ((ty == from || ty == to || tx == from || tx == to)) {
+                    int xx = tile.x + tx;
+                    int yy = tile.y + ty;
+                    tileAround.add(Vars.world.tile(xx, yy));
+                }
+            }
+        }
+        
+        // Can be placed only if the block next to it is a Core
+        return tileAround.contains(o -> (core = o.build) instanceof CoreBuild);
     }
 
     @Override
@@ -92,33 +138,103 @@ public class ArmoryBlock extends Block {
         });
     }
 
-    /** Act as a core extension */
     @Override
-    public boolean canPlaceOn(Tile tile, Team team, int rotation) {
-        Seq<Tile> tileAround = new Seq<>();
+    public void setBars() {
+        Cost currentCost = getCurrentCost();
+        addBar("health", entity -> new Bar("stat.health", Pal.health, entity::healthf).blink(Color.white));
 
-        /* Thanks to @_agzam_ */
-        final int to = (this.size + 2) / 2;
-        final int from = to + 1 - (this.size + 2);
-        for (int ty = from; ty <= to; ty++) {
-            for (int tx = from; tx <= to; tx++) {
-                //Skip corners
-                if ((ty == from || ty == to) && (tx == from ||tx == to))
-                    continue;
-                
-                if ((ty == from || ty == to || tx == from || tx == to)) {
-                    int xx = tile.x + tx;
-                    int yy = tile.y + ty;
-                    tileAround.add(Vars.world.tile(xx, yy));
+        if (hasItems && currentCost.hasItems())
+            addBar("items", b -> new Bar(
+                () -> Core.bundle.format("bar.items", b.items.total()),
+                () -> Pal.items,
+                () -> (float) (b.items.total() / itemCapacity)
+            ));
+        
+        if (hasLiquids && currentCost.hasLiquids()) {
+            boolean added = false;
+
+            //add bars for *specific* consumed liquids
+            for(var consl : consumers) {
+                if(consl instanceof ConsumeLiquid liq) {
+                    added = true;
+                    addLiquidBar(liq.liquid);
+                } else if(consl instanceof ConsumeLiquids multi) {
+                    added = true;
+                    for(var stack : multi.liquids) {
+                        addLiquidBar(stack.liquid);
+                    }
                 }
+            }
+            //nothing was added, so it's safe to add a dynamic liquid bar (probably?)
+            if(!added){
+                addLiquidBar(build -> build.liquids.current());
             }
         }
         
-        // Can be placed only if the block next to it is a Core
-        return tileAround.contains(o -> o.block() instanceof CoreBlock);
+        if (hasPower && currentCost.hasPower())
+            addBar("power", (ArmoryBuild b) -> new Bar(
+                () -> "bar.power",
+                () -> Pal.powerBar,
+                () -> b.efficiency
+            ));
+        
+        if (currentCost.hasHeat())
+            addBar("heat", (ArmoryBuild b) -> new Bar(
+                () -> "bar.heat",
+                () -> Pal.lightOrange,
+                b::heatFrac
+            ));
+        
+        addBar("progress", b -> new Bar(
+            () -> "bar.loadprogress", 
+            () -> Pal.accent,
+            b::progress
+        ));
     }
 
-    public class ArmoryBuild extends Building {
+    public void updateBars() {
+        barMap.clear();
+        setBars();
+    }
+
+    public class ArmoryBuild extends Building implements HeatBlock, HeatConsumer {
+        public float[] sideHeat = new float[4];
+        public float heat;
+
+        @Override
+        public boolean acceptItem(Building source, Item item) {
+            return getCurrentChoice().cost.hasItems()
+                && items.get(item) < itemCapacity;
+        }
+
+        @Override
+        public boolean acceptLiquid(Building source, Liquid liquid) {
+            return getCurrentChoice().cost.hasLiquids()
+                && liquids.get(liquid) < liquidCapacity;
+        }
+
+        @Override
+        public void updateTile() {
+            super.updateTile();
+            heat = calculateHeat(sideHeat);
+        }
+
+        @Override
+        public boolean shouldConsume() {
+            return enabled && efficiency > 0;
+        }
+
+        @Override
+        public void drawSelect() {
+            super.drawSelect();
+            if (core != null)
+                Drawf.selected(core, Pal.accent);
+        }
+
+        @Override
+        public void buildConfiguration(Table table) {
+            build(ArmoryBlock.this, this, table);
+        }
 
         public void build(ArmoryBlock b, ArmoryBuild c, Table table) {
             for (Choice armorChoice : armorChoices) {
@@ -133,7 +249,10 @@ public class ArmoryBlock extends Block {
                     t.setSize(64f);
                     t.pack();
                 }));
-                button.changed(() -> c.configure(index));
+                button.changed(() -> {
+                    c.configure(index);
+                    updateBars();
+                });
                 button.update(() -> button.setChecked(getCurrentChoice().unit == armorChoice.unit));
 
                 table.add(button);
@@ -142,15 +261,28 @@ public class ArmoryBlock extends Block {
             table.left().pack();
         }
 
+        /** As {@linkplain HeatBlock} */
         @Override
-        public void buildConfiguration(Table table) {
-            build(ArmoryBlock.this, this, table);
+        public float heat() {
+            return heat;
         }
 
-        public void setIndex(int index) {
-            index = Mathf.clamp(index, 0, armorChoices.size-1);
-            if (index != ArmoryBlock.this.index)
-                ArmoryBlock.this.index = index;
+        /** As {@linkplain HeatBlock} */
+        @Override
+        public float heatFrac() {
+            return heat / getCurrentChoice().cost.heat;
+        }
+
+        /** As {@linkplain HeatConsumer} only for visual effects */
+        @Override
+        public float[] sideHeat() {
+            return sideHeat;
+        }
+
+        /** As {@linkplain HeatConsumer} only for visual effects */
+        @Override
+        public float heatRequirement() {
+            return getCurrentChoice().cost.heat;
         }
 
         @Override
@@ -158,6 +290,9 @@ public class ArmoryBlock extends Block {
             super.write(write);
 
             write.i(index);
+            //Save the core coordinates
+            write.f(core.x);
+            write.f(core.y);
         }
 
         @Override
@@ -165,15 +300,14 @@ public class ArmoryBlock extends Block {
             super.read(read, revision);
 
             index = Mathf.clamp(read.i(), 0, armorChoices.size-1);
+            //Get the core with the saved coordinates
+            core = Vars.world.buildWorld(read.f(), read.f());
         }
-    }
 
-    public void setVariable() {
-        Cost cost = getCurrentChoice().cost;
-        if (cost != null) {
-            hasItems = acceptsItems = cost.hasItems();
-            hasLiquids = cost.hasLiquids();
-            hasPower = consumesPower = cost.hasPower();
+        public void setIndex(int index) {
+            index = Mathf.clamp(index, 0, armorChoices.size-1);
+            if (index != ArmoryBlock.this.index)
+                ArmoryBlock.this.index = index;
         }
     }
 
@@ -183,5 +317,9 @@ public class ArmoryBlock extends Block {
 
     public Choice getCurrentChoice() {
         return armorChoices.get(getIndex());
+    }
+
+    public Cost getCurrentCost() {
+        return getCurrentChoice().cost;
     }
 }
