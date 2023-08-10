@@ -9,11 +9,14 @@ import arc.struct.*;
 import arc.util.*;
 import arc.util.io.*;
 
+import mindustry.*;
 import mindustry.core.*;
+import mindustry.game.*;
 import mindustry.gen.*;
 import mindustry.type.*;
 import mindustry.ui.*;
 import mindustry.world.*;
+import mindustry.world.blocks.storage.*;
 import mindustry.world.meta.*;
 
 import aeyama.ui.*;
@@ -79,6 +82,7 @@ public class ArmoryBlock extends Block {
                                     c.add(new HeatDisplay(armorChoice.cost.heat)).padRight(5f);
                             } else c.add("[gray]" + Core.bundle.get("stat.none")).pad(0f);
                             c.row();
+                            //TODO fix weird space in front of the time
                             c.add(Core.bundle.format("stat.time", UI.formatTime(armorChoice.cost.time * 60f))).pad(0f);
                         }).left();
                     });
@@ -86,6 +90,32 @@ public class ArmoryBlock extends Block {
                 }).growX().pad(5f).row();
             }
         });
+    }
+
+    /** Act as a core extension */
+    @Override
+    public boolean canPlaceOn(Tile tile, Team team, int rotation) {
+        Seq<Tile> tileAround = new Seq<>();
+
+        /* Thanks to @_agzam_ */
+        final int to = (this.size + 2) / 2;
+        final int from = to + 1 - (this.size + 2);
+        for (int ty = from; ty <= to; ty++) {
+            for (int tx = from; tx <= to; tx++) {
+                //Skip corners
+                if ((ty == from || ty == to) && (tx == from ||tx == to))
+                    continue;
+                
+                if ((ty == from || ty == to || tx == from || tx == to)) {
+                    int xx = tile.x + tx;
+                    int yy = tile.y + ty;
+                    tileAround.add(Vars.world.tile(xx, yy));
+                }
+            }
+        }
+        
+        // Can be placed only if the block next to it is a Core
+        return tileAround.contains(o -> o.block() instanceof CoreBlock);
     }
 
     public class ArmoryBuild extends Building {
