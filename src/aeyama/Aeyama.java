@@ -19,6 +19,7 @@ public class Aeyama extends Mod {
         AeyamaStatusEffects.load();
         AeyamaLoadouts.load();
 
+        AeyamaWeapons.load();
         AeyamaUnits.load();
         AeyamaItems.load();
         AeyamaLiquids.load();
