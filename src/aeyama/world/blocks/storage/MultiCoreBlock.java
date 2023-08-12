@@ -44,9 +44,9 @@ public class MultiCoreBlock extends CoreBlock {
         consume(new ConsumeItemDynamic(
             (MultiCoreBuild b) -> b.getCurrentChoice().hasCost() ? b.getCurrentChoice().cost.items : ItemStack.empty
         ));
-        consume(new ConsumeLiquidsDynamic(
-            (MultiCoreBuild b) -> b.getCurrentChoice().hasCost() ? b.getCurrentChoice().cost.liquids : LiquidStack.empty
-        ));
+        // consume(new ConsumeLiquidsDynamic(
+        //     (MultiCoreBuild b) -> b.getCurrentChoice().hasCost() ? b.getCurrentChoice().cost.liquids : LiquidStack.empty
+        // ));
         consume(new ConsumePowerDynamic(
             b -> ((MultiCoreBuild) b).getCurrentChoice().hasCost() ? ((MultiCoreBuild) b).getCurrentChoice().cost.power : 0f
         ));

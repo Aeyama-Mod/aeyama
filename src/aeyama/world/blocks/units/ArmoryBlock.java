@@ -29,6 +29,7 @@ import aeyama.world.Cost;
 import static mindustry.Vars.*;
 
 /*
+ !TODO Index/Choices seems to be null (might need to move getters to the Building class)
  TODO Complete "Stats" UI (build time, etc...)
  TODO Fix "Time" offset in "Stats" UI
  TODO Update bars depending on the current selected armor
@@ -40,37 +41,46 @@ public class ArmoryBlock extends Block {
     public UnitType currentArmor;
     private int index = 0;
     public Building core;
+    public float overheatScale = 1f;
+    public float maxEfficiency = 1f;
 
     public ArmoryBlock(String name) {
         super(name);
 
         solid = true;
         update = true;
-        destructible = true;
-        allowResupply = true;
         configurable = true;
-        group = BlockGroup.units;
+        saveConfig = true;
+        sync = true;
         flags = EnumSet.of(BlockFlag.unitAssembler);
-
-        hasItems = acceptsItems = false;
-        hasLiquids = false;
-        hasPower = consumesPower = false;
         
         config(Integer.class, ArmoryBuild::setIndex);
     }
 
     @Override
     public void init() {
-        super.init();
-
-        Cost cost = getCurrentChoice().cost;
-        if (cost != null) {
-            hasItems |= acceptsItems |= cost.hasItems();
+        hasItems = false;
+        hasLiquids = false;
+        hasPower = false;
+        
+        Cost cost = getCurrentCost();
+        if (cost != null) { //! TODO Cost seems to be null
+            hasItems |= cost.hasItems();
             hasLiquids |= cost.hasLiquids();
-            hasPower |= consumesPower |= cost.hasPower();
+            hasPower |= cost.hasPower();
+            itemCapacity = (int) Math.max(cost.maxItemAmount(), itemCapacity);
+            liquidCapacity = Math.max(cost.maxLiquidAmount(), liquidCapacity);
         }
+        consumesPower = hasPower;
 
-        currentArmor = armorChoices.first().unit;
+        Log.info(hasItems); //? TODO False even tho should be true
+        Log.info(hasLiquids); //? TODO False even tho should be true
+        Log.info(hasPower); //? TODO False even tho should be true
+        Log.info(itemCapacity); //? TODO Still default to 10 when it should be 10000
+        Log.info(liquidCapacity); //? TODO Still default to 10f when it should be 10000f
+        Log.info(consumesPower); //? TODO False even tho should be true
+        
+        super.init();
     }
 
     /** Act as a core extension */
@@ -102,16 +112,16 @@ public class ArmoryBlock extends Block {
     @Override
     public void setStats() {
         super.setStats();
-    
+        
         stats.remove(Stat.unitType);
         stats.add(new Stat("armors", StatCat.function), t -> {
             t.row();
             for(Choice armorChoice : armorChoices) {
                 t.table(Styles.grayPanel, b -> {
-                    b.image(armorChoice.unit.uiIcon).size(iconLarge).pad(10f).left().scaling(Scaling.fit);
+                    b.image(armorChoice.armor.uiIcon).size(iconLarge).pad(10f).left().scaling(Scaling.fit);
                     b.table(i -> {
-                        i.add(armorChoice.unit.localizedName).left().row();
-                        i.add(armorChoice.unit.name).left().color(Color.lightGray).row();
+                        i.add(armorChoice.armor.localizedName).left().row();
+                        i.add(armorChoice.armor.name).left().color(Color.lightGray).row();
 
                         i.table(c -> {
                             c.add(Core.bundle.get("stat.armorcost"));
@@ -132,7 +142,7 @@ public class ArmoryBlock extends Block {
                             c.add(Core.bundle.format("stat.time", UI.formatTime(armorChoice.cost.time * 60f))).pad(0f);
                         }).left();
                     });
-                    b.button("?", Styles.flatBordert, () -> ui.content.show(armorChoice.unit)).size(40f).pad(10f).right().grow().visible(() -> armorChoice.unit.unlockedNow());
+                    b.button("?", Styles.flatBordert, () -> ui.content.show(armorChoice.armor)).size(40f).pad(10f).right().grow().visible(() -> armorChoice.armor.unlockedNow());
                 }).growX().pad(5f).row();
             }
         });
@@ -145,11 +155,12 @@ public class ArmoryBlock extends Block {
 
         if (hasItems && currentCost.hasItems())
             addBar("items", b -> new Bar(
-                () -> Core.bundle.format("bar.items", b.items.total()),
-                () -> Pal.items,
+                Core.bundle.format("bar.items", b.items.total()),
+                Pal.items,
                 () -> (float) (b.items.total() / itemCapacity)
             ));
         
+        //TODO Support multi liquids?/Better implementation than copying vanilla
         if (hasLiquids && currentCost.hasLiquids()) {
             boolean added = false;
 
@@ -173,50 +184,59 @@ public class ArmoryBlock extends Block {
         
         if (hasPower && currentCost.hasPower())
             addBar("power", (ArmoryBuild b) -> new Bar(
-                () -> "bar.power",
-                () -> Pal.powerBar,
+                "bar.power",
+                Pal.powerBar,
                 () -> b.efficiency
             ));
         
         if (currentCost.hasHeat())
             addBar("heat", (ArmoryBuild b) -> new Bar(
-                () -> "bar.heat",
-                () -> Pal.lightOrange,
-                b::heatFrac
+                Core.bundle.format("bar.heatpercent", (int)(b.heat + 0.01f), (int)(b.efficiencyScale() * 100 + 0.01f)),
+                Pal.lightOrange,
+                () -> b.heat / currentCost.heat
             ));
         
         addBar("progress", b -> new Bar(
-            () -> "bar.loadprogress", 
-            () -> Pal.accent,
+            "bar.loadprogress",
+            Pal.accent,
             b::progress
         ));
+
+        Log.info("Bars init/updated");
     }
 
     public void updateBars() {
+        Log.info("Updated Bars");
         barMap.clear();
         setBars();
     }
 
-    public class ArmoryBuild extends Building implements HeatBlock, HeatConsumer {
+
+    public class ArmoryBuild extends Building implements HeatConsumer {
         public float[] sideHeat = new float[4];
         public float heat;
 
         @Override
+        public void updateTile() {
+            heat = calculateHeat(sideHeat);
+            
+            super.updateTile();
+        }
+
+        @Override
         public boolean acceptItem(Building source, Item item) {
-            return getCurrentChoice().cost.hasItems()
+            Cost currentCost = getCurrentCost();
+            return (hasItems && currentCost.hasItems())
+                && currentCost.itemsUnique.contains(item)
                 && items.get(item) < itemCapacity;
         }
 
         @Override
         public boolean acceptLiquid(Building source, Liquid liquid) {
-            return getCurrentChoice().cost.hasLiquids()
+            Cost currentCost = getCurrentCost();
+            return (hasLiquids && currentCost.hasLiquids())
+                && currentCost.liquidsUnique.contains(liquid)
                 && liquids.get(liquid) < liquidCapacity;
-        }
-
-        @Override
-        public void updateTile() {
-            super.updateTile();
-            heat = calculateHeat(sideHeat);
         }
 
         @Override
@@ -244,33 +264,20 @@ public class ArmoryBlock extends Block {
                 
                 ImageButton button = new ImageButton(Styles.clearTogglei);
                 button.replaceImage(new Table(t -> {
-                    t.image(armorChoice.unit.uiIcon).size(32f).scaling(Scaling.fit).center().row();
-                    t.add(armorChoice.unit.localizedName).center().row();
+                    t.image(armorChoice.armor.uiIcon).size(32f).scaling(Scaling.fit).center().row();
+                    t.add(armorChoice.armor.localizedName).center().row();
                     t.setSize(64f);
                     t.pack();
                 }));
                 button.changed(() -> {
                     c.configure(index);
-                    updateBars();
                 });
-                button.update(() -> button.setChecked(getCurrentChoice().unit == armorChoice.unit));
+                button.update(() -> button.setChecked(getCurrentChoice().armor == armorChoice.armor));
 
                 table.add(button);
             }
 
             table.left().pack();
-        }
-
-        /** As {@linkplain HeatBlock} */
-        @Override
-        public float heat() {
-            return heat;
-        }
-
-        /** As {@linkplain HeatBlock} */
-        @Override
-        public float heatFrac() {
-            return heat / getCurrentChoice().cost.heat;
         }
 
         /** As {@linkplain HeatConsumer} only for visual effects */
@@ -282,17 +289,35 @@ public class ArmoryBlock extends Block {
         /** As {@linkplain HeatConsumer} only for visual effects */
         @Override
         public float heatRequirement() {
-            return getCurrentChoice().cost.heat;
+            return getCurrentCost().heat;
+        }
+
+        public float warmupTarget() {
+            Cost currentCost = getCurrentCost();
+            if (currentCost.hasHeat())
+                return Mathf.clamp(heat / currentCost.heat);
+            else return 1f;
+        }
+
+        @Override
+        public float efficiencyScale() {
+            Cost currentCost = getCurrentCost();
+            if (currentCost.hasHeat()) {
+                float heatRequirement = currentCost.heat;
+                float over = Math.max(heat - heatRequirement, 0f);
+                return Math.min(Mathf.clamp(heat / heatRequirement) + over / heatRequirement * overheatScale, maxEfficiency);
+            } else return 1f;
         }
 
         @Override
         public void write(Writes write) {
             super.write(write);
 
-            write.i(index);
+            write.i(index);            
             //Save the core coordinates
             write.f(core.x);
             write.f(core.y);
+
         }
 
         @Override
@@ -304,14 +329,21 @@ public class ArmoryBlock extends Block {
             core = Vars.world.buildWorld(read.f(), read.f());
         }
 
-        public void setIndex(int index) {
-            index = Mathf.clamp(index, 0, armorChoices.size-1);
-            if (index != ArmoryBlock.this.index)
-                ArmoryBlock.this.index = index;
+        public void setIndex(int newIndex) {
+            newIndex = Mathf.clamp(newIndex, 0, armorChoices.size-1);
+            Log.info("Set index to: " + newIndex);
+            Log.info("Index: " + index);
+            if (newIndex != index) {
+                Log.info("Index not same: " + index);
+                index = newIndex;
+            }
+            updateBars();
         }
     }
 
     public int getIndex() {
+        //! VV spam console with blank VV
+        // Log.info("Got index: " + Mathf.clamp(index, 0, armorChoices.size-1));
         return Mathf.clamp(index, 0, armorChoices.size-1);
     }
 

@@ -44,7 +44,7 @@ public class AeyamaTestBlock {
                 ))
             );
 
-            requirements(Category.effect, BuildVisibility.sandboxOnly, ItemStack.empty);
+            requirements(Category.effect, BuildVisibility.sandboxOnly, ItemStack.with(AeyamaItems.steel, 10000));
         }};
 
         // weaponLocker = new WeaponLockerBlock() {{
