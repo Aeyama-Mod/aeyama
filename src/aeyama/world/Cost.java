@@ -11,6 +11,9 @@ public class Cost {
     public float heat = 0f;
     public float time = 0f;
 
+    public int itemCapacity;
+    public float liquidCapacity;
+
     public ObjectSet<Item> itemsUnique = new ObjectSet<>();
     public ObjectSet<Liquid> liquidsUnique = new ObjectSet<>();
 
@@ -41,6 +44,9 @@ public class Cost {
             itemsUnique.add(item.item);
         if (hasLiquids()) for (LiquidStack liquid : liquids)
             liquidsUnique.add(liquid.liquid);
+
+        itemCapacity = maxItemAmount();
+        liquidCapacity = maxLiquidAmount();
     }
 
     public boolean hasItems() {

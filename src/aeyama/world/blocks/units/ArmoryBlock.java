@@ -29,20 +29,20 @@ import aeyama.world.Cost;
 import static mindustry.Vars.*;
 
 /*
- !TODO Index/Choices seems to be null (might need to move getters to the Building class)
- TODO Complete "Stats" UI (build time, etc...)
+ !TODO Fix Bars UI not updating like usual
+ ?TODO Fix core saving issue?
  TODO Fix "Time" offset in "Stats" UI
- TODO Update bars depending on the current selected armor
  TODO Make it consume the necessary items/liquids/power/heat
  TODO Comment the function/variable
  */
 public class ArmoryBlock extends Block {
+    /** List of all the available armor and their cost. */
     public Seq<Choice> armorChoices = new Seq<>(Choice.class);
-    public UnitType currentArmor;
-    private int index = 0;
-    public Building core;
-    public float overheatScale = 1f;
-    public float maxEfficiency = 1f;
+    public Choice currentChoice; //Used a little outside of the inner Building class
+    public float overheatScale = 1f; //Used for heat, no idea how it works yet
+    public float maxEfficiency = 1f; //Used for heat, no idea how ti works yet
+    private int index = 0; //? Global for all building or local and unique for all building?
+    public Seq<Tile> tileAround = new Seq<>(); //Only used to save the core to the building ,not the best way
 
     public ArmoryBlock(String name) {
         super(name);
@@ -55,30 +55,28 @@ public class ArmoryBlock extends Block {
         flags = EnumSet.of(BlockFlag.unitAssembler);
         
         config(Integer.class, ArmoryBuild::setIndex);
+        config(Choice.class, ArmoryBuild::setCurrentChoice);
     }
 
     @Override
     public void init() {
+        currentChoice = armorChoices.get(index);
         hasItems = false;
         hasLiquids = false;
         hasPower = false;
         
-        Cost cost = getCurrentCost();
-        if (cost != null) { //! TODO Cost seems to be null
-            hasItems |= cost.hasItems();
-            hasLiquids |= cost.hasLiquids();
-            hasPower |= cost.hasPower();
-            itemCapacity = (int) Math.max(cost.maxItemAmount(), itemCapacity);
-            liquidCapacity = Math.max(cost.maxLiquidAmount(), liquidCapacity);
+        //TODO make it dynamic?
+        for (Choice choice : armorChoices) {
+            Cost cost = choice.cost;
+            if (cost != null) {
+                hasItems |= cost.hasItems();
+                hasLiquids |= cost.hasLiquids();
+                hasPower |= cost.hasPower();
+                itemCapacity = (int) Math.max(cost.maxItemAmount(), itemCapacity);
+                liquidCapacity = Math.max(cost.maxLiquidAmount(), liquidCapacity);
+            }
         }
         consumesPower = hasPower;
-
-        Log.info(hasItems); //? TODO False even tho should be true
-        Log.info(hasLiquids); //? TODO False even tho should be true
-        Log.info(hasPower); //? TODO False even tho should be true
-        Log.info(itemCapacity); //? TODO Still default to 10 when it should be 10000
-        Log.info(liquidCapacity); //? TODO Still default to 10f when it should be 10000f
-        Log.info(consumesPower); //? TODO False even tho should be true
         
         super.init();
     }
@@ -86,8 +84,8 @@ public class ArmoryBlock extends Block {
     /** Act as a core extension */
     @Override
     public boolean canPlaceOn(Tile tile, Team team, int rotation) {
-        Seq<Tile> tileAround = new Seq<>();
-
+        tileAround = new Seq<>();
+        
         /* Thanks to @_agzam_ */
         final int to = (this.size + 2) / 2;
         final int from = to + 1 - (this.size + 2);
@@ -106,9 +104,10 @@ public class ArmoryBlock extends Block {
         }
         
         // Can be placed only if the block next to it is a Core
-        return tileAround.contains(o -> (core = o.build) instanceof CoreBuild);
+        return tileAround.contains(o -> o.build instanceof CoreBuild);
     }
 
+    //? TODO Remove the vanilla implementation for custome one?
     @Override
     public void setStats() {
         super.setStats();
@@ -138,7 +137,7 @@ public class ArmoryBlock extends Block {
                                     c.add(new HeatDisplay(armorChoice.cost.heat)).padRight(5f);
                             } else c.add("[gray]" + Core.bundle.get("stat.none")).pad(0f);
                             c.row();
-                            //TODO fix weird space in front of the time
+                            //? TODO fix the weird 2 spaces in front of the time, pad(0) didn't work
                             c.add(Core.bundle.format("stat.time", UI.formatTime(armorChoice.cost.time * 60f))).pad(0f);
                         }).left();
                     });
@@ -148,10 +147,15 @@ public class ArmoryBlock extends Block {
         });
     }
 
+    //! TODO Don't update unless switch to another block UI for some reason
     @Override
     public void setBars() {
-        Cost currentCost = getCurrentCost();
-        addBar("health", entity -> new Bar("stat.health", Pal.health, entity::healthf).blink(Color.white));
+        Cost currentCost = currentChoice.cost;
+        addBar("health", b -> new Bar(
+            "stat.health",
+            Pal.health,
+            b::healthf
+        ).blink(Color.white));
 
         if (hasItems && currentCost.hasItems())
             addBar("items", b -> new Bar(
@@ -160,7 +164,7 @@ public class ArmoryBlock extends Block {
                 () -> (float) (b.items.total() / itemCapacity)
             ));
         
-        //TODO Support multi liquids?/Better implementation than copying vanilla
+        //TODO Support multi liquids?/Better implementation than copying vanilla, and it's kinda ugly
         if (hasLiquids && currentCost.hasLiquids()) {
             boolean added = false;
 
@@ -182,6 +186,7 @@ public class ArmoryBlock extends Block {
             }
         }
         
+        //TODO Doesn't accept power for some reason so it's always at 0
         if (hasPower && currentCost.hasPower())
             addBar("power", (ArmoryBuild b) -> new Bar(
                 "bar.power",
@@ -201,53 +206,70 @@ public class ArmoryBlock extends Block {
             Pal.accent,
             b::progress
         ));
-
-        Log.info("Bars init/updated");
     }
 
+    //? Maybe not the best way to update it
     public void updateBars() {
-        Log.info("Updated Bars");
         barMap.clear();
         setBars();
+    }
+
+    /** This block doesn't output any item */
+    @Override
+    public boolean outputsItems() {
+        return false;
     }
 
 
     public class ArmoryBuild extends Building implements HeatConsumer {
         public float[] sideHeat = new float[4];
         public float heat;
+        public Building core;
+        //? Do I save the index globally for all block or locally to each building?
+
+        public ArmoryBuild() {
+            //? TODO Only way to save the core to the build, but fix nothing
+            tileAround.contains(o -> (core = o.build instanceof CoreBuild ? o.build : null) instanceof CoreBuild);
+            tileAround = null; //Free the Seq
+        }
 
         @Override
         public void updateTile() {
             heat = calculateHeat(sideHeat);
+
+            //TODO lot of things
             
             super.updateTile();
         }
 
+        /** Only accept items if it's needed and have enough space */
         @Override
         public boolean acceptItem(Building source, Item item) {
             Cost currentCost = getCurrentCost();
             return (hasItems && currentCost.hasItems())
                 && currentCost.itemsUnique.contains(item)
-                && items.get(item) < itemCapacity;
+                && items.get(item) < currentCost.itemCapacity;
         }
 
+        /** Only accept liquids if it's needed and have enough space */
         @Override
         public boolean acceptLiquid(Building source, Liquid liquid) {
             Cost currentCost = getCurrentCost();
             return (hasLiquids && currentCost.hasLiquids())
                 && currentCost.liquidsUnique.contains(liquid)
-                && liquids.get(liquid) < liquidCapacity;
+                && liquids.get(liquid) < currentCost.liquidCapacity;
         }
 
         @Override
         public boolean shouldConsume() {
+            //TODO Lot of things too
             return enabled && efficiency > 0;
         }
 
         @Override
         public void drawSelect() {
             super.drawSelect();
-            if (core != null)
+            if (core != null) //! TODO Core become null, can be easily seen when the core is no longer highlighted when the block is selected
                 Drawf.selected(core, Pal.accent);
         }
 
@@ -271,12 +293,15 @@ public class ArmoryBlock extends Block {
                 }));
                 button.changed(() -> {
                     c.configure(index);
+                    c.configure(armorChoice);
                 });
-                button.update(() -> button.setChecked(getCurrentChoice().armor == armorChoice.armor));
+                button.update(() -> {
+                    button.setChecked(getCurrentChoice().armor == armorChoice.armor);
+                    updateBars(); //! TODO Static, not updating like usual for no reason
+                });
 
                 table.add(button);
             }
-
             table.left().pack();
         }
 
@@ -315,8 +340,8 @@ public class ArmoryBlock extends Block {
 
             write.i(index);            
             //Save the core coordinates
-            write.f(core.x);
-            write.f(core.y);
+            if (core != null) write.f(core.x); //! TODO Core become null at some point, can't save and might corrupt save (if the block is built and core becoma null)
+            if (core != null) write.f(core.y);
 
         }
 
@@ -326,32 +351,38 @@ public class ArmoryBlock extends Block {
 
             index = Mathf.clamp(read.i(), 0, armorChoices.size-1);
             //Get the core with the saved coordinates
-            core = Vars.world.buildWorld(read.f(), read.f());
+            core = Vars.world.buildWorld(read.f(), read.f()); //! TODO well can't read something that is not saved
+        }
+
+        //? Might not be the best implementation, I do I use it
+        public void setCore(Building newCore) {
+            if (core != newCore)
+                core = newCore;
+        }
+
+        public void setCurrentChoice(Choice choice) {
+            itemCapacity = choice.cost.itemCapacity;
+            liquidCapacity = choice.cost.liquidCapacity;
+            if (currentChoice != choice)
+                currentChoice = choice;
         }
 
         public void setIndex(int newIndex) {
             newIndex = Mathf.clamp(newIndex, 0, armorChoices.size-1);
-            Log.info("Set index to: " + newIndex);
-            Log.info("Index: " + index);
-            if (newIndex != index) {
-                Log.info("Index not same: " + index);
+            if (newIndex != index)
                 index = newIndex;
-            }
-            updateBars();
         }
-    }
 
-    public int getIndex() {
-        //! VV spam console with blank VV
-        // Log.info("Got index: " + Mathf.clamp(index, 0, armorChoices.size-1));
-        return Mathf.clamp(index, 0, armorChoices.size-1);
-    }
+        public int getIndex() {
+            return Mathf.clamp(index, 0, armorChoices.size-1);
+        }
 
-    public Choice getCurrentChoice() {
-        return armorChoices.get(getIndex());
-    }
+        public Choice getCurrentChoice() {
+            return armorChoices.get(getIndex());
+        }
 
-    public Cost getCurrentCost() {
-        return getCurrentChoice().cost;
+        public Cost getCurrentCost() {
+            return getCurrentChoice().cost;
+        }
     }
 }
