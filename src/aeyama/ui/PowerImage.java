@@ -5,22 +5,21 @@ import arc.scene.ui.layout.*;
 import arc.util.*;
 
 import mindustry.core.*;
-import mindustry.type.*;
+import mindustry.gen.*;
+import mindustry.graphics.*;
 import mindustry.ui.*;
 
-/** An ItemDisplay, but for liquids. Copy of Vanilla one to remove the localizedName */
-public class ALiquidDisplay extends Table{
-    public final Liquid liquid;
+/** An ItemDisplay, but for power. */
+public class PowerImage extends Table {
     public final float amount;
 
-    public ALiquidDisplay(Liquid liquid, float amount){
-        this.liquid = liquid;
+    public PowerImage(float amount) {
         this.amount = amount;
 
         add(new Stack() {{
             add(new Table(o -> {
                 o.left();
-                o.add(new Image(liquid.uiIcon)).size(32f).scaling(Scaling.fit);
+                o.add(new Image(Icon.power)).size(32f).scaling(Scaling.fit).color(Pal.power);
             }));
 
             if(amount != 0) {

@@ -4,47 +4,52 @@ import arc.struct.*;
 
 import mindustry.type.*;
 import mindustry.world.*;
-import mindustry.world.meta.*;
 
 import aeyama.content.*;
-import aeyama.world.Choice;
-import aeyama.world.Cost;
 import aeyama.world.blocks.units.*;
 
+import multicraft.*;
+
 public class AeyamaTestBlock {
-    public static Block armory, weaponLocker;
+    public static Block armory, weaponLocker, testMulticraft;
 
     public static void load() {
+        testMulticraft = new MultiCrafter("test-multicraft") {{
+            size = 2;
+
+            selector = RecipeSelector.Transform;
+            maxEfficiency = 1f;
+            overheatScale = 1f;
+
+            resolvedRecipes = Seq.with(
+                new Recipe(
+                    new IOEntry(
+                        Seq.with(ItemStack.with(AeyamaItems.woodLumber, 1000)),
+                        Seq.with(),
+                        100f, 0f
+                    ),
+                    new IOEntry(
+                        Seq.with(ItemStack.with(AeyamaItems.woodLumber, 1000)),
+                        Seq.with(),
+                        1000f, 1000f
+                    ), 600f
+                )
+            );
+
+            requirements(Category.crafting, ItemStack.with(AeyamaItems.woodLumber, 1000));
+        }};
+
         armory = new ArmoryBlock("armory-test") {{
             size = 2;
 
             armorChoices = Seq.with(
-                new Choice(AeyamaUnits.sms, new Cost(10f)),
-                new Choice(AeyamaUnits.assault, new Cost(
-                    ItemStack.with(AeyamaItems.stoneBrick, 10, AeyamaItems.woodLumber, 10),
-                    20f
-                )),
-                new Choice(AeyamaUnits.heavy, new Cost(
-                    ItemStack.with(AeyamaItems.stoneBrick, 100, AeyamaItems.woodLumber, 100),
-                    LiquidStack.with(AeyamaLiquids.water, 10),
-                    30f
-                )),
-                new Choice(AeyamaUnits.scout, new Cost(
-                    ItemStack.with(AeyamaItems.stoneBrick, 1000, AeyamaItems.woodLumber, 1000),
-                    LiquidStack.with(AeyamaLiquids.water, 100),
-                    10f,
-                    40f
-                )),
-                new Choice(AeyamaUnits.colonist, new Cost(
-                    ItemStack.with(AeyamaItems.stoneBrick, 10000, AeyamaItems.woodLumber, 10000),
-                    LiquidStack.with(AeyamaLiquids.water, 1000),
-                    100f,
-                    10f,
-                    50f
-                ))
+                AeyamaUnits.sms,
+                AeyamaUnits.assault,
+                AeyamaUnits.heavy,
+                AeyamaUnits.scout
             );
 
-            requirements(Category.effect, BuildVisibility.sandboxOnly, ItemStack.with(AeyamaItems.steel, 10000));
+            requirements(Category.effect, ItemStack.with(AeyamaItems.steel, 10000));
         }};
 
         // weaponLocker = new WeaponLockerBlock() {{

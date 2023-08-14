@@ -1,25 +1,26 @@
 package aeyama.ui;
 
-import arc.graphics.*;
 import arc.scene.ui.*;
 import arc.scene.ui.layout.*;
 import arc.util.*;
 
 import mindustry.core.*;
-import mindustry.gen.*;
+import mindustry.type.*;
 import mindustry.ui.*;
 
-/** An ItemDisplay, but for heat. */
-public class HeatDisplay extends Table {
+/** An ItemDisplay, but for liquids. Copy of Vanilla one to remove the localizedName */
+public class LiquidImage extends Table{
+    public final Liquid liquid;
     public final float amount;
 
-    public HeatDisplay(float amount) {
+    public LiquidImage(Liquid liquid, float amount){
+        this.liquid = liquid;
         this.amount = amount;
 
         add(new Stack() {{
             add(new Table(o -> {
                 o.left();
-                o.add(new Image(Icon.waves)).size(32f).scaling(Scaling.fit).color(new Color(1f, 0.22f, 0.22f, 0.8f));
+                o.add(new Image(liquid.uiIcon)).size(32f).scaling(Scaling.fit);
             }));
 
             if(amount != 0) {

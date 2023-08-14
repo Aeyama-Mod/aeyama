@@ -2,6 +2,7 @@ package aeyama.content;
 
 import arc.graphics.*;
 
+import mindustry.*;
 import mindustry.content.*;
 import mindustry.graphics.g3d.*;
 import mindustry.type.*;
@@ -14,6 +15,12 @@ public class AeyamaPlanets {
     aeyama, moon;
 
     public static void load() {
+        // Hide the items of this mod on all the other planets.
+        for (Planet planet : Vars.content.planets()) {
+            if (planet.name != "aeyama")
+                planet.hiddenItems.addAll(AeyamaItems.aeyamaItems);
+        }
+
         aeyama = new Planet("aeyama", Planets.sun, 1f, 1) {{
             iconColor = Color.valueOf("#158400");
             generator = new AeyamaPlanetGenerator();
