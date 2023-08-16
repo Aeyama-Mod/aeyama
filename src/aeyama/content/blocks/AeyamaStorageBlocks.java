@@ -1,7 +1,6 @@
 package aeyama.content.blocks;
 
 import arc.graphics.*;
-import arc.struct.*;
 
 import mindustry.type.*;
 import mindustry.world.*;
@@ -11,7 +10,6 @@ import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
 import aeyama.content.*;
-import aeyama.world.blocks.storage.*;
 
 import static mindustry.type.ItemStack.*;
 
@@ -61,36 +59,12 @@ public class AeyamaStorageBlocks {
 
             requirements(Category.effect, BuildVisibility.shown, with(AeyamaItems.woodLumber, 300, AeyamaItems.stoneBrick, 600, AeyamaItems.rawIron, 150));
         }};
-        coreControl = new MultiCoreBlock("core-control") {{
+        coreControl = new CoreBlock("core-control") {{
             health = 2000;
             size = 3;
             itemCapacity = 3000;
 
-            unitChoices = Seq.with(
-                new UnitChoice(AeyamaUnits.sms, new UnitCost(10f)),
-                new UnitChoice(AeyamaUnits.assault, new UnitCost(
-                    ItemStack.with(AeyamaItems.stoneBrick, 10, AeyamaItems.woodLumber, 10),
-                    20f
-                )),
-                new UnitChoice(AeyamaUnits.heavy, new UnitCost(
-                    ItemStack.with(AeyamaItems.stoneBrick, 100, AeyamaItems.woodLumber, 100),
-                    LiquidStack.with(AeyamaLiquids.water, 10),
-                    30f
-                )),
-                new UnitChoice(AeyamaUnits.scout, new UnitCost(
-                    ItemStack.with(AeyamaItems.stoneBrick, 1000, AeyamaItems.woodLumber, 1000),
-                    LiquidStack.with(AeyamaLiquids.water, 100),
-                    10f,
-                    40f
-                )),
-                new UnitChoice(AeyamaUnits.colonist, new UnitCost(
-                    ItemStack.with(AeyamaItems.stoneBrick, 10000, AeyamaItems.woodLumber, 10000),
-                    LiquidStack.with(AeyamaLiquids.water, 1000),
-                    100f,
-                    10f,
-                    50f
-                ))
-            );
+            unitType = AeyamaUnits.sms;
 
             requirements(Category.effect, BuildVisibility.shown, with(AeyamaItems.woodLumber, 1000, AeyamaItems.stoneBrick, 1000, AeyamaItems.iron, 500));
         }};

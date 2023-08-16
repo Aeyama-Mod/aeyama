@@ -11,6 +11,7 @@ import arc.util.io.*;
 import mindustry.*;
 import mindustry.game.*;
 import mindustry.gen.*;
+import mindustry.graphics.*;
 import mindustry.type.*;
 import mindustry.ui.*;
 import mindustry.world.*;
@@ -50,28 +51,7 @@ public class ArmoryBlock extends Block {
     /** Act as a core extension */
     @Override
     public boolean canPlaceOn(Tile tile, Team team, int rotation) {
-        Seq<Tile> tileAround = new Seq<>();
-        
-        /* Thanks to @_agzam_ */
-        final int to = (this.size + 2) / 2;
-        final int from = to + 1 - (this.size + 2);
-        for (int ty = from; ty <= to; ty++) {
-            for (int tx = from; tx <= to; tx++) {
-                //Skip corners
-                if ((ty == from || ty == to) && (tx == from ||tx == to))
-                    continue;
-                
-                //Only check the side of the block
-                if ((ty == from || ty == to || tx == from || tx == to)) {
-                    int xx = tile.x + tx;
-                    int yy = tile.y + ty;
-                    tileAround.add(Vars.world.tile(xx, yy));
-                }
-            }
-        }
-        
-        // Can be placed only if the block next to it is a Core
-        return tileAround.contains(o -> o.build instanceof CoreBuild);
+        return isNextToCore(this, tile, tile);
     }
 
     @Override
@@ -91,7 +71,7 @@ public class ArmoryBlock extends Block {
                         });
                         b.button("?", Styles.flatBordert, () -> ui.content.show(armor)).size(40f).pad(10f).right().grow();
                     }).grow().pad(5f).row();
-                } else {
+                } else { //TODO Is centered when it should be all to the left
                     t.table(Styles.grayPanel, b -> {
                         b.image(Icon.lock).size(iconLarge).pad(10f).left().scaling(Scaling.fit);
                         b.table(i -> {
@@ -104,8 +84,39 @@ public class ArmoryBlock extends Block {
         });
     }
 
+    public @Nullable CoreBuild getCore(Team team, Tile tile) {
+        var results = Vars.indexer.getFlagged(team, BlockFlag.core).<CoreBuild>as();
+
+        return results.find(b -> isNextToCore(this, tile, b.tile));
+    }
+
+    public boolean isNextToCore(Block block, Tile tile, Tile coreTile) {
+        Seq<Tile> tileAround = new Seq<>();
+
+        /* Thanks to @_agzam_ */
+        final int to = (block.size + 2) / 2;
+        final int from = to + 1 - (block.size + 2);
+
+        for (int ty = from; ty <= to; ty++) {
+            for (int tx = from; tx <= to; tx++) {
+                //Skip corners
+                if ((ty == from || ty == to) && (tx == from ||tx == to))
+                    continue;
+                
+                //Only check the side of the block
+                if ((ty == from || ty == to || tx == from || tx == to)) {
+                    int xx = coreTile.x + tx;
+                    int yy = coreTile.y + ty;
+                    tileAround.add(Vars.world.tile(xx, yy));
+                }
+            }
+        }
+
+        //Not done keep picking random core I'm done I cn't anymore like please it's been 8 hours I work on this fucking thing
+        return tileAround.contains(o -> o.build instanceof CoreBuild);
+    }
+
     public class ArmoryBuild extends Building {
-        //TODO get the core and save it
         /** The Core block next to this build. */
         public CoreBlock coreBlock = null;
         /** The Core build next to this build. */
@@ -114,6 +125,13 @@ public class ArmoryBlock extends Block {
         public UnitType currentArmor = null;
         /** The index of the selected armor for this build. */
         public int index = 0;
+
+        public int lastChange = -2;
+
+        public ArmoryBuild() {
+            //To avoid any null error, it will always be the first change because index is 0.
+            currentArmor = getCurrentArmor();
+        }
 
         @Override
         public void buildConfiguration(Table table) {
@@ -133,9 +151,12 @@ public class ArmoryBlock extends Block {
                         t.add(armor.localizedName).center().row();
                     }));
                     button.setSize(64f + biggestTextLenght);
-                    button.changed(() -> c.configure(index));
+                    button.changed(() -> {
+                        c.configure(index);
+                        c.configure(armor);
+                    });
                     button.update(() -> button.setChecked(index == getIndex()));
-                } else { //TODO It's centered for some reason
+                } else {
                     table.add(new Table(t -> {
                         t.image(Icon.lock).size(32f).scaling(Scaling.fit).center();
                         t.setSize(64f + biggestTextLenght);
@@ -152,33 +173,42 @@ public class ArmoryBlock extends Block {
             super.write(write);
 
             write.i(index);
-            //Save the X and Y coordinates of the core build (and block).
-            //TODO don't work cause no core
-            if (coreBuild != null) {
-                write.f(coreBuild.x);
-                write.f(coreBuild.y);
-                //Double because x would've been overwritten by y
-                write.f(coreBuild.x);
-                write.f(coreBuild.y);
-            }
         }
 
         @Override
         public void read(Reads read, byte revision) {
             super.read(read, revision);
 
-            index = Mathf.clamp(read.i(), 0, armorChoices.size-1);
-            //Get the core build using the saved coordinates.
-            //TODO don't work cause no core saved
-            coreBlock = (CoreBlock) Vars.world.tileWorld(read.f(), read.f()).block();
-            coreBuild = (CoreBuild) Vars.world.tileWorld(read.f(), read.f()).build;
+            index = Mathf.clamp(read.i(), 0, armorChoices.size-1);            
+        }
+
+        @Override
+        public void drawSelect() {
+            Drawf.selected(coreBuild, Pal.accent);
+        }
+
+        @Override
+        public void updateTile() {
+            if (lastChange != world.tileChanges) {
+                lastChange = world.tileChanges;
+                findCore();
+            }
+        }
+
+        public void findCore() {
+            coreBuild = getCore(team, this.tile);
+            Log.info(this.tile);
+            if (coreBuild != null)
+                coreBlock = (CoreBlock) coreBuild.block;
         }
 
         public void setArmor(UnitType armor) {
             if (armor != currentArmor) {
                 currentArmor = armor;
-                coreBlock.unitType = armor;
-                coreBuild.requestSpawn(player);
+                if (coreBlock != null && coreBuild != null) {
+                    coreBlock.unitType = armor;
+                    coreBuild.requestSpawn(player);
+                }
             }
         }
 

@@ -4,42 +4,27 @@ import arc.struct.*;
 
 import mindustry.type.*;
 import mindustry.world.*;
+import mindustry.world.blocks.storage.*;
+import mindustry.world.meta.*;
 
 import aeyama.content.*;
 import aeyama.world.blocks.units.*;
 
-import multicraft.*;
-
 public class AeyamaTestBlock {
-    public static Block armory, weaponLocker, testMulticraft;
+    public static Block testArmory, weaponLocker, testCore;
 
     public static void load() {
-        testMulticraft = new MultiCrafter("test-multicraft") {{
-            size = 2;
+        testCore = new CoreBlock("test-core-control") {{
+            health = 2000;
+            size = 3;
+            itemCapacity = 3000;
 
-            selector = RecipeSelector.Transform;
-            maxEfficiency = 1f;
-            overheatScale = 1f;
+            unitType = AeyamaUnits.sms;
 
-            resolvedRecipes = Seq.with(
-                new Recipe(
-                    new IOEntry(
-                        Seq.with(ItemStack.with(AeyamaItems.woodLumber, 1000)),
-                        Seq.with(),
-                        100f, 0f
-                    ),
-                    new IOEntry(
-                        Seq.with(ItemStack.with(AeyamaItems.woodLumber, 1000)),
-                        Seq.with(),
-                        1000f, 1000f
-                    ), 600f
-                )
-            );
-
-            requirements(Category.crafting, ItemStack.with(AeyamaItems.woodLumber, 1000));
+            requirements(Category.effect, BuildVisibility.shown, ItemStack.with(AeyamaItems.woodLumber, 1000, AeyamaItems.stoneBrick, 1000, AeyamaItems.iron, 500));
         }};
 
-        armory = new ArmoryBlock("armory-test") {{
+        testArmory = new ArmoryBlock("armory-test") {{
             size = 2;
 
             armorChoices = Seq.with(
