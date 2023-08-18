@@ -51,7 +51,28 @@ public class ArmoryBlock extends Block {
     /** Act as a core extension */
     @Override
     public boolean canPlaceOn(Tile tile, Team team, int rotation) {
-        return isNextToCore(this, tile, tile);
+        Seq<Tile> tileAround = new Seq<>();
+
+        /* Thanks to @_agzam_ */
+        final int to = (this.size + 2) / 2;
+        final int from = to + 1 - (this.size + 2);
+
+        for (int ty = from; ty <= to; ty++) {
+            for (int tx = from; tx <= to; tx++) {
+                //Skip corners
+                if ((ty == from || ty == to) && (tx == from ||tx == to))
+                    continue;
+                
+                //Only check the side of the block
+                if ((ty == from || ty == to || tx == from || tx == to)) {
+                    int xx = tile.x + tx;
+                    int yy = tile.y + ty;
+                    tileAround.add(Vars.world.tile(xx, yy));
+                }
+            }
+        }
+
+        return tileAround.contains(o -> o.build instanceof CoreBuild);
     }
 
     @Override
@@ -84,61 +105,50 @@ public class ArmoryBlock extends Block {
         });
     }
 
-    public @Nullable CoreBuild getCore(Team team, Tile tile) {
-        var results = Vars.indexer.getFlagged(team, BlockFlag.core).<CoreBuild>as();
+    public @Nullable CoreBuild getCore(Team team, float x, float y) {
+        var result = Vars.indexer.findClosestFlag(x, y, team, BlockFlag.core).<CoreBuild>as();
 
-        return results.find(b -> isNextToCore(this, tile, b.tile));
-    }
-
-    public boolean isNextToCore(Block block, Tile tile, Tile coreTile) {
-        Seq<Tile> tileAround = new Seq<>();
-
-        /* Thanks to @_agzam_ */
-        final int to = (block.size + 2) / 2;
-        final int from = to + 1 - (block.size + 2);
-
-        for (int ty = from; ty <= to; ty++) {
-            for (int tx = from; tx <= to; tx++) {
-                //Skip corners
-                if ((ty == from || ty == to) && (tx == from ||tx == to))
-                    continue;
-                
-                //Only check the side of the block
-                if ((ty == from || ty == to || tx == from || tx == to)) {
-                    int xx = coreTile.x + tx;
-                    int yy = coreTile.y + ty;
-                    tileAround.add(Vars.world.tile(xx, yy));
-                }
-            }
-        }
-
-        //Not done keep picking random core I'm done I cn't anymore like please it's been 8 hours I work on this fucking thing
-        return tileAround.contains(o -> o.build instanceof CoreBuild);
+        return result;
     }
 
     public class ArmoryBuild extends Building {
-        /** The Core block next to this build. */
+        /** The Core block next to this build. Set after placement and each tile update. */
         public CoreBlock coreBlock = null;
-        /** The Core build next to this build. */
+        /** The Core build next to this build. Set after placement and each tile update. */
         public CoreBuild coreBuild = null;
         /** The currently selected armor for this build. */
         public UnitType currentArmor = null;
         /** The index of the selected armor for this build. */
         public int index = 0;
-
+        /** TODO comment */
         public int lastChange = -2;
 
-        public ArmoryBuild() {
-            //To avoid any null error, it will always be the first change because index is 0.
-            currentArmor = getCurrentArmor();
+        /** On placement and on each update get the core. */
+        @Override
+        public void updateTile() {
+            if (lastChange != world.tileChanges) {
+                lastChange = world.tileChanges;
+
+                coreBuild = getCore(team, this.x, this.y);
+                if (coreBuild != null)
+                    coreBlock = (CoreBlock) coreBuild.block;
+            }
         }
 
+        /** Draw a selection on the linked core. */
+        @Override
+        public void drawSelect() {
+            if (coreBuild != null)
+                Drawf.selected(coreBuild, Pal.accent);
+        }
+
+        /** The configuration menu. */
         @Override
         public void buildConfiguration(Table table) {
-            build(ArmoryBlock.this, this, table);
+            configurationMenu(ArmoryBlock.this, this, table);
         }
 
-        public void build(ArmoryBlock b, ArmoryBuild c, Table table) {
+        public void configurationMenu(ArmoryBlock b, ArmoryBuild c, Table table) {
             for (UnitType armor : armorChoices) {
                 int index = armorChoices.indexOf(armor);
                 if (index != 0 && index % 2 == 0)
@@ -182,27 +192,8 @@ public class ArmoryBlock extends Block {
             index = Mathf.clamp(read.i(), 0, armorChoices.size-1);            
         }
 
-        @Override
-        public void drawSelect() {
-            Drawf.selected(coreBuild, Pal.accent);
-        }
-
-        @Override
-        public void updateTile() {
-            if (lastChange != world.tileChanges) {
-                lastChange = world.tileChanges;
-                findCore();
-            }
-        }
-
-        public void findCore() {
-            coreBuild = getCore(team, this.tile);
-            Log.info(this.tile);
-            if (coreBuild != null)
-                coreBlock = (CoreBlock) coreBuild.block;
-        }
-
         public void setArmor(UnitType armor) {
+            //TODO need a custom spawning system.
             if (armor != currentArmor) {
                 currentArmor = armor;
                 if (coreBlock != null && coreBuild != null) {
