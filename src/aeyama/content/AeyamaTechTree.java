@@ -215,6 +215,9 @@ public class AeyamaTechTree {
                     node(AeyamaUnits.heavy, with(AeyamaItems.armorPlating, 500), () -> {
     
                     });
+                    node(AeyamaUnits.scout, with(AeyamaItems.armorPlating, 300), () -> {
+    
+                    });
                 });
             });
         });

@@ -2,8 +2,8 @@ name: Dev Build
 
 on:
   push:
-    branches:
-      - dev
+    branches-ignore:
+      - main
 
 jobs:
   buildJar:
