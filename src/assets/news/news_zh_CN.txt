@@ -1,34 +1,33 @@
-[gray]August 07th, 2023
+[gray]2023年8月7号
 
-[white]Hi everyone, after a long time, we finally decided to make a big decision for the mod...
+[white]大家好，经过很长时间，我们终于决定为这个模组做出一个重大决定......
 
-[red]We will stop the campaign.
+[red]我们将停止该活动。
 
-[yellow]Why?
-[white]It's simple, we were not ready. Fredy was just making a mod for fun, then I joined not long after to have fun with someone else, and then suddenly... the mod blew up.
-We weren't expecting that the mod would become this big so quickly and because of that we felt oppressed, forced and having way less liberty, even making this announcement was a long decision because we know this decision will not please anyone.
-I burned out once when the v0.2 released, then I slowly came back and took Fredy's place as the main developer when he was fed up with Mindustry, and then I forced myself once again for the v0.3 where I almost burned out once again.
+[yellow]为什么?
+[white]很简单，因为我们没有准备更好。Fredy只是因为一时兴起所以做了一款模组，当我和别人一起玩时，然后这个模组......爆炸了。我们没有想过这个模组会变得那么正式，正因为如此，我们感受到了被压迫，并且游玩的自由度降低，即使宣布这件事也是一个艰难的决定，因为我们知道这不会让任何人满意。
+当你0.2版本发布时，我就放任不管，然后又慢慢回来，当Fredy厌倦了Mindustry时，我取代了作为开发人员的位置，就这么强迫自己完成了0.3的开发。
 
-[yellow]When will it come back?
-[white]Probably after the v1.0 official release, when content and progression will be completely reworked and stable. Then after the planet and the campaign will be focused until v2.0 official release, where the main planet will be done.
+[yellow]什么时候回来？
+[white]大约是在1.0发布之前，我们会完善所有的内容和进度，然后将星球的战役集中到2.0正式发布，随后就会完工。
 
-[yellow]What's the mod future?
-[white]Simple, expanding the content which is currently small and new, making it better, more balanced and enjoyable for everyone.
-Since the mod migrated to Java, I became the main developer and have since total control (Fredy's still in the shadow), but there's a very important thing missing... feedbacks.
-Feedback, even for small things, are really important for us, we can't know what's the problem when you don't tell us, that's also why I started making polls to "force" you to give your opinion, making the beta version to give easy access to the latest change and being able to fix problem before the official release.
+[yellow]模组的未来是什么？
+[white]很简单，扩展目前小而新的内容，使其更好，更平衡，对每个人来说都令人愉快。
+自从模组迁移到 Java 后，我成为了主要的开发人员，并且从此完全控制了（Fredy 仍然在阴影中），但缺少一件非常重要的事情......反馈。
+反馈，即使是小事，对我们来说真的很重要，当你不告诉我们时，我们无法知道有什么问题，这也是为什么我开始进行民意调查以“强迫”您发表意见，使测试版可以轻松访问最新更改并能够在正式发布之前解决问题。
 
  
 
-It was hard to make this decision but we finally did it, I hope that the mod content and community keep expanding (slowly please) and that Fredy will get back soon. That's all for now, see you all next time!
+很难做出这个抉择，但我们终于做到了，我希望 mod 内容和社区继续扩大（不要着急），Fredy很快就会回来。到此为止，下次见！
 
 
-[gray]July 30th, 2023
+[gray]2023年7月30号
 
-[white]A small update was released, the [yellow]v0.3.1 [white]which has some small changes, mainly translation and balancing.
+[white]发布了一个小更新于 [yellow]v0.3.1 [white]。它有一些小的变化，主要是翻译和平衡。
     
-As of today, beta release will be made, only if enough content is added, every week or two on Monday! Basically you now have the stable release, the beta release every 1 or 2 weeks and the dev version, available on each commits via GitHub Actions!
+从今天开始，只要添加在足够内容的情况下，就会发布测试版本于周一或周二。每一两周时间发布一次测试和开发版本，每次提交都可以可Github操作获得。
 
-Like usual report bugs on the GitHub repository Issue and come on our [blue]Discord [white]to get help or give your idea!
+像往常一样报告GitHub存储库上的错误问题，并来我们的[blue]Discord [white]获得帮助或给出您的想法！
 
 
 [gray]2023年7月16号
@@ -39,12 +38,10 @@ Like usual report bugs on the GitHub repository Issue and come on our [blue]Disc
 
 [red]更新: [white]似乎玩家在某一时刻缺少了目标(在您获得铜和锌之前)，你必须亲自为些泡他的和防御才能生存。这似乎有点难，我们做了一些平衡
 
-[red]UPDATE: [white]It seems like player are missing some objectives, at one point (before it ask you to get copper and zinc) you have to build walls and turrets to be able to survive! It seems like this sector was too hard and some balancing was made.
-
 
 [gray]2023年6月17号
 
-[white]Holà! 现在 [yellow]第一区域 [white]已 [green]更新[white]! 目标都回来了
+[white]Holà! 现在 [yellow]第一区域 [white]已 [green]更新[white]! 目标都回来了。
 
 如果您有任何的反馈或建议请访问我们的 [blue]Discord [white]或者前往GitHub! Adiós! 
 
