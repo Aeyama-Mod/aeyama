@@ -1,4 +1,25 @@
-# Changelog
+# Changelogs
+
+## 0.4.0 (Unreleased)
+ * **Campaign development is officially stopped as of August 7th, 2023**
+ * New `Armory` custom block
+ * New Updater to update the mod when outdated
+ * Setting to disable/enable the Updater
+ * Setting to enable/disable the Beta Updater
+
+## 0.3.1 (July 30th, 2023)
+ * New `Wood Junction` block
+ * Made the `News` UI compatible with landscape mode
+ * Translation for `Russian` & `Simplified Chinese`
+ * Some bug fixes and balancing
+
+## 0.3.0 (July 16th, 2023)
+ * Complete rewrite in **Java**
+ * Added the 2nd sector, `Ecnounter`
+ * Reworked the 1st sector
+ * Reworked a parts of the progression
+ * Full translation for `Russian` & `French`
+ * New translation for `Simplified Chinese` & `Spanish`
 
 ##### These update changelogs were made after their release, they were simplified and may be inaccurate.
 
