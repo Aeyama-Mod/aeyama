@@ -4,16 +4,19 @@ import mindustry.mod.*;
 
 import aeyama.content.*;
 import aeyama.ui.*;
+import aeyama.ui.dialogs.*;
+
+import static arc.Core.*;
 
 public class Aeyama extends Mod {
 
     @Override
     public void init() {
         AeyamaVars.load();
+        SettingsMenuDialog.load();
         AeyamaDialogs.load();
-        // AeyamaUpdater.load();
 
-        AeyamaUpdater.check();
+        if(settings.getBool("aeyama-checkUpdate")) AeyamaUpdater.check();
     }
 
     @Override

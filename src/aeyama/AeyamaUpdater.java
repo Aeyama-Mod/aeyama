@@ -14,19 +14,15 @@ import mindustry.ui.dialogs.*;
 import java.net.*;
 
 import static aeyama.AeyamaVars.*;
+import static arc.Core.*;
 import static mindustry.Vars.*;
 
+/** Most of this from the mod "Scheme Size". */
 public class AeyamaUpdater {
     public static String urlReleases = ghApi + "/repos/" + repo + "/releases";
     public static String betaDownload;
     public static String download;
     public static float progress;
-    
-    // public static void load() {
-    //     Jval meta = Jval.read(mod.root.child("mod.json").readString());
-    //     mod.meta.author = meta.getString("author");
-    //     mod.meta.description = meta.getString("description");
-    // }
 
     public static void check() {
         Log.info("[green][Aeyama][lightgray] Checking for updates...");
@@ -35,8 +31,8 @@ public class AeyamaUpdater {
             JsonArray releases = Jval.read(res.getResultAsString()).asArray();
             Jval release;
 
-            // Check if the first release is a beta (pre-release)
-            if ((release = releases.get(0)).getBool("prerelease", false)) {
+            // Check if the first release is a beta (pre-release) only if the user wants
+            if (settings.getBool("aeyama-checkBetaUpdate") && (release = releases.get(0)).getBool("prerelease", false)) {
                 String betaVersion = release.getString("tag_name").substring(1);
                 betaDownload = release.get("assets").asArray().get(0).getString("browser_download_url");
                 
@@ -54,10 +50,19 @@ public class AeyamaUpdater {
                     showCustomConfirmBeta(
                         "@aeyama.updater.name", Core.bundle.format("aeyama.updater.info-beta", mod.meta.version, version, betaVersion),
                         "@aeyama.updater.install", "@aeyama.updater.install-beta", "@aeyama.updater.ignore",
-                        AeyamaUpdater::update, AeyamaUpdater::updateBeta, () -> {}
+                        AeyamaUpdater::update, AeyamaUpdater::updateBeta
                     );
                 } else { // The first release is the latest
                     release = releases.get(0);
+                    // Check if it's not a prerelease, if it is then get the firs release
+                    if (release.getBool("prerelease", false)) {
+                        for (int i=1; i < releases.size; i++) {
+                            if (!releases.get(i).getBool("prerelease", false)) {
+                                release = releases.get(i);
+                                break;
+                            }
+                        }
+                    }
                     String version = release.getString("tag_name").substring(1);
                     download = release.get("assets").asArray().get(0).getString("browser_download_url");
     
@@ -65,7 +70,7 @@ public class AeyamaUpdater {
                         showCustomConfirm(
                             "@aeyama.updater.name", Core.bundle.format("aeyama.updater.info", mod.meta.version, version),
                             "@aeyama.updater.install", "@aeyama.updater.ignore",
-                            AeyamaUpdater::update, () -> {}
+                            AeyamaUpdater::update
                         );
 
             }
@@ -119,25 +124,22 @@ public class AeyamaUpdater {
      * Custom "showCustomComfirm" for the Updater UI only.
      */
 
-    public static void showCustomConfirm(String title, String text, String yes, String no, Runnable confirmed, Runnable denied){
+    public static void showCustomConfirm(String title, String text, String yes, String no, Runnable confirmed){
         BaseDialog dialog = new BaseDialog(title);
         dialog.cont.add(text).width(mobile ? 400f : 500f).wrap().pad(4f).get().setAlignment(Align.center, Align.center);
-        dialog.buttons.defaults().size(250f, 54f).pad(2f);
+        dialog.buttons.defaults().size(125f, 54f).pad(2f);
         dialog.setFillParent(false);
         dialog.buttons.button(yes, () -> {
             dialog.hide();
             confirmed.run();
-        }).row();
-        dialog.buttons.button(no, () -> {
-            dialog.hide();
-            denied.run();
         });
+        dialog.buttons.button(no, dialog::hide);
         dialog.keyDown(KeyCode.escape, dialog::hide);
         dialog.keyDown(KeyCode.back, dialog::hide);
         dialog.show();
     }
 
-    public static void showCustomConfirmBeta(String title, String text, String yes1, String yes2, String no, Runnable confirmed1, Runnable confirmed2, Runnable denied){
+    public static void showCustomConfirmBeta(String title, String text, String yes1, String yes2, String no, Runnable confirmed1, Runnable confirmed2){
         BaseDialog dialog = new BaseDialog(title);
         dialog.cont.add(text).width(mobile ? 400f : 500f).wrap().pad(4f).get().setAlignment(Align.center, Align.center);
         dialog.buttons.defaults().size(250f, 54f).pad(2f);
@@ -153,10 +155,7 @@ public class AeyamaUpdater {
                 confirmed2.run();
             });
         }).row();
-        dialog.buttons.button(no, () -> {
-            dialog.hide();
-            denied.run();
-        });
+        dialog.buttons.button(no, dialog::hide);
         dialog.keyDown(KeyCode.escape, dialog::hide);
         dialog.keyDown(KeyCode.back, dialog::hide);
         dialog.show();

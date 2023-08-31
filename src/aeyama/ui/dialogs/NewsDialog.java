@@ -5,21 +5,19 @@ import arc.scene.ui.layout.*;
 import arc.util.*;
 import mindustry.*;
 import mindustry.gen.*;
-import mindustry.mod.Mods.*;
 import mindustry.ui.dialogs.*;
 
 import static mindustry.Vars.*;
 import static aeyama.AeyamaVars.*;
 
 public class NewsDialog extends BaseDialog {
-    static LoadedMod mod = Vars.mods.getMod("aeyama");
-    String urlNews = "https://raw.githubusercontent.com/" + repo + (isDev ? "/dev" : "/main") + "/src/assets/news/" + Core.bundle.get("newsFile");
+    String urlNews = "https://raw.githubusercontent.com/" + repo + (isDev ? "/dev" : "/main") + "/src/assets/news/" + Core.bundle.get("aeyama.news.file");
     String urlGitHub = "https://github.com/Aeyama-Mod/aeyama";
     String urlDiscord = "https://discord.gg/YVY9Y3uA85";
     String urlProject = "https://github.com/users/FredyJabe/projects/2";
 
     public NewsDialog() {
-        super(Core.bundle.format("news.title", mod.meta.version));
+        super(Core.bundle.format("aeyama.news.title", mod.meta.version));
 
         addCloseListener();
         Table news = getNews();
@@ -49,13 +47,13 @@ public class NewsDialog extends BaseDialog {
             
             cont.table(t -> {
                 t.defaults().size(256f, 64f).pad(3f);
-                t.button(Core.bundle.format("linkGitHub"), Icon.githubSquare, () -> {
+                t.button("@aeyama.news.github", Icon.githubSquare, () -> {
                     if (!Core.app.openURI(urlGitHub)) {
                         Vars.ui.showErrorMessage("@linkfail");
                         Core.app.setClipboardText(urlGitHub);
                     }
                 });
-                t.button(Core.bundle.format("linkDiscord"), Icon.discord, () -> {
+                t.button("@aeyama.news.discord", Icon.discord, () -> {
                     if (!Core.app.openURI(urlDiscord)) {
                         Vars.ui.showErrorMessage("@linkfail");
                         Core.app.setClipboardText(urlDiscord);
@@ -64,7 +62,7 @@ public class NewsDialog extends BaseDialog {
             }).center().fillX().row();
             cont.table(t -> {
                 t.defaults().size(256f*2f, 64f).pad(3f);
-                t.button(Core.bundle.format("linkProject"), Icon.trello, () -> {
+                t.button("@aeyama.news.project", Icon.trello, () -> {
                     if (!Core.app.openURI(urlProject)) {
                         Vars.ui.showErrorMessage("@linkfail");
                         Core.app.setClipboardText(urlProject);
@@ -75,19 +73,19 @@ public class NewsDialog extends BaseDialog {
         } else { // If on landscape mobile
             cont.table(t -> {
                 t.defaults().size(256f, 64f).pad(3f);
-                t.button(Core.bundle.format("linkGitHub"), Icon.githubSquare, () -> {
+                t.button("@aeyama.news.github", Icon.githubSquare, () -> {
                     if (!Core.app.openURI(urlGitHub)) {
                         Vars.ui.showErrorMessage("@linkfail");
                         Core.app.setClipboardText(urlGitHub);
                     }
                 }).row();
-                t.button(Core.bundle.format("linkDiscord"), Icon.discord, () -> {
+                t.button("@aeyama.news.discord", Icon.discord, () -> {
                     if (!Core.app.openURI(urlDiscord)) {
                         Vars.ui.showErrorMessage("@linkfail");
                         Core.app.setClipboardText(urlDiscord);
                     }
                 }).row();
-                t.button(Core.bundle.format("linkProject"), Icon.trello, () -> {
+                t.button("@aeyama.news.project", Icon.trello, () -> {
                     if (!Core.app.openURI(urlProject)) {
                         Vars.ui.showErrorMessage("@linkfail");
                         Core.app.setClipboardText(urlProject);
