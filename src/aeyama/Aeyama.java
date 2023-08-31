@@ -11,6 +11,9 @@ public class Aeyama extends Mod {
     public void init() {
         AeyamaVars.load();
         AeyamaDialogs.load();
+        // AeyamaUpdater.load();
+
+        AeyamaUpdater.check();
     }
 
     @Override

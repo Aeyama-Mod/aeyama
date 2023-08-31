@@ -12,7 +12,7 @@ import aeyama.planets.*;
 
 public class AeyamaPlanets {
     public static Planet
-    aeyama, moon;
+        aeyama, moon;
 
     public static void load() {
         // Hide the items of this mod on all the other planets.

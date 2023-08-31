@@ -13,13 +13,13 @@ import static aeyama.AeyamaVars.*;
 
 public class NewsDialog extends BaseDialog {
     static LoadedMod mod = Vars.mods.getMod("aeyama");
-    String urlNews = "https://raw.githubusercontent.com/" + repo + (isDev ? "dev" : "main") + "/src/assets/news/" + Core.bundle.get("newsFile");
+    String urlNews = "https://raw.githubusercontent.com/" + repo + (isDev ? "/dev" : "/main") + "/src/assets/news/" + Core.bundle.get("newsFile");
     String urlGitHub = "https://github.com/Aeyama-Mod/aeyama";
     String urlDiscord = "https://discord.gg/YVY9Y3uA85";
     String urlProject = "https://github.com/users/FredyJabe/projects/2";
 
     public NewsDialog() {
-        super(Core.bundle.format("title") + Core.bundle.format("installedVersion") + " " + mod.meta.version);
+        super(Core.bundle.format("news.title", mod.meta.version));
 
         addCloseListener();
         Table news = getNews();
