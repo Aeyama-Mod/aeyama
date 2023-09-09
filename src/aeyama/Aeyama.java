@@ -14,8 +14,8 @@ public class Aeyama extends Mod {
     public void init() {
         AeyamaVars.load();
         SettingsMenuDialog.load();
-        AeyamaDialogs.load();
 
+        if(settings.getBool("aeyama-showNews")) NewsDialog.load();
         if(settings.getBool("aeyama-checkUpdate")) AeyamaUpdater.check();
     }
 
