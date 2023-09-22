@@ -12,8 +12,8 @@ import static mindustry.type.ItemStack.*;
 public class AeyamaTechTree {
     
     public static void load() {
-        AeyamaPlanets.aeyama.techTree = nodeRoot("Aeyama", AeyamaItems.planet, () -> {
-            node(AeyamaStorageBlocks.coreDropPod, () -> {
+        AeyamaPlanets.aeyama.techTree = nodeRoot("@aeyama.displayName-simple", AeyamaItems.planet, () -> {
+            node(AeyamaEffectBlocks.coreDropPod, () -> {
                 node(AeyamaDistributionBlocks.woodConveyor, with(AeyamaItems.woodLumber, 10, AeyamaItems.stone, 5), Seq.with(new Research(AeyamaProductionBlocks.woodHarvester)), () -> {
                     node(AeyamaDistributionBlocks.ironConveyor, with(/*TODO*/), Seq.with(new Produce(AeyamaItems.iron)), () -> {
                         node(AeyamaDistributionBlocks.steelConveyor, with(/*TODO*/), Seq.with(new Produce(AeyamaItems.iron), new Produce(AeyamaItems.steel)), () -> {
@@ -35,11 +35,11 @@ public class AeyamaTechTree {
 
                     });
                 });
-                node(AeyamaStorageBlocks.coreFrontline, with(AeyamaItems.woodLumber, 600, AeyamaItems.stoneBrick, 950, AeyamaItems.rawIron, 250, AeyamaItems.blueprint, 2), Seq.with(new Produce(AeyamaItems.blueprint)/*, new Produce(AeyamaUnitTypes.sms)*/), () -> {
-                    node(AeyamaStorageBlocks.coreControl, with(AeyamaItems.woodLumber, 1000, AeyamaItems.stoneBrick, 1000, AeyamaItems.iron, 500, AeyamaItems.specialBPDefense, 3), () -> {
+                node(AeyamaEffectBlocks.coreFrontline, with(AeyamaItems.woodLumber, 600, AeyamaItems.stoneBrick, 950, AeyamaItems.rawIron, 250, AeyamaItems.blueprint, 2), Seq.with(new Produce(AeyamaItems.blueprint)/*, new Produce(AeyamaUnitTypes.sms)*/), () -> {
+                    node(AeyamaEffectBlocks.coreControl, with(AeyamaItems.woodLumber, 1000, AeyamaItems.stoneBrick, 1000, AeyamaItems.iron, 500, AeyamaItems.specialBPDefense, 3), () -> {
 
                     });
-                    node(AeyamaStorageBlocks.groundScanner, with(AeyamaItems.stoneBrick, 450, AeyamaItems.iron, 200, AeyamaItems.blueprint, 2), Seq.with(new Produce(AeyamaItems.iron)), () -> {
+                    node(AeyamaEffectBlocks.groundScanner, with(AeyamaItems.stoneBrick, 450, AeyamaItems.iron, 200, AeyamaItems.blueprint, 2), Seq.with(new Produce(AeyamaItems.iron)), () -> {
 
                     });
                 });
@@ -56,9 +56,9 @@ public class AeyamaTechTree {
                         });
                     });
                 });
-                node(AeyamaStorageBlocks.smallStockpile, with(AeyamaItems.woodLumber, 120, AeyamaItems.stoneBrick, 300, AeyamaItems.blueprint, 1), Seq.with(new Produce(AeyamaItems.rawIron)), () -> {
-                    node(AeyamaStorageBlocks.stockpile, with(AeyamaItems.woodLumber, 1200, AeyamaItems.stoneBrick, 1800, AeyamaItems.iron, 600, AeyamaItems.blueprint, 12), () -> {
-                        node(AeyamaStorageBlocks.largeStockpile, with(AeyamaItems.woodLumber, 3750, AeyamaItems.stoneBrick, 4500, AeyamaItems.iron, 1000, AeyamaItems.advancedBlueprint, 18), () -> {
+                node(AeyamaEffectBlocks.smallStockpile, with(AeyamaItems.woodLumber, 120, AeyamaItems.stoneBrick, 300, AeyamaItems.blueprint, 1), Seq.with(new Produce(AeyamaItems.rawIron)), () -> {
+                    node(AeyamaEffectBlocks.stockpile, with(AeyamaItems.woodLumber, 1200, AeyamaItems.stoneBrick, 1800, AeyamaItems.iron, 600, AeyamaItems.blueprint, 12), () -> {
+                        node(AeyamaEffectBlocks.largeStockpile, with(AeyamaItems.woodLumber, 3750, AeyamaItems.stoneBrick, 4500, AeyamaItems.iron, 1000, AeyamaItems.advancedBlueprint, 18), () -> {
                             
                         });
                     });

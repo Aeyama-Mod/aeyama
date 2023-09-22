@@ -7,9 +7,7 @@ public class AeyamaBlocks {
         AeyamaDefenseBlocks.load();
         AeyamaDistributionBlocks.load();
         AeyamaProductionBlocks.load();
-        AeyamaStorageBlocks.load();
+        AeyamaEffectBlocks.load();
         AeyamaEnvironmentBlocks.load();
-
-        AeyamaTestBlock.load();
     }
 }

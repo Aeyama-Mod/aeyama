@@ -27,7 +27,7 @@ public class AeyamaPlanets {
 
             accessible = true;
             alwaysUnlocked = true;
-            defaultCore = AeyamaStorageBlocks.coreFrontline;
+            defaultCore = AeyamaEffectBlocks.coreFrontline;
 
             drawOrbit = true;
             orbitRadius = 32f;
