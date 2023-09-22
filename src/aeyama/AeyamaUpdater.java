@@ -17,7 +17,7 @@ import static aeyama.AeyamaVars.*;
 import static arc.Core.*;
 import static mindustry.Vars.*;
 
-/** Most of this from the mod "Scheme Size". */
+/** Most of this is from the mod "Scheme Size". */
 public class AeyamaUpdater {
     public static String urlReleases = ghApi + "/repos/" + repo + "/releases";
     public static String betaDownload;

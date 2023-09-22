@@ -3,7 +3,6 @@ package aeyama;
 import mindustry.mod.*;
 
 import aeyama.content.*;
-import aeyama.ui.*;
 import aeyama.ui.dialogs.*;
 
 import static arc.Core.*;
