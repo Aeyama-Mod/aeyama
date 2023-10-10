@@ -27,7 +27,7 @@ public class AeyamaEnvironmentBlocks {
             variants = 9;
         }};
         floorSand = new Floor("floor-sand", 1) {{
-            itemDrop = AeyamaItems.sand;
+            itemDrop = Items.sand;
             attributes.set(Attribute.get("sand"), .25f);
             attributes.set(Attribute.get("stone"), .0875f);
         }};
@@ -118,7 +118,7 @@ public class AeyamaEnvironmentBlocks {
         
         floorSandWater = new Floor("floor-sand-water", 0) {{
             isLiquid = true;
-            liquidDrop = AeyamaLiquids.water;
+            liquidDrop = Liquids.water;
             attributes.set(Attribute.get("water"), 1f);
 
             supportsOverlay = true;
@@ -131,7 +131,7 @@ public class AeyamaEnvironmentBlocks {
         }};
         floorDeepWater = new Floor("floor-deep-water", 0) {{
             isLiquid = true;
-            liquidDrop = AeyamaLiquids.water;
+            liquidDrop = Liquids.water;
             attributes.set(Attribute.get("water"), 1f);
 
             supportsOverlay = true;

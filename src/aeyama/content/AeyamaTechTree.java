@@ -2,6 +2,7 @@ package aeyama.content;
 
 import arc.struct.*;
 
+import mindustry.content.*;
 import mindustry.game.Objectives.*;
 
 import aeyama.content.blocks.*;
@@ -128,8 +129,8 @@ public class AeyamaTechTree {
                 nodeProduce(AeyamaItems.carbon, () -> {
 
                 });
-                nodeProduce(AeyamaItems.sand, () -> {
-                    nodeProduce(AeyamaLiquids.water, () -> {
+                nodeProduce(Items.sand, () -> {
+                    nodeProduce(Liquids.water, () -> {
 
                     });
                 });
