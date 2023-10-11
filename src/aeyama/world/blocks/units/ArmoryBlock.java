@@ -91,15 +91,15 @@ public class ArmoryBlock extends Block {
                             i.add(armor.name).left().color(Color.lightGray);
                         });
                         b.button("?", Styles.flatBordert, () -> ui.content.show(armor)).size(40f).pad(10f).right().grow();
-                    }).grow().pad(5f).row();
-                } else { //TODO Is centered when it should be all to the left
+                    }).growX().pad(5f).row();
+                } else {
                     t.table(Styles.grayPanel, b -> {
                         b.image(Icon.lock).size(iconLarge).pad(10f).left().scaling(Scaling.fit);
                         b.table(i -> {
-                            i.add("???").left().color(Color.gray).row();
+                            i.add("???").left().row();
                             i.add("???").left().color(Color.lightGray);
                         });
-                    }).grow().pad(5f).row();
+                    }).growX().pad(5f).row();   
                 }
             }
         });
@@ -155,20 +155,20 @@ public class ArmoryBlock extends Block {
                         t.image(armor.uiIcon).size(32f).scaling(Scaling.fit).center().row();
                         t.add(armor.localizedName).center().row();
                     }));
-                    button.setSize(64f + biggestTextLenght);
                     button.changed(() -> {
                         c.configure(index);
                         c.configure(armor);
                     });
-                    button.update(() -> button.setChecked(index == getIndex()));
                 } else {
-                    table.add(new Table(t -> {
-                        t.image(Icon.lock).size(32f).scaling(Scaling.fit).center();
-                        t.setSize(64f + biggestTextLenght);
-                        //? TODO Same style as the button but Table doesn't support style.
+                    button.replaceImage(new Table(t -> {
+                        t.image(Icon.lock).size(32f).scaling(Scaling.fit).center().row();
+                        t.add("???").center().row();
                     }));
                 }
-                table.add(button);
+                button.update(() -> button.setChecked(index == getIndex()));
+                // button.setSize(64f + biggestTextLenght);
+                button.getImageCell().scaling(Scaling.fit).size(Vars.iconLarge);
+                table.add(button).grow().pad(2.5f).margin(15f + biggestTextLenght);
             }
             table.left();
         }
