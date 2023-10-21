@@ -1,6 +1,8 @@
 package aeyama;
 
+import mindustry.*;
 import mindustry.mod.*;
+import mindustry.type.*;
 
 import aeyama.content.*;
 import aeyama.ui.dialogs.*;
@@ -14,8 +16,14 @@ public class Aeyama extends Mod {
         AeyamaVars.load();
         SettingsMenuDialog.load();
 
-        if(settings.getBool("aeyama-showNews")) NewsDialog.load();
-        if(settings.getBool("aeyama-checkUpdate")) AeyamaUpdater.check();
+        if (settings.getBool("aeyama-showNews")) NewsDialog.load();
+        if (settings.getBool("aeyama-checkUpdate")) AeyamaUpdater.check();
+
+        // Hide the items of this mod on all the other planets.
+        for (Planet planet : Vars.content.planets()) {
+            if (planet.name != "aeyama")
+                planet.hiddenItems.addAll(AeyamaItems.aeyamaItems);
+        }
     }
 
     @Override

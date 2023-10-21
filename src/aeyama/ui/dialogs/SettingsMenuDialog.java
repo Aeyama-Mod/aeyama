@@ -13,7 +13,6 @@ public class SettingsMenuDialog {
             t.checkPref("aeyama-showNews", true);
             t.checkPref("aeyama-checkUpdate", true);
             t.checkPref("aeyama-checkBetaUpdate", false);
-
         });
     }
 }

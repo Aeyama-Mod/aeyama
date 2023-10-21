@@ -274,7 +274,7 @@ public class AeyamaProductionBlocks {
 
             menu = "transform";
             maxEfficiency = 1f;
-            overheatScale = 0.25f;
+            overheatScale = 1f;
 
             resolvedRecipes = Seq.with(
                 new Recipe(
@@ -286,7 +286,7 @@ public class AeyamaProductionBlocks {
                     new IOEntry(
                         Seq.with(ItemStack.with(AeyamaItems.brass, 1)),
                         Seq.with()
-                    ), 15f * 60f //Divided by 2 when full heat capacity
+                    ), 8f * 60f
                 ),
                 new Recipe(
                     new IOEntry(
@@ -297,7 +297,7 @@ public class AeyamaProductionBlocks {
                     new IOEntry(
                         Seq.with(ItemStack.with(AeyamaItems.steel, 1)),
                         Seq.with()
-                    ), 15f * 60f //Divided by 2 when full heat capacity
+                    ), 8f * 60f
                 )
             );
 
