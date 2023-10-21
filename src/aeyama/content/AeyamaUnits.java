@@ -141,28 +141,7 @@ public class AeyamaUnits {
             coreUnitDock = true;
             createScorch = false;
 
-            weapons.add(new Weapon("riffle") {{
-                aiControllable = false;
-                top = false;
-                x = 5f;
-                y = 3f;
-                shootY = 2f;
-                reload = 25f;
-                recoil = 2f;
-                shootSound = Sounds.pew;
-                shake = .25f;
-                alternate = false;
-                mirror = false;
-                bullet = new BasicBulletType() {{
-                    damage = 14f;
-                    speed = 6f;
-                    lifetime = 20f;
-                    collidesTeam = true;
-                    healPercent = 5f;
-                    frontColor = Color.valueOf("#ffffff");
-                    backColor = Color.valueOf("#98ffa9");
-                }};
-            }});
+            weapons.add(AeyamaWeapons.rifle);
         }};
         heavy = new UnitType("heavy") {{
             aiController = BuilderAI::new;
@@ -196,28 +175,7 @@ public class AeyamaUnits {
             coreUnitDock = true;
             createScorch = false;
 
-            weapons.add(new Weapon("riffle") {{
-                aiControllable = false;
-                top = false;
-                x = 5f;
-                y = 3f;
-                shootY = 2f;
-                reload = 25f;
-                recoil = 2f;
-                shootSound = Sounds.pew;
-                shake = .25f;
-                alternate = false;
-                mirror = false;
-                bullet = new BasicBulletType() {{
-                    damage = 14f;
-                    speed = 6f;
-                    lifetime = 20f;
-                    collidesTeam = true;
-                    healPercent = 5f;
-                    frontColor = Color.valueOf("#ffffff");
-                    backColor = Color.valueOf("#98ffa9");
-                }};
-            }});
+            weapons.add(AeyamaWeapons.rifle);
         }};
         scout = new UnitType("scout") {{
             aiController = BuilderAI::new;
@@ -251,28 +209,7 @@ public class AeyamaUnits {
             coreUnitDock = true;
             createScorch = false;
 
-            weapons.add(new Weapon("riffle") {{
-                aiControllable = false;
-                top = false;
-                x = 5f;
-                y = 3f;
-                shootY = 2f;
-                reload = 25f;
-                recoil = 2f;
-                shootSound = Sounds.pew;
-                shake = .25f;
-                alternate = false;
-                mirror = false;
-                bullet = new BasicBulletType() {{
-                    damage = 14f;
-                    speed = 6f;
-                    lifetime = 20f;
-                    collidesTeam = true;
-                    healPercent = 5f;
-                    frontColor = Color.valueOf("#ffffff");
-                    backColor = Color.valueOf("#98ffa9");
-                }};
-            }});
+            weapons.add(AeyamaWeapons.rifle);
         }};
         
         insectCrawler = new UnitType("insect-crawler") {{
@@ -428,28 +365,7 @@ public class AeyamaUnits {
             createWreck = false;
 
             canAttack = true;
-            weapons.add(new Weapon("insect-spit") {{
-                top = false;
-                reload = 34f;
-                recoil = 1f;
-                x = 0f;
-                y = 2f;
-                shootY = 3f;
-                shake = 0.25f;
-                alternate = false;
-                mirror = false;
-                shootSound = Sounds.none;
-                bullet = new BasicBulletType(5, 7) {{
-                    status = AeyamaStatusEffects.knockdown;
-                    statusDuration = 30;
-                    lifetime = 14f;
-                    frontColor = Color.valueOf("#16942e");
-                    backColor = Color.valueOf("#16942e");
-                    trailColor = Color.valueOf("#16942e");
-                    trailWidth = 1.2f;
-                    trailLength = 5;
-                }};
-            }});
+            weapons.add(AeyamaWeapons.insectSpit);
         }};
     }
 }

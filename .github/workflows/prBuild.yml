@@ -18,10 +18,8 @@ jobs:
         java-version: 17.0.7
         distribution: oracle
         cache: gradle
-    - name: Grant execution permission to gradlew
-      run: chmod +x ./gradlew
     - name: Build mod JAR
-      run: ./gradlew deploy
+      run: chmod +x ./gradlew; ./gradlew deploy
     - name: Get current version
       run: |
         version=$(${{github.workspace}}/gradlew -q printVersion)

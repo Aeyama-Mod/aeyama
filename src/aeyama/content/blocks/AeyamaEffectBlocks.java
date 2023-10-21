@@ -1,6 +1,7 @@
 package aeyama.content.blocks;
 
 import arc.graphics.*;
+import arc.struct.*;
 
 import mindustry.type.*;
 import mindustry.world.*;
@@ -10,36 +11,27 @@ import mindustry.world.draw.*;
 import mindustry.world.meta.*;
 
 import aeyama.content.*;
+import aeyama.world.blocks.storage.*;
+import aeyama.world.blocks.units.*;
 
 import static mindustry.type.ItemStack.*;
 
-public class AeyamaStorageBlocks {
+public class AeyamaEffectBlocks {
     public static Block
+    /* Core */
     coreDropPod, coreFrontline, coreControl,
 
-    /* Campaign */
-    groundScanner,
+    /* Equipment */
+    armory,
 
     /* Storage */
-    smallStockpile, stockpile, largeStockpile;
+    smallStockpile, stockpile, largeStockpile,
+
+    /* Campaign */
+    groundScanner;
 
     public static void load () {
-        groundScanner = new GenericCrafter("ground-scanner") {{
-            health = 750;
-            size = 4;
-
-            drawer = new DrawMulti(
-                new DrawDefault(),
-                new DrawSpikes(Color.valueOf("#FACF7F")) {{ rotateSpeed = .5f; }},
-                new DrawPulseShape(false) {{
-                    radiusScl = 2.5f;
-                    square = false;
-                    timeScl = 250f;
-                }}
-            );
-
-            requirements(Category.effect, with(AeyamaItems.stoneBrick, 200, AeyamaItems.iron, 175));
-        }};
+       /* Core */
         coreDropPod = new CoreBlock("core-drop-pod") {{
             health = 550;
             alwaysUnlocked = true;
@@ -59,7 +51,7 @@ public class AeyamaStorageBlocks {
 
             requirements(Category.effect, BuildVisibility.shown, with(AeyamaItems.woodLumber, 300, AeyamaItems.stoneBrick, 600, AeyamaItems.rawIron, 150));
         }};
-        coreControl = new CoreBlock("core-control") {{
+        coreControl = new AeyamaCoreBlock("core-control") {{
             health = 2000;
             size = 3;
             itemCapacity = 3000;
@@ -68,6 +60,23 @@ public class AeyamaStorageBlocks {
 
             requirements(Category.effect, BuildVisibility.shown, with(AeyamaItems.woodLumber, 1000, AeyamaItems.stoneBrick, 1000, AeyamaItems.iron, 500));
         }};
+
+        /* Equipment */
+        armory = new ArmoryBlock("armory") {{
+            health = 1250;
+            size = 3;
+
+            armorChoices = Seq.with(
+                AeyamaUnits.sms,
+                AeyamaUnits.assault,
+                AeyamaUnits.heavy,
+                AeyamaUnits.scout
+            );
+
+            requirements(Category.effect, with(/* TODO */));
+        }};
+
+        /* Storage */
         smallStockpile = new StorageBlock("stockpile-small") {{
             scaledHealth = 48;
             itemCapacity = 200;
@@ -87,6 +96,24 @@ public class AeyamaStorageBlocks {
             itemCapacity = 2500;
 
             requirements(Category.effect, with(AeyamaItems.woodLumber, 750, AeyamaItems.stoneBrick, 900, AeyamaItems.steel, 200));
+        }};
+
+        /* Campaing */
+        groundScanner = new GenericCrafter("ground-scanner") {{
+            health = 750;
+            size = 4;
+
+            drawer = new DrawMulti(
+                new DrawDefault(),
+                new DrawSpikes(Color.valueOf("#FACF7F")) {{ rotateSpeed = .5f; }},
+                new DrawPulseShape(false) {{
+                    radiusScl = 2.5f;
+                    square = false;
+                    timeScl = 250f;
+                }}
+            );
+
+            requirements(Category.effect, with(AeyamaItems.stoneBrick, 200, AeyamaItems.iron, 175));
         }};
     }
 }

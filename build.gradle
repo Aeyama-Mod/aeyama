@@ -1,6 +1,6 @@
 apply plugin: "java"
 
-version 'v0.3.1'
+version 'v0.4-pre'
 
 targetCompatibility = JavaVersion.VERSION_1_8
 sourceCompatibility = JavaVersion.VERSION_17
@@ -9,16 +9,19 @@ sourceSets.main.java.srcDirs = ["src/"]
 
 repositories {
     mavenCentral()
-    maven{ url 'https://www.jitpack.io' }
+    maven { url "https://raw.githubusercontent.com/Zelaux/MindustryRepo/master/repository" }
+    maven { url 'https://maven.xpdustry.com/anuken' }
+    maven { url 'https://www.jitpack.io' }
 }
 
 ext {
     //the build number that this mod is made for
     mindustryVersion = 'v145'
     jabelVersion = "93fde537c7"
-    sdkRoot = System.getenv("ANDROID_HOME") ?: System.getenv("ANDROID_SDK_ROOT")
 
-    multicrafterVersion = '1.6' // Official 1.7 is broken
+    multicrafterVersion = 'v1.7.2' // Custom build
+
+    sdkRoot = System.getenv("ANDROID_HOME") ?: System.getenv("ANDROID_SDK_ROOT")
 }
 
 //java 8 backwards compatibility flag
@@ -30,10 +33,10 @@ allprojects {
 
 dependencies {
     compileOnly "com.github.Anuken.Arc:arc-core:$mindustryVersion"
-    compileOnly "com.github.Anuken.MindustryJitpack:core:$mindustryVersion"
+    compileOnly "com.github.Anuken.Mindustry:core:$mindustryVersion"
 
     // implementation("com.github.liplum:MultiCrafterLib:$multicrafterVersion") 
-    implementation "com.github.jojofr1:MultiCrafterLib:v1.7.2" //Custom Build
+    implementation "com.github.jojofr1:MultiCrafterLib:$multicrafterVersion" //Custom Build
 
     annotationProcessor "com.github.Anuken:jabel:$jabelVersion"
 }
@@ -86,6 +89,7 @@ jar {
 
     from(rootDir) {
         include "mod.json"
+        include "icon.png"
     }
 
     from("src/assets/") {

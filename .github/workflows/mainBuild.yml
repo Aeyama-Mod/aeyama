@@ -17,7 +17,7 @@ jobs:
       with:
         java-version: 17.0.7
         distribution: oracle
-        cache: gradle 
+        cache: gradle
     - name: Build mod JAR
       run: chmod +x ./gradlew; ./gradlew deploy
     - name: Get current version

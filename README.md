@@ -57,8 +57,8 @@ Here's the current Tech Tree (outdated), it is FAR from done and will keep expan
 
 [Logo]: https://raw.githubusercontent.com/Aeyama-Mod/aeyama/main/src/assets/sprites/logo.png
 
-[GithubProject]: https://github.com/users/FredyJabe/projects/2
-[GithubBuild]: https://github.com/Aeyama-Mod/aeyama/actions/workflows/devBuild.yml
+[GitHubProject]: https://github.com/users/FredyJabe/projects/2
+[GitHubBuild]: https://github.com/Aeyama-Mod/aeyama/actions
 [BranchMain]: https://github.com/Aeyama-Mod/aeyama/tree/main
 [BranchDev]: https://github.com/Aeyama-Mod/aeyama/tree/dev
 

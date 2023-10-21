@@ -11,7 +11,7 @@ import aeyama.planets.*;
 
 public class AeyamaPlanets {
     public static Planet
-    aeyama, moon;
+        aeyama, moon;
 
     public static void load() {
         aeyama = new Planet("aeyama", Planets.sun, 1f, 1) {{
@@ -19,8 +19,7 @@ public class AeyamaPlanets {
             generator = new AeyamaPlanetGenerator();
 
             accessible = true;
-            alwaysUnlocked = true;
-            defaultCore = AeyamaStorageBlocks.coreFrontline;
+            defaultCore = AeyamaEffectBlocks.coreFrontline;
 
             drawOrbit = true;
             orbitRadius = 32f;
@@ -37,6 +36,7 @@ public class AeyamaPlanets {
             clearSectorOnLose = true;
             allowSectorInvasion = false;
             allowLaunchToNumbered = false;
+            allowLaunchLoadout = true;
 
             ruleSetter = r -> {
                 r.fog = true;
@@ -50,9 +50,24 @@ public class AeyamaPlanets {
                               5, .9f, 4, 1f, .75f, 1.2f,
                               Color.valueOf("#158400"), Color.valueOf("#7070ff"),
                               4, .5f, .5f, .5f),
-                
+                                
                 new HexSkyMesh(this, 5,     
                                1.5f, .12f, 5, Color.valueOf("#7eb6debb"), 1, 2f, 2f, .45f)
+                
+                // // Grass & Water
+                // new NoiseMesh(this, 262436,
+                //               6, 1f, 4, 1f, 0.75f, 1.2f,
+                //               Color.valueOf("#158400"), Color.valueOf("#7070ff"),
+                //               3, 0.5f, 0.25f, 0.5f),
+                // // Moutains
+                // new NoiseMesh(this, 373547,
+                //               6, 1f, 5, 0.5f, 1f, 1.3f,
+                //               Color.valueOf("#aaaaaa"), Color.valueOf("#cccccc"),
+                //               4, 0.7f, 0.7f, 0.8f),
+                
+                // new HexSkyMesh(this, 5,     
+                //                0.5f, 0.27f, 7, Color.valueOf("#7eb6debb"),
+                //                1, 2f, 2f, 0.45f)
             );
         }};
 
@@ -68,8 +83,9 @@ public class AeyamaPlanets {
 
             hasAtmosphere = false;
 
-            meshLoader = () -> new NoiseMesh(this, 4689, 3,
-                                             Color.valueOf("#7d6e64"), .45f, 5, 1.2f, .45f, 1.2f);
+            meshLoader = () -> new NoiseMesh(this, 4689, 4,
+                                             Color.valueOf("#999999"), .5f, 5,
+                                             1f, .5f, 1f);
         }};
     }
 }
