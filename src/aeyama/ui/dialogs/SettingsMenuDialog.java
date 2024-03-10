@@ -12,7 +12,7 @@ public class SettingsMenuDialog {
         ui.settings.addCategory("@aeyama.displayName-simple", new TextureRegionDrawable(AeyamaItems.planet.uiIcon), t -> {
             t.checkPref("aeyama-showNews", true);
             t.checkPref("aeyama-checkUpdate", true);
-            t.checkPref("aeyama-checkBetaUpdate", false);
+            t.checkPref("aeyama-checkBeta", false);
         });
     }
 }

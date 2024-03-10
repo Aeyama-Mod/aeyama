@@ -1,6 +1,9 @@
 # Changelogs
 
-## 0.4.0 (Unreleased)
+## 0.5.0 (In development)
+ * ...
+
+## 0.4.0 (Pre-released)
  * **Campaign development is officially stopped as of August 7th, 2023**
  * New mod icon
  * New `Armory` Block
