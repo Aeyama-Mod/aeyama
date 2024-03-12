@@ -1,56 +1,5 @@
-[gray]07 Août 2023
+[gray]12 Mars 2024
 
-[white]Bonjour tout le monde, après un long moment, nous avons finalement décidé de prendre une grande décision pour le mod...
+[white]Salut tout le monde ! Ça fait longtemps, hein ?
 
-[red]Nous allons arrêter la campagne.
-
-
-[yellow]Pourquoi ?
-[white]C'est simple, nous n'étions pas prêts. Fredy faisait juste un mod pour s'amuser, puis je l'ai rejoint peu de temps après pour m'amuser avec quelqu'un d'autre, et puis soudain... le mod a explosé.
-Nous ne nous attendions pas à ce que le mod devienne si gros si rapidement et à cause de cela nous nous sommes sentis oppressés, forcés et avec beaucoup moins de liberté, même faire cette annonce a été une longue décision parce que nous savons que cette décision ne plaira à personne.
-J'ai burned out une fois quand la v0.2 est sortie, puis je suis revenu lentement et j'ai pris la place de Fredy en tant que développeur principal quand il en a eu marre de Mindustry, et puis je me suis forcé une fois de plus pour la v0.3 où j'ai failli burned out une fois de plus.
-
-
-[yellow]Quand reviendra la campagne ?
-[white]Probablement après la sortie officielle de la v1.0, quand le contenu et la progression seront complètement retravaillés et stables. Ensuite, la planète et la campagne seront prioritisé jusqu'à la sortie officielle de la v2.0, où la planète principale sera terminée. 
- 
-
-[yellow]Quel est l'avenir du mod ?
-[white]C'est simple, développer le contenu qui est actuellement petit et nouveau, le rendre meilleur, plus équilibré et agréable pour tout le monde.
-Depuis que le mod a migré vers Java, je suis devenu le développeur principal et j'ai depuis le contrôle total (Fredy est toujours dans l'ombre), mais il y a une chose très importante qui manque... les feedbacks.
-Les feedbacks, même pour de petites choses, sont vraiment importants pour nous, nous ne pouvons pas savoir quel est le problème si vous ne nous le dites pas, c'est aussi pourquoi j'ai commencé à faire des sondages pour vous "forcer" à donner votre avis, à faire la version beta pour donner un accès facile aux derniers changements et être en mesure de corriger les problèmes avant la sortie officielle. 
-
-
-J'espère que le contenu du mod et la communauté continueront à se développer (lentement s'il vous plaît) [lightgray]et que Fredy reviendra bientôt. [white]C'est tout pour l'instant, à la prochaine !
-
-
-[gray]30 Juillet 2023
-
-[white]Une petite mise à jour a été publiée, la [yellow]v0.3.1 [white]qui contient quelques petits changements, principalement des traductions et quelques modifications.
-
-À partir d'aujourd'hui, une version bêta sera publiée, uniquement si suffisamment de contenu est ajouté, toutes les une ou deux semaine le lundi ! Basiquement, vous avez maintenant la version stable, la version bêta toutes les 1 ou 2 semaines, et la version de développement, disponible à chaque commits via GitHub Actions !
-
-Comme d'habitude, signalez les bugs sur le GitHub Issue et rendez-vous sur notre [blue]Discord [white]pour obtenir de l'aide ou partager vos idées !
-
-
-[gray]16 Juillet 2023
-
-[white]Salut tout le monde ! La [yellow]v0.3 [white]est disponible avec enfin le 2ème secteur ! La mise à jour pourrait être un peu déséquilibré.
-
-La prochaine mise à jour (v0.4) est prévue pour se concentrer sur le contenu, avec beaucoup de nouveaux éléments et un rééquilibrage très nécessaire (il est temps de donner vos suggestions sur notre [blue]Discord[white] !).
-
-[red]UPDATE: [white]It seems like player are missing some objectives, at one point (before it ask you to get copper and zinc) you have to build walls and turrets to be able to survive! It seems like this sector was too hard and some balancing was made.
-
-
-[gray]17 Juin 2023
-
-[white]Holà ! Le [yellow]premier secteur [white]a été [green]mis à jour[white] ! Les objectifs sont tous de retour.
-
-Si vous rencontrez un problème ou si vous avez des commentaires, rejoignez notre [blue]Discord [white]ou créez une issue sur GitHub ! Adiós !
-
-
-[gray]13 Juin 2023
-
-[white]Salut tout le monde, grande nouvelle pour le mod ! Nous sommes désormais un mod en [red]Java [white] ! Vous pouvez le mettre à jour en le téléchargeant à nouveau via le navigateur de mods, une mise à jour pourrait bientôt arriver, il reste encore quelques choses à terminer.
-
-D'ici là, à plus tard !
+Petite mise à jour rapide à propos du mod : ne vous inquiétez pas il va revivre, nous (oui, nous et pas je) allons [gree]revenir bientôt[white] ! Le mod va potentiellement recevoir de gros changements... ou pas, ça dépend si notre vision sera différente ou pas (nous sommes actuellement en train de discuter à propos de ça mais on vous tiens au courant).
