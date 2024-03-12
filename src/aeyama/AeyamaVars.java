@@ -11,6 +11,6 @@ public class AeyamaVars {
 
     public static void load() {
         isDev = mod.meta.version.contains("dev");
-        isBeta = mod.meta.version.contains("beta");
+        isBeta = mod.meta.version.contains("beta") || mod.meta.version.contains("pre");
     }
 }

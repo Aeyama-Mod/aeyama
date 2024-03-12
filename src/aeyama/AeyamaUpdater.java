@@ -21,28 +21,33 @@ import static mindustry.Vars.*;
 public class AeyamaUpdater {
     private static final String urlReleases = ghApi + "/repos/" + repo + "/releases";
     private static float progress;
-    private static Jval release;
-    private static Jval betaRelease;
-    private static boolean uiShown = false;
 
     public static void check() {
+        if (isDev) {
+            Log.info("[green][Aeyama][lightgray] Not checking for update on development version.");
+            return;
+        }
+
         Log.info("[green][Aeyama][lightgray] Checking for updates...");
 
         // x.y.z-__.w --> xyz and w
-        String modVersion = mod.meta.version;
-        int modVersionCheck = Integer.parseInt(modVersion.substring(0, 5).replace(".", ""));
-        int modBuild = Integer.parseInt(modVersion.substring(modVersion.length() - 1));
+        int modVersionCheck = Integer.parseInt(mod.meta.version.substring(0, 5).replace(".", ""));
+        // Check if the mod version has a build number (only with -beta or -pre version)
+        int modBuild = isBeta ? Integer.parseInt(mod.meta.version.substring(mod.meta.version.length() - 1)) : 0;
 
         // Everything has to be in this HTTP request to work (async)
         Http.get(urlReleases, res -> {
             /* Get the releases */
             JsonArray releases = Jval.read(res.getResultAsString()).asArray();
+            Jval release = null;
+            Jval betaRelease = null;
+            boolean uiShown = false;
 
             // Check if the first release is a "pre-release" (beta)
             if (releases.get(0).getBool("prerelease", false)) {
                 betaRelease = releases.get(0);
                 // Get the first non "pre-release" (release)
-                for (int i=1; i<releases.size; i++) {
+                for (int i=1; i < releases.size; i++) {
                     // Check if the release is a "pre-release", skip.
                     if (!releases.get(i).getBool("prerelease", false)) {
                         release = releases.get(i);
@@ -54,15 +59,17 @@ public class AeyamaUpdater {
                 betaRelease = null;
             }
 
-            String releaseVersion = release.getString("tag_name").substring(1);
+            String releaseVersion = release.getString("tag_name").substring(1); // Get version of release without the 'v'
+            
             if (betaRelease != null && settings.getBool("aeyama-checkBeta")) { // There's a beta to check
-                // x.y.z-__.w --> xyz and w    
+                // vx.y.z-__.w --> xyz and w    
                 String betaVersion = betaRelease.getString("tag_name").substring(1);
                 int betaVersionCheck = Integer.parseInt(betaVersion.substring(0, 5).replace(".", ""));
                 int betaBuild = Integer.parseInt(betaVersion.substring(betaVersion.length() - 1));
 
                 //Check if the beta version is newer than the installed one or that the installed version build number is greater
-                if (betaVersionCheck > modVersionCheck || (betaVersionCheck == modVersionCheck && betaBuild > modBuild)) {
+                if (betaVersionCheck > modVersionCheck
+                    || (betaVersionCheck == modVersionCheck && betaBuild > modBuild)) {
                     String betaDownloadUrl = betaRelease.get("assets").asArray().get(0).getString("browser_download_url");
                     String downloadUrl = release.get("assets").asArray().get(0).getString("browser_download_url");
                     showCustomConfirmBeta(
@@ -80,7 +87,8 @@ public class AeyamaUpdater {
                 int releaseVersionCheck = Integer.parseInt(releaseVersion.substring(0, 5).replace(".", ""));
 
                 //Check if the release version is newer than the installed one or that the installed version is a beta/pre
-                if (releaseVersionCheck > modVersionCheck || (releaseVersionCheck == modVersionCheck && modVersion.length() > 5)) {
+                if (releaseVersionCheck > modVersionCheck
+                    || (releaseVersionCheck == modVersionCheck && isBeta)) {
                     String downloadUrl = release.get("assets").asArray().get(0).getString("browser_download_url");
                     showCustomConfirm(
                         "@aeyama.updater.name", Core.bundle.format("aeyama.updater.info", mod.meta.version, releaseVersion),
