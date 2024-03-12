@@ -2,4 +2,4 @@
 
 [white]Salut tout le monde ! Ça fait longtemps, hein ?
 
-Petite mise à jour rapide à propos du mod : ne vous inquiétez pas il va revivre, nous (oui, nous et pas je) allons [gree]revenir bientôt[white] ! Le mod va potentiellement recevoir de gros changements... ou pas, ça dépend si notre vision sera différente ou pas (nous sommes actuellement en train de discuter à propos de ça mais on vous tiens au courant).
+Petite mise à jour rapide à propos du mod : ne vous inquiétez pas il va revivre, nous (oui, nous et pas je) allons [green]revenir bientôt[white] ! Le mod va potentiellement recevoir de gros changements... ou pas, ça dépend si notre vision sera différente ou pas (nous sommes actuellement en train de discuter à propos de ça mais on vous tiens au courant).
