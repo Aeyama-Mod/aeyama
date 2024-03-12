@@ -13,7 +13,7 @@ import static aeyama.AeyamaVars.*;
 
 public class NewsDialog {
     static BaseDialog dialog;
-    static String urlNews = "https://raw.githubusercontent.com/" + repo + (isDev ? "/dev" : "/main") + "/src/assets/news/" + Core.bundle.get("aeyama.news.file");
+    static String urlNews = "https://raw.githubusercontent.com/" + repo + "/main/src/assets/news/" + Core.bundle.get("aeyama.news.file");
     static String urlGitHub = "https://github.com/Aeyama-Mod/aeyama";
     static String urlDiscord = "https://discord.gg/YVY9Y3uA85";
     static String urlProject = "https://github.com/users/FredyJabe/projects/2";
