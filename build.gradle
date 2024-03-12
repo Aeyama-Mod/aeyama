@@ -2,15 +2,14 @@ apply plugin: "java"
 
 version 'v0.5.0-dev'
 
-targetCompatibility = JavaVersion.VERSION_1_8
 sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_1_8
 
 sourceSets.main.java.srcDirs = ["src/"]
 
 repositories {
     mavenCentral()
     maven { url "https://raw.githubusercontent.com/Zelaux/MindustryRepo/master/repository" }
-    maven { url 'https://maven.xpdustry.com/anuken' }
     maven { url 'https://www.jitpack.io' }
 }
 
@@ -19,7 +18,7 @@ ext {
     mindustryVersion = 'v145'
     jabelVersion = "93fde537c7"
 
-    multicrafterVersion = 'v1.7.2' // Custom build
+    multicrafterVersion = '1.8' // Custom build
 
     sdkRoot = System.getenv("ANDROID_HOME") ?: System.getenv("ANDROID_SDK_ROOT")
 }
@@ -35,8 +34,7 @@ dependencies {
     compileOnly "com.github.Anuken.Arc:arc-core:$mindustryVersion"
     compileOnly "com.github.Anuken.Mindustry:core:$mindustryVersion"
 
-    // implementation("com.github.liplum:MultiCrafterLib:$multicrafterVersion") 
-    implementation "com.github.jojofr1:MultiCrafterLib:$multicrafterVersion" //Custom Build
+    implementation "com.github.liplum:MultiCrafterLib:$multicrafterVersion"
 
     annotationProcessor "com.github.Anuken:jabel:$jabelVersion"
 }
@@ -68,16 +66,12 @@ task jarAndroid {
         def dependencies = (configurations.compileClasspath.asList() + configurations.runtimeClasspath.asList() + [new File(platformRoot, "android.jar")]).collect{ "--classpath $it.path" }.join(" ")
 
         //d8 doesn't work on windows (but required for Actions), so it set it to Dd8.bat if needed.
-        def d8command = isWindows() ? "d8.bat" : "d8"
+        def d8command = System.properties['os.name'].toLowerCase().contains('win') ? "d8.bat" : "d8"
 
         //dex and desugar files - this requires d8 in your PATH
         "$d8command $dependencies --min-api 14 --output ${project.archivesBaseName}Android.jar ${project.archivesBaseName}Desktop.jar"
             .execute(null, new File("$buildDir/libs")).waitForProcessOutput(System.out, System.err)
     }
-}
-
-def isWindows() {
-    return System.properties['os.name'].toLowerCase().contains('win')
 }
 
 jar {
