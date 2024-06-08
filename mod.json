@@ -1,24 +1,20 @@
 {
     "name": "aeyama",
     "repo": "aeyama-mod/aeyama",
-    "minGameVersion": 145,
-    "version": "0.5.0-dev",
+    "minGameVersion": 146,
+    "version": "0.1.0r-dev",
 
     "java": true,
     "main": "aeyama.Aeyama",
     
     "displayName": "Aeyama: The New World",
-    "author": "FredyJabe & Jojo",
-    "subtitle": "A brand new world...",
+    "author": "[[]orange]F[[]white]redy[[]orange]J[[]white]abe & [[]#00AB08]J[[]#00C301]o[[]#26D701]j[[]#4DED30]o",
+    "subtitle": "The rebirth of a world...",
     "description": "This mod will allow you to explore a whole new world and play differently from the base game.
 
     [[]gray]Language: [[]white]- English
                        [[]white]- Français
                        [[]white]- Русский
-                       [[]white]- Polski [[]red](WIP)
-                       [[]white]- Українська [[]red](WIP)
-                       [[]white]- 简体中文 [[]red](WIP)
-                       [[]white]- Español [[]red](WIP)
 
 [[]white]. . . check our Discord and GitHub repository for more info!",
     
