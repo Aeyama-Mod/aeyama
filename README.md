@@ -38,20 +38,6 @@ To build the mod you can either get the [Github Action build][GithubBuild] or yo
 Here's the current Tech Tree (outdated), it is FAR from done and will keep expanding!
 <img src="https://raw.githubusercontent.com/Aeyama-Mod/aeyama/main/src/assets/sprites/tech.drawio.png"/>
 
-## Contributors
-<ul>
-    <li>SunkyMP3G</li>
-    <li>soppi666</li>
-    <li>pepters</li>
-    <li>RouterXdd</li>
-    <li>1stvaliduser</li>
-    <li>RGBProductions</li>
-    <li>Zombaka</li>
-    <li>UAdustry</li>
-    <li>ZielonyTrojkat</li>
-    <li>nehulos</li>
-    <li>Taras4k</li>
-</ul>
 
 <!--------------------------------------------------------------------------------->
 
