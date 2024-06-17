@@ -18,7 +18,7 @@ public class AeyamaItems {
         stone = new Item("stone", Color.valueOf("#e0b28d")) {{
 
         }};
-        //#endregion Resources
+        //#endregion
 
         aeyamaItems.addAll(wood, stone);
     }
