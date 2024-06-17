@@ -1,6 +1,22 @@
-[gray]March 12th, 2024 (¡Se necesita traducción!)
+[red]Las 3 últimas noticias han sido traducidas usando un traductor, si ves algún error en la traducción por favor notifícanoslo y ayúdanos a mejorarla. 
 
-[white]Hi everyone! It's been quite a long time huh?
+[gray]9 de junio de 2024
+[white]¡Un nuevo canal de #❗feedbacks❗ fue creado en [blue]Discord[white]! Os pido a todos que por favor os toméis un tiempo y escribáis vuestra opinión sobre la antigua versión de Aeyama, lo que pensabais de ella, lo que era bueno o malo y cualquier mejora que se os ocurra para hacer que la versión del renacimiento sea aún mejor y mayor. Excepcionalmente puedes hablar en tu idioma nativo, será traducido.
 
-Quick update about the mod: don't worry it will relive, we (yes, we and not I) will [green]come back soon[white]! The mod might receive big changes... or not, it depends if our vision will be different (it's currently still in discusion but we will update you).
 
+[gray]8 de junio de 2024
+[white]Hola @everyone, han pasado 8 meses, y no, no es una actualización sino que es hora de que Aeyama finalmente [gold]vuelva[white]...
+
+[darkgray]¡Aeyama: El Nuevo Mundo [white]volverá como una versión [gold]rebirth [white]! Empezando de nuevo desde cero pero esta vez yendo poco a poco, sin planear demasiado para no perder la motivación. La idea seguirá siendo la misma pero todo será reelaborado.
+La actualización puede tardar un poco en llegar pero habrá [azul]beta [blanco]y [azul]pre-lanzamiento [blanco]¡para que podáis probar las futuras actualizaciones!
+Por ahora, yo estoy a cargo de todo, pero @FredyJabe sigue con nosotros en la sombra, podría (o no) volver.
+Si quieres seguir el desarrollo, no olvides visitar #┃github (en Discord). Por mi parte estoy en periodo de exámenes hasta julio así que el desarrollo puede ser lento al principio. 
+
+Eso es todo por hoy, ¡nos vemos la próxima vez o en los otros canales de texto!
+
+
+[gray]12 de marzo de 2024
+
+[white]¡Hola a todos! Ha pasado mucho tiempo ¿eh?
+
+Rápida actualización sobre el mod: no os preocupéis que revivirá, ¡nosotros (sí, nosotros y no yo) volveremos [green]pronto[white]! El mod podría recibir grandes cambios... o no, depende de si nuestra visión va a ser diferente (actualmente todavía está en discusión, pero os mantendremos informados).

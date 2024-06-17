@@ -1,3 +1,18 @@
+[gray]9 Juin, 2024
+[white]Un nouveau salon ⁠#❗feedbacks❗ a été créé sur [blue]Discord[white] ! Je vous demande à tous donc de bien vouloir prendre un peu de temp et d'écrire votre opinion sur l'ancienne version de Aeyama, ce que vous en avez pensé, ce qui était bien ou mauvais ou des n'importes quelle amélioration que vous pouvez imaginer pour faire la version rebirth (renaissance) encore mieux et meilleur qu'avant. Vous êtes exceptionnellement autorisé a parler dans votre langue maternelle.
+
+
+[gray]8 Juin, 2024
+[white]Salut @everyone, ça fait 8 mois, et non, ce n'est pas une mise à jour mais il est temps pour Aeyama de [gold]revenir[white]...
+
+[darkgray]Aeyama: Le Nouveau Monde [white]reviendra en une version [gold]rebirth (renaissance) [white] ! En repartans de zéro mais cette fois en allant doucement, sans prévoir trop en avance pour pas perdre de motivation. L'idée restera la même mais tout sera retravailler.
+La mise à jour va sûrement prendre un peu de temps pour arriver mais il y aura des [blue]beta [white]et des [blue]pre-release [white]pour que vous puissiez essayer les futur mise à jour !
+Pour l'instant, je suis en charge de tout mais @FredyJabe est toujours là avec nous dans l'ombre, il peux (ou pas) revenir.
+Si vous voulez suivre le développement, n'oubliez pas de suivre #⁠┃github (sur Discord). Quant à moi, je suis dans ma période d'examen jusqu'en Juillet donc le développement peut être lent au début. 
+
+C'est tout pour aujourd'hui, je vous verrai la prochaine fois ou dans les autres salons textuels !
+
+
 [gray]12 Mars 2024
 
 [white]Salut tout le monde ! Ça fait longtemps, hein ?

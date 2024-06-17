@@ -1,6 +1,22 @@
-[gray]March 12th, 2024 (需要翻译！)
+[red]最后 3 条新闻使用翻译器翻译，如果您发现翻译错误，请通知我们并帮助我们改进。
 
-[white]Hi everyone! It's been quite a long time huh?
+[gray]2024 年 6 月 9 日
+[white]在[blue]Discord[white]上创建了一个新的 #❗反馈❗频道！请大家花一些时间写下你们对旧版本《艾亚马》的看法，你们认为它好在哪里，不好在哪里，以及你们能想到的任何改进措施，以使重生版本变得更好、更伟大。作为特例，您可以使用自己的母语发表意见，我们将对您的意见进行翻译。
 
-Quick update about the mod: don't worry it will relive, we (yes, we and not I) will [green]come back soon[white]! The mod might receive big changes... or not, it depends if our vision will be different (it's currently still in discusion but we will update you).
 
+[gray]2024 年 6 月 8 日
+[white]大家好，@大家，已经过去 8 个月了，不，这不是一次更新，而是青山终于[gold]复出[white]的时候了......
+
+[darkgray]《青山：新世界》[white]将以[gold]重生[white]版的形式回归！我们将从头开始，但这次我们会慢慢来，不会提前做太多计划，以免失去动力。想法将保持不变，但一切都将重新设计。
+更新可能需要一些时间，但会有[blue]测试版[white]和[blue]预发布版[white]更新，供大家尝试未来的更新！
+目前，一切由我负责，但 @FredyJabe 仍在暗中支持我们，他可能会（也可能不会）回来。
+如果你想关注开发进程，别忘了查看 #┃github （在 Discord 上）。至于我，七月前我都在考试，所以一开始的开发可能会比较慢。
+
+今天就到这里，我们下次或在其他文字频道再见！
+
+
+[gray]2024 年 3 月 12 日
+
+[white]大家好！好久不见啊？
+
+关于本模块的快速更新：别担心，它会重启的，我们（是的，是我们而不是我）很快就会 [green] 回来[white]！该模块可能会有大的改动......也可能不会，这取决于我们的愿景是否会有所不同（目前仍在讨论中，但我们会及时更新）。

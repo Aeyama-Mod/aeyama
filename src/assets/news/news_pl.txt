@@ -1,6 +1,22 @@
-[gray]March 12th, 2024 (Potrzebne tłumaczenie!)
+[red]3 ostatnie wiadomości zostały przetłumaczone za pomocą translatora, jeśli widzisz błąd w tłumaczeniu, powiadom nas i pomóż nam go poprawić. 
 
-[white]Hi everyone! It's been quite a long time huh?
+[gray]9 czerwca 2024.
+[white]Nowy kanał #❗feedbacks❗ został utworzony na [blue]Discord[white]! Proszę was wszystkich, abyście poświęcili trochę czasu i napisali swoją opinię na temat starej wersji Aeyamy, co o niej myśleliście, co było dobre, a co złe i jakie ulepszenia możecie wymyślić, aby odrodzona wersja była jeszcze lepsza i wspanialsza. Wyjątkowo możesz rozmawiać w swoim ojczystym języku, zostanie to przetłumaczone.
 
-Quick update about the mod: don't worry it will relive, we (yes, we and not I) will [green]come back soon[white]! The mod might receive big changes... or not, it depends if our vision will be different (it's currently still in discusion but we will update you).
 
+[gray]8 czerwca 2024.
+[white]Cześć @wszyscy, minęło 8 miesięcy i nie, to nie jest aktualizacja, ale nadszedł czas, aby Aeyama w końcu [gold]powrócił[white]...
+
+[darkgray]Aeyama: The New World [white] powróci jako [gold]rebirth [white] wersja! Zaczynamy od zera, ale tym razem powoli, nie planując zbyt wiele, by nie stracić motywacji. Pomysł pozostanie ten sam, ale wszystko zostanie przerobione.
+Aktualizacja może zająć trochę czasu, ale będą [niebieskie] beta [białe] i [niebieskie] przedpremierowe [białe] aktualizacje, abyście mogli wypróbować przyszłe aktualizacje!
+Na chwilę obecną ja jestem odpowiedzialny za wszystko, ale @FredyJabe wciąż jest z nami w cieniu, może (lub nie) wrócić.
+Jeśli chcesz śledzić rozwój, nie zapomnij sprawdzić #┃github (na Discordzie). Jeśli chodzi o mnie, jestem w okresie egzaminacyjnym do lipca, więc rozwój może być powolny na początku. 
+
+To wszystko na dziś, do zobaczenia następnym razem lub na innych kanałach tekstowych!
+
+
+[gray]12 marca 2024 roku
+
+[white]Cześć wszystkim! Minęło sporo czasu, co?
+
+Szybka aktualizacja na temat moda: nie martwcie się, przeżyje, my (tak, my, a nie ja) [green]wrócimy wkrótce [white]! Mod może otrzymać duże zmiany... lub nie, zależy to od tego, czy nasza wizja będzie inna (obecnie jest to nadal przedmiotem dyskusji, ale będziemy was informować).
